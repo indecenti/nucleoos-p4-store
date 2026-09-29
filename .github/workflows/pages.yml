@@ -47,6 +47,16 @@ jobs:
               --pattern nucleos-anima.bin --dir "$RUNNER_TEMP/fw"
             echo "$sha  $RUNNER_TEMP/fw/nucleos-anima.bin" | sha256sum -c -
             cp "$RUNNER_TEMP/fw/nucleos-anima.bin" "_site/ota/$file"
+            # Web flasher (ESP Web Tools): boot parts from flash/parts.json + the same app image.
+            if [ -f flash/parts.json ]; then
+              jq --arg v "$ver" --arg app "../ota/$file" '{
+                  name: "NucleoOS P4", version: $v,
+                  new_install_prompt_erase: true, new_install_improv_wait_time: 0,
+                  builds: [{ chipFamily: "ESP32-P4",
+                             parts: (.parts + [{ path: $app, offset: .app_offset }]) }] }' \
+                flash/parts.json > _site/flash/manifest.json
+              rm _site/flash/parts.json
+            fi
           fi
 
       - uses: actions/upload-pages-artifact@v3

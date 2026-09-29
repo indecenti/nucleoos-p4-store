@@ -1,0 +1,1 @@
+{"app_offset": 131072, "parts": [{"path": "bootloader.bin", "offset": 8192}, {"path": "partition-table.bin", "offset": 32768}, {"path": "ota_data_initial.bin", "offset": 61440}]}

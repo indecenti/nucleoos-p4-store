@@ -1,7 +1,9 @@
 # nucleoos-p4-store
 
 App store and firmware updates for [NucleoOS-P4](https://github.com/indecenti/NucleoOS-P4), the
-custom OS for the Guition JC1060P420C (ESP32-P4, 7" touchscreen).
+custom OS for the Guition JC1060P470C (ESP32-P4, 7" 1024x600 touchscreen).
+
+**New board? [Install NucleoOS P4 from the browser](https://indecenti.github.io/nucleoos-p4-store/flash/)** (Chrome/Edge, Web Serial).
 
 Everything here is static, served by GitHub Pages at
 **https://indecenti.github.io/nucleoos-p4-store/**. There is no server: the device only makes
@@ -20,6 +22,8 @@ store-<lang>.json    catalog in one language (en it es fr de), what the device a
 store.json           the English catalog, for firmware older than 1.1.108
 apps/<id>/           manifest.json, app.wasm, and when present app.aot, icon.z, icon.argb
 ota/manifest.json    {"version", "url", "notes", "size", "sha256"} of the current firmware
+flash/               web flasher page + bootloader/partition table/otadata (parts.json); the
+                     workflow writes the ESP Web Tools manifest.json next to them
 index*.html          the catalog as a web page
 CREDITS.md           author, license and source of every app
 ```
