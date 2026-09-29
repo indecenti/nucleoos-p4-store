@@ -1,1 +1,1 @@
-{"version":"1.1.110","url":"https://indecenti.github.io/nucleoos-p4-store/ota/nucleos-anima-1.1.110.bin","notes":"Avviso quando esce una nuova versione del sistema (controllo ogni 6 ore)","size":3542000,"sha256":"da98c3c06fe6483ad1df621ea4ab6905751cb0481e8a097d75ce6bd7838d4709"}
+{"version":"1.1.111","url":"https://indecenti.github.io/nucleoos-p4-store/ota/nucleos-anima-1.1.111.bin","notes":"Camera works after ANIMA and games (no PSRAM fragmentation)","size":3542032,"sha256":"2c012055f502f8b4389f75b9df6444f1a5915d9392308d470f145f2b2afe838f"}
