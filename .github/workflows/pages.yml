@@ -3,7 +3,7 @@
 # The tree is served as it is, except the firmware image. Images live in GitHub Releases, so the
 # git history doesn't grow by 3.5 MB at every release; this job copies the one ota/manifest.json
 # names into the site, after checking it against the manifest's sha256. The device then downloads
-# it from Pages with a plain 200: firmware up to 1.1.105 can't follow the redirect a release
+# it from Pages with a plain 200: firmware before 1.1.108 can't follow the redirect a release
 # download answers with.
 name: pages
 

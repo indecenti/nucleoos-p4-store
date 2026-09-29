@@ -9,15 +9,15 @@ HTTPS GET requests.
 
 | What | URL | Used by |
 |---|---|---|
-| App store | `https://indecenti.github.io/nucleoos-p4-store` | Settings → Update → App store (default from 1.1.106) |
-| Firmware | `https://indecenti.github.io/nucleoos-p4-store/ota/manifest.json` | Settings → Update, and the check at every boot (default from 1.1.106) |
+| App store | `https://indecenti.github.io/nucleoos-p4-store` | Settings → Update → App store (default from 1.1.108) |
+| Firmware | `https://indecenti.github.io/nucleoos-p4-store/ota/manifest.json` | Settings → Update, and the check at every boot (default from 1.1.108) |
 | Catalog in a browser | [index.html](https://indecenti.github.io/nucleoos-p4-store/) | people |
 
 ## Layout
 
 ```
 store-<lang>.json    catalog in one language (en it es fr de), what the device asks for first
-store.json           the English catalog, for firmware older than 1.1.106
+store.json           the English catalog, for firmware older than 1.1.108
 apps/<id>/           manifest.json, app.wasm, and when present app.aot, icon.z, icon.argb
 ota/manifest.json    {"version", "url", "notes", "size", "sha256"} of the current firmware
 index*.html          the catalog as a web page
