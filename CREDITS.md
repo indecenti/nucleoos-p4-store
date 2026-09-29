@@ -150,6 +150,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Trials of the dark sea | `trials-of-the-dark-sea` | ericvilcu | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/trials-of-the-dark-sea) |
 | UEM Mini Game | `uem-mini-game` | Thiago Calvi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/uem-mini-game) |
 | Untangle | `untangle` | Mota Link | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/untangle) |
+| Vertice GP | `vxgp` | NucleoOS |  |  |
 | W4 Test | `w4test` |  |  |  |
 | WASI Test | `wasihello` |  |  |  |
 | WASM Invaders | `wasminvaders` | Lorenzo Henrique Zanetti, Matheus Cener | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasminvaders) |
