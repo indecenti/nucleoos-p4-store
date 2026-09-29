@@ -1,0 +1,14 @@
+{
+  "id": "miku-15",
+  "name": "MIKU-15",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mr.Rafael",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/miku-15",
+  "description": "MIKU-15 by Mr.Rafael, a small game built around an anime-style illustration. Press X or Z to start.",
+  "descriptions": {
+    "en": "MIKU-15 by Mr.Rafael, a small game built around an anime-style illustration. Press X or Z to start.",
+    "it": "MIKU-15 di Mr.Rafael, un piccolo gioco costruito attorno a un'illustrazione in stile anime. Premi X o Z per iniziare."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "lumber-night",
+  "name": "Lumber Night",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Vitaly",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/lumber-night",
+  "description": "A night-time game set in a dark forest around a lonely cabin, made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "A night-time game set in a dark forest around a lonely cabin, made for the first WASM-4 game jam.",
+    "it": "Un gioco notturno ambientato in una foresta buia attorno a una baita isolata, creato per la prima game jam di WASM-4."
+  }
+}

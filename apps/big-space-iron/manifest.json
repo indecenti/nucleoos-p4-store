@@ -1,0 +1,14 @@
+{
+  "id": "big-space-iron",
+  "name": "Big Space Iron",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "kzerot",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/big-space-iron",
+  "description": "A space shooter: pilot your ship against squadrons of enemy fighters, keeping an eye on your energy, speed and shields.",
+  "descriptions": {
+    "en": "A space shooter: pilot your ship against squadrons of enemy fighters, keeping an eye on your energy, speed and shields.",
+    "it": "Uno sparatutto spaziale: pilota la tua nave contro squadriglie di caccia nemici, tenendo d'occhio energia, velocità e scudi."
+  }
+}

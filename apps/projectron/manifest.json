@@ -1,0 +1,14 @@
+{
+  "id": "projectron",
+  "name": "Projectron",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "James McMurray",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/projectron",
+  "description": "A Tron-style light-cycle duel: race around the arena leaving a trail behind you and make your rival crash first.",
+  "descriptions": {
+    "en": "A Tron-style light-cycle duel: race around the arena leaving a trail behind you and make your rival crash first.",
+    "it": "Un duello di moto di luce in stile Tron: corri nell'arena lasciando una scia dietro di te e fai schiantare l'avversario per primo."
+  }
+}

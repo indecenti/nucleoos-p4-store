@@ -1,0 +1,14 @@
+{
+  "id": "untangle",
+  "name": "Untangle",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mota Link",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/untangle",
+  "description": "A relaxing de-cluttering puzzle: drag the points around until none of the lines connecting them cross. Tap or click a point to select it, then drag it.",
+  "descriptions": {
+    "en": "A relaxing de-cluttering puzzle: drag the points around until none of the lines connecting them cross. Tap or click a point to select it, then drag it.",
+    "it": "Un puzzle rilassante: trascina i punti finché nessuna delle linee che li collegano si incrocia più. Tocca o clicca un punto per selezionarlo, poi trascinalo."
+  }
+}

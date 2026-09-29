@@ -1,0 +1,14 @@
+{
+  "id": "wasm4-city",
+  "name": "WASM-4 City",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Jeremy Zeiber",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wasm4-city",
+  "description": "A port of MicroCity for Arduboy: build and manage your own city in a SimCity-style simulation. Arrows to move around, buttons to act. No sound.",
+  "descriptions": {
+    "en": "A port of MicroCity for Arduboy: build and manage your own city in a SimCity-style simulation. Arrows to move around, buttons to act. No sound.",
+    "it": "Porting di MicroCity per Arduboy: costruisci e gestisci la tua città in un gestionale in stile SimCity. Frecce per muoverti, pulsanti per le azioni. Senza audio."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "escape-guldur",
+  "name": "Escape Guldur",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Chris Heyes",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/escape-guldur",
+  "description": "Escape from the dark fortress of Guldur. Can you get out alive? Made in Zig for the second WASM-4 game jam.",
+  "descriptions": {
+    "en": "Escape from the dark fortress of Guldur. Can you get out alive? Made in Zig for the second WASM-4 game jam.",
+    "it": "Fuggi dalla cupa fortezza di Guldur: riuscirai a uscirne vivo? Realizzato in Zig per la seconda game jam di WASM-4."
+  }
+}

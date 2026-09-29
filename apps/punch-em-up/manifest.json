@@ -1,0 +1,14 @@
+{
+  "id": "punch-em-up",
+  "name": "Punch'Em Up",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Louis Pearson",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/punch-em-up",
+  "description": "A tiny, unfinished beat 'em up made for the WASM-4 jam: take on the enemies with your fists and, above all, have fun punching the pots!",
+  "descriptions": {
+    "en": "A tiny, unfinished beat 'em up made for the WASM-4 jam: take on the enemies with your fists and, above all, have fun punching the pots!",
+    "it": "Un piccolo picchiaduro incompiuto creato per la jam di WASM-4: affronta i nemici a suon di pugni e, soprattutto, divertiti a prendere a pugni i vasi!"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "iwas",
+  "name": "IWAS",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mr.Rafael",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/iwas",
+  "description": "IWAS is a small music tool made for WASM-4: create a song within the console's limits and save it. Everything in the editor works with mouse or touch.",
+  "descriptions": {
+    "en": "IWAS is a small music tool made for WASM-4: create a song within the console's limits and save it. Everything in the editor works with mouse or touch.",
+    "it": "IWAS è un piccolo strumento musicale per WASM-4: crea una canzone nei limiti della console e salvala. Tutto l'editor si usa con mouse o tocco."
+  }
+}

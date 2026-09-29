@@ -1,0 +1,14 @@
+{
+  "id": "mazethingie",
+  "name": "Mazethingie",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Davy Willems",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/mazethingie",
+  "description": "Generate mazes of the size you choose and guide the little red box from the bottom-right corner to the top-left exit. Arrows to move, X for a new maze.",
+  "descriptions": {
+    "en": "Generate mazes of the size you choose and guide the little red box from the bottom-right corner to the top-left exit. Arrows to move, X for a new maze.",
+    "it": "Genera labirinti della misura che vuoi e guida il quadratino rosso dall'angolo in basso a destra all'uscita in alto a sinistra. Frecce per muoverti, X nuovo labirinto."
+  }
+}

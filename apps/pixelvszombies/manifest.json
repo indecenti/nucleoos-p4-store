@@ -1,0 +1,14 @@
+{
+  "id": "pixelvszombies",
+  "name": "Pixel vs Zombies",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Vitor Lorençone",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/pixelvszombies",
+  "description": "A Plants vs. Zombies-inspired game: place plants to hold back the zombies across 3 levels, with 5 plants and 3 zombie types. Mouse or touch to select and plant.",
+  "descriptions": {
+    "en": "A Plants vs. Zombies-inspired game: place plants to hold back the zombies across 3 levels, with 5 plants and 3 zombie types. Mouse or touch to select and plant.",
+    "it": "Ispirato a Plants vs. Zombies: pianta le tue difese per fermare gli zombi in 3 livelli, con 5 piante e 3 tipi di zombi. Mouse o tocco per scegliere e piantare."
+  }
+}

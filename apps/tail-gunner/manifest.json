@@ -1,0 +1,14 @@
+{
+  "id": "tail-gunner",
+  "name": "Tail Gunner",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Dial0",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tail-gunner",
+  "description": "Take on enemy planes and dodge their shots among the clouds in this aerial shooter made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "Take on enemy planes and dodge their shots among the clouds in this aerial shooter made for the first WASM-4 game jam.",
+    "it": "Affronta gli aerei nemici ed evita i loro colpi tra le nuvole in questo sparatutto aereo creato per la prima game jam di WASM-4."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "seal-adventure",
+  "name": "Seal Adventure",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "katspaugh",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/seal-adventure",
+  "description": "Guide a seal through the northern seas and avoid the deadly icebergs, on a map generated procedurally with cellular automata.",
+  "descriptions": {
+    "en": "Guide a seal through the northern seas and avoid the deadly icebergs, on a map generated procedurally with cellular automata.",
+    "it": "Guida una foca nei mari del nord evitando gli iceberg mortali, su una mappa generata proceduralmente con automi cellulari."
+  }
+}

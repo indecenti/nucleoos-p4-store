@@ -1,0 +1,14 @@
+{
+  "id": "w4f",
+  "name": "Win 4 Fighter (W4F)",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Kris Dabrowski",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/w4f",
+  "description": "A minimalist fighting game based on the core of Virtua Fighter, meant for two players: punch, guard, crouch and throw. Press punch and guard together to throw.",
+  "descriptions": {
+    "en": "A minimalist fighting game based on the core of Virtua Fighter, meant for two players: punch, guard, crouch and throw. Press punch and guard together to throw.",
+    "it": "Un picchiaduro minimalista basato sul cuore di Virtua Fighter, pensato per due giocatori: pugni, guardia, accovacciate e prese. Pugno e guardia insieme per la presa."
+  }
+}

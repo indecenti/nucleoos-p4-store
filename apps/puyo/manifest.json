@@ -1,0 +1,14 @@
+{
+  "id": "puyo",
+  "name": "Puyo",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Shigeki Karita",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/puyo",
+  "description": "A Puyo Puyo-style falling puzzle: stack the falling blobs and link four of the same color to pop them and trigger chains.",
+  "descriptions": {
+    "en": "A Puyo Puyo-style falling puzzle: stack the falling blobs and link four of the same color to pop them and trigger chains.",
+    "it": "Un puzzle in stile Puyo Puyo: impila le gelatine che cadono e collegane quattro dello stesso colore per farle scoppiare e creare catene."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "floppy-fish",
+  "name": "Floppy Fish",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Chris Breece",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/floppy-fish",
+  "description": "A small arcade game starring a fish, the author's very first WASM-4 creation, written in AssemblyScript.",
+  "descriptions": {
+    "en": "A small arcade game starring a fish, the author's very first WASM-4 creation, written in AssemblyScript.",
+    "it": "Un piccolo gioco arcade con protagonista un pesce, il primissimo titolo WASM-4 del suo autore, scritto in AssemblyScript."
+  }
+}

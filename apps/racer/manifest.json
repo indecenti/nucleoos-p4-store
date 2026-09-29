@@ -1,0 +1,14 @@
+{
+  "id": "racer",
+  "name": "Racer",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Claudio Mattera",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/racer",
+  "description": "A pseudo-3D racing game: speed down a winding desert road past the cacti, with a speedometer and a track map on screen.",
+  "descriptions": {
+    "en": "A pseudo-3D racing game: speed down a winding desert road past the cacti, with a speedometer and a track map on screen.",
+    "it": "Un gioco di corse in pseudo-3D: sfreccia su una strada tortuosa nel deserto tra i cactus, con tachimetro e mappa del circuito sullo schermo."
+  }
+}

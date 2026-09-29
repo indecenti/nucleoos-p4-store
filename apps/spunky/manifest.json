@@ -1,0 +1,14 @@
+{
+  "id": "spunky",
+  "name": "Spunky",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Richard McCormack",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/spunky",
+  "description": "A platformer: jump across the blocks, avoid the spikes and grab the collectibles to raise your score.",
+  "descriptions": {
+    "en": "A platformer: jump across the blocks, avoid the spikes and grab the collectibles to raise your score.",
+    "it": "Un platform: salta tra i blocchi, evita gli spuntoni e raccogli gli oggetti per far salire il punteggio."
+  }
+}

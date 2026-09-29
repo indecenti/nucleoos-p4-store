@@ -1,0 +1,14 @@
+{
+  "id": "wloku",
+  "name": "WLOKU",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "12Boti",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wloku",
+  "description": "A two-player game on a cave-like map, with P1 and P2 starting on opposite sides. Made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "A two-player game on a cave-like map, with P1 and P2 starting on opposite sides. Made for the first WASM-4 game jam.",
+    "it": "Un gioco per due giocatori su una mappa simile a una caverna, con P1 e P2 ai lati opposti. Creato per la prima game jam di WASM-4."
+  }
+}

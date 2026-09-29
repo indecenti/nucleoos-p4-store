@@ -1,0 +1,14 @@
+{
+  "id": "lime-volleyball",
+  "name": "Lime Volleyball",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Bruno Garcia",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/lime-volleyball",
+  "description": "Volleyball in the style of Slime Volleyball: move your blob, jump and bounce the ball over the net to score points.",
+  "descriptions": {
+    "en": "Volleyball in the style of Slime Volleyball: move your blob, jump and bounce the ball over the net to score points.",
+    "it": "Pallavolo in stile Slime Volleyball: muovi la tua pallina gelatinosa, salta e rimanda la palla oltre la rete per fare punto."
+  }
+}

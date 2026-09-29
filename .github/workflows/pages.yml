@@ -1,0 +1,57 @@
+# Publishes this repository on GitHub Pages: the NucleoOS-P4 app store and firmware channel.
+#
+# The tree is served as it is, except the firmware image. Images live in GitHub Releases, so the
+# git history doesn't grow by 3.5 MB at every release; this job copies the one ota/manifest.json
+# names into the site, after checking it against the manifest's sha256. The device then downloads
+# it from Pages with a plain 200: firmware up to 1.1.105 can't follow the redirect a release
+# download answers with.
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir _site
+          rsync -a --exclude .git --exclude .github --exclude _site ./ _site/
+          if [ -f ota/manifest.json ]; then
+            ver=$(jq -r .version ota/manifest.json)
+            sha=$(jq -r .sha256 ota/manifest.json)
+            file="nucleos-anima-$ver.bin"
+            jq -e --arg f "/ota/$file" '.url | endswith($f)' ota/manifest.json > /dev/null \
+              || { echo "ota/manifest.json: url must end in /ota/$file"; exit 1; }
+            gh release download "v$ver" --repo "$GITHUB_REPOSITORY" \
+              --pattern nucleos-anima.bin --dir "$RUNNER_TEMP/fw"
+            echo "$sha  $RUNNER_TEMP/fw/nucleos-anima.bin" | sha256sum -c -
+            cp "$RUNNER_TEMP/fw/nucleos-anima.bin" "_site/ota/$file"
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

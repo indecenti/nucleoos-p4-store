@@ -1,0 +1,14 @@
+{
+  "id": "zigtris",
+  "name": "Zigtris",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Toby Jaffey",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/zigtris",
+  "description": "Yet another Tetris: move and spin the falling blocks to clear lines. X to start, arrows to move, Up to spin.",
+  "descriptions": {
+    "en": "Yet another Tetris: move and spin the falling blocks to clear lines. X to start, arrows to move, Up to spin.",
+    "it": "L'ennesimo Tetris: sposta e ruota i blocchi che cadono per completare le righe. X per iniziare, frecce per muoverti, su per ruotare."
+  }
+}

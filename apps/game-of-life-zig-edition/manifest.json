@@ -1,0 +1,14 @@
+{
+  "id": "game-of-life-zig-edition",
+  "name": "Game of Life: Zig Edition",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "David Roman",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/game-of-life-zig-edition",
+  "description": "Conway's Game of Life with a brush to paint cells, adjustable speed and an invert mode. Up/Down brush size, Left/Right speed, X to pause, Z to switch mode.",
+  "descriptions": {
+    "en": "Conway's Game of Life with a brush to paint cells, adjustable speed and an invert mode. Up/Down brush size, Left/Right speed, X to pause, Z to switch mode.",
+    "it": "Il Gioco della vita di Conway con un pennello per disegnare le cellule, velocità regolabile e modalità inversa. Su/giù pennello, sinistra/destra velocità, X pausa, Z modalità."
+  }
+}

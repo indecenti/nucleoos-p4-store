@@ -1,0 +1,14 @@
+{
+  "id": "simple-space-invaders",
+  "name": "A Simple Space Invaders game",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "LogicProjects",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/simple-space-invaders",
+  "description": "A simple Space Invaders clone, coded live on YouTube: move your ship and shoot down the rows of alien invaders.",
+  "descriptions": {
+    "en": "A simple Space Invaders clone, coded live on YouTube: move your ship and shoot down the rows of alien invaders.",
+    "it": "Un semplice clone di Space Invaders, programmato in diretta su YouTube: muovi la navicella e abbatti le file di invasori alieni."
+  }
+}

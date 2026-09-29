@@ -1,0 +1,14 @@
+{
+  "id": "earth-invaders",
+  "name": "Earth Invaders",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Yara F. Scramin",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/earth-invaders",
+  "description": "Space Invaders turned around: Earth is the enemy. Destroy human ships, dodge bullets and unleash your ultimate. Arrows to move, X to shoot, Z for the ultimate.",
+  "descriptions": {
+    "en": "Space Invaders turned around: Earth is the enemy. Destroy human ships, dodge bullets and unleash your ultimate. Arrows to move, X to shoot, Z for the ultimate.",
+    "it": "Space Invaders al contrario: il nemico è la Terra. Distruggi le navi umane, schiva i proiettili e scatena la mossa finale. Frecce per muoverti, X spara, Z mossa finale."
+  }
+}

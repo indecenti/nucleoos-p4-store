@@ -1,0 +1,14 @@
+{
+  "id": "space-kommand",
+  "name": "Space Kommand",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "korhadris",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/space-kommand",
+  "description": "Command a starship in space combat: manage its heading and speed, check its systems and fire at enemy ships.",
+  "descriptions": {
+    "en": "Command a starship in space combat: manage its heading and speed, check its systems and fire at enemy ships.",
+    "it": "Comanda un'astronave in battaglia: gestisci rotta e velocità, controlla i sistemi di bordo e fai fuoco sulle navi nemiche."
+  }
+}

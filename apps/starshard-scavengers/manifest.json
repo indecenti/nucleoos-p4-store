@@ -1,0 +1,14 @@
+{
+  "id": "starshard-scavengers",
+  "name": "StarShard Scavengers",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "HitchH1k3r",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/starshard-scavengers",
+  "description": "Fly a spaceship, shoot asteroids and collect StarShards, then bring them to your station to score. Single-player is for practice. Warning: flashing colors.",
+  "descriptions": {
+    "en": "Fly a spaceship, shoot asteroids and collect StarShards, then bring them to your station to score. Single-player is for practice. Warning: flashing colors.",
+    "it": "Pilota un'astronave, spara agli asteroidi e raccogli StarShard da portare alla tua stazione per fare punti. In singolo è un allenamento. Attenzione: colori lampeggianti."
+  }
+}

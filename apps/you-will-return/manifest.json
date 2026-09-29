@@ -1,0 +1,14 @@
+{
+  "id": "you-will-return",
+  "name": "You Will Return",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Sander in 't Veld",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/you-will-return",
+  "description": "You Will Return, a space-themed game set above a dark planet, made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "You Will Return, a space-themed game set above a dark planet, made for the first WASM-4 game jam.",
+    "it": "You Will Return, un gioco a tema spaziale ambientato sopra un pianeta oscuro, creato per la prima game jam di WASM-4."
+  }
+}

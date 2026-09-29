@@ -1,0 +1,14 @@
+{
+  "id": "maze-wanderer",
+  "name": "Maze Wanderer",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Grant Handy",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/maze-wanderer",
+  "description": "A first-person raycasting demo: walk through a 3D maze and switch to the map editor to toggle walls. X to start, Z to switch modes.",
+  "descriptions": {
+    "en": "A first-person raycasting demo: walk through a 3D maze and switch to the map editor to toggle walls. X to start, Z to switch modes.",
+    "it": "Una demo in prima persona con raycasting: esplora un labirinto 3D e passa all'editor della mappa per aggiungere o togliere muri. X per iniziare, Z cambia modalità."
+  }
+}

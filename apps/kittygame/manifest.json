@@ -1,0 +1,15 @@
+{
+  "id": "kittygame",
+  "name": "Kitty Game",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Cannon Tuttle",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/kittygame",
+  "description": "Find the kitties! Run, jump and use cards to track them all down. Arrows to move, X and Z to jump and use cards.",
+  "descriptions": {
+    "en": "Find the kitties! Run, jump and use cards to track them all down. Arrows to move, X and Z to jump and use cards.",
+    "it": "Trova i gattini! Corri, salta e usa le carte per scovarli tutti. Frecce per muoverti, X e Z per saltare e usare le carte."
+  },
+  "featured": true
+}

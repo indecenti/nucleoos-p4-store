@@ -1,0 +1,14 @@
+{
+  "id": "wasminvaders",
+  "name": "WASM Invaders",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Lorenzo Henrique Zanetti, Matheus Cener",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wasminvaders",
+  "description": "A Space Invaders-inspired arcade shooter: defend the galaxy from endless waves of aliens that get faster and more numerous. Left/right to move, X to shoot.",
+  "descriptions": {
+    "en": "A Space Invaders-inspired arcade shooter: defend the galaxy from endless waves of aliens that get faster and more numerous. Left/right to move, X to shoot.",
+    "it": "Sparatutto arcade ispirato a Space Invaders: difendi la galassia da ondate infinite di alieni sempre più veloci e numerosi. Sinistra/destra per muoverti, X per sparare."
+  }
+}

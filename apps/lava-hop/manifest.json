@@ -1,0 +1,14 @@
+{
+  "id": "lava-hop",
+  "name": "Lava Hop!",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Cannon Tuttle",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/lava-hop",
+  "description": "A vertical platformer: hop from platform to platform and keep climbing to stay clear of the lava below.",
+  "descriptions": {
+    "en": "A vertical platformer: hop from platform to platform and keep climbing to stay clear of the lava below.",
+    "it": "Un platform verticale: salta da una piattaforma all'altra e continua a salire per stare lontano dalla lava."
+  }
+}

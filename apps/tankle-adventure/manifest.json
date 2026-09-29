@@ -1,0 +1,14 @@
+{
+  "id": "tankle-adventure",
+  "name": "Tankle Adventure",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Milky Natas",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tankle-adventure",
+  "description": "A top-down tank adventure through forests and mountains: blast the enemy tanks and turrets in your way. Z to fire, X to dash if you have Nitro.",
+  "descriptions": {
+    "en": "A top-down tank adventure through forests and mountains: blast the enemy tanks and turrets in your way. Z to fire, X to dash if you have Nitro.",
+    "it": "Avventura con un carro armato vista dall'alto tra foreste e montagne: distruggi carri e torrette nemiche sul tuo cammino. Z per sparare, X per lo scatto se hai il Nitro."
+  }
+}

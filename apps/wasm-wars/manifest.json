@@ -1,0 +1,14 @@
+{
+  "id": "wasm-wars",
+  "name": "Wasm Wars",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Daniel Kiyoshi",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wasm-wars",
+  "description": "A turn-based tactics game in the style of Advance Wars: move your units across a map of roads, forests and cities.",
+  "descriptions": {
+    "en": "A turn-based tactics game in the style of Advance Wars: move your units across a map of roads, forests and cities.",
+    "it": "Uno strategico a turni in stile Advance Wars: muovi le tue unità su una mappa di strade, foreste e città."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "zxz",
+  "name": "ZxZ",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Ścisław Dercz",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/zxz",
+  "description": "An action platformer set in a purple maze of pipes and platforms crawling with creatures, with an energy bar at the bottom. A WASM-4 game jam entry.",
+  "descriptions": {
+    "en": "An action platformer set in a purple maze of pipes and platforms crawling with creatures, with an energy bar at the bottom. A WASM-4 game jam entry.",
+    "it": "Un platform d'azione ambientato in un labirinto viola di tubi e piattaforme pieno di creature, con una barra di energia in basso. Creato per la jam di WASM-4."
+  }
+}

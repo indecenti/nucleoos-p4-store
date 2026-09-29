@@ -1,0 +1,14 @@
+{
+  "id": "panelpon4",
+  "name": "panelpon4",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "CanyonTurtle",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/panelpon4",
+  "description": "A Panel de Pon-style block matching game: swap panels to line up matching colors as the stack keeps rising. Press X to start.",
+  "descriptions": {
+    "en": "A Panel de Pon-style block matching game: swap panels to line up matching colors as the stack keeps rising. Press X to start.",
+    "it": "Un puzzle a blocchi in stile Panel de Pon: scambia i pannelli per allineare i colori uguali mentre la pila continua a salire. Premi X per iniziare."
+  }
+}

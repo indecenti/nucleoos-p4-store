@@ -1,0 +1,14 @@
+{
+  "id": "nairdemake",
+  "name": "NAIR DEMAKE",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "MiguelGSS",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/nairdemake",
+  "description": "A demake of NAIR, a fighting game with a single attack: jump, dodge and land your NAIR. Z for the NAIR in the air, X to dodge, Up to jump, Down to crouch.",
+  "descriptions": {
+    "en": "A demake of NAIR, a fighting game with a single attack: jump, dodge and land your NAIR. Z for the NAIR in the air, X to dodge, Up to jump, Down to crouch.",
+    "it": "Un demake di NAIR, picchiaduro con un solo attacco: salta, schiva e colpisci con la NAIR. Z per la NAIR in aria, X per schivare, su per saltare, giù per abbassarti."
+  }
+}

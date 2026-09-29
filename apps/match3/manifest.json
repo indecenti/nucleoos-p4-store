@@ -1,0 +1,14 @@
+{
+  "id": "match3",
+  "name": "Match3",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Ben Smith",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/match3",
+  "description": "A match-3 puzzle with emoji faces: swap neighbouring tiles to line up three or more of a kind and rack up points.",
+  "descriptions": {
+    "en": "A match-3 puzzle with emoji faces: swap neighbouring tiles to line up three or more of a kind and rack up points.",
+    "it": "Un puzzle match-3 con faccine emoji: scambia le tessere vicine per allinearne tre o più uguali e accumulare punti."
+  }
+}

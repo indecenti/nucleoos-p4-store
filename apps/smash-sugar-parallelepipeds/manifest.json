@@ -1,0 +1,14 @@
+{
+  "id": "smash-sugar-parallelepipeds",
+  "name": "Smash Sugar Parallelepipeds",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Lázaro Albuquerque",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/smash-sugar-parallelepipeds",
+  "description": "A Breakout-style game: bounce the ball with your paddle and smash all the bricks, keeping track of your lives and score.",
+  "descriptions": {
+    "en": "A Breakout-style game: bounce the ball with your paddle and smash all the bricks, keeping track of your lives and score.",
+    "it": "Un gioco in stile Breakout: fai rimbalzare la palla con la racchetta e distruggi tutti i mattoncini, tenendo d'occhio vite e punteggio."
+  }
+}

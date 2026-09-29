@@ -1,0 +1,14 @@
+{
+  "id": "dragon-poker-draw",
+  "name": "Dragon Poker Draw",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "LoneGrayWolf2000",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/dragon-poker-draw",
+  "description": "Six-card video poker inspired by Robert Asprin's Dragon Poker: bet, swap up to 4 cards and chase new hands like Full Dragon. Up to 4 jokers. X to confirm, Z for help.",
+  "descriptions": {
+    "en": "Six-card video poker inspired by Robert Asprin's Dragon Poker: bet, swap up to 4 cards and chase new hands like Full Dragon. Up to 4 jokers. X to confirm, Z for help.",
+    "it": "Video poker a 6 carte ispirato al Dragon Poker di Robert Asprin: punta, cambia fino a 4 carte e cerca mani nuove come il Full Dragon. Fino a 4 jolly. X conferma, Z aiuto."
+  }
+}

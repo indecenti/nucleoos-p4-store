@@ -1,0 +1,14 @@
+{
+  "id": "melancholy-cart-3",
+  "name": "Melancholy: cart 3",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Đe-Alchmst",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/melancholy-cart-3",
+  "description": "The surreal follow-up to Melancholy: cart 0: fight hordes of cultists, defeat the archmagus and discover the meaning of life. Part of the Melancholy project.",
+  "descriptions": {
+    "en": "The surreal follow-up to Melancholy: cart 0: fight hordes of cultists, defeat the archmagus and discover the meaning of life. Part of the Melancholy project.",
+    "it": "Il seguito surreale di Melancholy: cart 0: affronta orde di cultisti, sconfiggi l'arcimago e scopri il senso della vita. Fa parte del progetto Melancholy."
+  }
+}

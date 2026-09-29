@@ -1,0 +1,14 @@
+{
+  "id": "mouse-demo",
+  "name": "Mouse Demo",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "David Sims",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/mouse-demo",
+  "description": "A small test cart for the mouse: move the pointer and press the buttons to see each input detected on screen. Works with mouse or touch.",
+  "descriptions": {
+    "en": "A small test cart for the mouse: move the pointer and press the buttons to see each input detected on screen. Works with mouse or touch.",
+    "it": "Una piccola demo di prova per il mouse: muovi il puntatore e premi i tasti per vedere ogni input riconosciuto sullo schermo. Funziona con mouse o tocco."
+  }
+}

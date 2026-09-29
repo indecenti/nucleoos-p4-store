@@ -1,0 +1,14 @@
+{
+  "id": "disk-0-madness",
+  "name": "disk-0 MADNESS",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Max Curzi",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/disk-0-madness",
+  "description": "Absorb enemies of your own color, dodge the rest and trigger bombs to recolor them. Survive as long as you can. Up to 4 players with several gamepads. X switches color.",
+  "descriptions": {
+    "en": "Absorb enemies of your own color, dodge the rest and trigger bombs to recolor them. Survive as long as you can. Up to 4 players with several gamepads. X switches color.",
+    "it": "Assorbi i nemici del tuo colore, evita gli altri e fai esplodere le bombe per cambiarne il colore. Resisti più che puoi. Fino a 4 giocatori con più joypad. X cambia colore."
+  }
+}

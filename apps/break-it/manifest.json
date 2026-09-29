@@ -1,0 +1,15 @@
+{
+  "id": "break-it",
+  "name": "Break-It",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "douglett",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/break-it",
+  "description": "A simple Breakout clone: bounce the ball, smash the bricks and loop through 5 levels for a high score - the game speeds up on every lap.",
+  "descriptions": {
+    "en": "A simple Breakout clone: bounce the ball, smash the bricks and loop through 5 levels for a high score - the game speeds up on every lap.",
+    "it": "Un semplice clone di Breakout: fai rimbalzare la palla, distruggi i mattoncini e ripeti i 5 livelli per il record, ma a ogni giro il gioco accelera."
+  },
+  "featured": true
+}

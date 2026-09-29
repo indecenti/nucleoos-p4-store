@@ -1,0 +1,14 @@
+{
+  "id": "lingword",
+  "name": "Lingword",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Jonathan Derque",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/lingword",
+  "description": "A Wordle-style word game: guess the hidden five-letter English word in six tries, with colored hints and an on-screen keyboard.",
+  "descriptions": {
+    "en": "A Wordle-style word game: guess the hidden five-letter English word in six tries, with colored hints and an on-screen keyboard.",
+    "it": "Un gioco di parole in stile Wordle: indovina la parola inglese segreta di cinque lettere in sei tentativi, con indizi colorati e tastiera sullo schermo."
+  }
+}

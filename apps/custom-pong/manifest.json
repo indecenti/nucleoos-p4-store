@@ -1,0 +1,14 @@
+{
+  "id": "custom-pong",
+  "name": "Customizable Pong",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "UnusualEgg",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/custom-pong",
+  "description": "Classic Pong with customizable colors: pick the paddle, ball and palette colors, then save and load your settings. X returns to the menu.",
+  "descriptions": {
+    "en": "Classic Pong with customizable colors: pick the paddle, ball and palette colors, then save and load your settings. X returns to the menu.",
+    "it": "Il classico Pong con i colori personalizzabili: scegli i colori di racchette, palla e tavolozza e salva o carica le impostazioni. X torna al menu."
+  }
+}

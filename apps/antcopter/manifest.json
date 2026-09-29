@@ -1,0 +1,14 @@
+{
+  "id": "antcopter",
+  "name": "Antcopter",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Eduardo Bart",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/antcopter",
+  "description": "Guide a tiny flying ant through maze-like cave levels lined with spikes, picking up items along the way. Made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "Guide a tiny flying ant through maze-like cave levels lined with spikes, picking up items along the way. Made for the first WASM-4 game jam.",
+    "it": "Guida una piccola formica volante attraverso livelli a labirinto pieni di spuntoni, raccogliendo oggetti lungo la strada. Creato per la prima game jam di WASM-4."
+  }
+}

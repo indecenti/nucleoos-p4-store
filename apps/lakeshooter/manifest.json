@@ -1,0 +1,14 @@
+{
+  "id": "lakeshooter",
+  "name": "Lake Shooter",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Jimmy Cartrette",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/lakeshooter",
+  "description": "A River Raid-style shooter: fly up the river, shoot the boats and helicopters and keep an eye on your fuel gauge.",
+  "descriptions": {
+    "en": "A River Raid-style shooter: fly up the river, shoot the boats and helicopters and keep an eye on your fuel gauge.",
+    "it": "Uno sparatutto in stile River Raid: risali il fiume in volo, abbatti navi ed elicotteri e tieni d'occhio l'indicatore del carburante."
+  }
+}

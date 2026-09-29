@@ -1,0 +1,14 @@
+{
+  "id": "comic-sans",
+  "name": "comic-sans",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Eduardo Minholi, Nuno Abilio",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/comic-sans",
+  "description": "A fan-made survival challenge inspired by an iconic final battle: guide the SOUL through waves of bones and Flappy Bone walls. Arrows to move.",
+  "descriptions": {
+    "en": "A fan-made survival challenge inspired by an iconic final battle: guide the SOUL through waves of bones and Flappy Bone walls. Arrows to move.",
+    "it": "Una sfida di sopravvivenza fan-made ispirata a una celebre battaglia finale: guida l'anima tra raffiche di ossa e muri Flappy Bone. Frecce per muoverti."
+  }
+}

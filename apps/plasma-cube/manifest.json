@@ -1,0 +1,14 @@
+{
+  "id": "plasma-cube",
+  "name": "Plasma Cube",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "unnick",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/plasma-cube",
+  "description": "A graphics demo: a spinning 3D cube covered in a colorful, animated plasma texture.",
+  "descriptions": {
+    "en": "A graphics demo: a spinning 3D cube covered in a colorful, animated plasma texture.",
+    "it": "Una demo grafica: un cubo 3D rotante ricoperto da una colorata texture al plasma animata."
+  }
+}

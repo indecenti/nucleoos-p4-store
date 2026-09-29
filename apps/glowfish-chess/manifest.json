@@ -1,0 +1,14 @@
+{
+  "id": "glowfish-chess",
+  "name": "Glowfish Chess",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Analog Hors",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/glowfish-chess",
+  "description": "A simple game of chess against a basic CPU or a second player. D-pad to move the cursor, Z to select and move pieces, X to undo.",
+  "descriptions": {
+    "en": "A simple game of chess against a basic CPU or a second player. D-pad to move the cursor, Z to select and move pieces, X to undo.",
+    "it": "Una semplice partita a scacchi contro la CPU o contro un secondo giocatore. Frecce per il cursore, Z per scegliere e muovere i pezzi, X per annullare."
+  }
+}

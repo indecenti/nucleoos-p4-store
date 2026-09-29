@@ -1,0 +1,14 @@
+{
+  "id": "piano",
+  "name": "Piano",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "pfg",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/piano",
+  "description": "A playable chiptune piano: choose the key, the waveform (pulse, triangle or noise), the duty cycle and the fade, then play the notes.",
+  "descriptions": {
+    "en": "A playable chiptune piano: choose the key, the waveform (pulse, triangle or noise), the duty cycle and the fade, then play the notes.",
+    "it": "Un pianoforte chiptune da suonare: scegli tonalità, forma d'onda (pulse, triangolare o rumore), duty cycle e dissolvenza, poi suona le note."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "waternet",
+  "name": "Waternet",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Davy Willems",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/waternet",
+  "description": "A pipe puzzle: connect every pipe so water flows from the source by rotating pipes, sliding rows and columns, or both in Roslid mode. X to act, Z to go back.",
+  "descriptions": {
+    "en": "A pipe puzzle: connect every pipe so water flows from the source by rotating pipes, sliding rows and columns, or both in Roslid mode. X to act, Z to go back.",
+    "it": "Un puzzle di tubi: collega tutte le condutture perché l'acqua scorra dalla sorgente, ruotando i tubi, spostando righe e colonne o entrambe le cose. X agisci, Z indietro."
+  }
+}

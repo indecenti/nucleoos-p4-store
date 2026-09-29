@@ -1,0 +1,14 @@
+{
+  "id": "wumpus-hunt",
+  "name": "Wumpus Hunt",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Troy Wiegand",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wumpus-hunt",
+  "description": "A take on the classic Hunt the Wumpus: move between rooms, look around for clues and shoot to take down the Wumpus.",
+  "descriptions": {
+    "en": "A take on the classic Hunt the Wumpus: move between rooms, look around for clues and shoot to take down the Wumpus.",
+    "it": "Una versione del classico Hunt the Wumpus: spostati tra le stanze, guardati intorno in cerca di indizi e spara per abbattere il Wumpus."
+  }
+}

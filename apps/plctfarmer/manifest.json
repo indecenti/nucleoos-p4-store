@@ -1,0 +1,14 @@
+{
+  "id": "plctfarmer",
+  "name": "Pl¢tfarmer",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "pfg",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/plctfarmer",
+  "description": "Pl¢tfarmer is a side-view game set on a rolling landscape of hills and valleys, created for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "Pl¢tfarmer is a side-view game set on a rolling landscape of hills and valleys, created for the first WASM-4 game jam.",
+    "it": "Pl¢tfarmer è un gioco con visuale laterale ambientato in un paesaggio di colline e valli, creato per la prima game jam di WASM-4."
+  }
+}

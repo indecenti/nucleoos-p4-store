@@ -1,0 +1,14 @@
+{
+  "id": "assemblio",
+  "name": "Assemblio",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Philipp Lühmann",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/assemblio",
+  "description": "A factory-building puzzle: lay conveyor belts to carry items into the central hub and reach the quota it asks for. Made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "A factory-building puzzle: lay conveyor belts to carry items into the central hub and reach the quota it asks for. Made for the first WASM-4 game jam.",
+    "it": "Un puzzle di costruzione industriale: posa nastri trasportatori per portare i pezzi al centro di raccolta e raggiungere la quota richiesta."
+  }
+}

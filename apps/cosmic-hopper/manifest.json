@@ -1,0 +1,14 @@
+{
+  "id": "cosmic-hopper",
+  "name": "Cosmic Hopper",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Bernardo Wilchen de Oliveira",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/cosmic-hopper",
+  "description": "Help Zorp the alien hop across a highway of speeding spaceships and a stardust river to fill 4 landing pads, over 3 stages. Arrows to hop.",
+  "descriptions": {
+    "en": "Help Zorp the alien hop across a highway of speeding spaceships and a stardust river to fill 4 landing pads, over 3 stages. Arrows to hop.",
+    "it": "Aiuta l'alieno Zorp ad attraversare un'autostrada di astronavi e un fiume di polvere di stelle fino alle 4 piattaforme, in 3 livelli. Frecce per saltare."
+  }
+}

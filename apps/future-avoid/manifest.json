@@ -1,0 +1,14 @@
+{
+  "id": "future-avoid",
+  "name": "Future Avoid",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Joakim Hentula",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/future-avoid",
+  "description": "A reflex game: steer your dot around the screen and dodge the incoming triangles to keep your score going up.",
+  "descriptions": {
+    "en": "A reflex game: steer your dot around the screen and dodge the incoming triangles to keep your score going up.",
+    "it": "Un gioco di riflessi: muovi il tuo punto sullo schermo e schiva i triangoli in arrivo per far salire il punteggio."
+  }
+}

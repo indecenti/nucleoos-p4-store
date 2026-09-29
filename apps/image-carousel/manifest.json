@@ -1,0 +1,14 @@
+{
+  "id": "image-carousel",
+  "name": "Image Carousel",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "pfg",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/image-carousel",
+  "description": "A small graphics demo that shows a carousel of detailed dithered pictures, such as a mountain landscape, in just four colors.",
+  "descriptions": {
+    "en": "A small graphics demo that shows a carousel of detailed dithered pictures, such as a mountain landscape, in just four colors.",
+    "it": "Una piccola demo grafica che mostra una serie di immagini retinate e dettagliate, come un paesaggio di montagna, in soli quattro colori."
+  }
+}

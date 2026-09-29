@@ -1,0 +1,14 @@
+{
+  "id": "skipahead",
+  "name": "Skip Ahead",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Dennis Ranke",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/skipahead",
+  "description": "Bounce your ball from tile to tile along a 3D track and skip ahead as far as you can without falling off.",
+  "descriptions": {
+    "en": "Bounce your ball from tile to tile along a 3D track and skip ahead as far as you can without falling off.",
+    "it": "Fai rimbalzare la pallina di piastrella in piastrella lungo un percorso 3D e vai avanti il più possibile senza cadere."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "trials-of-the-dark-sea",
+  "name": "Trials of the dark sea",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "ericvilcu",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/trials-of-the-dark-sea",
+  "description": "A short game made for the 2022 WASM-4 jam: steer a small red craft through a dark sea dotted with glowing lights.",
+  "descriptions": {
+    "en": "A short game made for the 2022 WASM-4 jam: steer a small red craft through a dark sea dotted with glowing lights.",
+    "it": "Un breve gioco creato per la jam di WASM-4 del 2022: guida una piccola imbarcazione rossa in un mare scuro punteggiato di luci."
+  }
+}

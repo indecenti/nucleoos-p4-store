@@ -1,0 +1,14 @@
+{
+  "id": "full-steam-ahead-to-the-rescue",
+  "name": "FULL STEAM AHEAD TO THE RESCUE",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "lluq",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/full-steam-ahead-to-the-rescue",
+  "description": "Drive a steam locomotive 1600 m to an accident site in 120 seconds: shovel coal, vent pressure before the tank blows and brake to stop right at the end of the track.",
+  "descriptions": {
+    "en": "Drive a steam locomotive 1600 m to an accident site in 120 seconds: shovel coal, vent pressure before the tank blows and brake to stop right at the end of the track.",
+    "it": "Guida una locomotiva a vapore per 1600 m fino al luogo di un incidente in 120 secondi: spala carbone, sfiata la pressione prima che la caldaia esploda e frena al punto giusto."
+  }
+}

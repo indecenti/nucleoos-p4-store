@@ -1,0 +1,14 @@
+{
+  "id": "wasm4nia",
+  "name": "wasm4nia",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Marcus Ramse",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wasm4nia",
+  "description": "A rhythm game: hit the notes in time with the music, with 4-Key and Index chart modes and an audio offset setting. X to confirm, Z to go back.",
+  "descriptions": {
+    "en": "A rhythm game: hit the notes in time with the music, with 4-Key and Index chart modes and an audio offset setting. X to confirm, Z to go back.",
+    "it": "Un gioco ritmico: premi le note a tempo di musica, con modalità 4-Key e Index e regolazione dell'offset audio. X per confermare, Z per tornare indietro."
+  }
+}

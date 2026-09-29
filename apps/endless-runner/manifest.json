@@ -1,0 +1,14 @@
+{
+  "id": "endless-runner",
+  "name": "Endless Runner",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Richard McCormack",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/endless-runner",
+  "description": "A minimalist endless runner: keep going and avoid the obstacles for as long as you can to push your score up.",
+  "descriptions": {
+    "en": "A minimalist endless runner: keep going and avoid the obstacles for as long as you can to push your score up.",
+    "it": "Un endless runner minimalista: vai avanti evitando gli ostacoli il più a lungo possibile per far salire il punteggio."
+  }
+}

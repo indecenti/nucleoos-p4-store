@@ -1,0 +1,14 @@
+{
+  "id": "game-of-life",
+  "name": "Game of Life",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Claudio Mattera",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/game-of-life",
+  "description": "Conway's Game of Life: watch the cells live, die and multiply generation after generation, with adjustable speed and a pause button.",
+  "descriptions": {
+    "en": "Conway's Game of Life: watch the cells live, die and multiply generation after generation, with adjustable speed and a pause button.",
+    "it": "Il Gioco della vita di Conway: guarda le cellule nascere, morire e moltiplicarsi generazione dopo generazione, con velocità regolabile e pausa."
+  }
+}

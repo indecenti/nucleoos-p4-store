@@ -1,0 +1,14 @@
+{
+  "id": "one-slime-army",
+  "name": "One Slime Army",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Isaiah Billingsley",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/one-slime-army",
+  "description": "An endless wave survival arcade game: a humble slime with sword and shield battles hordes of enemies. Arrows to move, hold Z to block, release to attack, X to dash.",
+  "descriptions": {
+    "en": "An endless wave survival arcade game: a humble slime with sword and shield battles hordes of enemies. Arrows to move, hold Z to block, release to attack, X to dash.",
+    "it": "Arcade di sopravvivenza a ondate infinite: uno slime con spada e scudo affronta orde di nemici. Frecce per muoverti, tieni Z per parare e rilascia per attaccare, X scatto."
+  }
+}

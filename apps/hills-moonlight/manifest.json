@@ -1,0 +1,14 @@
+{
+  "id": "hills-moonlight",
+  "name": "Hills in the Moonlight",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Samarth Hattangady",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/hills-moonlight",
+  "description": "A bike ride across rolling hills under the moon, made for the first WASM-4 game jam. Press X to start.",
+  "descriptions": {
+    "en": "A bike ride across rolling hills under the moon, made for the first WASM-4 game jam. Press X to start.",
+    "it": "Una pedalata tra le colline sotto la luna, creata per la prima game jam di WASM-4. Premi X per iniziare."
+  }
+}

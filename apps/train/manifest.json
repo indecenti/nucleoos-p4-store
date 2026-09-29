@@ -1,0 +1,14 @@
+{
+  "id": "train",
+  "name": "Train!",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Davidian1024",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/train",
+  "description": "Snake on rails: hook each new train car onto the end of your train without crashing into the cars or yourself. Watch the demo to see how it's done.",
+  "descriptions": {
+    "en": "Snake on rails: hook each new train car onto the end of your train without crashing into the cars or yourself. Watch the demo to see how it's done.",
+    "it": "Uno Snake su rotaie: aggancia ogni nuovo vagone in coda al tuo treno senza schiantarti contro i vagoni o contro te stesso. Guarda la demo per capire come si fa."
+  }
+}

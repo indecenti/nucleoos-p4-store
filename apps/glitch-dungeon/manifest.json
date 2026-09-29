@@ -1,0 +1,14 @@
+{
+  "id": "glitch-dungeon",
+  "name": "Glitch Dungeon",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "jakeonaut, Wormi",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/glitch-dungeon",
+  "description": "A remake of jakeonaut's Glitch Dungeon: a platformer where you cast spells to get through the rooms. Arrows to move and jump, X cycles spells, Z respawns.",
+  "descriptions": {
+    "en": "A remake of jakeonaut's Glitch Dungeon: a platformer where you cast spells to get through the rooms. Arrows to move and jump, X cycles spells, Z respawns.",
+    "it": "Remake di Glitch Dungeon di jakeonaut: un platform in cui usi incantesimi per superare le stanze. Frecce per muoverti e saltare, X cambia incantesimo, Z per riapparire."
+  }
+}

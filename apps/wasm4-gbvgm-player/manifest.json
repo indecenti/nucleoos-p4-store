@@ -1,0 +1,14 @@
+{
+  "id": "wasm4-gbvgm-player",
+  "name": "Wasm4 Gameboy VGM Player",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Sine System",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wasm4-gbvgm-player",
+  "description": "A proof-of-concept music player that emulates the Game Boy sound chip on WASM-4 and plays a chiptune from a VGM file.",
+  "descriptions": {
+    "en": "A proof-of-concept music player that emulates the Game Boy sound chip on WASM-4 and plays a chiptune from a VGM file.",
+    "it": "Un lettore musicale sperimentale che emula il chip audio del Game Boy su WASM-4 e riproduce un brano chiptune da un file VGM."
+  }
+}

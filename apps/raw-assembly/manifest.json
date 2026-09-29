@@ -1,0 +1,14 @@
+{
+  "id": "raw-assembly",
+  "name": "Raw Assembly Test",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Bruno Garcia",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/raw-assembly",
+  "description": "A tiny tech demo written directly in WebAssembly text format, showing a message and a smiley. Mostly of interest to developers.",
+  "descriptions": {
+    "en": "A tiny tech demo written directly in WebAssembly text format, showing a message and a smiley. Mostly of interest to developers.",
+    "it": "Una minuscola demo tecnica scritta direttamente in WebAssembly testuale, che mostra un messaggio e una faccina. Interessa soprattutto agli sviluppatori."
+  }
+}

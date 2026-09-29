@@ -1,0 +1,14 @@
+{
+  "id": "pega-pega-the-game",
+  "name": "Pega-Pega: the game",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Ana Paula Crippa, Maria Eduarda Polican",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/pega-pega-the-game",
+  "description": "A two-player chase-and-shoot duel: follow your opponent around and fire as soon as you have them in your sights. Two gamepads needed. Arrows to move, X to shoot.",
+  "descriptions": {
+    "en": "A two-player chase-and-shoot duel: follow your opponent around and fire as soon as you have them in your sights. Two gamepads needed. Arrows to move, X to shoot.",
+    "it": "Un duello per due giocatori: insegui l'avversario e spara appena lo hai sotto tiro. Servono due joypad. Frecce per muoverti, X per sparare."
+  }
+}

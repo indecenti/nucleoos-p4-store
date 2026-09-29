@@ -1,0 +1,14 @@
+{
+  "id": "uem-mini-game",
+  "name": "UEM Mini Game",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Thiago Calvi",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/uem-mini-game",
+  "description": "Dodge obstacles rushing at you down a road with a 3D depth effect: move and jump to survive as your score rises. Arrows to move, Up to jump, Z to pause.",
+  "descriptions": {
+    "en": "Dodge obstacles rushing at you down a road with a 3D depth effect: move and jump to survive as your score rises. Arrows to move, Up to jump, Z to pause.",
+    "it": "Schiva gli ostacoli che arrivano lungo una strada con effetto di profondità 3D: spostati e salta mentre il punteggio sale. Frecce per muoverti, su per saltare, Z pausa."
+  }
+}

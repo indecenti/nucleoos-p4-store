@@ -1,0 +1,14 @@
+{
+  "id": "dodgeball",
+  "name": "Dodgeball",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Sander in 't Veld",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/dodgeball",
+  "description": "Move around the arena and dodge the ball to rack up points, with a timer running on screen.",
+  "descriptions": {
+    "en": "Move around the arena and dodge the ball to rack up points, with a timer running on screen.",
+    "it": "Muoviti nell'arena e schiva la palla per accumulare punti, con il tempo che scorre sullo schermo."
+  }
+}

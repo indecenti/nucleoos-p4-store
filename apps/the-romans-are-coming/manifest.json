@@ -1,0 +1,14 @@
+{
+  "id": "the-romans-are-coming",
+  "name": "The Romans Are Coming",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Sander in 't Veld",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/the-romans-are-coming",
+  "description": "Place banners to score and gather grain, wood, stone and wine; fail the imperial decrees and Roman troops arrive. Survive as long as you can. Mouse or touch to play.",
+  "descriptions": {
+    "en": "Place banners to score and gather grain, wood, stone and wine; fail the imperial decrees and Roman troops arrive. Survive as long as you can. Mouse or touch to play.",
+    "it": "Piazza stendardi per fare punti e raccogliere grano, legno, pietra e vino; se non rispetti i decreti imperiali arrivano i Romani. Resisti più che puoi. Mouse o tocco."
+  }
+}

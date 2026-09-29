@@ -1,0 +1,14 @@
+{
+  "id": "lad2024",
+  "name": "Lad 2024",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "YAMAMOTO Takashi",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/lad2024",
+  "description": "A puzzle game: move your characters, push objects and switch between players to solve each stage; the first 8 are tutorials. Arrows to move, X to switch player.",
+  "descriptions": {
+    "en": "A puzzle game: move your characters, push objects and switch between players to solve each stage; the first 8 are tutorials. Arrows to move, X to switch player.",
+    "it": "Un puzzle game: muovi i personaggi, spingi gli oggetti e alternali per risolvere ogni livello; i primi 8 fanno da tutorial. Frecce per muoverti, X cambia personaggio."
+  }
+}

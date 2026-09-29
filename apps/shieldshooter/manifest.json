@@ -1,0 +1,14 @@
+{
+  "id": "shieldshooter",
+  "name": "Shieldshooter",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Marcus Ramse",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/shieldshooter",
+  "description": "A simple platform shooter: shoot the other players and raise your shield to block their shots. There is no win condition. X to shoot, Z to shield.",
+  "descriptions": {
+    "en": "A simple platform shooter: shoot the other players and raise your shield to block their shots. There is no win condition. X to shoot, Z to shield.",
+    "it": "Un semplice sparatutto a piattaforme: spara agli altri giocatori e alza lo scudo per bloccare i loro colpi. Non c'è un modo per vincere. X spara, Z scudo."
+  }
+}

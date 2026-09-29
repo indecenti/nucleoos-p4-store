@@ -1,0 +1,14 @@
+{
+  "id": "palette-previewer",
+  "name": "Palette Previewer",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "David Sims",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/palette-previewer",
+  "description": "A handy tool to preview four-color palettes on WASM-4: browse the palettes and see how each one looks on a sample image, with its name and author.",
+  "descriptions": {
+    "en": "A handy tool to preview four-color palettes on WASM-4: browse the palettes and see how each one looks on a sample image, with its name and author.",
+    "it": "Uno strumento per provare tavolozze a quattro colori su WASM-4: sfoglia le palette e guarda come rendono su un'immagine di esempio, con nome e autore."
+  }
+}

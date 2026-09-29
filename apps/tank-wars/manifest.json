@@ -1,0 +1,14 @@
+{
+  "id": "tank-wars",
+  "name": "Tank Wars",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Shimon Ulewicz",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tank-wars",
+  "description": "A 3D tank battle: hit the other tanks with your shells to score, and the first to 10 points wins. Up to 4 players with several gamepads.",
+  "descriptions": {
+    "en": "A 3D tank battle: hit the other tanks with your shells to score, and the first to 10 points wins. Up to 4 players with several gamepads.",
+    "it": "Battaglia di carri armati in 3D: colpisci gli altri carri con i proiettili per fare punti; vince chi arriva prima a 10. Fino a 4 giocatori con più joypad."
+  }
+}

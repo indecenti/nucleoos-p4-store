@@ -1,0 +1,14 @@
+{
+  "id": "maze",
+  "name": "Maze",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Ben Smith",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/maze",
+  "description": "Find your way through a first-person 3D maze with textured walls and floor.",
+  "descriptions": {
+    "en": "Find your way through a first-person 3D maze with textured walls and floor.",
+    "it": "Trova la strada in un labirinto 3D in prima persona, con pareti e pavimento texturizzati."
+  }
+}

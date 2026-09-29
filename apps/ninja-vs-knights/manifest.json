@@ -1,0 +1,14 @@
+{
+  "id": "ninja-vs-knights",
+  "name": "Ninja vs Knights",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mr.Rafael",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/ninja-vs-knights",
+  "description": "A platformer where a ninja takes on knights: slash knights, bombs and statues with your sword. Left/right to move, X to jump (hold for higher), Z to attack.",
+  "descriptions": {
+    "en": "A platformer where a ninja takes on knights: slash knights, bombs and statues with your sword. Left/right to move, X to jump (hold for higher), Z to attack.",
+    "it": "Un platform in cui un ninja sfida i cavalieri: colpisci cavalieri, bombe e statue con la spada. Sinistra/destra per muoverti, X per saltare (tieni premuto), Z per attaccare."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "sound-demo",
+  "name": "Sound Demo",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Bruno Garcia",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/sound-demo",
+  "description": "An interactive demo of the WASM-4 sound system: tweak frequency, envelope, volume, channel and mode, then play the tone. Arrows to adjust, X to play.",
+  "descriptions": {
+    "en": "An interactive demo of the WASM-4 sound system: tweak frequency, envelope, volume, channel and mode, then play the tone. Arrows to adjust, X to play.",
+    "it": "Una demo interattiva del sistema audio di WASM-4: regola frequenza, inviluppo, volume, canale e modalità, poi ascolta il suono. Frecce per regolare, X per suonare."
+  }
+}

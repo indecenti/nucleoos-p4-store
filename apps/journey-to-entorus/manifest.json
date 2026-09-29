@@ -1,0 +1,14 @@
+{
+  "id": "journey-to-entorus",
+  "name": "Journey to Entorus",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Marcus Ramse",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/journey-to-entorus",
+  "description": "A bullet hell with a short story: make your way to Entorus, and maybe back. Includes a Practice Mode and a harder Extra Story. Arrows to move, X and Z for the ship.",
+  "descriptions": {
+    "en": "A bullet hell with a short story: make your way to Entorus, and maybe back. Includes a Practice Mode and a harder Extra Story. Arrows to move, X and Z for the ship.",
+    "it": "Un bullet hell con una breve storia: raggiungi Entorus e forse torna indietro. C'è una modalità pratica e una storia extra più difficile. Frecce per muoverti, X e Z per la nave."
+  }
+}

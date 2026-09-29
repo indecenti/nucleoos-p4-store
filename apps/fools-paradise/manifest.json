@@ -1,0 +1,14 @@
+{
+  "id": "fools-paradise",
+  "name": "Fool's Paradise",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Dave Purdum",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/fools-paradise",
+  "description": "A top-down shooter: fly your ship over the land, blast the enemy craft and survive from one day to the next, with hearts for health.",
+  "descriptions": {
+    "en": "A top-down shooter: fly your ship over the land, blast the enemy craft and survive from one day to the next, with hearts for health.",
+    "it": "Uno sparatutto visto dall'alto: pilota la tua nave sul territorio, abbatti i velivoli nemici e sopravvivi un giorno dopo l'altro, con i cuori come salute."
+  }
+}

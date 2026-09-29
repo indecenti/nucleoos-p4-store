@@ -1,0 +1,14 @@
+{
+  "id": "snake",
+  "name": "Snake",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Tomas Tulka",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/snake",
+  "description": "The classic Snake: eat the fruit to grow longer and don't bite your own tail or hit the walls.",
+  "descriptions": {
+    "en": "The classic Snake: eat the fruit to grow longer and don't bite your own tail or hit the walls.",
+    "it": "Il classico Snake: mangia la frutta per allungarti e non morderti la coda né sbattere contro i muri."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "melancholy-cart-0",
+  "name": "Melancholy: cart 0",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Đe-Alchmst",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/melancholy-cart-0",
+  "description": "A surreal little experience: explore the surroundings, fight your enemy, hunt for secrets and, above all, go outside. Part of the Melancholy project.",
+  "descriptions": {
+    "en": "A surreal little experience: explore the surroundings, fight your enemy, hunt for secrets and, above all, go outside. Part of the Melancholy project.",
+    "it": "Una piccola esperienza surreale: esplora l'ambiente, combatti il tuo nemico, cerca i segreti e soprattutto esci all'aperto. Fa parte del progetto Melancholy."
+  }
+}

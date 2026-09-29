@@ -1,0 +1,14 @@
+{
+  "id": "ur",
+  "name": "The Royal Game of Ur",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Gelatin Studios",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/ur",
+  "description": "The Royal Game of Ur, one of the oldest known board games, for two players on one device. Up/Down to pick a piece, X to roll and move.",
+  "descriptions": {
+    "en": "The Royal Game of Ur, one of the oldest known board games, for two players on one device. Up/Down to pick a piece, X to roll and move.",
+    "it": "Il Gioco reale di Ur, uno dei giochi da tavolo più antichi, per due giocatori sullo stesso dispositivo. Su/giù per scegliere la pedina, X per tirare e muovere."
+  }
+}

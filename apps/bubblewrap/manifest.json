@@ -1,0 +1,14 @@
+{
+  "id": "bubblewrap",
+  "name": "Bubblewrap",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Henrik Zenkert",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/bubblewrap",
+  "description": "Pop the bubbles bouncing around the room by shooting upward as you move along the floor. Left and right to move, Up to shoot.",
+  "descriptions": {
+    "en": "Pop the bubbles bouncing around the room by shooting upward as you move along the floor. Left and right to move, Up to shoot.",
+    "it": "Fai scoppiare le bolle che rimbalzano nella stanza sparando verso l'alto mentre ti muovi sul pavimento. Sinistra e destra per muoverti, su per sparare."
+  }
+}

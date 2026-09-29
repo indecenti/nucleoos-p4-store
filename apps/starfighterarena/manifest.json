@@ -1,0 +1,14 @@
+{
+  "id": "starfighterarena",
+  "name": "Starfighter Arena",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Jeremy Zeiber",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/starfighterarena",
+  "description": "A multiplayer-only space battle: fly a ship designed in Starfighter Ship Creator and manage your energy as you move and shoot. Arrows to move, buttons for radar and fire.",
+  "descriptions": {
+    "en": "A multiplayer-only space battle: fly a ship designed in Starfighter Ship Creator and manage your energy as you move and shoot. Arrows to move, buttons for radar and fire.",
+    "it": "Battaglia spaziale solo multigiocatore: pilota la nave creata con Starfighter Ship Creator e gestisci l'energia mentre ti muovi e spari. Frecce per muoverti, pulsanti per radar e fuoco."
+  }
+}

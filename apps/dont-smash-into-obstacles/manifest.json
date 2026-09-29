@@ -1,0 +1,14 @@
+{
+  "id": "dont-smash-into-obstacles",
+  "name": "Don't Smash Into Obstacles",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mateusz Czarnecki",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/dont-smash-into-obstacles",
+  "description": "A simple runner: jump over the obstacles coming your way and try not to smash into them to keep your score climbing.",
+  "descriptions": {
+    "en": "A simple runner: jump over the obstacles coming your way and try not to smash into them to keep your score climbing.",
+    "it": "Un semplice runner: salta gli ostacoli che ti vengono incontro senza schiantarti, per far crescere il punteggio."
+  }
+}

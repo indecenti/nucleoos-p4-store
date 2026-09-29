@@ -1,0 +1,14 @@
+{
+  "id": "hotw",
+  "name": "Hero of the Woods v3",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "BigRobCoder",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/hotw",
+  "description": "Hero of the Woods: a top-down action game where an arrow on the screen edge points to your next objective. Arrows to move; tap the screen to change rotation mode.",
+  "descriptions": {
+    "en": "Hero of the Woods: a top-down action game where an arrow on the screen edge points to your next objective. Arrows to move; tap the screen to change rotation mode.",
+    "it": "Hero of the Woods: gioco d'azione visto dall'alto in cui una freccia sul bordo indica il prossimo obiettivo. Frecce per muoverti, tocca lo schermo per cambiare la rotazione."
+  }
+}

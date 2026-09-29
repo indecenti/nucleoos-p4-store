@@ -1,0 +1,14 @@
+{
+  "id": "presents-to-the-metal",
+  "name": "Presents to the Metal",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "errorStream",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/presents-to-the-metal",
+  "description": "A festive platformer: jump across stacks of crates and grab the presents scattered around each level.",
+  "descriptions": {
+    "en": "A festive platformer: jump across stacks of crates and grab the presents scattered around each level.",
+    "it": "Un platform a tema natalizio: salta tra pile di casse e raccogli i regali sparsi per il livello."
+  }
+}

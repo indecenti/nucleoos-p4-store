@@ -1,0 +1,14 @@
+{
+  "id": "micro-quest",
+  "name": "Micro Quest",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "André L. Alvares",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/micro-quest",
+  "description": "A tiny, minimalist quest in shades of green, made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "A tiny, minimalist quest in shades of green, made for the first WASM-4 game jam.",
+    "it": "Una minuscola avventura minimalista nei toni del verde, creata per la prima game jam di WASM-4."
+  }
+}

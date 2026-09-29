@@ -1,0 +1,14 @@
+{
+  "id": "phantom-shift",
+  "name": "PHANTOM SHIFT",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Sergey Poznyak",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/phantom-shift",
+  "description": "Switch your light on and off to phase between two worlds and find your way through 3 levels - just don't phase into a wall! A 1-bit jam entry.",
+  "descriptions": {
+    "en": "Switch your light on and off to phase between two worlds and find your way through 3 levels - just don't phase into a wall! A 1-bit jam entry.",
+    "it": "Accendi e spegni la luce per passare da un mondo all'altro e superare 3 livelli, ma attento a non riapparire dentro un muro! Creato per una 1-bit jam."
+  }
+}

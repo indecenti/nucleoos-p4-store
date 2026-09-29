@@ -1,0 +1,14 @@
+{
+  "id": "hammer-joe",
+  "name": "HAMMER JOE",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "MFauzan26",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/hammer-joe",
+  "description": "A single-screen arcade platformer: guide Joe and his hammer through stages full of enemies, with 3 lives and a timer.",
+  "descriptions": {
+    "en": "A single-screen arcade platformer: guide Joe and his hammer through stages full of enemies, with 3 lives and a timer.",
+    "it": "Un platform arcade a schermata singola: guida Joe e il suo martello in livelli pieni di nemici, con 3 vite e il tempo contato."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rubido",
+  "name": "Rubido",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Davy Willems",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/rubido",
+  "description": "Peg solitaire with four difficulties: jump pegs over each other to remove them until only one remains. Arrows and X to play, or mouse and touch.",
+  "descriptions": {
+    "en": "Peg solitaire with four difficulties: jump pegs over each other to remove them until only one remains. Arrows and X to play, or mouse and touch.",
+    "it": "Il solitario con i pioli in quattro difficoltà: salta un piolo sopra l'altro per eliminarlo finché ne resta uno solo. Frecce e X per giocare, oppure mouse o tocco."
+  }
+}

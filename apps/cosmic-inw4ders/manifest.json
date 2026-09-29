@@ -1,0 +1,15 @@
+{
+  "id": "cosmic-inw4ders",
+  "name": "Cosmic Inw4ders",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Pierro",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/cosmic-inw4ders",
+  "description": "A take on Space Invaders: move your ship along the bottom of the screen and shoot down the invaders overhead.",
+  "descriptions": {
+    "en": "A take on Space Invaders: move your ship along the bottom of the screen and shoot down the invaders overhead.",
+    "it": "Una versione di Space Invaders: muovi la tua navicella in fondo allo schermo e abbatti gli invasori sopra di te."
+  },
+  "featured": true
+}

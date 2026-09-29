@@ -1,0 +1,14 @@
+{
+  "id": "pong",
+  "name": "Pong",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Fabrizio Vitale",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/pong",
+  "description": "The classic Pong: move your paddle up and down, return the ball and score when your opponent misses.",
+  "descriptions": {
+    "en": "The classic Pong: move your paddle up and down, return the ball and score when your opponent misses.",
+    "it": "Il classico Pong: muovi la racchetta in su e in giù, rimanda la palla e fai punto quando l'avversario la manca."
+  }
+}

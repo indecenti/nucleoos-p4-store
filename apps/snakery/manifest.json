@@ -1,0 +1,14 @@
+{
+  "id": "snakery",
+  "name": "Snakery",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "hahahahaman",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/snakery",
+  "description": "A grid-based puzzle game: collect all the $ symbols to solve each level.",
+  "descriptions": {
+    "en": "A grid-based puzzle game: collect all the $ symbols to solve each level.",
+    "it": "Un puzzle su griglia: raccogli tutti i simboli $ per risolvere ogni livello."
+  }
+}

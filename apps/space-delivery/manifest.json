@@ -1,0 +1,14 @@
+{
+  "id": "space-delivery",
+  "name": "Space Delivery",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "kirinokirino",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/space-delivery",
+  "description": "Travel through space between the planets in this delivery-themed game made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "Travel through space between the planets in this delivery-themed game made for the first WASM-4 game jam.",
+    "it": "Viaggia nello spazio tra i pianeti in questo gioco a tema consegne creato per la prima game jam di WASM-4."
+  }
+}

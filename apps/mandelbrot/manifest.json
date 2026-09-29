@@ -1,0 +1,14 @@
+{
+  "id": "mandelbrot",
+  "name": "Mandelbrot",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "LukeGrahamLandry",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/mandelbrot",
+  "description": "Explore the Mandelbrot fractal: Up/Down to zoom in and out, drag with mouse or touch to move around, X to toggle the Julia set.",
+  "descriptions": {
+    "en": "Explore the Mandelbrot fractal: Up/Down to zoom in and out, drag with mouse or touch to move around, X to toggle the Julia set.",
+    "it": "Esplora il frattale di Mandelbrot: su/giù per lo zoom, trascina con mouse o tocco per spostarti, X per passare all'insieme di Julia."
+  }
+}

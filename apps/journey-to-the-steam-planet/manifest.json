@@ -1,0 +1,14 @@
+{
+  "id": "journey-to-the-steam-planet",
+  "name": "Journey to the Steam Planet",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "QuaternionWake",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/journey-to-the-steam-planet",
+  "description": "Pilot a steam rocket: shoot asteroids and UFOs, dodge deadly steam puffs and collect fuel to reach the next level - but you can't fire while charging the engine.",
+  "descriptions": {
+    "en": "Pilot a steam rocket: shoot asteroids and UFOs, dodge deadly steam puffs and collect fuel to reach the next level - but you can't fire while charging the engine.",
+    "it": "Pilota un razzo a vapore: distruggi asteroidi e UFO, evita gli sbuffi di vapore letali e raccogli carburante per avanzare, ma mentre carichi il motore non puoi sparare."
+  }
+}

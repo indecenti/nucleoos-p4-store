@@ -1,0 +1,14 @@
+{
+  "id": "strikeforce",
+  "name": "Strikeforce",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "iszn_11",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/strikeforce",
+  "description": "A top-down arena shooter: move through the rooms, avoid the fire of the turrets around you and keep your HP up.",
+  "descriptions": {
+    "en": "A top-down arena shooter: move through the rooms, avoid the fire of the turrets around you and keep your HP up.",
+    "it": "Uno sparatutto in arena visto dall'alto: muoviti tra le stanze, evita il fuoco delle torrette intorno a te e non perdere i punti vita."
+  }
+}

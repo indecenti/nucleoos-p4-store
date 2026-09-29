@@ -1,0 +1,14 @@
+{
+  "id": "corn",
+  "name": "It's Corn!",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Sander in 't Veld",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/corn",
+  "description": "A quick arcade game made in about a day for GBJam 10: move around, boost and chain combos to push your score up. Arrows to move, X for a boost.",
+  "descriptions": {
+    "en": "A quick arcade game made in about a day for GBJam 10: move around, boost and chain combos to push your score up. Arrows to move, X for a boost.",
+    "it": "Un rapido gioco arcade creato in circa un giorno per la GBJam 10: muoviti, accelera e concatena combo per far salire il punteggio. Frecce per muoverti, X per lo scatto."
+  }
+}

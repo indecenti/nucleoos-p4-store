@@ -1,0 +1,14 @@
+{
+  "id": "tankbattle",
+  "name": "Tank Battle",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Jeremy Zeiber",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tankbattle",
+  "description": "A multiplayer-only tank battle: destroy the enemy tanks and try your luck with mystery packages - not all help. Arrows to move, buttons to shoot and stop.",
+  "descriptions": {
+    "en": "A multiplayer-only tank battle: destroy the enemy tanks and try your luck with mystery packages - not all help. Arrows to move, buttons to shoot and stop.",
+    "it": "Battaglia di carri armati solo multigiocatore: distruggi i carri nemici e tenta la sorte con i pacchi misteriosi, non tutti utili. Frecce per muoverti, pulsanti per sparare e fermarti."
+  }
+}

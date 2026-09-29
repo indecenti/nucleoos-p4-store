@@ -1,0 +1,14 @@
+{
+  "id": "jump-n-shoot",
+  "name": "Jump 'n' Shoot",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Matheus Foltran Consonni",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/jump-n-shoot",
+  "description": "A fast action platformer: dodge obstacles, take out enemies and survive as long as you can; destroying enemies or their shots adds points. X to jump, Z to shoot.",
+  "descriptions": {
+    "en": "A fast action platformer: dodge obstacles, take out enemies and survive as long as you can; destroying enemies or their shots adds points. X to jump, Z to shoot.",
+    "it": "Un platform d'azione frenetico: schiva gli ostacoli, elimina i nemici e resisti il più a lungo possibile; colpire nemici e proiettili dà punti. X per saltare, Z per sparare."
+  }
+}

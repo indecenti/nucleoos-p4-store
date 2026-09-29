@@ -1,0 +1,14 @@
+{
+  "id": "seed-creator-showcase",
+  "name": "Seed Creator Showcase",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "huntrss@posteo.me",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/seed-creator-showcase",
+  "description": "A developer demo showing how to build a random seed: click or tap the rectangles to make a pattern, then press accept.",
+  "descriptions": {
+    "en": "A developer demo showing how to build a random seed: click or tap the rectangles to make a pattern, then press accept.",
+    "it": "Una demo per sviluppatori che mostra come creare un seme casuale: tocca o clicca i rettangoli per comporre un motivo, poi premi accetta."
+  }
+}

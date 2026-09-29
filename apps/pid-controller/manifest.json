@@ -1,0 +1,14 @@
+{
+  "id": "pid-controller",
+  "name": "PID Controller",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "rezajamesahmed",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/pid-controller",
+  "description": "A PID controller simulator: tune the KP, KI and KD gains and watch the dial settle on the set point. X to run, Z to reset, arrows to tune.",
+  "descriptions": {
+    "en": "A PID controller simulator: tune the KP, KI and KD gains and watch the dial settle on the set point. X to run, Z to reset, arrows to tune.",
+    "it": "Un simulatore di controllore PID: regola i guadagni KP, KI e KD e guarda il quadrante raggiungere il valore obiettivo. X avvia, Z azzera, frecce per regolare."
+  }
+}

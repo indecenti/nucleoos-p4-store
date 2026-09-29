@@ -1,0 +1,14 @@
+{
+  "id": "duck-maze",
+  "name": "Duck Maze",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Julia Marques Sanches",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/duck-maze",
+  "description": "You're a duck stuck in a maze: find your way through the corridors and get out. Arrows to move.",
+  "descriptions": {
+    "en": "You're a duck stuck in a maze: find your way through the corridors and get out. Arrows to move.",
+    "it": "Sei una papera intrappolata in un labirinto: trova la strada tra i corridoi e raggiungi l'uscita. Frecce per muoverti."
+  }
+}

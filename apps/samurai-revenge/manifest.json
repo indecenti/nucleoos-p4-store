@@ -1,0 +1,14 @@
+{
+  "id": "samurai-revenge",
+  "name": "Samurai Revenge",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Krylan, Dominik Koperkiewicz",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/samurai-revenge",
+  "description": "An endless action game driven by revenge: run, jump and slide, deflect bullets with your sword and dash past walls for a high score. Sword, dash and slow motion use the mouse.",
+  "descriptions": {
+    "en": "An endless action game driven by revenge: run, jump and slide, deflect bullets with your sword and dash past walls for a high score. Sword, dash and slow motion use the mouse.",
+    "it": "Gioco d'azione infinito guidato dalla vendetta: corri, salta e scivola, devia i proiettili con la spada e scatta oltre i muri per il record. Spada, scatto e rallenty col mouse."
+  }
+}

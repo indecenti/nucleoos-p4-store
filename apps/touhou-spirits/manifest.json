@@ -1,0 +1,14 @@
+{
+  "id": "touhou-spirits",
+  "name": "Touhou Spirits",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mr.Rafael",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/touhou-spirits",
+  "description": "A Touhou fangame built around cards: choose a character with stats like attack, defense and magic and save as many spirits as you can.",
+  "descriptions": {
+    "en": "A Touhou fangame built around cards: choose a character with stats like attack, defense and magic and save as many spirits as you can.",
+    "it": "Un fangame di Touhou basato sulle carte: scegli un personaggio con statistiche come attacco, difesa e magia e salva più spiriti che puoi."
+  }
+}

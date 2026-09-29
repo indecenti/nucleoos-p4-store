@@ -1,0 +1,14 @@
+{
+  "id": "tankle",
+  "name": "Tankle",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Milky Natas",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tankle",
+  "description": "A top-down tank battle: take on the enemy tanks on the field, with stats for speed, shot trajectory and cooldown shown next to your level.",
+  "descriptions": {
+    "en": "A top-down tank battle: take on the enemy tanks on the field, with stats for speed, shot trajectory and cooldown shown next to your level.",
+    "it": "Battaglia di carri armati vista dall'alto: affronta i carri nemici sul campo, con statistiche di velocità, traiettoria e ricarica accanto al tuo livello."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tinypong",
+  "name": "Tiny Pong",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Ztry8",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tinypong",
+  "description": "A tiny Pong written in C in just 1001 bytes and 50 lines of code: move your paddle and return the ball.",
+  "descriptions": {
+    "en": "A tiny Pong written in C in just 1001 bytes and 50 lines of code: move your paddle and return the ball.",
+    "it": "Un minuscolo Pong scritto in C in soli 1001 byte e 50 righe di codice: muovi la racchetta e rimanda la palla."
+  }
+}

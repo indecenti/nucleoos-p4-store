@@ -1,0 +1,14 @@
+{
+  "id": "zoopzoop",
+  "name": "Zoop Zoop Bee Adventures 7",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Garrett Hale",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/zoopzoop",
+  "description": "Defend your meadows from Dick Dastardly Duck as a bee, with team and solo high scores. Drop-in play for up to 4 bees with several gamepads. X to start, arrows to move.",
+  "descriptions": {
+    "en": "Defend your meadows from Dick Dastardly Duck as a bee, with team and solo high scores. Drop-in play for up to 4 bees with several gamepads. X to start, arrows to move.",
+    "it": "Difendi i tuoi prati da Dick Dastardly Duck nei panni di un'ape, con record a squadre e in solitario. Fino a 4 api con più joypad. X per iniziare, frecce per muoverti."
+  }
+}

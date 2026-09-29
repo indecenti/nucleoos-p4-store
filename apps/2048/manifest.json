@@ -1,0 +1,15 @@
+{
+  "id": "2048",
+  "name": "2048",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Peter Hellberg",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/2048",
+  "description": "The classic 2048 puzzle: slide the numbered tiles, merge matching pairs and keep doubling them until you build the 2048 tile.",
+  "descriptions": {
+    "en": "The classic 2048 puzzle: slide the numbered tiles, merge matching pairs and keep doubling them until you build the 2048 tile.",
+    "it": "Il classico puzzle 2048: fai scorrere le tessere numerate, unisci quelle uguali e continua a raddoppiarle fino a ottenere 2048."
+  },
+  "featured": true
+}

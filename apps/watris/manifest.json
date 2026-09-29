@@ -1,0 +1,14 @@
+{
+  "id": "watris",
+  "name": "Watris",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Bruno Garcia",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/watris",
+  "description": "A Tetris-style falling block game: rotate and drop the pieces to complete lines, with level, score and best score on screen.",
+  "descriptions": {
+    "en": "A Tetris-style falling block game: rotate and drop the pieces to complete lines, with level, score and best score on screen.",
+    "it": "Un gioco di blocchi in stile Tetris: ruota e fai cadere i pezzi per completare le righe, con livello, punteggio e record sullo schermo."
+  }
+}

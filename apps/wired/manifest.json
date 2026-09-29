@@ -1,0 +1,14 @@
+{
+  "id": "wired",
+  "name": "Wired",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Louis Pearson",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wired",
+  "description": "Collect coins by solving puzzles with wires and circuits. Left/right to move, Up/Down to interact above or below, Z to grab wires and flip switches, X to jump.",
+  "descriptions": {
+    "en": "Collect coins by solving puzzles with wires and circuits. Left/right to move, Up/Down to interact above or below, Z to grab wires and flip switches, X to jump.",
+    "it": "Raccogli monete risolvendo enigmi con fili e circuiti. Sinistra/destra per muoverti, su/giù per interagire sopra o sotto, Z per fili e leve, X per saltare."
+  }
+}

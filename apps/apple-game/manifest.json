@@ -1,0 +1,14 @@
+{
+  "id": "apple-game",
+  "name": "Apple Game",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "João Gabriel de Campos Nassar",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/apple-game",
+  "description": "You're an apple on the run from hungry snakes across 6 ever harder phases. Grab speed potions and shields and use the side portals. Arrows to move, Z to pause.",
+  "descriptions": {
+    "en": "You're an apple on the run from hungry snakes across 6 ever harder phases. Grab speed potions and shields and use the side portals. Arrows to move, Z to pause.",
+    "it": "Sei una mela in fuga da serpenti affamati in 6 fasi sempre più difficili. Raccogli pozioni di velocità e scudi e sfrutta i portali ai lati. Frecce per muoverti, Z pausa."
+  }
+}

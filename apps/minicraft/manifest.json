@@ -1,0 +1,14 @@
+{
+  "id": "minicraft",
+  "name": "Minicraft",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "TheFloatingPixel",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/minicraft",
+  "description": "A semi-open-world sandbox: gather, craft and build on a random 50x50 map, then save at the campfire. X uses the item, Z opens the inventory; mouse works too.",
+  "descriptions": {
+    "en": "A semi-open-world sandbox: gather, craft and build on a random 50x50 map, then save at the campfire. X uses the item, Z opens the inventory; mouse works too.",
+    "it": "Un sandbox semi-open world: raccogli, crea e costruisci su una mappa casuale 50x50, poi salva al falò. X usa l'oggetto, Z apre l'inventario; funziona anche col mouse."
+  }
+}

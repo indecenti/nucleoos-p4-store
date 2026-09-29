@@ -1,0 +1,14 @@
+{
+  "id": "formula-1",
+  "name": "Formula 1",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Davy Willems",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/formula-1",
+  "description": "A Game & Watch-style LCD racer: move your car left and right to avoid the oncoming traffic and set a high score. Left/right to steer, X to start.",
+  "descriptions": {
+    "en": "A Game & Watch-style LCD racer: move your car left and right to avoid the oncoming traffic and set a high score. Left/right to steer, X to start.",
+    "it": "Un gioco LCD in stile Game & Watch: sposta la tua auto a destra e a sinistra per evitare il traffico e fai il record. Sinistra/destra per sterzare, X per iniziare."
+  }
+}

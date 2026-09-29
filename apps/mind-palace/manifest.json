@@ -1,0 +1,14 @@
+{
+  "id": "mind-palace",
+  "name": "Mind Palace",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Matúš Chovan",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/mind-palace",
+  "description": "A first-person 3D exploration game: wander through the rooms and find what's hidden, with a counter tracking your progress.",
+  "descriptions": {
+    "en": "A first-person 3D exploration game: wander through the rooms and find what's hidden, with a counter tracking your progress.",
+    "it": "Un gioco di esplorazione 3D in prima persona: aggirati tra le stanze e trova ciò che è nascosto, con un contatore che segna i progressi."
+  }
+}

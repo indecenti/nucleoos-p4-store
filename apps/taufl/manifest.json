@@ -1,0 +1,14 @@
+{
+  "id": "taufl",
+  "name": "Tᴀᴜ Flight Simulator 1.0",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Tau",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/taufl",
+  "description": "A physics-based flight simulator: reach the runway, then learn to land and shake off missiles by flying low. Arrows for yaw and throttle; pitch and roll use a second gamepad.",
+  "descriptions": {
+    "en": "A physics-based flight simulator: reach the runway, then learn to land and shake off missiles by flying low. Arrows for yaw and throttle; pitch and roll use a second gamepad.",
+    "it": "Simulatore di volo basato sulla fisica: raggiungi la pista, impara ad atterrare e semina i missili volando basso. Frecce per imbardata e motore; beccheggio e rollio sul secondo joypad."
+  }
+}

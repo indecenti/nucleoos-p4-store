@@ -1,0 +1,14 @@
+{
+  "id": "sound-test",
+  "name": "Sound Test",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Mr.Rafael",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/sound-test",
+  "description": "A mouse-driven sound lab for WASM-4 with draggable controls and a simple music composer, handy for finding sound effects. X or Z changes the palette.",
+  "descriptions": {
+    "en": "A mouse-driven sound lab for WASM-4 with draggable controls and a simple music composer, handy for finding sound effects. X or Z changes the palette.",
+    "it": "Un laboratorio sonoro per WASM-4 da usare col mouse, con controlli trascinabili e un semplice compositore musicale, utile per trovare effetti. X o Z cambia palette."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "wormhole",
+  "name": "Wormhole",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "David Sims",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/wormhole",
+  "description": "Wormhole, a game written in C on WASM-4 for GBJam 9 in 2021, with a look inspired by the Game Boy.",
+  "descriptions": {
+    "en": "Wormhole, a game written in C on WASM-4 for GBJam 9 in 2021, with a look inspired by the Game Boy.",
+    "it": "Wormhole, un gioco scritto in C su WASM-4 per la GBJam 9 del 2021, con uno stile che ricorda il Game Boy."
+  }
+}

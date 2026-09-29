@@ -1,0 +1,14 @@
+{
+  "id": "sokoban",
+  "name": "Sokoban",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Lars Hamre",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/sokoban",
+  "description": "The classic Sokoban warehouse puzzle: push the boxes onto their target spots without getting them stuck in a corner.",
+  "descriptions": {
+    "en": "The classic Sokoban warehouse puzzle: push the boxes onto their target spots without getting them stuck in a corner.",
+    "it": "Il classico puzzle Sokoban: spingi le casse sulle caselle obiettivo senza bloccarle negli angoli."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rolly-dango",
+  "name": "Rolly Dango",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "William Guimont-Martin",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/rolly-dango",
+  "description": "A game starring a round, jelly-like dango, made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "A game starring a round, jelly-like dango, made for the first WASM-4 game jam.",
+    "it": "Un gioco con protagonista un dango tondo e gelatinoso, creato per la prima game jam di WASM-4."
+  }
+}

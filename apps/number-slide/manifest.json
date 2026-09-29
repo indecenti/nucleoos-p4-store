@@ -1,0 +1,14 @@
+{
+  "id": "number-slide",
+  "name": "Number Slide",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Giovana Ferreira Waterkemper, Jamily Go",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/number-slide",
+  "description": "The classic 15-puzzle: slide the numbered tiles into the empty space until they are all in ascending order. Arrows to move the tiles, X to start.",
+  "descriptions": {
+    "en": "The classic 15-puzzle: slide the numbered tiles into the empty space until they are all in ascending order. Arrows to move the tiles, X to start.",
+    "it": "Il classico gioco del 15: fai scorrere le tessere numerate nello spazio vuoto finché non sono tutte in ordine crescente. Frecce per spostarle, X per iniziare."
+  }
+}

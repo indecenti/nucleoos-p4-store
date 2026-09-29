@@ -1,0 +1,14 @@
+{
+  "id": "particle-editor",
+  "name": "Particle Editor v1.0",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Dominik Koperkiewicz",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/particle-editor",
+  "description": "An editor for the author's WASM-4 particle system: design effects with the mouse, zoom and pan the view, then export the settings. Hold Z and move to set the emitter area.",
+  "descriptions": {
+    "en": "An editor for the author's WASM-4 particle system: design effects with the mouse, zoom and pan the view, then export the settings. Hold Z and move to set the emitter area.",
+    "it": "Editor per il sistema di particelle WASM-4 dell'autore: crea effetti col mouse, sposta e ingrandisci la vista ed esporta le impostazioni. Tieni Z e muovi per l'area di emissione."
+  }
+}

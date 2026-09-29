@@ -1,0 +1,14 @@
+{
+  "id": "ping",
+  "name": "PING",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Cannon Tuttle",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/ping",
+  "description": "A twist on Pong: move, lunge and catch the ball; choose colors, difficulty and match length. Up to 4 players with several gamepads. Arrows to move, X/Z to lunge or catch.",
+  "descriptions": {
+    "en": "A twist on Pong: move, lunge and catch the ball; choose colors, difficulty and match length. Up to 4 players with several gamepads. Arrows to move, X/Z to lunge or catch.",
+    "it": "Una variante di Pong: muoviti, allungati e afferra la palla; scegli colori, difficoltà e durata. Fino a 4 giocatori con più joypad. Frecce per muoverti, X/Z per allungarti o afferrare."
+  }
+}

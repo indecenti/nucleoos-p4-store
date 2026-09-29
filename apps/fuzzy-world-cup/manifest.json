@@ -1,0 +1,14 @@
+{
+  "id": "fuzzy-world-cup",
+  "name": "Fuzzy World Cup",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Damian Girardi, Sebastian Alvarez",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/fuzzy-world-cup",
+  "description": "Penalty shoot-out against the computer: shoot left, center or right, then pick a side to save its kicks. Arrows to aim or dive, X to shoot.",
+  "descriptions": {
+    "en": "Penalty shoot-out against the computer: shoot left, center or right, then pick a side to save its kicks. Arrows to aim or dive, X to shoot.",
+    "it": "Rigori contro il computer: tira a sinistra, al centro o a destra, poi scegli dove tuffarti per parare i suoi. Frecce per mirare o tuffarti, X per tirare."
+  }
+}

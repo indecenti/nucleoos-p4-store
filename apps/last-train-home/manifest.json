@@ -1,0 +1,14 @@
+{
+  "id": "last-train-home",
+  "name": "Last Train Home",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Reuben Dunnington",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/last-train-home",
+  "description": "A hex-based exploration puzzle with a train theme: select the tiles one by one to explore the map while keeping an eye on your resources.",
+  "descriptions": {
+    "en": "A hex-based exploration puzzle with a train theme: select the tiles one by one to explore the map while keeping an eye on your resources.",
+    "it": "Un puzzle di esplorazione su griglia esagonale a tema ferroviario: seleziona le caselle una alla volta per esplorare la mappa tenendo d'occhio le risorse."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dashy-dango",
+  "name": "Dashy Dango",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "samX500",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/dashy-dango",
+  "description": "A wave fighting game: help the Dango survive waves of enemies by dashing into them to take them out.",
+  "descriptions": {
+    "en": "A wave fighting game: help the Dango survive waves of enemies by dashing into them to take them out.",
+    "it": "Un gioco d'azione a ondate: aiuta il Dango a sopravvivere agli assalti dei nemici lanciandoti contro di loro per eliminarli."
+  }
+}

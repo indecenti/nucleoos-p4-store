@@ -1,0 +1,14 @@
+{
+  "id": "annoyingrobots",
+  "name": "Annoying Robots",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Shimon Ulewicz",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/annoyingrobots",
+  "description": "Race your robots across the board before your rival: big robots climb onto small ones and jumps chain like in checkers. Vs AI or 2 players. Arrows and Z to play.",
+  "descriptions": {
+    "en": "Race your robots across the board before your rival: big robots climb onto small ones and jumps chain like in checkers. Vs AI or 2 players. Arrows and Z to play.",
+    "it": "Porta i tuoi robot dall'altra parte del tabellone prima del rivale: i grandi salgono sui piccoli e i salti si concatenano come a dama. Contro la CPU o in due. Frecce e Z."
+  }
+}

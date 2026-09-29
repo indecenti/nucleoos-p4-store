@@ -1,0 +1,14 @@
+{
+  "id": "minesweeper",
+  "name": "Minesweeper",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Claudio Mattera",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/minesweeper",
+  "description": "Classic Minesweeper: uncover the squares without setting off a mine, using the numbers to work out where the mines are hidden.",
+  "descriptions": {
+    "en": "Classic Minesweeper: uncover the squares without setting off a mine, using the numbers to work out where the mines are hidden.",
+    "it": "Il classico Campo minato: scopri le caselle senza far saltare una mina, usando i numeri per capire dove sono nascoste."
+  }
+}

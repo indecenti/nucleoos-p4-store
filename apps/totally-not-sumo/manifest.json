@@ -1,0 +1,14 @@
+{
+  "id": "totally-not-sumo",
+  "name": "Totally not sumo",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "André L. Alvares",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/totally-not-sumo",
+  "description": "Definitely not a sumo game: push your opponents out while wrestling with a tricky dual control scheme. Local multiplayer with several gamepads.",
+  "descriptions": {
+    "en": "Definitely not a sumo game: push your opponents out while wrestling with a tricky dual control scheme. Local multiplayer with several gamepads.",
+    "it": "Non è assolutamente un gioco di sumo: spingi fuori gli avversari facendo i conti con dei comandi sdoppiati. Multigiocatore locale con più joypad."
+  }
+}

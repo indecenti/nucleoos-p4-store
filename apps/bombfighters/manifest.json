@@ -1,0 +1,14 @@
+{
+  "id": "bombfighters",
+  "name": "Bombfighters",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Patbox",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/bombfighters",
+  "description": "A player-vs-player battle inspired by the multiplayer modes of 2D Bomberman games: drop bombs and blow up your opponents. Needs several gamepads.",
+  "descriptions": {
+    "en": "A player-vs-player battle inspired by the multiplayer modes of 2D Bomberman games: drop bombs and blow up your opponents. Needs several gamepads.",
+    "it": "Sfida tra giocatori ispirata alle modalità multigiocatore dei Bomberman 2D: piazza le bombe e fai saltare in aria gli avversari. Servono più joypad."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "the-legend-of-geml-awakening",
+  "name": "The Legend of GEML: Awakening",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Robby Zampino, Ethan Hunter",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/the-legend-of-geml-awakening",
+  "description": "A Zelda-inspired top-down adventure: explore a world of rocks, rivers and floor switches and find your way forward. Made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "A Zelda-inspired top-down adventure: explore a world of rocks, rivers and floor switches and find your way forward. Made for the first WASM-4 game jam.",
+    "it": "Un'avventura vista dall'alto ispirata a Zelda: esplora un mondo di rocce, fiumi e interruttori a pavimento e trova la strada. Creata per la prima game jam di WASM-4."
+  },
+  "featured": true
+}

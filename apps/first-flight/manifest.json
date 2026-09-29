@@ -1,0 +1,14 @@
+{
+  "id": "first-flight",
+  "name": "First Flight",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "bootra",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/first-flight",
+  "description": "Play a young witch on her first flight: soar through the skies collecting rings and speed-ups as fast as you can. Arrows to fly, X to speed up, Z to slow down.",
+  "descriptions": {
+    "en": "Play a young witch on her first flight: soar through the skies collecting rings and speed-ups as fast as you can. Arrows to fly, X to speed up, Z to slow down.",
+    "it": "Sei una giovane strega al primo volo: sfreccia nel cielo raccogliendo anelli e bonus di velocità il più in fretta possibile. Frecce per volare, X accelera, Z rallenta."
+  }
+}

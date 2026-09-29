@@ -1,0 +1,14 @@
+{
+  "id": "nyancat",
+  "name": "Nyan Cat",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Jake Ledoux",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/nyancat",
+  "description": "The famous Nyan Cat flies across the screen with its rainbow trail in this small animated demo.",
+  "descriptions": {
+    "en": "The famous Nyan Cat flies across the screen with its rainbow trail in this small animated demo.",
+    "it": "Il famoso Nyan Cat sfreccia sullo schermo con la sua scia arcobaleno in questa piccola demo animata."
+  }
+}

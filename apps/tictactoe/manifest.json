@@ -1,0 +1,14 @@
+{
+  "id": "tictactoe",
+  "name": "Tic Tac Toe",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Christopher Kleine",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/tictactoe",
+  "description": "Classic tic-tac-toe on a 3x3 grid: take turns placing X and O and line up three in a row to win.",
+  "descriptions": {
+    "en": "Classic tic-tac-toe on a 3x3 grid: take turns placing X and O and line up three in a row to win.",
+    "it": "Il classico tris su una griglia 3x3: a turno si piazzano X e O, e chi mette tre simboli in fila vince."
+  }
+}

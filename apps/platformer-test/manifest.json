@@ -1,0 +1,14 @@
+{
+  "id": "platformer-test",
+  "name": "Platformer Test",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Bruno Garcia",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/platformer-test",
+  "description": "A simple platformer test: run and jump across the blocks with a little bunny-like hero. A tech demo from WASM-4's early days.",
+  "descriptions": {
+    "en": "A simple platformer test: run and jump across the blocks with a little bunny-like hero. A tech demo from WASM-4's early days.",
+    "it": "Un semplice test di platform: corri e salta tra i blocchi con un piccolo eroe simile a un coniglio. Una demo tecnica dei primi giorni di WASM-4."
+  }
+}

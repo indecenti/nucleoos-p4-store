@@ -1,0 +1,14 @@
+{
+  "id": "simple-rocket",
+  "name": "Simple Rocket",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Venkatesh.H",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/simple-rocket",
+  "description": "Steer a small rocket left and right across the screen in this minimal game made for the first WASM-4 game jam.",
+  "descriptions": {
+    "en": "Steer a small rocket left and right across the screen in this minimal game made for the first WASM-4 game jam.",
+    "it": "Guida un piccolo razzo a destra e a sinistra in questo gioco minimale creato per la prima game jam di WASM-4."
+  }
+}

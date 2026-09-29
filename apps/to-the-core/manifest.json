@@ -1,0 +1,14 @@
+{
+  "id": "to-the-core",
+  "name": "TO THE CORE",
+  "version": "1.0",
+  "wasm4": true,
+  "author": "Garrett Hale",
+  "license": "CC BY-NC-SA 4.0",
+  "source": "https://wasm4.org/play/to-the-core",
+  "description": "A semi-idle game: guide Pant Ant on his journey home to the center of the earth, with Wormie explaining the rules. Z opens the tool kit, X picks and uses a tool.",
+  "descriptions": {
+    "en": "A semi-idle game: guide Pant Ant on his journey home to the center of the earth, with Wormie explaining the rules. Z opens the tool kit, X picks and uses a tool.",
+    "it": "Un gioco semi-idle: accompagna Pant Ant nel viaggio verso casa, al centro della Terra, con Wormie a spiegarti le regole. Z apre gli attrezzi, X sceglie e usa un attrezzo."
+  }
+}
