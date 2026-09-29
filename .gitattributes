@@ -1,0 +1,4 @@
+# A distribution mirror: every file ships byte for byte. Without this, core.autocrlf would
+# rewrite line endings in any file it guesses is text, and a compressed icon with no NUL byte
+# in its first 8 KB is exactly such a guess.
+* -text
