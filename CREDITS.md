@@ -128,6 +128,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Starfighter Ship Creator | `starfightercreator` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/starfightercreator) |
 | StarShard Scavengers | `starshard-scavengers` | HitchH1k3r | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/starshard-scavengers) |
 | Strikeforce | `strikeforce` | iszn_11 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/strikeforce) |
+| Synth | `synth` | NucleoOS + AMY (Brian Whitman, Dan Ellis) | MIT | [link](https://github.com/shorepine/amy) |
 | T Flight Simulator 1.0 | `taufl` | Tau | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/taufl) |
 | Tail Gunner | `tail-gunner` | Dial0 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tail-gunner) |
 | Tank Battle | `tankbattle` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankbattle) |
