@@ -1,0 +1,141 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Vertice GP — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Vertice GP</h1><p class=desc>Kart in 3D sul motore Vertice: quattro kart, tre giri, turbo in derapata, frecce turbo, monete, partenza a razzo e scia. Touch, tastiera o joypad.</p><p class=meta>versione 1.0.0</p></div></header><article><h1>Vertice GP</h1>
+<h2>A cosa serve</h2>
+<p>Una corsa di kart in 3D: tu contro altri tre piloti, tre giri di pista. Puoi guidare con il touch, con una tastiera USB o con un joypad USB.</p>
+<h2>Come si usa</h2>
+<ol>
+<li>Nella schermata del titolo tocca lo schermo per partire (su tastiera Invio o Spazio, sul joypad il tasto A o Start).</li>
+<li>Si accendono tre luci rosse con tre bip, poi arriva il VIA.</li>
+<li>Guida per tre giri. In alto a sinistra vedi giro, tempo, giro migliore e monete; in alto a destra la tua posizione e la mappa della pista; in basso la velocità.</li>
+<li>All'arrivo vedi posizione, tempo di gara e giro più veloce. Tocca di nuovo (o premi Invio) per tornare al titolo.</li>
+</ol>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tocco</th>
+<th>Tastiera</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sterza</td>
+<td>frecce in basso a sinistra</td>
+<td>← → oppure A D</td>
+<td>croce direzionale</td>
+</tr>
+<tr>
+<td>Accelera</td>
+<td>freccia in su, in basso a destra</td>
+<td>↑, W, Spazio, Invio, X, K, E</td>
+<td>un tasto frontale, oppure R</td>
+</tr>
+<tr>
+<td>Frena / retromarcia</td>
+<td>barra accanto all'acceleratore</td>
+<td>↓, S, Z, C, Backspace, J, Q</td>
+<td>l'altro tasto frontale, oppure L</td>
+</tr>
+<tr>
+<td>Pausa</td>
+<td>–</td>
+<td>P o Tab</td>
+<td>Start</td>
+</tr>
+<tr>
+<td>Torna al titolo</td>
+<td>gesto Indietro</td>
+<td>Esc</td>
+<td>Select</td>
+</tr>
+</tbody>
+</table>
+<p>Con una tastiera o un joypad collegati, i comandi a schermo spariscono. Sul joypad quale tasto frontale accelera e quale frena dipende dal modello: provali.</p>
+<p>Per frenare fino a fermarti e poi andare indietro, tieni premuto il freno.</p>
+<p>Per uscire: dal titolo usa il gesto Indietro (scorri dal bordo sinistro verso destra) o premi Esc. Durante la gara il primo Indietro ti riporta al titolo. Scorrendo verso l'alto dal bordo inferiore torni subito alla Home.</p>
+<h2>Suggerimenti</h2>
+<ul>
+<li><strong>Partenza a razzo</strong>: premi l'acceleratore sull'ultimo bip, non prima. Se lo tieni premuto dalla prima luce il motore si ingolfa e parti fermo.</li>
+<li><strong>Turbo in derapata</strong>: in velocità tieni la curva a fondo. Escono scintille blu, poi arancioni; raddrizza lo sterzo per avere il turbo. Arancione dura di più.</li>
+<li><strong>Frecce sulla pista</strong>: passaci sopra per un turbo.</li>
+<li><strong>Scia</strong>: resta dietro a un altro kart per circa un secondo e ricevi una spinta.</li>
+<li><strong>Monete</strong>: ne tieni fino a 10, ognuna aumenta un po' la velocità massima. Se sbatti forte contro il bordo ne perdi.</li>
+<li>Se resti bloccato fuori pista o vai contromano per qualche secondo, il gioco ti rimette in strada.</li>
+<li>Il record sul giro resta salvato sulla scheda SD e lo vedi nel titolo.</li>
+</ul>
+<h2>Problemi comuni</h2>
+<ul>
+<li><strong>Non sento nulla</strong>: collega uno speaker al tablet e controlla il volume in Impostazioni.</li>
+<li><strong>La tastiera o il joypad non funzionano</strong>: devono essere collegati via USB.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Vertice GP</h1><p class=desc>3D kart racing on the Vertice engine: four karts, three laps, drift turbo, boost pads, coins, rocket starts and slipstream. Touch, keyboard or gamepad.</p><p class=meta>version 1.0.0</p></div></header><article><h1>Vertice GP</h1>
+<h2>What it's for</h2>
+<p>A 3D kart race: you against three other drivers, three laps of the track. You can drive with touch, a USB keyboard or a USB gamepad.</p>
+<h2>How to use it</h2>
+<ol>
+<li>On the title screen, tap the screen to start (on a keyboard press Enter or Space, on a gamepad the A button or Start).</li>
+<li>Three red lights come on with three beeps, then GO.</li>
+<li>Race for three laps. Top left shows lap, time, best lap and coins; top right your position and the track map; at the bottom your speed.</li>
+<li>At the finish you see your position, race time and fastest lap. Tap again (or press Enter) to return to the title.</li>
+</ol>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Touch</th>
+<th>Keyboard</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steer</td>
+<td>arrows at the bottom left</td>
+<td>← → or A D</td>
+<td>D-pad</td>
+</tr>
+<tr>
+<td>Accelerate</td>
+<td>up arrow, bottom right</td>
+<td>↑, W, Space, Enter, X, K, E</td>
+<td>one face button, or R</td>
+</tr>
+<tr>
+<td>Brake / reverse</td>
+<td>bar next to the accelerator</td>
+<td>↓, S, Z, C, Backspace, J, Q</td>
+<td>the other face button, or L</td>
+</tr>
+<tr>
+<td>Pause</td>
+<td>–</td>
+<td>P or Tab</td>
+<td>Start</td>
+</tr>
+<tr>
+<td>Back to title</td>
+<td>Back gesture</td>
+<td>Esc</td>
+<td>Select</td>
+</tr>
+</tbody>
+</table>
+<p>With a keyboard or gamepad connected, the on-screen controls disappear. On a gamepad, which face button accelerates and which brakes depends on the model: try them.</p>
+<p>To stop and then go backwards, keep holding the brake.</p>
+<p>To exit: from the title, use the Back gesture (swipe right from the left edge) or press Esc. During a race the first Back takes you to the title. Swiping up from the bottom edge goes straight to the Home screen.</p>
+<h2>Tips</h2>
+<ul>
+<li><strong>Rocket start</strong>: press the accelerator on the last beep, not before. If you hold it from the first light the engine floods and you start from a standstill.</li>
+<li><strong>Drift turbo</strong>: at speed, hold the turn all the way. Blue sparks appear, then orange; straighten the steering to get the turbo. Orange lasts longer.</li>
+<li><strong>Arrows on the track</strong>: drive over them for a turbo.</li>
+<li><strong>Slipstream</strong>: stay behind another kart for about a second and you get a push.</li>
+<li><strong>Coins</strong>: you can hold up to 10, and each one raises your top speed a little. Hit the edge hard and you lose some.</li>
+<li>If you get stuck off the track or drive the wrong way for a few seconds, the game puts you back on the road.</li>
+<li>Your lap record is saved on the SD card and shown on the title screen.</li>
+</ul>
+<h2>Common problems</h2>
+<ul>
+<li><strong>No sound</strong>: connect a speaker to the tablet and check the volume in Settings.</li>
+<li><strong>Keyboard or gamepad doesn't work</strong>: it must be connected over USB.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

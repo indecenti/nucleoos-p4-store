@@ -1,0 +1,119 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>SQLite — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>SQLite</h1><p class=desc>La shell di SQLite: database SQL locali sulla scheda SD, con JSON e funzioni matematiche. Scrivi sqlite3 note.db.</p><p class=meta>versione 3.53.4.1 · Licenza: Public domain · <a href='https://sqlite.org'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>sqlite3</code>.</p></aside><article><h1>SQLite</h1>
+<h2>A cosa serve</h2>
+<p>La shell ufficiale di SQLite: crei e interroghi database SQL veri, salvati come file sulla scheda SD. Utile per note, inventari, registri, esperimenti di SQL. Ci sono le funzioni JSON e matematiche.</p>
+<h2>Come si usa</h2>
+<pre><code>sqlite3 note.db
+</code></pre>
+<p>Apre (o crea) <code>note.db</code> nella cartella home. Poi scrivi SQL, terminando ogni istruzione con <code>;</code>:</p>
+<pre><code class="language-sql">CREATE TABLE note(id INTEGER PRIMARY KEY, testo TEXT, quando TEXT DEFAULT CURRENT_TIMESTAMP);
+INSERT INTO note(testo) VALUES ('comprare il latte');
+SELECT * FROM note;
+</code></pre>
+<h2>Comandi utili</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.tables</code></td>
+<td>elenca le tabelle</td>
+</tr>
+<tr>
+<td><code>.schema</code></td>
+<td>mostra come sono fatte</td>
+</tr>
+<tr>
+<td><code>.mode box</code></td>
+<td>risultati in una tabella leggibile</td>
+</tr>
+<tr>
+<td><code>.headers on</code></td>
+<td>nomi delle colonne</td>
+</tr>
+<tr>
+<td><code>.import file.csv t</code></td>
+<td>importa un CSV (con <code>.mode csv</code>)</td>
+</tr>
+<tr>
+<td><code>.help</code></td>
+<td>tutti i comandi</td>
+</tr>
+<tr>
+<td><code>.quit</code></td>
+<td>esce (oppure <strong>EOF</strong>)</td>
+</tr>
+</tbody>
+</table>
+<h2>Limiti</h2>
+<p>Versione ridotta per la scheda: niente WAL, mmap, thread, estensioni caricabili e FTS5. Senza nome di file (<code>sqlite3</code> da solo) il database sta in memoria e si perde all'uscita.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>SQLite</h1><p class=desc>The SQLite shell: local SQL databases on the SD card, with JSON and math functions. Type sqlite3 notes.db.</p><p class=meta>version 3.53.4.1 · License: Public domain · <a href='https://sqlite.org'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>sqlite3</code>.</p></aside><article><h1>SQLite</h1>
+<h2>What it is</h2>
+<p>The official SQLite shell: create and query real SQL databases stored as files on the SD card. Handy for notes, inventories, logs, learning SQL. JSON and math functions are included.</p>
+<h2>How to use it</h2>
+<pre><code>sqlite3 notes.db
+</code></pre>
+<p>Opens (or creates) <code>notes.db</code> in the home folder. Then type SQL, ending each statement with <code>;</code>:</p>
+<pre><code class="language-sql">CREATE TABLE notes(id INTEGER PRIMARY KEY, text TEXT, at TEXT DEFAULT CURRENT_TIMESTAMP);
+INSERT INTO notes(text) VALUES ('buy milk');
+SELECT * FROM notes;
+</code></pre>
+<h2>Useful commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.tables</code></td>
+<td>lists the tables</td>
+</tr>
+<tr>
+<td><code>.schema</code></td>
+<td>shows their structure</td>
+</tr>
+<tr>
+<td><code>.mode box</code></td>
+<td>results as a readable table</td>
+</tr>
+<tr>
+<td><code>.headers on</code></td>
+<td>column names</td>
+</tr>
+<tr>
+<td><code>.import file.csv t</code></td>
+<td>imports a CSV (with <code>.mode csv</code>)</td>
+</tr>
+<tr>
+<td><code>.help</code></td>
+<td>every command</td>
+</tr>
+<tr>
+<td><code>.quit</code></td>
+<td>quits (or <strong>EOF</strong>)</td>
+</tr>
+</tbody>
+</table>
+<h2>Limits</h2>
+<p>Trimmed for the board: no WAL, mmap, threads, loadable extensions or FTS5. Without a file name (<code>sqlite3</code> alone) the database lives in memory and is lost on exit.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

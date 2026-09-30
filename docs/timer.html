@@ -1,0 +1,113 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Timer — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><div><h1>Timer</h1><p class=desc>Cronometro e conto alla rovescia con beep finale. Cifre grandi, comode al tocco.</p><p class=meta>versione 1.0</p></div></header><article><h1>Timer</h1>
+<h2>A cosa serve</h2>
+<p>Un cronometro e un conto alla rovescia con cifre grandi, leggibili anche da lontano. Il conto alla rovescia suona un beep quando arriva a zero.</p>
+<h2>Come si usa</h2>
+<p>L'app ha due modalità, indicate in alto: <strong>STOPWATCH</strong> (cronometro) e <strong>COUNTDOWN</strong> (conto alla rovescia).</p>
+<p>Cronometro:</p>
+<ol>
+<li>Tocca <strong>START</strong>: il tempo parte da 00:00.</li>
+<li>Tocca <strong>STOP</strong> per fermarlo, poi <strong>START</strong> per riprendere da dove eri.</li>
+<li>Tocca <strong>RESET</strong> per tornare a 00:00.</li>
+</ol>
+<p>Conto alla rovescia:</p>
+<ol>
+<li>Col timer fermo tocca <strong>MODE</strong> per passare a COUNTDOWN.</li>
+<li>Imposta i minuti con <strong>-1M</strong> e <strong>+1M</strong> (da 1 a 99, si parte da 5:00).</li>
+<li>Tocca <strong>START</strong>. A 00:00 senti un beep e il timer si ferma.</li>
+<li><strong>RESET</strong> riporta il tempo al valore impostato.</li>
+</ol>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Bottone</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>START / STOP</td>
+<td>avvia o ferma il tempo</td>
+</tr>
+<tr>
+<td>RESET</td>
+<td>azzera il cronometro, o riporta il conto alla rovescia all'inizio</td>
+</tr>
+<tr>
+<td>MODE</td>
+<td>cambia fra cronometro e conto alla rovescia (solo a timer fermo)</td>
+</tr>
+<tr>
+<td>-1M / +1M</td>
+<td>toglie o aggiunge un minuto al conto alla rovescia (solo a timer fermo)</td>
+</tr>
+</tbody>
+</table>
+<p>Per uscire: scorri dal bordo sinistro verso destra (gesto Indietro), oppure scorri verso l'alto dal bordo inferiore per tornare alla Home.</p>
+<h2>Suggerimenti</h2>
+<ul>
+<li>Il tempo si misura in minuti e secondi, fino a 99:59.</li>
+<li>Cambiare modalità azzera il tempo.</li>
+<li>Le impostazioni non vengono salvate: alla riapertura il conto alla rovescia torna a 5 minuti.</li>
+</ul>
+<h2>Problemi comuni</h2>
+<ul>
+<li><strong>Non sento il beep finale</strong>: collega uno speaker al tablet e controlla il volume in Impostazioni.</li>
+<li><strong>MODE, -1M o +1M non rispondono</strong>: ferma prima il timer con <strong>STOP</strong>.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><div><h1>Timer</h1><p class=desc>Stopwatch and countdown with an end beep. Big, tap-friendly digits.</p><p class=meta>version 1.0</p></div></header><article><h1>Timer</h1>
+<h2>What it's for</h2>
+<p>A stopwatch and a countdown timer with big digits you can read from across the room. The countdown beeps when it reaches zero.</p>
+<h2>How to use it</h2>
+<p>The app has two modes, shown at the top: <strong>STOPWATCH</strong> and <strong>COUNTDOWN</strong>.</p>
+<p>Stopwatch:</p>
+<ol>
+<li>Tap <strong>START</strong>: time starts from 00:00.</li>
+<li>Tap <strong>STOP</strong> to pause it, then <strong>START</strong> to carry on from where you were.</li>
+<li>Tap <strong>RESET</strong> to go back to 00:00.</li>
+</ol>
+<p>Countdown:</p>
+<ol>
+<li>With the timer stopped, tap <strong>MODE</strong> to switch to COUNTDOWN.</li>
+<li>Set the minutes with <strong>-1M</strong> and <strong>+1M</strong> (1 to 99; it starts at 5:00).</li>
+<li>Tap <strong>START</strong>. At 00:00 you hear a beep and the timer stops.</li>
+<li><strong>RESET</strong> puts the time back to the value you set.</li>
+</ol>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>START / STOP</td>
+<td>starts or stops the time</td>
+</tr>
+<tr>
+<td>RESET</td>
+<td>clears the stopwatch, or puts the countdown back to its start</td>
+</tr>
+<tr>
+<td>MODE</td>
+<td>switches between stopwatch and countdown (only while stopped)</td>
+</tr>
+<tr>
+<td>-1M / +1M</td>
+<td>removes or adds one minute to the countdown (only while stopped)</td>
+</tr>
+</tbody>
+</table>
+<p>To exit: swipe right from the left edge (Back gesture), or swipe up from the bottom edge to go to the Home screen.</p>
+<h2>Tips</h2>
+<ul>
+<li>Time is shown in minutes and seconds, up to 99:59.</li>
+<li>Changing mode resets the time.</li>
+<li>Settings aren't saved: when you reopen the app the countdown is back to 5 minutes.</li>
+</ul>
+<h2>Common problems</h2>
+<ul>
+<li><strong>I can't hear the final beep</strong>: connect a speaker to the tablet and check the volume in Settings.</li>
+<li><strong>MODE, -1M or +1M don't respond</strong>: stop the timer with <strong>STOP</strong> first.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

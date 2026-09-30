@@ -1,0 +1,97 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>JavaScript — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAOmklEQVR42u2dCXBU9RnAw5ljk+zmIsnbd2wAI6eVMUoBFUSd0Q4FizJoSyvS4m3r4DEWRUAd8OBQ0VqPiqKdlkixqNOh6BgoaquAB3IGNpvskTuQc7Pn+/p9//97u0suQiaB7CaZ+XjL7jt/+e6370tcXA9/AOKGogyHIhR8HRdlP3jOQ1CGAcwcDoW0jBtyfg7cycGgdmwqnFZMYIsCwfPsBGrfgdTADQ0Dkyd4K5Q7fC55s9ch72m1yTWtNqm+tUQ67S6R6vur0Pl5yqTTeM7foGz3OaQHfRXiFYV4fZEge1vdQzv0u6TrA05ll88p+6HOAkyqFQg4FPA7ZBSl/4tdBqhSAGrx3E9ZIFiuAF7PQa9TWQKHJoyMcFFDesNPMK1rLZWvDZQru6ASD1xjAdQ4cJfIAbdN9qME8LUaTdLKz5nE77bKKlQoDKbfpfzotStLIi2vx0FCf+0tk1apGjg8YJAOjCdAJwGxIvp1AWojNFgAXdNW59dCRo9MWodn/0pMR9XeCfVM43RwEMvCQUp+0sZAhVLccky8/JwgamY7pOGIkEGOln4buENfrINrKy1WhFiFJl2unGqxhiAO7XbA8NjkT6Ehj3Y04OCFIcoBFX2jzyFXNVnzsiNjQifwFjB4CG0Vme1A1Lx2Jm3FbAOjtZsUaiWLzMO61Dx3iWVmsFJRMepShIXWQQHmE8mVWaXlnfpDXTVx5SJGfAAEjHMILKrfqQS9ZXIdOIUMPU60076mE8o1QUwwKUcaBNeBFqJbI/fWTgtZ1o32jSt9rtYMal9nWuhzKKqnVK5t+n70KD1jCZluw1HLxRht/J4YS5B7ObUJwGnKiaXFHODM4fwfKtXwTUoeUQsHta8rMz5lUd2l8mYGsIgAFoUAbtEA+gdhdV6lBDEvdNukYigeG89MuFDr7yHAL6F60P+d1Q/aFVo2gys/MxxErKONmOPUYqgGrVMxCKwziDY5CFVK0G3NuyoM0KaY0HQbqFd2PgFiqQRNJ1BOhgWP35UGQPNJTax8e1309+l1X5sx9T9bbco1bQHWn0+ABAMqUE6jnAqLz94eog4u4MB1alHqqCGKUqlJVcT75ecN4KwLBpCA+PFCd22VYPWjIrywUoTnVojw7BMi2PfLrLOtQySNwgqAAXJ+J0PhGyI8sUyEO24zwy1zzbAAZfGtZnj0ARHeflGEw7ul2AdI2kTa9vC9IsTFCZBqFCDRIEB8ogDf/EtiWkXgsJBnMBvRzFc+LMJFYwVISRXAkIxL3MZo4kLbJ6fyfYzOE8D6PxmCTtxHSSwDrONQUk38omVJANEswLe7JGbatI4XzbnuqAw3XmuGkQg3J0cACdezWPgyNxffQzHjdnn4nqLgZyjHvpBBdQ0AgCvQFJNQm2RZAEHggA78mwOk4EK+7b4lCC+BQyNQtB5pYXa2AOMvFmDieA7OlCawfSm4r+KvBjhAFf1jAE3w2F45BI2WJJlZAiy7W4RvP5Og4gcZqn+UofhLGT5+X4J77hBh7BgBDu/hwWTAAiT/BdUyfPCWyPwbmaskcl+3aIHII3Y5j9gkpG1Qw/d5aDcHy6K5bYADpKhK5soAStx077odAdbL0FAczhtbIvJDgukr6zqfHBgA0f/teEcKaSB9TkK+7631Ite4qnCO6I5IzvsKXvQEkXKuRQ7MCSlC0/u6D6TISwFj4U1mKNousTSHckS2X+v5aShERRRuLOZ+bc1yEUbE8+iqBxRR84fpGQLcgCnOX18TmQaSRtK+BwFWhGtar4NSGRHikwQYNUrLF0Vu1rQkbaQketaVZtjzT4lB70tNjCqA5Ms8pTJLa95EvzdhHM/1SPMoKouaEFQCmZ4uwPt/ElkA6qumQtRpIEFkjQf0c5UHZXh5jQhXTTOHTJhA0rakkbR9ZqYAX2M5GKzoG4j9ByACWf4HkdW1ckSU/e7TMwFGbsO+llbH05YPN0tw9XQzGI1cC2lb+kWQOS++zcz9YawAbJtWMIBoZksXieyCZa2upUARqmO1LoyugZFtLXpNvs6Nn/9ukZmZL0GkIJOFlcpllwpQfyy8fdQD1Ht8rGl6IgxjagE3OTJDChCTJwpQe4inMLTOqaMcJpV1tJ3uF0kajvNOTSVWHVS+ZedwiKMwTxyXL7BqxG+PAYAUBMh3sXKrjmseNMvw2nMia0WxiCryttT8OWYIlmuNBNSw7W9LrPKoPao1XCt5U1Uv4agiOflfmXVgcjSAWfiLmHKJwOBHvQY2acFi7eMizLvRDFteEaHwTZE1A+iCyWzJd5HpUjB5Y53I1q8/zgHueFeCuGECXDpZgKcfE2HvRxI4DshQg1pahkn2zq0SXHu1GTIyeSuMAgm1x6jRGhNBRAf4zB9549Rk4vUs+T09aJDjT8P0o2AKao3mt9h2CPCjLRJkZHHtIsBk7tRUnThBYGbLUpcM7vv03JDW+xi3I01vjhWAa1AD6WLHjg43PSlw6PkbaeLeHbwT3WwNR+ltf5FYI5XWp4ZpZLrDNFfbF8GjNhd1tJ98SAS1knezoz4PbNJa96se4RqYlsZLMGrHU/pCrykV+eoT6YwyjEwvgL5wP+aEl11qZlpG6yencBPVW/nJWnuffgkFU8zw7iaEV8EbCzHRjaGL8KHTP/aFxGpadiPo52ZYtMDMcsCP35N4klzZvoal9yn60v2Qz7dJsPEpEX6/VIRf3WKGm3EfC39hhrsXi8y/7vybxNpbLLUpibFamC4o6GpzK1K/DVnDo3Rnzp629ZZq69fJoRZW6HZmdTiyk+/s60bCBU2km9rcDNcboGfTGJY8W7XtT7a5mW4N77evNa9flXLR/gWjQYCDAAcBDgIcBBjFADFR5k9d2npRunndUQ3QXaIEUVRvqYh5Xy+Ktr/QMbr4on1UAiRodFGqKwcCDgH8joua/Y78pl4VZ34jgYTybEzuJWjBY8YEQILnQ+3w2QUA961FAB8+X2bd/ZT1xN7Vtt6VVRDcuQbgoUJPmcUTcAodQowqgHQu3jJJ9ZSOaQH4YN3GTR+uHT9x2j5TZm6DKT2nqfckly3l0ZOO3/3A2j8DHH48UFFQ2hHEaNNAlWkeFK6/Yc49hYmGREhISgJDSmo7STYamXT0WXcl0WCA+MSRMH7y9P0Bj+0xnyO/wWdnN+3VqAPotilB8nnQsnA3aV6SIQGSU03BVFN6EJdqpKQY09TEYUlq4nCDmpKWribj/9uu0x3B/eD+M/wj40fAvPn3FAK8+EbQmUOwgtEHEE3HbxdUgB3Pj5v00+9Q81QNHpwhxjRIik+GMb+eAaMXToX4uHhIMaWx99ut2z1RURvVjKzcBqf9+xWohY0UoXUtjAqAdLJ00hRtKWCgf2pkZso15YwLTtEAFrx6G8z3boRx982GhCGJ/HNTzyAyjUZzfvmVLeuhfvahoDOXWUQUAsxvoghJDr4zgMlGvkwcYYBJy3/GIE5ZdwuDajCk9kgTdYAbXkSADdcdjG2A+kWnpaP5jgTL/AKYV/88XPmPOyE1IwOSk40hyH0HsExOa7FKjVELkMw4MYXJJavmwtzqNTD5yTk99YFnB1iDAEvl2QzeSjZIYebwVpt0QK3ig3WizYQNqGUmMRtmbFsKNzW+AGN+OY0Fk+QU0zlrX1cAeV7KHrp2g3OMxAAWFcXxx11Lpe00B6s/PK15LgBZEBmZDNO3/hbmuJ6B3OnjEF4CM2mCR8uU9I6lM7hdAQy4FLpl6gK7mIjYhsTB/stG8Dkx0oP0NHZ/eF743DSQm292wUWQNTkPI3ACh0OfpRiZJpJv7Eh4kDkngAGotaikbCHl0x/5pxFHgXJF7Vc+0Dmu0Xp872pj2qjms/pAjLpJCSlc81K5WadmZbLI/JOn58Elq+e2k/TRZjAkpTIt7gjguvWbN0DD9T+EAfLBE26rtIzFDk352PCE4uKx8Uj2SLDSovYHP0hlnN8uBajAV/ImncQLYpVCp76Lcj497yO/iNplzB0FM7bfCbM+ewBm7ry/nWRNsiD4FJ54RyTSyalGTNozPPu+3rM66Jpc7bOb2XPCnlJM7p2yx2PNyz9jFFR46I50O3vs39oP/GCJEqTWEsCybXfdv/Z1qlHxogIpvEzrXkDAIJIwNIkl1h2JoYMUx5iGpVxCPFw+7Yb/AHz0HFVDrJ1WIrOBZC1W+d2Oxp4MobEnmhYe83NTDl5oM/aUSqrPkecGOPr4+EnTD4zAGpVMmSB2V1KxNu5M2q5rQJ9J8LKyxdrDRysegcrLbdR/JPPFyBv0u1D7SiwXQ1wHM7QitPA30Mjs/IIHE2olUUuJtZY8tsduuvnev2ONeor8U69LkoE0vPWKaTcW/XjY/iicnr9XdeXyZi5NcmvIg1ar/E6Xo/C0IaxDW0ukbRSRW/oRRJ8zvwHgpded9m9XbHr1vXUbXtqyjqJkb8jGTe+tW7/hnfX79u1dBfDJs1A91UrwWrXIS8HV65CtjcdyM7scDarPhKrHysTrkEpofl5LP/CHLVpXmlpLXnt+ExX4lF70nsw+CI3X/RCsmFyNPo/dNqBj4rWrnjI0XQTYctw8tVszBENpzVGpgIYP0vy8lv6QG7L7IjQAjEDm9oHkAIu2LGAweOT3VBrE1nxCXnquUyyH6bkhQizXprn5+0WOyG5n0p2zPhDt5hW5LrVcgUCl4m8uCcEb3qPRx81H5Fyfg+ao5gFvNkj+WLz5zsFxd0XJsr9cLnaflGf0CF5HI4B9dvkJDONVFFwIpHYwvzb9Vo3Cbxio+mBdUgoPgcM8z+uUvXidb9MM2V4Zyh05bJDmiPpd0irMxivpYGwId7miP48RjCahL2QGXdowblQKH1YYPgTntYuTOhoF3avTzAlkoEJZoo2BP+Kxy/VsQHc1n2re76XGQt+MdXvtsp3GwaOve9DjUsb1+Ux9/S8gtM8dhQxMNq9C055Fndr+Lv4KZRbUjhW1llS7PPj8/CmJorjhei8xmn9CfxKjh+D+Dyu1F1askMNBAAAAAElFTkSuQmCC' alt=><div><h1>JavaScript</h1><p class=desc>JavaScript moderno (ES2024) con QuickJS-ng: prompt interattivo, script e moduli, file con std/os, timer. Scrivi js, oppure js file.js.</p><p class=meta>versione 0.17.0 · Licenza: MIT · <a href='https://github.com/quickjs-ng/quickjs'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>js</code>.</p></aside><article><h1>JavaScript</h1>
+<h2>A cosa serve</h2>
+<p>JavaScript moderno (ES2024) con il motore QuickJS-ng: prompt interattivo, script e moduli ES, lettura e scrittura di file con i moduli <code>std</code> e <code>os</code>, timer.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>js</code></td>
+<td>apre il prompt interattivo (<code>&gt;</code>; <code>...</code> se la riga continua)</td>
+</tr>
+<tr>
+<td><code>js file.js</code></td>
+<td>esegue uno script dalla cartella home</td>
+</tr>
+<tr>
+<td><code>js -m file.js</code></td>
+<td>lo esegue come modulo ES (automatico per <code>.mjs</code>)</td>
+</tr>
+<tr>
+<td><code>js -e "codice"</code></td>
+<td>valuta il codice ed esce</td>
+</tr>
+<tr>
+<td><code>js -h</code></td>
+<td>mostra l'aiuto</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-js">&gt; [1, 2, 3].map(x =&gt; x * 2)
+[ 2, 4, 6 ]
+&gt; setTimeout(() =&gt; print(&quot;fatto&quot;), 1000)
+</code></pre>
+<p>Le parentesi aperte continuano sulla riga dopo. I timer partono prima del prompt successivo. Per uscire: <strong>EOF</strong>.</p>
+<h2>Limiti</h2>
+<p>Il prompt è a righe: niente frecce per la cronologia dentro il programma né completamento con Tab. Memoria: fino a 8 MB.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>JavaScript</h1><p class=desc>Modern JavaScript (ES2024) with QuickJS-ng: interactive prompt, scripts and modules, std/os file APIs, timers. Type js, or js file.js.</p><p class=meta>version 0.17.0 · License: MIT · <a href='https://github.com/quickjs-ng/quickjs'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>js</code>.</p></aside><article><h1>JavaScript</h1>
+<h2>What it is</h2>
+<p>Modern JavaScript (ES2024) on the QuickJS-ng engine: interactive prompt, scripts and ES modules, file I/O through the <code>std</code> and <code>os</code> modules, timers.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>js</code></td>
+<td>opens the interactive prompt (<code>&gt;</code>; <code>...</code> when the line continues)</td>
+</tr>
+<tr>
+<td><code>js file.js</code></td>
+<td>runs a script from the home folder</td>
+</tr>
+<tr>
+<td><code>js -m file.js</code></td>
+<td>runs it as an ES module (automatic for <code>.mjs</code>)</td>
+</tr>
+<tr>
+<td><code>js -e "code"</code></td>
+<td>evaluates the code and exits</td>
+</tr>
+<tr>
+<td><code>js -h</code></td>
+<td>shows the help</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-js">&gt; [1, 2, 3].map(x =&gt; x * 2)
+[ 2, 4, 6 ]
+&gt; setTimeout(() =&gt; print(&quot;done&quot;), 1000)
+</code></pre>
+<p>Open brackets continue on the next line. Timers run before the next prompt. To quit: <strong>EOF</strong>.</p>
+<h2>Limits</h2>
+<p>The prompt is line based: no arrow-key history inside the program and no Tab completion. Memory: up to 8 MB.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

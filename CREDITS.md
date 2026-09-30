@@ -17,11 +17,9 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Break-It | `break-it` | douglett | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/break-it) |
 | Bubblewrap | `bubblewrap` | Henrik Zenkert | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bubblewrap) |
 | Cannon | `cannon` |  |  |  |
-| Ciao SDK | `ciao` |  |  |  |
 | comic-sans | `comic-sans` | Eduardo Minholi, Nuno Abilio | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/comic-sans) |
 | Cosmic Hopper | `cosmic-hopper` | Bernardo Wilchen de Oliveira | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-hopper) |
 | Cosmic Inw4ders | `cosmic-inw4ders` | Pierro | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-inw4ders) |
-| CPU Bench | `bench` |  |  |  |
 | Customizable Pong | `custom-pong` | UnusualEgg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/custom-pong) |
 | Dashy Dango | `dashy-dango` | samX500 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dashy-dango) |
 | disk-0 MADNESS | `disk-0-madness` | Max Curzi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/disk-0-madness) |
@@ -42,7 +40,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Fuzzy World Cup | `fuzzy-world-cup` | Damian Girardi, Sebastian Alvarez | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fuzzy-world-cup) |
 | Game of Life | `game-of-life` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life) |
 | Game of Life: Zig Edition | `game-of-life-zig-edition` | David Roman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life-zig-edition) |
-| Gfx Bench | `gfxbench` |  |  |  |
 | Glitch Dungeon | `glitch-dungeon` | jakeonaut, Wormi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glitch-dungeon) |
 | Glowfish Chess | `glowfish-chess` | Analog Hors | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glowfish-chess) |
 | HAMMER JOE | `hammer-joe` | MFauzan26 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hammer-joe) |
@@ -83,7 +80,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Minicraft | `minicraft` | TheFloatingPixel | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/minicraft) |
 | Mouse Demo | `mouse-demo` | David Sims | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/mouse-demo) |
 | NAIR DEMAKE | `nairdemake` | MiguelGSS | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/nairdemake) |
-| Net Test | `nettest` |  |  |  |
 | Ninja vs Knights | `ninja-vs-knights` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ninja-vs-knights) |
 | Number Slide | `number-slide` | Giovana Ferreira Waterkemper, Jamily Go | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/number-slide) |
 | Nyan Cat | `nyancat` | Jake Ledoux | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/nyancat) |
@@ -153,7 +149,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Vertice Bass | `bass` | NucleoOS |  |  |
 | Vertice GP | `vxgp` | NucleoOS |  |  |
 | W4 Test | `w4test` |  |  |  |
-| WASI Test | `wasihello` |  |  |  |
 | WASM Invaders | `wasminvaders` | Lorenzo Henrique Zanetti, Matheus Cener | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasminvaders) |
 | Wasm Wars | `wasm-wars` | Daniel Kiyoshi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasm-wars) |
 | WASM-4 City | `wasm4-city` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasm4-city) |
@@ -164,7 +159,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Waternet | `waternet` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/waternet) |
 | Watris | `watris` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/watris) |
 | Weather | `meteo` |  |  |  |
-| Wedge Test | `wedge` |  |  |  |
 | Win 4 Fighter (W4F) | `w4f` | Kris Dabrowski | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/w4f) |
 | Wired | `wired` | Louis Pearson | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wired) |
 | WLOKU | `wloku` | 12Boti | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wloku) |
