@@ -1,0 +1,6 @@
+title 1000 Lines 2
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file 1klinecp2.wad 68885640 d2134f1579ee1ae1ae755fe5b73b6513a13db13f
+file 1klinecp2.txt 7433 346cc6e5558d9bac6ae73623b8682add92abd89b
+iwad freedoom2.wad
+pwad 1klinecp2.wad

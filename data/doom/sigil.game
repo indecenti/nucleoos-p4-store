@@ -1,0 +1,6 @@
+title SIGIL (DOS edition)
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file sigildos.wad 2926667 031423808eaa678cc208d3317489e1f5a93cb796
+file sigildos.txt 3997 c69ff5963c9b53b81980f77f623400685553e307
+iwad freedoom1.wad
+pwad sigildos.wad

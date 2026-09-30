@@ -1,0 +1,6 @@
+title Zone 300
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file zone300.wad 3052784 7ff798af30957df6dd82d2e7d10950129c3007c7
+file zone300.txt 6011 fd81eee6ed904e0a61d56da0213fb1a0c59b3ca3
+iwad freedoom2.wad
+pwad zone300.wad

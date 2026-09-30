@@ -1,0 +1,8 @@
+title Memento Mori
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file mm.wad 7825282 e4be45898b99f4b987110d2db9f5a3284d82dde2
+file mmmus.wad 885387 afff5912ffef167e695b33b13238cd25e49af66b
+file mm.txt 2893 81114aef64af753f89bc078f680676d4ff0f79d7
+iwad freedoom2.wad
+pwad mm.wad
+pwad mmmus.wad

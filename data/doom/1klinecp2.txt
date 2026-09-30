@@ -1,0 +1,195 @@
+===========================================================================
+Archive Maintainer      : None
+Update to               : 
+Advanced engine needed  : None
+Primary purpose         : Single play
+===========================================================================
+Title                   : 1000 Lines 2 - Community Project 1.0
+Filename                : 1klinecp2.wad
+Release date            : 29/08/2020
+Author                  : Liberation and others
+Email Address           : [redacted]
+Other Files By Author   : Numerous.
+Misc. Author Info       : N/A
+
+Description             : A 34 map megawad made for vanilla Doom 2, made by the community with a strict line limit of 1000 lines. Using the power of Votex, a vanilla version of the OTEX texture pack by Ola Björling (ukiro). Carrying the story on from the last time, the player must fight through 3 new, exciting and totally infested worlds.
+
+- STORY - 
+
+After the last battle you found yourself being dragged through a portal to god knows where, your first stop is an industrial world that has long since fallen to the hordes of hell.. Time to grab that pistol (again) and get to work.
+
+Hopefully you can make it back to Earth.
+
+-END OF STORY-
+
+
+- Maps and Mappers -
+
+** Episode 1 - Industrial planet **
+Map01 - Severed Dreams By Liberation
+Map02 - Reprocessing By Pegleg
+Map03 - Milliphobia By antares031
+Map04 - Vedauwoo By Aquila Chrysaetos
+Map05 - Corrosion By StormCatcher
+Map06 - Wastewater Falls By Kaito
+
+** Episode 2 - Industrial planet - Subterrain ** 
+Map07 - Into the Dark By Liberation
+Map08 - Immortal Industry By Dragon Hunter
+Map09 - Stone Steel By Wolf McBeard
+Map10 - Subterraqueous By Nootrac4571
+Map11 - Deep But Not Profound By Phobus
+
+** Episode 3 - Ice planet **
+Map12 - Thirty Below by Dreadopp
+Map13 - Zero Degrees by Lord_Z
+Map14 - Negelida By Worm
+Map15 - Abstract Thoughts by DMPhobos
+Map16 - Cold Shoulder by Breezeep
+Map17 - Snow Frontier by Misty
+Map18 - Dour Tower by Jimmy 
+Map19 - The Crystalline Vault By Scotty
+Map20 - The Pale Helm By RonnieJamesDiner 
+
+** Episode 4 - Marble palace planet **
+Map21 - The Gardeners of Eden By AD_79
+Map22 - Tuama By Major Arlene
+Map23 - Oratory By Walter
+Map24 - Marblelous By Leo
+Map25 - Metamorphism By elend
+Map26 - Heavenly Gantlet By LowGcifer
+Map27 - THUNDERBASTARD By an_mutt
+Map28 - The Halls of Reckoning By Bridgeburner
+Map29 - Marble Tombstone By Bauul
+Map30 - Eldritch By RonnieJamesDiner
+
+** Secrets maps **
+Map31 - Crimson Complex By Dragonfly
+Map32 - Ephemeral By Aurelius
+
+** Bonus maps - IDCLEV 33 or 34 required for these levels **
+Map33 - Boreas By Aquila Chrysaetos
+Map34 - Horseshoe of Death By DJV
+
+** Project team leader - Liberation **
+
+Additional Credits to   :
+
+1K Lines 2 MIDIs:
+
+MAP01: 'Tomb of the Unknown King' - Brayden "AD_79" Hart
+MAP02: 'Salvation through Evisceration' - Brayden "AD_79" Hart
+MAP03: 'Cave Dwellers' - Tristan "Eris Falling" Clark
+MAP04: 'Moonlight' - Tristan "Eris Falling" Clark
+MAP05: MIDI of Terminator 2 theme
+MAP06: 'Quarantine' - Brayden "AD_79" Hart
+MAP07: 'Obfuscation' - Brayden "AD_79" Hart
+MAP08: 'Oblivious' - Brayden "AD_79" Hart
+MAP09: 'Lunar Eclipse' - Brayden "AD_79" Hart
+MAP10: 'Lion Heart' - Brayden "AD_79" Hart
+MAP11: 'Forest of Concrete' - Lexus Alyus
+MAP12: 'The Infinite Labyrinth' - Tristan "Eris Falling" Clark
+MAP13: 'Out of the Depths' - Bobby Prince
+MAP14: 'Cold Subtleness' - Jonathan El-Bizri
+MAP15: 'Lone Wanderer' - Brayden "AD_79" Hart
+MAP16: 'Call Doctor Birch, 0-800' - Augustus 'Alfonzo' Knezevich
+MAP17: 'dec16.mid' - Ribbiks
+MAP18: MIDI of 'Tower of Power' from 'Croc: The Legend of Gobbos', seq. by James "Jimmy" Paddock
+MAP19: 'Blizzard' - James "Jimmy" Paddock
+MAP20: 'The Revolution Continues' - Tristan "Eris Falling" Clark
+MAP21: 'Weightless' - Brayden "AD_79" Hart
+MAP22: 'Sombre Visions' - Tristan "Eris Falling" Clark
+MAP23: 'Enshrined' - Brayden "AD_79" Hart
+MAP24: 'Courtyard' - James "Jimmy" Paddock
+MAP25: 'Heliophobe' - Brayden "AD_79" Hart
+MAP26: MIDI of 'Wanderlust' by Nightwish
+MAP27: 'Dry Rot' by Mark Klem
+MAP28: 'Remnants of War' - Brayden "AD_79" Hart
+MAP29: 'The Occultist' - Tristan "Eris Falling" Clark
+MAP30: 'Abysswalker' - Brayden "AD_79" Hart
+MAP31: 'Rotted Roots' - James "Jimmy" Paddock
+MAP32: MIDI of 'Colony' by In Flames
+MAP33: 'Insomnia' - Brayden "AD_79" Hart
+MAP34: 'Forest of Concrete' - Lexus Alyus
+
+Title: '1000 Lines 2 Main Theme' - Tristan "Eris Falling" Clark
+Inter: 'Wandering Souls' - Brayden "AD_79" Hart
+Text: 'Insomnia' - Brayden "AD_79" Hart
+
+DMPhobos for all the graphic work, titlepic/credits/cwilvs and internal testing.
+
+Aquila Chrysaetos - for the new Invul palette and Zdoom decorate. Discord management, internal testing.
+
+Bridgeburner - Discord management - Streaming, internal testing.
+
+Misty - For internal testing and creating the Emapinfo.
+
+Everyone in the 1k discord that has helped with testing.
+
+ukiro for the awesome OTEX texture pack.
+
+Eris Falling and AD_79 for making the music list.
+
+Chaingunner for the new hud, additional credit to Iikka "Fingers" Keränen for the font.
+
+Big shout out to Alter for idgames upload :-)
+
+===========================================================================
+Using Votex for your own projects-
+
+I would recommend waiting for the stand alone version of Votex, it will include
+as much as possible from the new Otex 1.1 along with notes on the changes made
+regarding animated textures and switches. It will not include the extra bits
+made just for this project.
+===========================================================================
+* What is included *
+
+New levels              : 34
+Sounds                  : No
+Music                   : Yes 
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes - Map names etc, Zmapinfo and Emapinfo included.
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01 - Map32. Maps 33/34 bonus
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes - Coop is fully supported
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 8 Months
+Editor(s) used          : Slade3, GZDbuilder/UDB, Eureka and ZokumBSP.
+Known Bugs              : None at this time
+May Not Run With        : William Shatner's Tekwar
+Tested With             : Chocolate Doom, GZDoom, Eternity, Prboom+
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: 
+FTP sites: 

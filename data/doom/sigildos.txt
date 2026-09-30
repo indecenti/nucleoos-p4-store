@@ -1,0 +1,120 @@
+===========================================================================
+Primary purpose         : Single play
+Advanced engine needed  : None
+===========================================================================
+Title                   : SIGIL Vanilla DOOM (DOS) Editon
+Filename                : SIGILDOS.wad
+Release date            : v1.0: 2022/02/24
+Version                 : 1.0
+Author of original maps	: John Romero
+Modifications			: the_kovic
+Email Address           : [redacted]
+
+Description             : The original release of SIGIL by John Romero
+requires a limit removing sourceport. This modification of SIGIL v1.21
+simplifies level geometry to adhere to the limits of the DOOM.EXE
+version 1.9 (most notably the visplane and drawseg limits). Changes were
+made with the intention to keep the original level design and visuals
+as intact as possible. Despite that, there *are* changes and demos desync
+on the new maps.
+
+Original Credits to		: Technical Diligence and Testing:
+                               Boris Klimes
+                               Xaser
+                               Kurt Baumgardner
+                               Flambeau
+                               keyboard_doomer
+                               Ubergewei
+                          
+                          Artist:
+                               Christopher Lovell
+                          
+                          MIDI Music:
+                               James Paddock
+                          
+                          MP3 Music:
+                               Buckethead
+
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : No
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E5M1-E5M9 (SIGIL_v1_2.wad)
+                        : E3M1-E3M9 (SIGIL_COMPAT_v1_2.wad)
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+Multiplayer-only areas of the original maps were removed because I cannot
+guarantee their vanilla compatibility.
+
+
+* Construction *
+
+Base                    : Hell
+Build Time              : About two weeks
+Editor(s) used          : Ultimate Doom Builder
+May Not Run With...     : Versions of Doom prior to 1.9
+
+
+* Map Names *
+
+E5M1: "Baphomet's Demesne"
+E5M2: "Sheol"
+E5M3: "Cages of the Damned"
+E5M4: "Paths of Wretchedness"
+E5M5: "Abaddon's Void"
+E5M6: "Unspeakable Persecution"
+E5M7: "Nightmare Underworld"
+E5M8: "Halls of Perdition"
+E5M9: "Realm of Iblis"
+
+
+* MIDI Music Names *
+
+E5M1: Hate Machine
+E5M2: You Ain't the Boss O' Me
+E5M3: Quell the Beast
+E5M4: Riot Squadron
+E5M5: Alice
+E5M6: Besieged City
+E5M7: Watching You
+E5M8: Easel
+E5M9: Adrenaline in the Blood
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse without explicit permission of the original mappers.  Permissions
+have been obtained from original authors for any of their resources modified
+or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+Author (the_kovic) has obtained written permission from John Romero to share
+this modification of John Romero's work.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirror mazes
+

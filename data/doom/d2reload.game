@@ -1,0 +1,6 @@
+title Doom 2 Reloaded
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file d2reload.wad 15095574 73d5e70b0f4f3dc6ddf8a566e245bb0f987d07a5
+file d2reload.txt 38643 c2ab6fae1d11e134d7f10a70810230eb80738bc1
+iwad freedoom2.wad
+pwad d2reload.wad

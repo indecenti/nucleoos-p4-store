@@ -1,0 +1,6 @@
+title Scythe
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file scythe.wad 6215556 3ec1d6c5537f4204d48ce661182e7fbd044d5f6b
+file scythe.txt 5093 421f6710e97aa1d298f41fefc5c8ef70b80b69bb
+iwad freedoom2.wad
+pwad scythe.wad
