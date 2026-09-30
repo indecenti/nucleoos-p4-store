@@ -1,0 +1,157 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Drascula: The Vampire Strikes Back — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Drascula: The Vampire Strikes Back</h1><p class=desc>Avventura comica spagnola: John Hacker va in Transilvania a salvare la fidanzata dal vampiro Drascula. Con la colonna sonora del CD.</p><p class=meta>versione 1.0.0 · Licenza: Freeware (Alcachofa Soft) · <a href='https://www.scummvm.org/games/'>Sito del progetto</a></p></div></header><article><h1>Drascula: The Vampire Strikes Back</h1>
+<h2>A cosa serve</h2>
+<p>Avventura comica spagnola: John Hacker va in Transilvania a salvare la fidanzata dal vampiro Drascula. Con la colonna sonora del CD. (Alcachofa Soft, 1996.)</p>
+<h2>Come si usa</h2>
+<p>Nella pagina dello Store scegli la lingua, poi installa. Al primo avvio il gioco scarica i suoi file originali dal sito di ScummVM (70-104 MB, serve il Wi-Fi), li controlla e parte; le volte successive parte subito. Il download si può interrompere con il gesto Indietro: riprende da dove era rimasto. Gira con il motore ScummVM, che lo Store installa insieme al gioco.</p>
+<p>Lingue: English, Italiano, Espanol, Francais, Deutsch.</p>
+<p>Licenza: Freeware (Alcachofa Soft). I file sono quelli originali, non modificati.</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tocco</th>
+<th>Mouse</th>
+<th>Tastiera</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cammina / usa</td>
+<td>tocca il punto</td>
+<td>tasto sinistro</td>
+<td>–</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Esamina (tasto destro)</td>
+<td>tieni premuto, oppure tocco con due dita</td>
+<td>tasto destro</td>
+<td>–</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Sposta il puntatore</td>
+<td>trascina il dito</td>
+<td>muovi</td>
+<td>–</td>
+<td>croce o levetta sinistra</td>
+</tr>
+<tr>
+<td>Salta scena / dialogo</td>
+<td>tocco con tre dita</td>
+<td>–</td>
+<td>Esc</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Salta una frase</td>
+<td>–</td>
+<td>–</td>
+<td>. (punto)</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Menu del gioco (salva, carica)</td>
+<td>–</td>
+<td>–</td>
+<td>F5</td>
+<td>Back / Select</td>
+</tr>
+<tr>
+<td>Menu di ScummVM</td>
+<td>gesto Indietro</td>
+<td>–</td>
+<td>Ctrl+F5</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>Tastiera e mouse USB o Bluetooth funzionano insieme al touch, appena li colleghi. Con la tastiera puoi scrivere i nomi dei salvataggi.</p>
+<h2>Salvataggi</h2>
+<p>Ogni gioco salva nella sua cartella: dal menu di ScummVM (gesto Indietro) scegli <strong>Save</strong> o <strong>Load</strong>. Disinstallando il gioco i salvataggi si perdono.</p>
+<h2>Problemi comuni</h2>
+<ul>
+<li><strong>Il download si ferma</strong>: controlla il Wi-Fi e riapri il gioco, riprende da dove era rimasto.</li>
+<li><strong>Nessun suono</strong>: un'altra app (per esempio Musica) sta usando l'altoparlante. Chiudila, l'audio torna da solo in pochi secondi.</li>
+<li><strong>Voglio cambiare lingua</strong>: nella pagina del gioco nello Store scegli un'altra lingua. Al prossimo avvio il gioco scarica i file di quella lingua.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Drascula: The Vampire Strikes Back</h1><p class=desc>Spanish comedy adventure: John Hacker travels to Transylvania to rescue his girlfriend from the vampire Drascula. With the CD soundtrack.</p><p class=meta>version 1.0.0 · License: Freeware (Alcachofa Soft) · <a href='https://www.scummvm.org/games/'>Project site</a></p></div></header><article><h1>Drascula: The Vampire Strikes Back</h1>
+<h2>What it is for</h2>
+<p>Spanish comedy adventure: John Hacker travels to Transylvania to rescue his girlfriend from the vampire Drascula. With the CD soundtrack. (Alcachofa Soft, 1996.)</p>
+<h2>How to use it</h2>
+<p>Pick the language on the Store page, then install. On first start the game downloads its original files from the ScummVM website (70-104 MB, Wi-Fi needed), checks them and starts; after that it starts straight away. The Back gesture stops the download: it resumes where it stopped. It runs on the ScummVM engine, which the Store installs together with the game.</p>
+<p>Languages: English, Italiano, Espanol, Francais, Deutsch.</p>
+<p>Licence: Freeware (Alcachofa Soft). The files are the original ones, unmodified.</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Touch</th>
+<th>Mouse</th>
+<th>Keyboard</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Walk / use</td>
+<td>tap the spot</td>
+<td>left button</td>
+<td>–</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Examine (right button)</td>
+<td>press and hold, or two-finger tap</td>
+<td>right button</td>
+<td>–</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Move the pointer</td>
+<td>drag your finger</td>
+<td>move</td>
+<td>–</td>
+<td>D-pad or left stick</td>
+</tr>
+<tr>
+<td>Skip scene / dialogue</td>
+<td>three-finger tap</td>
+<td>–</td>
+<td>Esc</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Skip one line</td>
+<td>–</td>
+<td>–</td>
+<td>. (period)</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Game menu (save, load)</td>
+<td>–</td>
+<td>–</td>
+<td>F5</td>
+<td>Back / Select</td>
+</tr>
+<tr>
+<td>ScummVM menu</td>
+<td>Back gesture</td>
+<td>–</td>
+<td>Ctrl+F5</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>USB or Bluetooth keyboards and mice work together with touch as soon as you plug them in. With a keyboard you can type save names.</p>
+<h2>Saves</h2>
+<p>Each game saves in its own folder: from the ScummVM menu (Back gesture) choose <strong>Save</strong> or <strong>Load</strong>. Uninstalling the game deletes its saves.</p>
+<h2>Common problems</h2>
+<ul>
+<li><strong>The download stops</strong>: check Wi-Fi and open the game again, it resumes where it stopped.</li>
+<li><strong>No sound</strong>: another app (Music, for example) is using the speaker. Close it, sound comes back on its own within a few seconds.</li>
+<li><strong>I want another language</strong>: pick it on the game's Store page. On the next start the game downloads the files of that language.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
