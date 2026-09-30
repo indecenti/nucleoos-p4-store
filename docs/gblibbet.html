@@ -1,0 +1,143 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Libbet — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Libbet e il pavimento magico</h1><p class=desc>Libbet and the Magic Floor di Damian Yerrick (zlib): rompicapo per Game Boy, fai rotolare le mattonelle per completare ogni stanza.</p><p class=meta>versione 1.0.0 · Licenza: zlib (game), MIT (emulator) · <a href='https://github.com/pinobatch/libbet'>Sito del progetto</a></p></div></header><article><h1>Libbet</h1>
+<p><em>Libbet and the Magic Floor</em>, rompicapo per Game Boy di <strong>Damian Yerrick</strong>. Libbet rotola nella cantina e ogni piastrella che attraversa si gira: girale tutte. Croce per rotolare, A + direzione per saltare. I testi del gioco sono in inglese.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT). Testi delle licenze:</p>
+<h3>Libbet and the Magic Floor</h3>
+<p>https://github.com/pinobatch/libbet</p>
+<pre><code>Copyright (c) 2018, 2024 Damian Yerrick
+Portions copyright (c) 2002, 2012 Martin Korth
+
+This software is provided 'as-is', without any express or implied warranty. In no event will the
+authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to alter it and redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software in a product, an acknowledgment in the product
+   documentation would be appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be misrepresented as being
+   the original software.
+3. This notice may not be removed or altered from any source distribution.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Libbet and the Magic Floor</h1><p class=desc>Libbet and the Magic Floor by Damian Yerrick (zlib): a Game Boy puzzle game, roll the floor tiles to clear each room.</p><p class=meta>version 1.0.0 · License: zlib (game), MIT (emulator) · <a href='https://github.com/pinobatch/libbet'>Project site</a></p></div></header><article><h1>Libbet</h1>
+<p><em>Libbet and the Magic Floor</em>, a Game Boy puzzle game by <strong>Damian Yerrick</strong>. Libbet rolls through the basement flipping every tile she crosses: flip them all. D-pad to roll, A + direction to jump.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license). License texts:</p>
+<h3>Libbet and the Magic Floor</h3>
+<p>https://github.com/pinobatch/libbet</p>
+<pre><code>Copyright (c) 2018, 2024 Damian Yerrick
+Portions copyright (c) 2002, 2012 Martin Korth
+
+This software is provided 'as-is', without any express or implied warranty. In no event will the
+authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to alter it and redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software in a product, an acknowledgment in the product
+   documentation would be appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be misrepresented as being
+   the original software.
+3. This notice may not be removed or altered from any source distribution.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

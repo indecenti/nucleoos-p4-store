@@ -5,6 +5,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | App | Id | Author | License | Source |
 |---|---|---|---|---|
 | 2048 | `2048` | Peter Hellberg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/2048) |
+| 2048 (Game Boy) | `gb2048` | Sanqui (game), tiles by beware; Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/Sanqui/2048-gb) |
 | A Simple Space Invaders game | `simple-space-invaders` | LogicProjects | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/simple-space-invaders) |
 | ABC 123 | `abc123` |  |  |  |
 | Annoying Robots | `annoyingrobots` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/annoyingrobots) |
@@ -41,6 +42,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | FULL STEAM AHEAD TO THE RESCUE | `full-steam-ahead-to-the-rescue` | lluq | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/full-steam-ahead-to-the-rescue) |
 | Future Avoid | `future-avoid` | Joakim Hentula | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/future-avoid) |
 | Fuzzy World Cup | `fuzzy-world-cup` | Damian Girardi, Sebastian Alvarez | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fuzzy-world-cup) |
+| Game Boy | `gameboy` | Peanut-GB by Mahyar Koshkouei, MiniGB APU by Alex Baines; NucleoOS | MIT | [link](https://github.com/deltabeard/Peanut-GB) |
 | Game of Life | `game-of-life` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life) |
 | Game of Life: Zig Edition | `game-of-life-zig-edition` | David Roman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life-zig-edition) |
 | Glitch Dungeon | `glitch-dungeon` | jakeonaut, Wormi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glitch-dungeon) |
@@ -64,6 +66,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Lake Shooter | `lakeshooter` | Jimmy Cartrette | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lakeshooter) |
 | Last Train Home | `last-train-home` | Reuben Dunnington | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/last-train-home) |
 | Lava Hop! | `lava-hop` | Cannon Tuttle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lava-hop) |
+| Libbet and the Magic Floor | `gblibbet` | Damian Yerrick (game); Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/pinobatch/libbet) |
 | Lime Volleyball | `lime-volleyball` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lime-volleyball) |
 | Lingword | `lingword` | Jonathan Derque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lingword) |
 | Lua | `lua` | Lua.org, PUC-Rio | MIT | [link](https://www.lua.org) |
@@ -147,6 +150,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Timer | `timer` |  |  |  |
 | Tiny Pong | `tinypong` | Ztry8 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tinypong) |
 | TO THE CORE | `to-the-core` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/to-the-core) |
+| Tobu Tobu Girl | `gbtobu` | Tangram Games (sound by potato-tan); Peanut-GB by Mahyar Koshkouei | MIT (game code, emulator), CC BY 4.0 (game graphics, text and music) | [link](https://github.com/SimonLarsen/tobutobugirl) |
 | Totally not sumo | `totally-not-sumo` | André L. Alvares | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/totally-not-sumo) |
 | Touhou Spirits | `touhou-spirits` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/touhou-spirits) |
 | Train! | `train` | Davidian1024 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/train) |

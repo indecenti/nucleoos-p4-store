@@ -1,0 +1,115 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Game Boy — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Game Boy</h1><p class=desc>Lettore Game Boy (Peanut-GB, MIT): gioca i tuoi .gb da /sdcard/home/roms con comandi touch, gamepad, suono e salvataggi. Giochi homebrew gratuiti: hh.gbdev.io.</p><p class=meta>versione 1.0.0 · Licenza: MIT · <a href='https://github.com/deltabeard/Peanut-GB'>Sito del progetto</a></p></div></header><article><h1>Game Boy</h1>
+<p>Un emulatore del <strong>Game Boy</strong> originale (DMG). Gioca i file <code>.gb</code> che copi nella cartella <strong>/sdcard/home/roms</strong>: giochi homebrew liberi (per esempio da <a href="https://hh.gbdev.io">Homebrew Hub</a>) o le copie delle tue cartucce.</p>
+<h2>Aggiungere i giochi</h2>
+<p>Copia i file <code>.gb</code> in <strong>/sdcard/home/roms</strong> con l'app File o dal web companion (la cartella viene creata al primo avvio). Tocca un gioco nella lista, oppure sceglilo con la croce del gamepad e premi A. Massimo 4 MB per gioco. I giochi <strong>solo Game Boy Color</strong> non sono supportati; quelli compatibili con entrambe le console funzionano, in bianco e nero.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Altro gioco</strong> torna alla lista. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Salvataggi</h2>
+<p>I giochi con la batteria nella cartuccia salvano come sul Game Boy: il file <code>&lt;nome&gt;.sav</code> compare accanto al gioco in /sdcard/home/roms pochi secondi dopo il salvataggio e quando esci.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT). Testi delle licenze:</p>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Game Boy</h1><p class=desc>Game Boy player (Peanut-GB, MIT): plays your own .gb games from /sdcard/home/roms with touch controls, gamepads, sound and battery saves. Homebrew: hh.gbdev.io.</p><p class=meta>version 1.0.0 · License: MIT · <a href='https://github.com/deltabeard/Peanut-GB'>Project site</a></p></div></header><article><h1>Game Boy</h1>
+<p>An emulator of the original <strong>Game Boy</strong> (DMG). It plays the <code>.gb</code> files you copy to <strong>/sdcard/home/roms</strong>: free homebrew games (for example from <a href="https://hh.gbdev.io">Homebrew Hub</a>) or backups of your own cartridges.</p>
+<h2>Adding games</h2>
+<p>Copy <code>.gb</code> files to <strong>/sdcard/home/roms</strong> with the Files app or the web companion (the folder is created on first start). Tap a game in the list, or pick it with the pad's D-pad and press A. Up to 4 MB per game. <strong>Game Boy Color only</strong> games are not supported; dual-mode ones work, in black and white.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Other game</strong> goes back to the list. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Saves</h2>
+<p>Games with a battery in the cartridge save as on a Game Boy: <code>&lt;name&gt;.sav</code> appears next to the game in /sdcard/home/roms a few seconds after the game saves, and when you leave.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license). License texts:</p>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

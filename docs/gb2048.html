@@ -1,0 +1,145 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>2048 GB — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>2048 (Game Boy)</h1><p class=desc>2048 per Game Boy di Sanqui (zlib), sull&#x27;emulatore Peanut-GB. Fai scorrere le tessere fino a 2048. Record salvato.</p><p class=meta>versione 1.0.0 · Licenza: zlib (game), MIT (emulator) · <a href='https://github.com/Sanqui/2048-gb'>Sito del progetto</a></p></div></header><article><h1>2048 GB</h1>
+<p>Il 2048 per il Game Boy originale, di <strong>Sanqui</strong> (grafica delle tessere di beware). Fai scorrere tutte le tessere con la croce direzionale: due tessere uguali si uniscono. Arriva a 2048.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Salvataggi</h2>
+<p>La cartuccia ha la batteria: i record restano salvati tra una partita e l'altra.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT). Testi delle licenze:</p>
+<h3>2048-gb</h3>
+<p>https://github.com/Sanqui/2048-gb</p>
+<pre><code>Copyright (c) 2014 &quot;Sanqui&quot;
+
+This software is provided 'as-is', without any express or implied warranty. In no event will the
+authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to alter it and redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software in a product, an acknowledgment in the product
+   documentation would be appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be misrepresented as being
+   the original software.
+3. This notice may not be removed or altered from any source distribution.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>2048 (Game Boy)</h1><p class=desc>2048 for the Game Boy by Sanqui (zlib), on the Peanut-GB emulator. Slide the tiles, reach 2048. High score saved.</p><p class=meta>version 1.0.0 · License: zlib (game), MIT (emulator) · <a href='https://github.com/Sanqui/2048-gb'>Project site</a></p></div></header><article><h1>2048 GB</h1>
+<p>2048 for the original Game Boy by <strong>Sanqui</strong> (tile graphics by beware). Slide every tile with the D-pad: two equal tiles merge. Reach 2048.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Saves</h2>
+<p>The cartridge has a battery: high scores stay saved between sessions.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license). License texts:</p>
+<h3>2048-gb</h3>
+<p>https://github.com/Sanqui/2048-gb</p>
+<pre><code>Copyright (c) 2014 &quot;Sanqui&quot;
+
+This software is provided 'as-is', without any express or implied warranty. In no event will the
+authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial
+applications, and to alter it and redistribute it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim that you wrote the
+   original software. If you use this software in a product, an acknowledgment in the product
+   documentation would be appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be misrepresented as being
+   the original software.
+3. This notice may not be removed or altered from any source distribution.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
