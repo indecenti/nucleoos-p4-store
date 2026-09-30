@@ -1,0 +1,119 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Rex Run — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Rex Run</h1><p class=desc>Rex Run di el_seyf (2019): una versione per Game Boy, quasi identica, del gioco del dinosauro di Chrome. Salta i cactus ed evita gli uccelli il più a lungo possibile. GPL-3.0 (github.com/elseyf/rex-run-gb).</p><p class=meta>versione 1.0.0 · Licenza: GPL-3.0 (game); MIT (emulator) · <a href='https://github.com/elseyf/rex-run-gb'>Sito del progetto</a></p></div></header><article><h1>Rex Run</h1>
+<p>Una versione per Game Boy (quasi) fedele del gioco Rex Run di Chrome, di <strong>el_seyf</strong> (2019). Il dinosauro corre da solo: salta i cactus ed evita gli uccelli, il gioco accelera man mano che il punteggio sale.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Rex Run di el_seyf, GPL-3.0. Basato sul gioco del dinosauro del progetto Chromium.</p>
+<p>La ROM è quella originale, non modificata, dal database Homebrew Hub (https://hh.gbdev.io/game/rex-run-v1-0).</p>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT).</p>
+<p>Testi delle licenze:</p>
+<h3>Rex Run</h3>
+<p>https://github.com/elseyf/rex-run-gb</p>
+<p>Licenza <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License, versione 3</a> (GPL-3.0). Il codice sorgente completo è nel repository indicato sopra.</p>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAOKElEQVR42u2cCXAUVRrHJyRsBJVFARFvXZX12GJLFKpEFKVYC0vLa3HddXdVPNYFdhfBW3TwQhBBQEgkJwHCESDkhJCgMSQhBzlmMpNJZpJJJsnM5Jokk3OSOfq/73uTHoaQhIQNrphO1Zfpd/R73b9+33tff939yWTn+QdgTCpS/eSpcj+ZXDZGdvH9+TDxpeOPQpRvb/rC/1FnDN5ZnVmgmwC0TGRlXFpQObEShZ40ybnStA+Jp7ylkNcZaaHj9P/VWNmYMadPw8fHhwbFhQPpBif3jLQ2GO7MsiS+HKFaH56kj0wzdCsbdZ251qSKyJYEfYRV255tZXnWH2sOWWO0oVZFc6q1pkdlzapLZOkQ68naeJ7OrjtiTaqMtB6v2mc12AqtmrZM60FNIK9H5RVdBdZKlj9SYrApWqptRS1rg9fmPv7nZ6ODDgcsr7YXzqLR6KVdviMKz7tBEzQLzM7iZKNd7Ui3RMMEFSKK10FpTUV6bQzUbSdwoDQAx6p2Q9WWhqyGBKTVRiNS/Q0Kmo8jTh8GTXsGAk7JUWY7heSqSMSUBSGkcA20nVmoQym+zf4QseUhsKAc1Q4ljE71iEh1TxFaUYE9xyMQmRKB4MOB+NPSxYjJjsLLK98oAiyL5VHyX4lTVH+aNlxwPuKoM9iU82udJcn17AQtKAO7mojVhjjNzhJHQLbcyUaMkGLYJ5R3nhIOlWwXDpcGCacajgk59UeFnIajQkjeF0KGOU6IZvnsRIRNGe8LeZYUIalit6DvzBMCclYLmeZ4oRHlwtasj4SDJd8JrD9B35UvsL5GRPQd+UIzyoTAg9uE6PS9zn2pO52zFz7qCIsPEv716Uo0sQt29R2/UyUpYhZ7NC8qyvc84Z1W15L2zNVe4FxMnAQht+EYYnWhiNYGgZ0o1NZ0JOp3IkoTgKKWH8HUD8mGvTjA0pnmOA49teYgr8/AoapbiTRjNI7oI8DAQtuRA5NDg6jibThetR9mp4bvY+hWjIhQWzVsFKobTuKLoDV4dfnrCI3bjorGQmzctcG1fNVS50dbVqMNVTiSe3h/RMq3k9wshglRhKe2Jl1pthcnWVFJB8DBeR8QqQQ/KLsaVT1Knhbzq+0qnkeQKM9dp8izj9FrnwpbAS/nZd2Fnu2RAncGRNa+0dl7bEzqoIHRoYLJpeYXvAGlLpbvaIYetY4Snb4z975hzYtutYWPpjVnkrFHnUtXo9KmsPd/QIWeg+rvQAdN2wYu76+9EYXo1XdFVyFPkxBQgthbx9EIHUFs1ncWiBDHDHnBqOpWpBA81oH9Qp7Mz1kYTCdNXUxb6vXtWVO914RB4elt+atbYaCrMGrheSCykUiLS2WXIoXgDajKYgGj/lC9SyuwucvJbCaMdoAiRD6VdRV8MOB8KOo3A5hKxCv6LBijWcgEMjmK2eJS1GSEZpK4TnjBcy/Tlba8hxtcWtpJgnc2REcrs0bY7+qzRqHb6paPMXQpfui19SSA/YxCo0MtsJXaUt6uuIpumfko9Khuq3I6q+Aw9CgECdhAc2GBk2ziyp7Cl3oHnp/7H6kvy2xhxqM0+gYbhQpHCypogIUTM3Lnuf8RwO7CnayQV5JgDQjQVesqAbNOdGzg+XMVFv17ld2KTLK8WSVpBA4yD9Y41XTf35FaGjfZs4jokfdrZrZYTM5iXkmCNfAtoMlV7CqqT3fd/8isuR6A3FNrK2wln5kEcEgAMevBmQ/3BWiVAA4d4OyHZs6TAA7fuUCebQng+fgQydVFzt4GlEkAhwpN9BOSg7esMxfpphjkNSW7VPUZmDN/tgRwsLmOPOImRzGMTEraTiLFsA8Z5jicbIh3xarCMXOONAIHlFpnCUrbs5DbkISsugR8X72f5SvRxG40GpkKH9PuYwBnSADPVlsFf24TqwtBeOE6HCwJ5NvZ9YkcZLopFjmNR1wpuigJYP+i5A+4TjJYWXWJyGtM5qMwszbeLUyFcy1JbATuxYw5d0kABxJabUlo/qN5kB6vktA2qXCJJUdahc+1iPQnoh2orDshAZTuRCSAEkAJ4M8doDhxk3hP5N4yki8f/aIA0r2oWShmN+9aZjpoUQsNF0o3oLRXtLzOhX6X5qIDSC/8mJ3F+F6dgAXPPY05jy/EEy89j8f+9hweYNtzn3ocDz39BBYseorXobq0jwSwV8o78vmbpMs/fxsymT+Ty/Hky3/B5j2bIPObiHHTbobs0im8bPlnb/G6tI8E8AyAery19j1cOnkaon7cjTJrHtphwO/nPYQdR0KwMXwD/MdNxLvrP4CV1ZUA9gHYwWAtfvufWPbJSg7w0eefwQcbP4LPuMm4acY90Dfm47V3l+KVd5byuhLAAQAukb+JxFOHcPWtd2Dq9Lsx5bY7cfu9s1DWkCcBHIoKj580DYdO7EGROROZ5cnI0CVB13wKn275jKnwFZIKn3sRGQvZhKsx8cbbMeGG27hcfv2tkI2fLC0iQzJjmKnyIDNb5jyx0Esew7xnJDNmyIY0Gc2NvQa1KJIhPcxbuYFEupWTnAkSQAmgBFACKAGUAEoAJYASQAmgBPCcAOmmXd9ZwCSfe0BoWwI4DID0iTx9T9KCcu5GakIZDD0SwHMC5Dv3qHEgLRKfbFqN9zas4r649TvWo8qmlAAOBpB2JLdRdsVxrFjzDlJPJWDmgvmQyS6BbNxkRGfsRaNQ+otX52EBFN8E8AaYY/geC1/4I95bswp3PTAXl11zC/wmX4d9P+yEBdrRC7AKRVdUdBW0iQB56BGnCtX2Is/b6lVsnitpzsHEW6bzZ7OycVO4q13mOxF7v48YVQCVdemYNfeeRzg8OQ+kkOrHQOU3CFpaZV1GuwqK2nQUW7L4/EarbRtbMFKLE3HlTbfDf+qN/M2A+c8+ia/Cv0JpUw6qu5U/qXPz//bRtVMtlLXndX227cPrZZ5vXim0U48imoLN6DvynbTChsR+h8+/+wI9MHIX+kcb5bhm+t245KobMHby9fh4sxxVnQq+CosjdTR8rWl20SMEhQnAOBlkPrI85I3l86C9cDl9jc0AOgjK7uRwXDJxGkIOb8fb696HzH8SfCddh/HX/ga+V16Lp195AUfzomG2q0eNLUgfozehXKDB5hl84if/FJ3H7NQI5Z35Qp1Lg2RFLB9pssunQsZAjp92My699haMu+pGXHfXDGTqkvnIHGWGtIPH0+lWrCBm4uDjwRN0Op2/wabQ1LtKhfKOPFcTM5ZXbZJDNn4Kxl9zM5fL6HmszwR8uPljbkSzuWA03cpRwAnB5FB3G7sVt58RCsoT7qmn4EX67J+CK9AtG0F8e+37uGQKm/eYyC6bivmLnkRNZ9EvfsHo5xbWSWzYLWzEWRHdwMYVhT3R6Y74M/0uraO4fZ0FLq01F52owqvvLMHCvy7CV2HrsOyTFfixMJGHkfspHmb3Z0qQVTDSF5AekQ7ydoPAFkqn2VHcXdGdO13GefUJRHZ6FCr+3sb03OhQUYQKbr58uOVjrGPwAg8H4qUV/0DEsRD+NgCpcAWbA38SoRPszOeh6+g1N/qlNH8+/D+2S7EP6UF9uzvMH5/XPe26wbpDP9kKdwwaCo8KiGwdNAeVtZl45T+vOjLYYmFjpsw3uzfigT/Mw64jYdy0sTD1ptWafpvZb19p6i3vv8xd3jxAeX9C/ZA2nNSn4NWVr/NfSvft3zKMdsXjJ3A7j4bijVX/5vEOrdxJohPbc7ELJhjtan1pW97kQUODijGh6M5kbejaisjDoVgTvMa5Pz4cwTHfwXfCVVjy8XIkpB/E9ugA7DoWzt/dC0sIQnhisEcoHZmyAxFHQtl2b36CWBbM86m8b5lHEvoIy9tBEh/MDffgvdv4L6XPqM+297B2++b122aC+1h2xodhy65N+DLkSwTs34qvI77G7oRQsdwVnhDiik7bJygsJ2YPKYagWKERJfc6UNdc1pqP4ENbHSnKOPgys+b195dxgGFxwdwTs0z+JnYdDXNDZJ1SSM2dDNBngZ8j4MC3iDgaesZBU5ryqZzqhcUHeU5QbOMsAFTG6gXHBEJZn8E0ogZF7JfS3pBof/nWT864oLz9hP4h7kgMQWjsdkRn7kU9Svh7hqmaRISyqSosMcjJLrSwPyUSi5a8+Npwo1jyirnmlPvqoTWDWXz6jgLHnCcWCht3beAqTFGOtK2nkKyM5SYNvaNHdyQxJ/cjt/IHaCzZqHGoeH6Tl8pQmvJLLTnI0B7jcwzNs6RKKawtb9UW65MPck3wlxwazVXa1lxeLy77AGKzojhQcUopMKV5+hMj9tLn+qLv8mxVLuf2bCV3FOejFsUCq+foRDW62EoANLzm5zvGE+FpGHFU3cu0piFtmqFLmUQGJHXGJm8Hm1QF6qzaTjFIS3jHfDImT3WH21NNk3ylrXdC9hJKUz5fBHo92mK+3ivdd59ytmBRP5U2TxQhvj+JWMf9MaDKcyyUXz5Am95tc2vCphAYRCet7rR4GntUOlXTiTncXyCX+51XJN8oL1vHaFetqulR1/PGnWpuF5FlTuZOb5jhs75sHOirx6GU9xUKBjmUesNoV2Bt8sC6dB7kbaJzM9mLe5i5EkYxZEckKLd3sEGKI2pyFK9mUked8Ui3bASS64vcPG5Ru05vD1fUwyxTD6G//svpmMnHScEmyQdgsqu7Gbyw6h7F3X3XgxGPZq5H0dRaZ8li1mE4W9411TaltaguHeRovCiEHWtZW15Xjb2ouqZHFd3gLF1u6i76bR9zbuRj6veORt++YDWanEn3PzhrLnlpLwqZM3Pe2s3y64DqcX3n/REddYOBJFeO6Eu8mP96R5vf+YL7L7eQ2VzdDa+FAAAAAElFTkSuQmCC' alt=><div><h1>Rex Run</h1><p class=desc>Rex Run by el_seyf (2019): a mostly faithful Game Boy port of the dinosaur runner game from Chrome. Jump over the cacti and avoid the birds for as long as you can. GPL-3.0 (github.com/elseyf/rex-run-gb).</p><p class=meta>version 1.0.0 · License: GPL-3.0 (game); MIT (emulator) · <a href='https://github.com/elseyf/rex-run-gb'>Project site</a></p></div></header><article><h1>Rex Run</h1>
+<p>A (mostly) faithful Game Boy port of the Rex Run game from Chrome, by <strong>el_seyf</strong> (2019). The dinosaur runs by itself: jump over the cacti and avoid the birds, the game speeds up as your score grows.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Rex Run by el_seyf, GPL-3.0. Based on the dinosaur game of the Chromium project.</p>
+<p>The ROM is the original, unmodified, from the Homebrew Hub database (https://hh.gbdev.io/game/rex-run-v1-0).</p>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license).</p>
+<p>License texts:</p>
+<h3>Rex Run</h3>
+<p>https://github.com/elseyf/rex-run-gb</p>
+<p>Licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License, version 3</a> (GPL-3.0). The complete source code is in the repository linked above.</p>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

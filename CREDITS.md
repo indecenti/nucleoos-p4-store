@@ -6,25 +6,34 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 |---|---|---|---|---|
 | 2048 | `2048` | Peter Hellberg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/2048) |
 | 2048 (Game Boy) | `gb2048` | Sanqui (game), tiles by beware; Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/Sanqui/2048-gb) |
+| 5 Mazes | `gbh-5-mazes` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-Mazes) |
+| 5 Mazes: Master Levels | `gbh-5-mazes-master-levels` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-mazes-Master-levels) |
+| 5 More Mazes | `gbh-5-more-mazes` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-more-mazes) |
 | A Simple Space Invaders game | `simple-space-invaders` | LogicProjects | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/simple-space-invaders) |
 | ABC 123 | `abc123` |  |  |  |
+| AIRPLANZ | `gbh-airplanz` | NotImplementedLife; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/NotImplementedLife/AIRPLANZ) |
 | Annoying Robots | `annoyingrobots` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/annoyingrobots) |
 | Antcopter | `antcopter` | Eduardo Bart | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/antcopter) |
 | Apple Game | `apple-game` | João Gabriel de Campos Nassar | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/apple-game) |
 | Assemblio | `assemblio` | Philipp Lühmann | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/assemblio) |
 | BASIC | `basic` | Adam Dunkels (uBASIC), Nucleo port | BSD-3-Clause | [link](https://github.com/adamdunkels/ubasic) |
 | Big Space Iron | `big-space-iron` | kzerot | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/big-space-iron) |
+| Big2Small | `gbh-big2small` | Matthew D. Steele (mdsteele); Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (game); MIT (emulator) | [link](https://github.com/mdsteele/big2small) |
+| Bit Bang | `gbh-bit-bang` | StudioGuma; Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (code), CC BY-SA 4.0 (assets) (game); MIT (emulator) | [link](https://github.com/StudioGuma/bit_bang) |
 | Bombfighters | `bombfighters` | Patbox | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bombfighters) |
 | Break-It | `break-it` | douglett | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/break-it) |
 | Bubblewrap | `bubblewrap` | Henrik Zenkert | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bubblewrap) |
 | Cannon | `cannon` |  |  |  |
+| Carazu | `gbh-carazu` | Martin Holtkamp; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/mholtkamp/carazu) |
 | Chess | `chess` | NucleoOS | MIT | [link](https://github.com/gissio/mcu-max) |
 | CHIP-8 Arcade | `chip8` | NucleoOS; games by the CHIP-8 Community Archive authors | CC0 (games), PolyForm Noncommercial (interpreter) | [link](https://github.com/JohnEarnest/chip8Archive) |
 | comic-sans | `comic-sans` | Eduardo Minholi, Nuno Abilio | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/comic-sans) |
 | Cosmic Hopper | `cosmic-hopper` | Bernardo Wilchen de Oliveira | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-hopper) |
 | Cosmic Inw4ders | `cosmic-inw4ders` | Pierro | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-inw4ders) |
+| CrossConnect | `gbh-crossconnect` | Quinn Painter; WitchFont8 by Lavenfurr; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/QuinnPainter/CrossConnect) |
 | Customizable Pong | `custom-pong` | UnusualEgg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/custom-pong) |
 | Dashy Dango | `dashy-dango` | samX500 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dashy-dango) |
+| Dashy no Witch | `gbh-dashy-no-witch` | voxel; Peanut-GB by Mahyar Koshkouei | 0BSD (game); MIT (emulator) | [link](https://voxel.itch.io/dashy-no-witch) |
 | Devices | `devices` | NucleoOS | MIT |  |
 | disk-0 MADNESS | `disk-0-madness` | Max Curzi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/disk-0-madness) |
 | Dodgeball | `dodgeball` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dodgeball) |
@@ -42,9 +51,11 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | FULL STEAM AHEAD TO THE RESCUE | `full-steam-ahead-to-the-rescue` | lluq | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/full-steam-ahead-to-the-rescue) |
 | Future Avoid | `future-avoid` | Joakim Hentula | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/future-avoid) |
 | Fuzzy World Cup | `fuzzy-world-cup` | Damian Girardi, Sebastian Alvarez | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fuzzy-world-cup) |
+| Game (Boy) of Life | `gbh-game-boy-of-life` | StudioGuma; Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (code), CC BY-SA 4.0 (assets) (game); MIT (emulator) | [link](https://github.com/StudioGuma/game_boy_of_life) |
 | Game Boy | `gameboy` | Peanut-GB by Mahyar Koshkouei, MiniGB APU by Alex Baines; NucleoOS | MIT | [link](https://github.com/deltabeard/Peanut-GB) |
 | Game of Life | `game-of-life` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life) |
 | Game of Life: Zig Edition | `game-of-life-zig-edition` | David Roman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life-zig-edition) |
+| GB-Wordyl | `gbh-gb-wordyl` | bbbbbr (based on the original by stacksmashing); Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/bbbbbr/gb-wordyl) |
 | Glitch Dungeon | `glitch-dungeon` | jakeonaut, Wormi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glitch-dungeon) |
 | Glowfish Chess | `glowfish-chess` | Analog Hors | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glowfish-chess) |
 | Glulxe | `glulxe` | Andrew Plotkin (Glulxe, CheapGlk) | MIT | [link](https://github.com/erkyrath/glulxe) |
@@ -59,6 +70,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | JavaScript | `js` | QuickJS-ng project (Bellard, Gordon, contributors) | MIT | [link](https://github.com/quickjs-ng/quickjs) |
 | Journey to Entorus | `journey-to-entorus` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/journey-to-entorus) |
 | Journey to the Steam Planet | `journey-to-the-steam-planet` | QuaternionWake | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/journey-to-the-steam-planet) |
+| JP | `gbh-jp` | Graham Coulby (IonicLimb); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/gcoulby/JP) |
 | JSON | `cjson` | Dave Gamble and cJSON contributors | MIT | [link](https://github.com/DaveGamble/cJSON) |
 | Jump 'n' Shoot | `jump-n-shoot` | Matheus Foltran Consonni | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/jump-n-shoot) |
 | Kitty Game | `kittygame` | Cannon Tuttle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/kittygame) |
@@ -96,6 +108,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | panelpon4 | `panelpon4` | CanyonTurtle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/panelpon4) |
 | Particle Editor v1.0 | `particle-editor` | Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/particle-editor) |
 | Pega-Pega: the game | `pega-pega-the-game` | Ana Paula Crippa, Maria Eduarda Polican | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pega-pega-the-game) |
+| Pelmanism | `gbh-pelmanism` | TeamKNOx (Osamu Ohashi); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://gitlab.com/teamknox/gbccardgame) |
 | PHANTOM SHIFT | `phantom-shift` | Sergey Poznyak | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/phantom-shift) |
 | Pianino | `pianino` |  |  |  |
 | Piano | `piano` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/piano) |
@@ -107,6 +120,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Pl¢tfarmer | `plctfarmer` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/plctfarmer) |
 | Pomodoro Desk Hub | `deskhub` |  |  |  |
 | Pong | `pong` | Fabrizio Vitale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pong) |
+| PostBot | `gbh-postbot` | Tobias Rojahn; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/MasterIV/PostBot) |
 | Presents to the Metal | `presents-to-the-metal` | errorStream | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/presents-to-the-metal) |
 | Projectron | `projectron` | James McMurray | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/projectron) |
 | Punch'Em Up | `punch-em-up` | Louis Pearson | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/punch-em-up) |
@@ -114,12 +128,16 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Puzzles | `puzzles` | Simon Tatham et al. | MIT | [link](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/) |
 | Racer | `racer` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/racer) |
 | Raw Assembly Test | `raw-assembly` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/raw-assembly) |
+| Rex Run | `gbh-rex-run` | el_seyf; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/elseyf/rex-run-gb) |
+| Rex Runner GB | `gbh-rex-runner` | The Void (etdv-thevoid); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/etdv-thevoid/rex-runner-gb) |
 | Rolly Dango | `rolly-dango` | William Guimont-Martin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rolly-dango) |
 | Rubido | `rubido` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rubido) |
 | Samurai Revenge | `samurai-revenge` | Krylan, Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/samurai-revenge) |
+| ScummVM | `scummvm` | The ScummVM Team; NucleoOS port | GPL-3.0-or-later | [link](https://www.scummvm.org) |
 | Seal Adventure | `seal-adventure` | katspaugh | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seal-adventure) |
 | Seed Creator Showcase | `seed-creator-showcase` | huntrss@posteo.me | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seed-creator-showcase) |
 | Shieldshooter | `shieldshooter` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/shieldshooter) |
+| Shock Lobster | `gbh-shock-lobster` | Dave VanEe (tbsp); Peanut-GB by Mahyar Koshkouei | Zlib (game); MIT (emulator) | [link](https://github.com/tbsp/shock-lobster) |
 | Simple Rocket | `simple-rocket` | Venkatesh.H | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/simple-rocket) |
 | Skip Ahead | `skipahead` | Dennis Ranke | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/skipahead) |
 | Smash Sugar Parallelepipeds | `smash-sugar-parallelepipeds` | Lázaro Albuquerque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/smash-sugar-parallelepipeds) |
@@ -132,6 +150,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Space Kommand | `space-kommand` | korhadris | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-kommand) |
 | Spunky | `spunky` | Richard McCormack | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/spunky) |
 | SQLite | `sqlite3` | SQLite developers (D. Richard Hipp et al.) | Public domain | [link](https://sqlite.org) |
+| Squishy the Turtle | `gbh-squishy-the-turtle` | cppchriscpp (potatolain); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/potatolain/SquishyTheTurtle) |
 | Starfighter Arena | `starfighterarena` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/starfighterarena) |
 | Starfighter Ship Creator | `starfightercreator` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/starfightercreator) |
 | StarShard Scavengers | `starshard-scavengers` | HitchH1k3r | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/starshard-scavengers) |
@@ -151,6 +170,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Tiny Pong | `tinypong` | Ztry8 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tinypong) |
 | TO THE CORE | `to-the-core` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/to-the-core) |
 | Tobu Tobu Girl | `gbtobu` | Tangram Games (sound by potato-tan); Peanut-GB by Mahyar Koshkouei | MIT (game code, emulator), CC BY 4.0 (game graphics, text and music) | [link](https://github.com/SimonLarsen/tobutobugirl) |
+| Tobu Tobu Girl Deluxe | `gbh-tobu-deluxe` | Tangram Games (sound by potato-tan); Peanut-GB by Mahyar Koshkouei | MIT (code), CC BY 4.0 (graphics, text, sound and music) (game); MIT (emulator) | [link](https://github.com/SimonLarsen/tobutobugirl-dx) |
 | Totally not sumo | `totally-not-sumo` | André L. Alvares | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/totally-not-sumo) |
 | Touhou Spirits | `touhou-spirits` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/touhou-spirits) |
 | Train! | `train` | Davidian1024 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/train) |

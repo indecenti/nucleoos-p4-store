@@ -1,0 +1,167 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>ScummVM — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>ScummVM</h1><p class=desc>ScummVM 2.9.1, il motore delle avventure grafiche punta e clicca. Fa girare i giochi gratuiti dello store (Beneath a Steel Sky, Flight of the Amazon Queen, Lure, Drascula, DreamWeb...) o le tue copie in /ScummVM. Touch, mouse, tastiera e joypad.</p><p class=meta>versione 1.0.0 · Licenza: GPL-3.0-or-later · <a href='https://www.scummvm.org'>Sito del progetto</a></p></div></header><article><h1>ScummVM</h1>
+<h2>A cosa serve</h2>
+<p>ScummVM fa girare le avventure grafiche "punta e clicca" degli anni '90. Sulla scheda ci sono i motori di otto giochi gratuiti: Beneath a Steel Sky, Flight of the Amazon Queen, Lure of the Temptress, Drascula, DreamWeb, Sołtys, Sfinx e Nippon Safes.</p>
+<h2>Come si usa</h2>
+<p>Il modo più semplice è installare un gioco dallo <strong>Store</strong> (categoria Giochi): ogni gioco ha la sua icona e nella pagina scegli la lingua. Al primo avvio il gioco scarica i suoi file originali dal sito di ScummVM (da 2 a 240 MB, serve il Wi-Fi), li controlla e parte. Le volte successive parte subito.</p>
+<p>Puoi anche aprire ScummVM da solo e aggiungere giochi tuoi:</p>
+<ol>
+<li>Copia la cartella del gioco dentro <strong>ScummVM</strong> nella tua Home (con l'app File, dal browser o con la SD nel PC).</li>
+<li>Apri ScummVM, tocca <strong>Add Game</strong>, entra nella cartella del gioco e tocca <strong>Choose</strong>.</li>
+<li>Seleziona il gioco nella lista e tocca <strong>Start</strong>.</li>
+</ol>
+<p>Funzionano solo i giochi dei motori inclusi, a risoluzione 320×200.</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tocco</th>
+<th>Mouse</th>
+<th>Tastiera</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cammina / usa</td>
+<td>tocca il punto</td>
+<td>tasto sinistro</td>
+<td>–</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Esamina (tasto destro)</td>
+<td>tieni premuto, oppure tocco con due dita</td>
+<td>tasto destro</td>
+<td>–</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Sposta il puntatore</td>
+<td>trascina il dito</td>
+<td>muovi</td>
+<td>–</td>
+<td>croce o levetta sinistra</td>
+</tr>
+<tr>
+<td>Salta scena / dialogo</td>
+<td>tocco con tre dita</td>
+<td>–</td>
+<td>Esc</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Salta una frase</td>
+<td>–</td>
+<td>–</td>
+<td>. (punto)</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Menu del gioco (salva, carica)</td>
+<td>–</td>
+<td>–</td>
+<td>F5</td>
+<td>Back / Select</td>
+</tr>
+<tr>
+<td>Menu di ScummVM</td>
+<td>gesto Indietro</td>
+<td>–</td>
+<td>Ctrl+F5</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>Tastiera e mouse USB o Bluetooth funzionano insieme al touch, appena li colleghi. Con la tastiera puoi scrivere i nomi dei salvataggi.</p>
+<h2>Salvataggi</h2>
+<p>Ogni gioco salva nella sua cartella: dal menu di ScummVM (gesto Indietro) scegli <strong>Save</strong> o <strong>Load</strong>. Disinstallando il gioco i salvataggi si perdono.</p>
+<h2>Problemi comuni</h2>
+<ul>
+<li><strong>Il download si ferma</strong>: controlla il Wi-Fi e riapri il gioco, riprende da dove era rimasto.</li>
+<li><strong>Nessun suono</strong>: un'altra app (per esempio Musica) sta usando l'altoparlante. Chiudila, l'audio torna da solo in pochi secondi.</li>
+<li><strong>Voglio cambiare lingua</strong>: nella pagina del gioco nello Store scegli un'altra lingua. Al prossimo avvio il gioco scarica i file di quella lingua.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>ScummVM</h1><p class=desc>ScummVM 2.9.1, the classic point-and-click adventure engine. Plays the free games in the store (Beneath a Steel Sky, Flight of the Amazon Queen, Lure, Drascula, DreamWeb...) or your own copies in /ScummVM. Touch, mouse, keyboard and gamepad.</p><p class=meta>version 1.0.0 · License: GPL-3.0-or-later · <a href='https://www.scummvm.org'>Project site</a></p></div></header><article><h1>ScummVM</h1>
+<h2>What it is for</h2>
+<p>ScummVM runs the point-and-click adventure games of the '90s. This build carries the engines of eight free games: Beneath a Steel Sky, Flight of the Amazon Queen, Lure of the Temptress, Drascula, DreamWeb, Sołtys, Sfinx and Nippon Safes.</p>
+<h2>How to use it</h2>
+<p>The easy way is to install a game from the <strong>Store</strong> (Games category): each game has its own icon, and you pick the language on its page. On first start the game downloads its original files from the ScummVM website (2 to 240 MB, Wi-Fi needed), checks them and starts. After that it starts straight away.</p>
+<p>You can also open ScummVM on its own and add games you own:</p>
+<ol>
+<li>Copy the game folder into <strong>ScummVM</strong> in your Home (Files app, browser, or the SD card in a PC).</li>
+<li>Open ScummVM, tap <strong>Add Game</strong>, go into the game folder and tap <strong>Choose</strong>.</li>
+<li>Select the game in the list and tap <strong>Start</strong>.</li>
+</ol>
+<p>Only games of the included engines work, at 320×200.</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Touch</th>
+<th>Mouse</th>
+<th>Keyboard</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Walk / use</td>
+<td>tap the spot</td>
+<td>left button</td>
+<td>–</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Examine (right button)</td>
+<td>press and hold, or two-finger tap</td>
+<td>right button</td>
+<td>–</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Move the pointer</td>
+<td>drag your finger</td>
+<td>move</td>
+<td>–</td>
+<td>D-pad or left stick</td>
+</tr>
+<tr>
+<td>Skip scene / dialogue</td>
+<td>three-finger tap</td>
+<td>–</td>
+<td>Esc</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Skip one line</td>
+<td>–</td>
+<td>–</td>
+<td>. (period)</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Game menu (save, load)</td>
+<td>–</td>
+<td>–</td>
+<td>F5</td>
+<td>Back / Select</td>
+</tr>
+<tr>
+<td>ScummVM menu</td>
+<td>Back gesture</td>
+<td>–</td>
+<td>Ctrl+F5</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>USB or Bluetooth keyboards and mice work together with touch as soon as you plug them in. With a keyboard you can type save names.</p>
+<h2>Saves</h2>
+<p>Each game saves in its own folder: from the ScummVM menu (Back gesture) choose <strong>Save</strong> or <strong>Load</strong>. Uninstalling the game deletes its saves.</p>
+<h2>Common problems</h2>
+<ul>
+<li><strong>The download stops</strong>: check Wi-Fi and open the game again, it resumes where it stopped.</li>
+<li><strong>No sound</strong>: another app (Music, for example) is using the speaker. Close it, sound comes back on its own within a few seconds.</li>
+<li><strong>I want another language</strong>: pick it on the game's Store page. On the next start the game downloads the files of that language.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

@@ -1,0 +1,159 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>5 More Mazes — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>5 More Mazes</h1><p class=desc>Il seguito di 5 Mazes: cinque nuovi labirinti per Alice, ognuno più grande e difficile del precedente. Gioco per Game Boy fatto con GB Studio da godai, musica di AJ Booker. Gira sull&#x27;emulatore Game Boy integrato con audio, comandi touch e gamepad. Licenza MIT (github.com/godai78/5-more-mazes).</p><p class=meta>versione 1.0.0 · Licenza: MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) · <a href='https://github.com/godai78/5-more-mazes'>Sito del progetto</a></p></div></header><article><h1>5 More Mazes</h1>
+<p>Il seguito di <em>5 Mazes</em> di <strong>godai</strong>, fatto con GB Studio (2023): altri cinque labirinti da percorrere con Alice, ognuno più grande e difficile.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h3>Nel gioco</h3>
+<p>START nella schermata del titolo, poi la croce direzionale muove Alice.</p>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Salvataggi</h2>
+<p>La cartuccia ha la batteria: i dati salvati restano sul dispositivo tra una partita e l'altra.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Idea e realizzazione in GB Studio di godai (Gniazdo Światów). Labirinti generati con un algoritmo di Keesie Meijer. Musiche di AJ Booker. Il repository ha licenza MIT; il database Homebrew Hub indica il gioco come CC BY-SA 4.0.</p>
+<p>La ROM è quella originale, non modificata, dal database Homebrew Hub (https://hh.gbdev.io/game/5-more-mazes).</p>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT).</p>
+<p>Testi delle licenze:</p>
+<h3>5 More Mazes</h3>
+<p>https://github.com/godai78/5-more-mazes</p>
+<pre><code>Copyright (c) 2023 godai78
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>5 More Mazes</h1><p class=desc>The sequel to 5 Mazes: five new mazes for Alice, each larger and harder than the last. Game Boy game made with GB Studio by godai, music by AJ Booker. Runs on the built-in Game Boy emulator with sound, touch controls and gamepads. MIT license (github.com/godai78/5-more-mazes).</p><p class=meta>version 1.0.0 · License: MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) · <a href='https://github.com/godai78/5-more-mazes'>Project site</a></p></div></header><article><h1>5 More Mazes</h1>
+<p>The sequel to <em>5 Mazes</em> by <strong>godai</strong>, made with GB Studio (2023): roam five more mazes with Alice, each one larger and more difficult.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h3>In the game</h3>
+<p>START on the title screen, then the D-pad moves Alice.</p>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Saves</h2>
+<p>The cartridge has a battery: its save data stays on the device between sessions.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Game idea and GB Studio work by godai (Gniazdo Światów). Mazes generated with a maze-generating algorithm by Keesie Meijer. Music tracks by AJ Booker. The repository is MIT licensed; the Homebrew Hub database lists the game as CC BY-SA 4.0.</p>
+<p>The ROM is the original, unmodified, from the Homebrew Hub database (https://hh.gbdev.io/game/5-more-mazes).</p>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license).</p>
+<p>License texts:</p>
+<h3>5 More Mazes</h3>
+<p>https://github.com/godai78/5-more-mazes</p>
+<pre><code>Copyright (c) 2023 godai78
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

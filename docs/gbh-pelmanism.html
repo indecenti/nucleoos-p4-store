@@ -1,0 +1,151 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Pelmanism — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAVgUlEQVR42u3dZ7BVxZYHcEHeTE2VNclXY00588mq0RotP43MBwu9Sk0ZUFFRzBFzBAOIKII55/gUMWLGnHPOGLDMWQSzmFE4d0//mrOum8M59wTS02dX9d2n9+69dve/V6/UvfddaqkOU1EUfVPuV819l/qNpdTmPikvXW2/Y5/F9eC6D0vn/jHlf/6t5Hb6tjCB61sq/3fKO6U8MeWHU/485Zkpf109/rXmr6v5mZQnpzw85f76V+7rQgev9Pv/Ur4n5dnF7yu9nPLOKf9dSUT1WRhyom/198AqcOU0pwqkY3elUul2jN/lcqNzc+bM6Tkfv2vrO197f/lYe08tzfLzSnlOqf3dpT5NBeQCc2PNdB1XekAlAGs0lKnhPb+7u7uLX375pZg9uz2GdV8jmvXqeIa8ACn6FemalJftCMQS1/1rync1eMCvbDhn7ukrr7yyGD16dHHUUUcVN910U/Hss88Whx9+eHH22WcXZ5xxRjFx4sScI/3www/FgAEDirfeeqt4+eWXi91337349ttvi5NOOqk47LDDik8//bS45pprioceeijXf/jhh4vnn38+n995551z+fvvvy8uv/zy4qyzzipOP/304qmnnir23HPPTA/drq6u/Jx6g9ILkDHab6a8WlsgVqetvGxV0OYB7u2JAeCJJ56YG44TgBZA3HDDDcUTTzxRXH311cXee++d68vvvfdese222xYXXnhhcfzxxxe77rprceqppxYffvhh8d133xV/+ctfigMPPLAYM2ZM8dxzzxX33ntvceONN2YgRo4cmZ8zffr04thjj83PAPYLL7yQ6ZxwwgnFOeecU6y66qrFxx9/3A6AkQLEr0og9m1ZYaTjva2AVwYQCMOHD88cePPNNxe33357cfTRRxePPPJI5gZciUMjAfCKK64oJk+eXJx77rnFeeedV2y99dbFMccck/MOO+xQHHzwwRmAu+66KwNz991353uPO+64Hi5GX37wwQeLk08+OdO64IIL8owYNmxY8c4773QCYFGacZ+mvFxZJzQDb1w98DQgcrkc8k3D33zzzR5A77///uKggw4qLrnkksxlOGr99dfPU+20007LHZw0aVLx0UcfFa+++mqe5rjpxx9/zDSBC0DXJYNz3333FZ99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' alt=><div><h1>Pelmanism</h1><p class=desc>Pelmanism, il classico gioco di memoria con le carte (Memory) per Game Boy di TeamKNOx (2001): gira due carte alla volta e trova tutte le coppie, più altre due modalità, Marky e Flasher, nella schermata di scelta. Licenza MIT (gitlab.com/teamknox/gbccardgame).</p><p class=meta>versione 1.0.0 · Licenza: MIT (game); MIT (emulator) · <a href='https://gitlab.com/teamknox/gbccardgame'>Sito del progetto</a></p></div></header><article><h1>Pelmanism</h1>
+<p>Il gioco di carte <em>Pelmanism</em> (noto anche come Memory) di <strong>TeamKNOx</strong> (Osamu Ohashi), realizzato intorno al 2001. Tutte le carte sono coperte: girane due alla volta e cerca di trovare tutte le coppie con meno mosse possibile. La schermata di scelta offre anche altre due modalità, Marky e Flasher.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Pelmanism di TeamKNOx. L'autore dichiara: Copyright (c) Osamu OHASHI, distribuito con licenza MIT.</p>
+<p>La ROM è quella originale, non modificata, dal database Homebrew Hub (https://hh.gbdev.io/game/gbccardgame).</p>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT).</p>
+<p>Testi delle licenze:</p>
+<h3>Pelmanism</h3>
+<p>https://gitlab.com/teamknox/gbccardgame</p>
+<pre><code>Copyright (c) Osamu OHASHI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAVgUlEQVR42u3dZ7BVxZYHcEHeTE2VNclXY00588mq0RotP43MBwu9Sk0ZUFFRzBFzBAOIKII55/gUMWLGnHPOGLDMWQSzmFE4d0//mrOum8M59wTS02dX9d2n9+69dve/V6/UvfddaqkOU1EUfVPuV819l/qNpdTmPikvXW2/Y5/F9eC6D0vn/jHlf/6t5Hb6tjCB61sq/3fKO6U8MeWHU/485Zkpf109/rXmr6v5mZQnpzw85f76V+7rQgev9Pv/Ur4n5dnF7yu9nPLOKf9dSUT1WRhyom/198AqcOU0pwqkY3elUul2jN/lcqNzc+bM6Tkfv2vrO197f/lYe08tzfLzSnlOqf3dpT5NBeQCc2PNdB1XekAlAGs0lKnhPb+7u7uLX375pZg9uz2GdV8jmvXqeIa8ACn6FemalJftCMQS1/1rync1eMCvbDhn7ukrr7yyGD16dHHUUUcVN910U/Hss88Whx9+eHH22WcXZ5xxRjFx4sScI/3www/FgAEDirfeeqt4+eWXi91337349ttvi5NOOqk47LDDik8//bS45pprioceeijXf/jhh4vnn38+n995551z+fvvvy8uv/zy4qyzzipOP/304qmnnir23HPPTA/drq6u/Jx6g9ILkDHab6a8WlsgVqetvGxV0OYB7u2JAeCJJ56YG44TgBZA3HDDDcUTTzxRXH311cXee++d68vvvfdese222xYXXnhhcfzxxxe77rprceqppxYffvhh8d133xV/+ctfigMPPLAYM2ZM8dxzzxX33ntvceONN2YgRo4cmZ8zffr04thjj83PAPYLL7yQ6ZxwwgnFOeecU6y66qrFxx9/3A6AkQLEr0og9m1ZYaTjva2AVwYQCMOHD88cePPNNxe33357cfTRRxePPPJI5gZciUMjAfCKK64oJk+eXJx77rnFeeedV2y99dbFMccck/MOO+xQHHzwwRmAu+66KwNz991353uPO+64Hi5GX37wwQeLk08+OdO64IIL8owYNmxY8c4773QCYFGacZ+mvFxZJzQDb1w98DQgcrkc8k3D33zzzR5A77///uKggw4qLrnkksxlOGr99dfPU+20007LHZw0aVLx0UcfFa+++mqe5rjpxx9/zDSBC0DXJYNz3333FZ99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' alt=><div><h1>Pelmanism</h1><p class=desc>Pelmanism, the classic memory card game (Concentration) for the Game Boy by TeamKNOx (2001): turn over two cards at a time and find all the pairs, plus two more modes, Marky and Flasher, on the game select screen. MIT license (gitlab.com/teamknox/gbccardgame).</p><p class=meta>version 1.0.0 · License: MIT (game); MIT (emulator) · <a href='https://gitlab.com/teamknox/gbccardgame'>Project site</a></p></div></header><article><h1>Pelmanism</h1>
+<p>The card game <em>Pelmanism</em> (also known as Concentration or Memory) by <strong>TeamKNOx</strong> (Osamu Ohashi), made around 2001. All the cards lie face down: turn over two at a time and try to find all the matching pairs with as few moves as possible. The game select screen also offers two more modes, Marky and Flasher.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Pelmanism by TeamKNOx. The author states: Copyright (c) Osamu OHASHI, distributed under the MIT License.</p>
+<p>The ROM is the original, unmodified, from the Homebrew Hub database (https://hh.gbdev.io/game/gbccardgame).</p>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license).</p>
+<p>License texts:</p>
+<h3>Pelmanism</h3>
+<p>https://gitlab.com/teamknox/gbccardgame</p>
+<pre><code>Copyright (c) Osamu OHASHI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
