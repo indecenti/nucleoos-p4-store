@@ -1,0 +1,117 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Tcl — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Tcl</h1><p class=desc>Tcl nel Terminale (Jim Tcl): prompt interattivo e script, con liste, dict, regexp, oggetti e file. Scrivi tcl per il prompt, tcl script.tcl per eseguire un file.</p><p class=meta>versione 0.84 · Licenza: BSD-2-Clause · <a href='https://jim.tcl.tk'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>tcl</code>.</p></aside><article><h1>Tcl</h1>
+<h2>A cosa serve</h2>
+<p>Tcl è un linguaggio di scripting dove tutto è un comando e tutto è una stringa: semplice da imparare, ottimo per automatismi e piccoli strumenti. Questa è <strong>Jim Tcl</strong>, un Tcl compatto con liste, dict, espressioni regolari, <code>proc</code>, lambda, oggetti (<code>oo</code>), namespace e file. Qui hai il prompt interattivo e l'esecuzione di file <code>.tcl</code>.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tcl</code></td>
+<td>apre il prompt interattivo (<code>.</code>)</td>
+</tr>
+<tr>
+<td><code>tcl script.tcl</code></td>
+<td>esegue un file dalla cartella home</td>
+</tr>
+<tr>
+<td><code>tcl script.tcl a b</code></td>
+<td>passa argomenti, letti in <code>$argv</code></td>
+</tr>
+<tr>
+<td><code>tcl -e 'expr {6 * 7}'</code></td>
+<td>esegue una riga al volo</td>
+</tr>
+</tbody>
+</table>
+<p>Nel prompt ogni riga è un comando e il risultato viene mostrato; un blocco <code>{</code> lasciato aperto continua alla riga dopo:</p>
+<pre><code class="language-tcl">. expr {6 * 7}
+42
+. set nomi {anna bruno carla}
+. lsort -decreasing $nomi
+carla bruno anna
+. proc quadrato {x} { expr {$x * $x} }
+. quadrato 12
+144
+. dict set eta anna 30
+. dict get $eta anna
+30
+. foreach i {1 2 3} { puts &quot;riga $i&quot; }
+</code></pre>
+<p>File:</p>
+<pre><code class="language-tcl">set f [open /nota.txt w]; puts $f &quot;ciao da Tcl&quot;; close $f
+set f [open /nota.txt]; puts [gets $f]; close $f
+</code></pre>
+<p>Per uscire: <code>exit</code>, oppure <strong>EOF</strong>.</p>
+<h2>Limiti</h2>
+<p>Niente processi esterni (<code>exec</code>), socket, segnali ed event loop (<code>after</code>, <code>vwait</code>). Gli interi sono a 64 bit (niente numeri enormi: per quelli c'è <code>bc</code>). Memoria disponibile: fino a 8 MB.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAANU0lEQVR42u2dC1hUZRrHyZD7cJXLwDA3EMgUsxQV1jDTHts1M1vTLmttF9M10yBkrswAhpVY2a6VPqastm2SsmvZk5s9abG2pamrqZGJmKVZaXlJsmDOu+/7ne/AADMEw9DODMPzvJyBc+ZcfvN/L993OC8BAS5+WQIC+lny8wNxSdYvwPu+LqsOCLicrmEaLunnX+WodDBwcDBLenqkRaWK9hZzdG3VvQmSwNkrDYENKlGp/mhWq9eYVKp3DUrlt2hn9Url97T0VOPn9z2e806TWl1jVqkWWDSaHK5Ce5Du+7LfoVmjmYDg3sITaCrTaIDMioYnA/g7cenphudpwWUpP/8SfI0g9+Pv77UMGhQkhSjoqRppB5Lq8JO7nsBJBzbgSehVqma0JoO4FLzJ+Dmz86efCSLBRJAf47p77T3P5SQhvTaqVFYJHB7MRgc2iCcBvmLSdRHIchHk+rnJyXEuubQE7xGFIhZlvaW8LTjwZWPXqVSy8IQed1inUIzolhLJbcl0SJ8C7SKtFnCHP/s6uPamQ4hWMT5+J0HsUrkmkcadbO2r8OzU2GwRk87Xeo0mMcAuJzjOttOmMXj4Ritz2z4Mzw5iE4/9WwmeU1eWVujV6nykzrJUX4fXAhHdeZEI0eA0qdiVK9s4cT/AVhUKWD/asBo5Q7lByhMd1adSXUc+71efYxXyasTaQYVsYgANhzjv8CLZD9CxCgVU4elCrTZBqljoG3PdIrU60yiOKgQ/MKcqbC4TBXYPE15+fqD4TSxb7ikTM69ffc5MLLAFTLRrWgDmc4Ao0bUcYJMflvNRCg31EOThZenpwWzqS5rfw5U7rP7494tx0Cgm2R8sGRkDWpJIsVYbhVRP01SP3hdioFoFJo26jRnV7lMhCs2GI5MxrVlYpYpG1z3nFoB4osYemEHdc3g6hRIK45PbmE6R2vN9twKk5XVtANJsrTsA6lKV7GRdN6XLxzZyeI8NyYBVU0bCqptyRMPXj2VnsnU9VaIEECuWsb0CsDQrHcqvHOiylV6R7vKxyVULBiTD32bkAZwsAzhsEu2rMnhl5rVsHW3jkQDpky1OSYXP1t0DjfuK4eL7BdD4QWGX7eJ/cPs9C+HEpgfBnMaqgW67nARw3bRcED4zQ/N/i5kJR8zw8h1jvAPgFxtnATSUAHysBzhoaLVPyIx2hj8fslt/ALfHCz3z9ryeA7wtF6C+BGz7dczgaAm8fKeXADyJCoIvrQB1xlYXIjuoB+FjHZq4ZMDs13+K2x+zwNnt8/suQEoCe/98O5za+hCcfG02fLV5jmivz4Gf0T2Z0rgyybVOvTHHbpvZcOpfc6FuzUwwaZ0DZNnavjwhIGofANjpQTEzn9g0m7mobR9e0Kcm+A5dtSS960ozaamWUzOVP5qYIpYnCclQlKRg+6d1foCOlM0vuCBODgvlCqi4KguWj78aVk3KgZW/GwHL8oeCNUPL1hFkP8B2Ma04WcFCw6v3XQf16++HH3cViQkIsyzFThuGhLOYxTfg+oWoxkcTUvwAJeUxxWEBXF99P8DnFoRiZpnbtk8sT2jZtKcY4EQp7FwyjQEi9+7zACmekeqoKP/mrYcYPBsHxrI3ZmtWKhFQBEWFcm3ZLSwu+gFy9RGMPcumA3xhhea9CI5KHyyNmnG5a+ltsP7ufFg3PQ9emzsBTuG+PvQrsFV9Rei6T+UOZvFNOMDrR3Tdxo+K4IWJ18D86ESEIWeQ50cnsbrxmWuzxWQT38eTCGXSR2Ll8Pq8G5ir0vbsPfh6M/5uniyBvY+2Y7UgqxlV/izcBiCqaye6qQiwmI1imnFZOepKzMqpwCc1202h+evAltKFXPPAyrtYomAAsWz5EUuVRUMyWHIxqn1wKOdugPufv5MD1DEFNmEWfnLEIDYSaa9Ao1+BHWPge6VTxPJlH4eAMGvuHwcPRyZCyUBt63Q9xUDcvz8G2rshKnDN1FEihH18BucTI5x/vwCeGZMN86MS2TYFPAtbM9Lg2bFDwYDJpLCvZ2HpNb3nq9dmc4i8DsT3XdpdBP9edAv8/a4x8NKMPHiz4EY4U7sAdlb6eh34z9l8lhgVVWeCM1udF9J0kQTiL9cPgyY+b0gjEYHg0yQsjUSOloijEDIcyrUfiQhHSjBz65gJ9T4AkOYEoQEv/AACwIs7u+3hTsfCFM8IyIs35cCFDwsBjluZAmkoJ03Vk5rpA4Gvy1GBt7Uo8KXpqMBj1tbZ7s+tqNhrvRvg0Vfug0a86Is7CqBx90I24fqLszEEMSEZKoZmwnvotqffeRhHJwjsM5M4G4PlzaVdRdBQMwtenJwjzhUmpEAVxs9GhEv3Zdi9GXRjGvbRB+KVAO3v1pXxu29lXbz7xqa0EMwjcXIwI/CnMYnQPCDNBy4fPwwWD8uCYszARag8KmVoVEJDO+lY0vHE2wTuuy/8qwPseL9Y2Y3bBWqmRlIrzUCTKqV4J9WFRjtlEaj295uZ0lVeDNDRXyy4tI9290M6DOvaFNc9OJbHAfShv9DyA/QD9AP0A/w/m9BL5uMA1WqbgR4CSk2FXjHpGJ0w8E6A4pNTgkEuB31KClgzMn4ozcy84FbLyjpPEPVJSfQ30NIxfQAgVxyBW3v7jG2HN216cvf27WW7a2tL3WV7me2w1m3ZUvFmUVG1SaO5ZMDjOYLobQAFPC/BnJZ28dCrr1ZWbdy4+KpRo3fFJcrPxSYkXYhNdJfJL8Tg/tKvHPyprmLxC6c/OWh8YsSIY44geh1AUt7B6uqlMx6cUx0cFApBwWEQFhHZwcIjo5g5WtcVC0cLCQ2HwMAguHp07kffNjTorJmZ53hsFLwPIAZzPca8tdOnb6/a+I/FwUEhEBEZbYuMjrXhUrA3WVSMEHp5mBAaGC7IYmKFCPy5/TZdMdyPLSomrunyfv3hTvzAPli2bCWdA08sXgdQQBcS6jDmXTVy1N7gkDCBw4M2FhUDYcERkPaHPNBOHwnBAcEgi45hv++wbddMQEUK8Unyc4f27DFbeXKRVOgtAFnioGxLCQPj1HlyM66UNhcs4wCHL78dpv70NGTNHQchl4WK66Ndg0iKJndeUVW1dPm4cQf0ycktKvQqgFReUJakQO8MYESUuAztHw6DDb9lEIdV/p5BDQ+PdEmJEsDnEeBz48fv922A0kXHxKL7BoF66nC4+eyT8JuNsyAyLg4iIqJaIPcaQJ1SGYMAz3stQHLjUBmzbOtkmPxNBQwpmeRqDOwaQKVyXJsubLhiN3+EyeZtLhyOKotWJELehgdgyvklkHbHaJZMImTR3VZfZwD5w4b00HWjMS0tlQHMDwgI5L0Saso852nNLgNkSSQoAnLX3weTTiwCeW4WwgthLk3waCmLdWzO4HYG0Cx66YmlCkUoe9x11jXX9GdurFIt8KDnhbuhQNF9E4cPhPghGszAISIcWieLYkqk2OjIxCTTLRemJ9YFdN+aFvFJj/xTdx6kK3hUDLziivO7EGBMfMIPvxgDMeuGhchE5UWKbh0ZP4Bl5qHlN0N26eQOFqtNgfCwSKZiRwCXr1791PMTJuxrUSBvPIFiKyBmkvhY84R56enBmEgOWeiRdg+Jg/hJN9MAP23Q4CN4QWyk4DR2Uc0n1X0UF1FdUfIEyKuZBWPfngf5Wx7qYPGD1QheJhbedoV0uCxKiIqNu1T77rulFdnZ3xgUCjofNpVmUqku6TSajDatoKQWHjq1+u4yT+kZQ594UhJsLizcoHts8Qoao+Iwq1kmDtO6lhAwiYT0C2OFtSMLd1Di0FAusH8w5N8w8b36zZufwLG4YBA9kzUkQ/X91VEzMtYTiquwrkR8g80jZmK02sbTBw8ah43O3U1jVHJlgthlw7FxpBNrvy0qDwheglxx+uiXXxYtyclp4DMyxMJmRvVhqZfpsIeWpELceOYiT0km4ngYHh8+/BjNjsyc/adXcIz6HcUnd1swGqrvx7ETb9x25PjxhatuvbXWIMY+wa71U1WnrfCkPqm44QYmVw+CSFNLHz777Io6HOCvXLu2cgUaZUl32Mq16yqfW1O1dEdtrbXhjTcerxw5st5gl3lLxNhXXyCXD+i0NShfcRmNTPANR62eEw/FWWm5nEBeoAH+cxMm7KcSw11G2ZYSBs0/ShOprHAm18XXmB9GdqmHoLRBUWrqcGo+aGF/sOMhSiRFEEhUh9uN5v0o24rHETBZULMxgVphLVQqH+hWK9CWrIy1IUI8ybu5NXlMjSjenesNYzevKHRRgx20Jj2HZ+Ejtm63Pl6gVMqpjyp1szRxNfrozXdBCle8Ce1hvNY8l+A5agGMRa0Jd/p1Oe8ZTT22uCptXtqwTJAa60ohihIniuUnvL7VOlc7+DprSssmHDSaRIRoRTtVbtfE2tTaRthrDOMbmHlr53IRHNV4q/Va7WBHraDd2s2cQJo0mnupDbwZh38mpfIsJRsr72ruDUZTUgjtOJ57jUWlWoBQs3q9pz7w/4DQ3s0rsrLi9KmpY2iW1hvMQpaeruBTUk7/X0CvffEW8YEuB1cP+prG/yWGq+D+BxO4leC6/hMPAAAAAElFTkSuQmCC' alt=><div><h1>Tcl</h1><p class=desc>Tcl in the Terminal (Jim Tcl): interactive prompt and scripts, with lists, dicts, regexp, OO and file I/O. Type tcl for the prompt, tcl script.tcl to run a file.</p><p class=meta>version 0.84 · License: BSD-2-Clause · <a href='https://jim.tcl.tk'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>tcl</code>.</p></aside><article><h1>Tcl</h1>
+<h2>What it is</h2>
+<p>Tcl is a scripting language where everything is a command and everything is a string: easy to learn, great for automation and small tools. This is <strong>Jim Tcl</strong>, a compact Tcl with lists, dicts, regular expressions, <code>proc</code>, lambdas, objects (<code>oo</code>), namespaces and files. You get the interactive prompt and <code>.tcl</code> file execution.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tcl</code></td>
+<td>opens the interactive prompt (<code>.</code>)</td>
+</tr>
+<tr>
+<td><code>tcl script.tcl</code></td>
+<td>runs a file from the home folder</td>
+</tr>
+<tr>
+<td><code>tcl script.tcl a b</code></td>
+<td>passes arguments, read from <code>$argv</code></td>
+</tr>
+<tr>
+<td><code>tcl -e 'expr {6 * 7}'</code></td>
+<td>runs one line</td>
+</tr>
+</tbody>
+</table>
+<p>At the prompt each line is a command and its result is shown; a <code>{</code> block left open continues on the next line:</p>
+<pre><code class="language-tcl">. expr {6 * 7}
+42
+. set names {anna bruno carla}
+. lsort -decreasing $names
+carla bruno anna
+. proc square {x} { expr {$x * $x} }
+. square 12
+144
+. dict set age anna 30
+. dict get $age anna
+30
+. foreach i {1 2 3} { puts &quot;line $i&quot; }
+</code></pre>
+<p>Files:</p>
+<pre><code class="language-tcl">set f [open /note.txt w]; puts $f &quot;hello from Tcl&quot;; close $f
+set f [open /note.txt]; puts [gets $f]; close $f
+</code></pre>
+<p>To quit: <code>exit</code>, or <strong>EOF</strong>.</p>
+<h2>Limits</h2>
+<p>No external processes (<code>exec</code>), sockets, signals or event loop (<code>after</code>, <code>vwait</code>). Integers are 64-bit (no huge numbers: use <code>bc</code> for those). Memory: up to 8 MB.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

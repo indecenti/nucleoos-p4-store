@@ -1,0 +1,115 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>jq — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>jq</h1><p class=desc>jq, il processore JSON da riga di comando: filtra, trasforma e formatta file JSON, con le espressioni regolari. Scrivi jq &#x27;.nome&#x27; dati.json, oppure mandagli JSON con una pipe.</p><p class=meta>versione 1.8.2 · Licenza: MIT; Oniguruma BSD-2-Clause · <a href='https://jqlang.org'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>jq</code>.</p></aside><article><h1>jq</h1>
+<h2>A cosa serve</h2>
+<p>jq è il coltellino svizzero del JSON: legge file JSON e ne estrae, filtra, trasforma e riformatta il contenuto con un piccolo linguaggio di filtri. Utile per capire al volo un file di configurazione, un export di dati o la risposta di un'API salvata con <code>curl</code>. Ci sono anche le espressioni regolari (<code>test</code>, <code>match</code>, <code>sub</code>, <code>gsub</code>, <code>capture</code>).</p>
+<h2>Come si usa</h2>
+<p><code>jq FILTRO file.json</code> applica il filtro al file (o all'input della pipe se non dai il file):</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>jq . dati.json</code></td>
+<td>stampa il JSON indentato e leggibile</td>
+</tr>
+<tr>
+<td><code>jq .nome dati.json</code></td>
+<td>il campo <code>nome</code></td>
+</tr>
+<tr>
+<td><code>jq -r '.app[].id' dati.json</code></td>
+<td>ogni <code>id</code> della lista <code>app</code>, come testo semplice</td>
+</tr>
+<tr>
+<td><code>jq '.app[] \| select(.peso &gt; 400)' dati.json</code></td>
+<td>solo gli elementi che rispettano la condizione</td>
+</tr>
+<tr>
+<td><code>jq -c 'map(.peso) \| add' lista.json</code></td>
+<td>somma i pesi, risultato su una riga</td>
+</tr>
+<tr>
+<td><code>jq --arg n lua '.app[] \| select(.id == $n)' dati.json</code></td>
+<td>usa un valore passato da fuori</td>
+</tr>
+<tr>
+<td><code>jq -n '[range(5)] \| map(. * .)'</code></td>
+<td>senza input: calcola e basta</td>
+</tr>
+<tr>
+<td><code>cat dati.json \| jq keys</code></td>
+<td>con una pipe della shell</td>
+</tr>
+</tbody>
+</table>
+<p>Opzioni utili: <code>-r</code> testo senza virgolette, <code>-c</code> una riga per risultato, <code>-s</code> legge tutti i file come un'unica lista, <code>-S</code> ordina le chiavi, <code>-f filtro.jq</code> legge il filtro da un file.</p>
+<h2>Limiti</h2>
+<p>La riga di comando del Terminale non passa bene le virgolette doppie dentro un argomento: se il filtro contiene stringhe tra <code>"..."</code>, scrivilo in un file e usa <code>jq -f filtro.jq dati.json</code>, oppure passa il valore con <code>--arg</code>. I colori ANSI si tolgono con <code>-M</code>. Memoria disponibile: fino a 8 MB (file JSON grandi, diciamo oltre 1-2 MB, possono non starci).</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>jq</h1><p class=desc>jq, the command-line JSON processor: filter, transform and pretty-print JSON files, with regular expressions. Type jq &#x27;.name&#x27; data.json, or pipe JSON into it.</p><p class=meta>version 1.8.2 · License: MIT; Oniguruma BSD-2-Clause · <a href='https://jqlang.org'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>jq</code>.</p></aside><article><h1>jq</h1>
+<h2>What it is</h2>
+<p>jq is the Swiss army knife for JSON: it reads JSON files and extracts, filters, transforms and reformats their content with a small filter language. Handy to make sense of a config file, a data export or an API response saved with <code>curl</code>. Regular expressions are there too (<code>test</code>, <code>match</code>, <code>sub</code>, <code>gsub</code>, <code>capture</code>).</p>
+<h2>How to use it</h2>
+<p><code>jq FILTER file.json</code> applies the filter to the file (or to the pipe's input when no file is given):</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>jq . data.json</code></td>
+<td>prints the JSON indented and readable</td>
+</tr>
+<tr>
+<td><code>jq .name data.json</code></td>
+<td>the <code>name</code> field</td>
+</tr>
+<tr>
+<td><code>jq -r '.apps[].id' data.json</code></td>
+<td>every <code>id</code> of the <code>apps</code> list, as plain text</td>
+</tr>
+<tr>
+<td><code>jq '.apps[] \| select(.size &gt; 400)' data.json</code></td>
+<td>only the items matching the condition</td>
+</tr>
+<tr>
+<td><code>jq -c 'map(.size) \| add' list.json</code></td>
+<td>sums the sizes, result on one line</td>
+</tr>
+<tr>
+<td><code>jq --arg n lua '.apps[] \| select(.id == $n)' data.json</code></td>
+<td>uses a value passed from outside</td>
+</tr>
+<tr>
+<td><code>jq -n '[range(5)] \| map(. * .)'</code></td>
+<td>no input: just compute</td>
+</tr>
+<tr>
+<td><code>cat data.json \| jq keys</code></td>
+<td>through a shell pipe</td>
+</tr>
+</tbody>
+</table>
+<p>Useful options: <code>-r</code> raw text without quotes, <code>-c</code> one line per result, <code>-s</code> reads all files as one list, <code>-S</code> sorts keys, <code>-f filter.jq</code> reads the filter from a file.</p>
+<h2>Limits</h2>
+<p>The Terminal's command line does not pass double quotes inside an argument well: if the filter has <code>"..."</code> strings, write it to a file and use <code>jq -f filter.jq data.json</code>, or pass the value with <code>--arg</code>. ANSI colours are turned off with <code>-M</code>. Memory: up to 8 MB (big JSON files, say over 1-2 MB, may not fit).</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

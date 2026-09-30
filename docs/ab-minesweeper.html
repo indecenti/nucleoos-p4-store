@@ -1,0 +1,647 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Minesweeper — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Minesweeper</h1><p class=desc>Minesweeper di Pharap: il classico rompicapo delle mine, con temi grafici e statistiche.</p><p class=meta>versione 1.0.0 · Licenza: Apache-2.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) · <a href='https://github.com/Pharap/Minesweeper/tree/v2.0.0'>Sito del progetto</a></p></div></header><article><h1>Minesweeper</h1>
+<p>Minesweeper di Pharap: il classico rompicapo delle mine, con temi grafici e statistiche.</p>
+<h2>Comandi</h2>
+<p>Le frecce muovono, A scopre una casella, B mette una bandierina.</p>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (A in basso, B in alto, come sull'Arduboy). Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A, X e Start = A; B e Y = B.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R, Select o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Zoom</strong> 5x, 6x o 7x (a 7x lo schermo è più grande e i comandi touch sono nascosti: comodo con gamepad o tastiera), <strong>Colori</strong> (bianco, ambra, verde, blu, LCD), <strong>Audio</strong> acceso o spento, <strong>Esci</strong>. Zoom, colori e audio restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Salvataggi</h2>
+<p>La EEPROM dell'Arduboy (1 KB, dove i giochi tengono record e progressi) è salvata nella cartella dell'app poco dopo ogni scrittura e all'uscita.</p>
+<h2>Crediti e licenze</h2>
+<p><strong>Minesweeper</strong> è di Pharap (Apache-2.0). Sorgente: https://github.com/Pharap/Minesweeper/tree/v2.0.0 (commit <code>da9bb31c02</code>).</p>
+<p>Gira sulla libreria Arduboy2 di Scott Allen e collaboratori (licenza BSD a 3 clausole), adattata a NucleoOS; i nomi delle note musicali vengono da ArduboyTones (MIT). Arduboy è un marchio di Arduboy Inc.; questo port non è affiliato.</p>
+<h3>Licenza del gioco</h3>
+<pre><code>Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      &quot;Legal Entity&quot; shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      &quot;control&quot; means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      &quot;Source&quot; form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      &quot;Object&quot; form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      &quot;Work&quot; shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      &quot;Contribution&quot; shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;
+
+      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same &quot;printed page&quot; as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+</code></pre>
+<h3>Arduboy2</h3>
+<pre><code>Licensed under the BSD 3-clause license:
+
+Arduboy2 library:
+Copyright (c) 2016-2021, Scott Allen
+All rights reserved.
+
+The Arduboy2 library was forked from the Arduboy library:
+https://github.com/Arduboy/Arduboy
+Copyright (c) 2016, Kevin &quot;Arduboy&quot; Bates
+Copyright (c) 2016, Chris Martinez
+Copyright (c) 2016, Josh Goebel
+Copyright (c) 2016, Scott Allen
+All rights reserved.
+
+- which is in turn partially based on the Adafruit_SSD1306 library
+https://github.com/adafruit/Adafruit_SSD1306
+Copyright (c) 2012, Adafruit Industries
+All rights reserved.
+
+SetSystemEEPROM example sketch:
+Copyright (c) 2018-2020, Scott Allen
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holders nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the BSD 2-clause license:
+
+Portions of the Arduboy library, and thus portions of the Arduboy2 library,
+based on the Adafruit-GFX library:
+https://github.com/adafruit/Adafruit-GFX-Library
+Copyright (c) 2012 Adafruit Industries
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the MIT license:
+
+Code from ArduboyExtra:
+https://github.com/yyyc514/ArduboyExtra
+Copyright (c) 2015 Josh Goebel
+
+Code for drawing compressed bitmaps:
+Copyright (c) 2016 TEAM a.r.g.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Minesweeper</h1><p class=desc>Minesweeper by Pharap: the classic mine-clearing puzzle, with themes and statistics.</p><p class=meta>version 1.0.0 · License: Apache-2.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) · <a href='https://github.com/Pharap/Minesweeper/tree/v2.0.0'>Project site</a></p></div></header><article><h1>Minesweeper</h1>
+<p>Minesweeper by Pharap: the classic mine-clearing puzzle, with themes and statistics.</p>
+<h2>Controls</h2>
+<p>Arrows move, A reveals a cell, B places a flag.</p>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (A lower, B upper, as on the Arduboy). Several fingers at once work.</li>
+<li><strong>Gamepad</strong> (USB or Bluetooth): D-pad or left stick; A, X and Start = A; B and Y = B.</li>
+<li><strong>USB keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulders, Select or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Zoom</strong> 5x, 6x or 7x (7x is the biggest picture and hides the touch controls: best with a gamepad or keyboard), <strong>Colours</strong> (white, amber, green, blue, LCD), <strong>Sound</strong> on or off, <strong>Exit</strong>. Zoom, colours and sound are remembered. The system back gesture opens the menu; a second one exits.</p>
+<h2>Saving</h2>
+<p>The Arduboy EEPROM (1 KB, where games keep high scores and progress) is saved in the app's folder shortly after every write and when the app closes.</p>
+<h2>Credits and licenses</h2>
+<p><strong>Minesweeper</strong> is by Pharap (Apache-2.0). Source: https://github.com/Pharap/Minesweeper/tree/v2.0.0 (commit <code>da9bb31c02</code>).</p>
+<p>Runs on the Arduboy2 library by Scott Allen and contributors (BSD 3-clause license), adapted to NucleoOS; musical note names come from ArduboyTones (MIT). Arduboy is a trademark of Arduboy Inc.; this port is not affiliated.</p>
+<h3>Game license</h3>
+<pre><code>Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      &quot;Legal Entity&quot; shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      &quot;control&quot; means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      &quot;Source&quot; form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      &quot;Object&quot; form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      &quot;Work&quot; shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      &quot;Contribution&quot; shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, &quot;submitted&quot;
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;
+
+      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same &quot;printed page&quot; as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+</code></pre>
+<h3>Arduboy2</h3>
+<pre><code>Licensed under the BSD 3-clause license:
+
+Arduboy2 library:
+Copyright (c) 2016-2021, Scott Allen
+All rights reserved.
+
+The Arduboy2 library was forked from the Arduboy library:
+https://github.com/Arduboy/Arduboy
+Copyright (c) 2016, Kevin &quot;Arduboy&quot; Bates
+Copyright (c) 2016, Chris Martinez
+Copyright (c) 2016, Josh Goebel
+Copyright (c) 2016, Scott Allen
+All rights reserved.
+
+- which is in turn partially based on the Adafruit_SSD1306 library
+https://github.com/adafruit/Adafruit_SSD1306
+Copyright (c) 2012, Adafruit Industries
+All rights reserved.
+
+SetSystemEEPROM example sketch:
+Copyright (c) 2018-2020, Scott Allen
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holders nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the BSD 2-clause license:
+
+Portions of the Arduboy library, and thus portions of the Arduboy2 library,
+based on the Adafruit-GFX library:
+https://github.com/adafruit/Adafruit-GFX-Library
+Copyright (c) 2012 Adafruit Industries
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the MIT license:
+
+Code from ArduboyExtra:
+https://github.com/yyyc514/ArduboyExtra
+Copyright (c) 2015 Josh Goebel
+
+Code for drawing compressed bitmaps:
+Copyright (c) 2016 TEAM a.r.g.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

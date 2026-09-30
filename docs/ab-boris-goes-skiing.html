@@ -1,0 +1,287 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Boris goes skiing — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Boris goes skiing</h1><p class=desc>Boris Goes Skiing di Tom Sparrow: attraversa la strada, noleggia gli sci e scendi nello slalom tra bandierine e alberi. Un omaggio a un classico dello ZX Spectrum.</p><p class=meta>versione 1.0.0 · Licenza: MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) · <a href='https://github.com/ArduboyCollection/boris-goes-skiing'>Sito del progetto</a></p></div></header><article><h1>Boris goes skiing</h1>
+<p>Boris Goes Skiing di Tom Sparrow: attraversa la strada, noleggia gli sci e scendi nello slalom tra bandierine e alberi. Un omaggio a un classico dello ZX Spectrum.</p>
+<h2>Comandi</h2>
+<p>La croce direzionale muove, A e B funzionano come sull'Arduboy (le schermate del gioco indicano cosa fanno).</p>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (A in basso, B in alto, come sull'Arduboy). Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A, X e Start = A; B e Y = B.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R, Select o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Zoom</strong> 5x, 6x o 7x (a 7x lo schermo è più grande e i comandi touch sono nascosti: comodo con gamepad o tastiera), <strong>Colori</strong> (bianco, ambra, verde, blu, LCD), <strong>Audio</strong> acceso o spento, <strong>Esci</strong>. Zoom, colori e audio restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Salvataggi</h2>
+<p>La EEPROM dell'Arduboy (1 KB, dove i giochi tengono record e progressi) è salvata nella cartella dell'app poco dopo ogni scrittura e all'uscita.</p>
+<h2>Crediti e licenze</h2>
+<p><strong>Boris goes skiing</strong> è di Tom Sparrow (sones857) (MIT). Sorgente: https://github.com/ArduboyCollection/boris-goes-skiing (commit <code>75d7a11e2e</code>).</p>
+<p>Gira sulla libreria Arduboy2 di Scott Allen e collaboratori (licenza BSD a 3 clausole), adattata a NucleoOS; i nomi delle note musicali vengono da ArduboyTones (MIT). Arduboy è un marchio di Arduboy Inc.; questo port non è affiliato.</p>
+<h3>Licenza del gioco</h3>
+<pre><code>MIT License
+
+Copyright (c) 2017 TEAM a.r.g.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+<h3>Arduboy2</h3>
+<pre><code>Licensed under the BSD 3-clause license:
+
+Arduboy2 library:
+Copyright (c) 2016-2021, Scott Allen
+All rights reserved.
+
+The Arduboy2 library was forked from the Arduboy library:
+https://github.com/Arduboy/Arduboy
+Copyright (c) 2016, Kevin &quot;Arduboy&quot; Bates
+Copyright (c) 2016, Chris Martinez
+Copyright (c) 2016, Josh Goebel
+Copyright (c) 2016, Scott Allen
+All rights reserved.
+
+- which is in turn partially based on the Adafruit_SSD1306 library
+https://github.com/adafruit/Adafruit_SSD1306
+Copyright (c) 2012, Adafruit Industries
+All rights reserved.
+
+SetSystemEEPROM example sketch:
+Copyright (c) 2018-2020, Scott Allen
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holders nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the BSD 2-clause license:
+
+Portions of the Arduboy library, and thus portions of the Arduboy2 library,
+based on the Adafruit-GFX library:
+https://github.com/adafruit/Adafruit-GFX-Library
+Copyright (c) 2012 Adafruit Industries
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the MIT license:
+
+Code from ArduboyExtra:
+https://github.com/yyyc514/ArduboyExtra
+Copyright (c) 2015 Josh Goebel
+
+Code for drawing compressed bitmaps:
+Copyright (c) 2016 TEAM a.r.g.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Boris goes skiing</h1><p class=desc>Boris Goes Skiing by Tom Sparrow: cross the road, rent your skis and race down the slalom between the flags and the trees. A tribute to a ZX Spectrum classic.</p><p class=meta>version 1.0.0 · License: MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) · <a href='https://github.com/ArduboyCollection/boris-goes-skiing'>Project site</a></p></div></header><article><h1>Boris goes skiing</h1>
+<p>Boris Goes Skiing by Tom Sparrow: cross the road, rent your skis and race down the slalom between the flags and the trees. A tribute to a ZX Spectrum classic.</p>
+<h2>Controls</h2>
+<p>The D-pad moves, A and B act as on the Arduboy (the game's own screens say which does what).</p>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (A lower, B upper, as on the Arduboy). Several fingers at once work.</li>
+<li><strong>Gamepad</strong> (USB or Bluetooth): D-pad or left stick; A, X and Start = A; B and Y = B.</li>
+<li><strong>USB keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulders, Select or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Zoom</strong> 5x, 6x or 7x (7x is the biggest picture and hides the touch controls: best with a gamepad or keyboard), <strong>Colours</strong> (white, amber, green, blue, LCD), <strong>Sound</strong> on or off, <strong>Exit</strong>. Zoom, colours and sound are remembered. The system back gesture opens the menu; a second one exits.</p>
+<h2>Saving</h2>
+<p>The Arduboy EEPROM (1 KB, where games keep high scores and progress) is saved in the app's folder shortly after every write and when the app closes.</p>
+<h2>Credits and licenses</h2>
+<p><strong>Boris goes skiing</strong> is by Tom Sparrow (sones857) (MIT). Source: https://github.com/ArduboyCollection/boris-goes-skiing (commit <code>75d7a11e2e</code>).</p>
+<p>Runs on the Arduboy2 library by Scott Allen and contributors (BSD 3-clause license), adapted to NucleoOS; musical note names come from ArduboyTones (MIT). Arduboy is a trademark of Arduboy Inc.; this port is not affiliated.</p>
+<h3>Game license</h3>
+<pre><code>MIT License
+
+Copyright (c) 2017 TEAM a.r.g.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+<h3>Arduboy2</h3>
+<pre><code>Licensed under the BSD 3-clause license:
+
+Arduboy2 library:
+Copyright (c) 2016-2021, Scott Allen
+All rights reserved.
+
+The Arduboy2 library was forked from the Arduboy library:
+https://github.com/Arduboy/Arduboy
+Copyright (c) 2016, Kevin &quot;Arduboy&quot; Bates
+Copyright (c) 2016, Chris Martinez
+Copyright (c) 2016, Josh Goebel
+Copyright (c) 2016, Scott Allen
+All rights reserved.
+
+- which is in turn partially based on the Adafruit_SSD1306 library
+https://github.com/adafruit/Adafruit_SSD1306
+Copyright (c) 2012, Adafruit Industries
+All rights reserved.
+
+SetSystemEEPROM example sketch:
+Copyright (c) 2018-2020, Scott Allen
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holders nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the BSD 2-clause license:
+
+Portions of the Arduboy library, and thus portions of the Arduboy2 library,
+based on the Adafruit-GFX library:
+https://github.com/adafruit/Adafruit-GFX-Library
+Copyright (c) 2012 Adafruit Industries
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+Licensed under the MIT license:
+
+Code from ArduboyExtra:
+https://github.com/yyyc514/ArduboyExtra
+Copyright (c) 2015 Josh Goebel
+
+Code for drawing compressed bitmaps:
+Copyright (c) 2016 TEAM a.r.g.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
