@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Hoosegow — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Hoosegow</h1><p class=desc>Evasione nel Far West: tira fuori te e il tuo socio dalla prigione prima dell&#x27;impiccagione all&#x27;alba. Avventura testuale in inglese (Ben Collins-Sussman &amp; Jack Welch, 2010). Licenza non commerciale. Scrivi if-hoosegow nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: CC BY-NC-SA 3.0 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=p2bxy33newzb930t'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-hoosegow</code>.</p></aside><article><h1>Hoosegow</h1>
+<h2>Il gioco</h2>
+<p>Evasione nel Far West: tira fuori te e il tuo socio dalla prigione prima dell'impiccagione all'alba.</p>
+<ul>
+<li><strong>Autore:</strong> Ben Collins-Sussman &amp; Jack Welch (2010)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine (Blorb), interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-hoosegow/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-hoosegow</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Hoosegow</strong> © Ben Collins-Sussman &amp; Jack Welch, 2010. Licenza: <strong>CC BY-NC-SA 3.0</strong> (solo uso non commerciale).
+Testo della licenza: <a href="https://github.com/sussman/hoosegow">https://github.com/sussman/hoosegow</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=p2bxy33newzb930t">https://ifdb.org/viewgame?id=p2bxy33newzb930t</a></p>
+<blockquote>
+<p>released under the 'Creative Commons Attribution - Noncommercial - Share Alike 3.0' license</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Il file della storia è ridistribuito senza le immagini, che qui non si possono mostrare (resta il codice di gioco), come la licenza consente; l'interprete è invariato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAPpklEQVR42u1dCXRTZRYOCHRJs7yX0FJAZZEdRKBQ2rTN0kKhFFyOnJnxjMgyIFCgSbqzFsEFpOB4REGUTXEAsR4dHDkimwU8sjmyCRQEWaUiW8EB2uTOvf97L6RpEtoSOEnbnnN5Wd7//v//3nfX9l1kshr+zJghazhDL2vERCZrKAu8nwZDh8oeofXTkd4/lFlpMnAz2cQBvDJdr1IHgsxAcbe3tQ8SSHa3nJiWZ+I7Zxv5EVlGbpnVwG8zJ/C/WxL4qyhX8PVVfxVaH66XZFeGgSvM1PPmbBPfR2ShM5C+BU96bTXx/TINmm8yDHxZbqIGSHJMGsD3ASXZJmHteShZRh4yDfx+q5EfObSzrAkzUQJZ7o+NpKpk6xhwBk0iAZdtFACz6HnAO1qOUmaho563WwJAHOsU1s7WT59lGQUwM438AQLSHXmq5ySc1NWi5/KzROBwQhtNLi4IaovQvghQ2ufkJA0xck1ab4WmRiBK4I3qq+TxjmzIS2KMYxPUJtC8AFkmsvHYpARN7+qC2ABA1iAtUaHBu7BrsgDendoOnBsgy8hOIoiXJRAlc1Ylh2ExcBsJPLxQnQPPCUSm0kiki5NM4RGiU2l4T/DS47n8uso8d0wkb21J4DaSafOoyneZp9Ujde2WOmDvqgOioI3qyR7toaTf5gRuCwtT6gF0FjvGjjarnv+DfIOYiTWozL4EjTG7HjyvLKSQrlK2wgoDqN9mPbe5nn1eWWhHFl4aGxMRLiUaDtVNj9V0oPSstgXIvvbKFBMjiMMZ8fSyRsI/lKrhhxQ8muvZ51WNESM7hnjLKgGIbnqlCGBZPVgexUaFBzR1xyYOkAUxRyIVE8169Y56B1IlO4gk425Y9WFahxPJSeJUyLxL9GW9Dbx3rpxt1GC+rI13AEhVWkT1Wk0BtOI4K6Y8zsdqjTPygtR0vLdxzudU8/qeAKRIZSKGfC4A8ldrAiCOg7S+6rsSrYKJseoqbX5CrHC+6/hJcVyVNjkhhs6XxqnZe9dz0vFaFebA1/TZ/QKYrtcY7gtA2iBtdGpqOBz6si8Ub4iFI+tjoHhzHHw1vytbrNWgcTs2A1kwHjdS+GonKN4SB0e+ioGjX8ewY/G3Olgw4lFhvFHjdQ3fr+gJxRt1wrx4/OHjXmxOuqk0djxeY+G4VlC8SZiDXR/Xt3hia5zf8/oeGoATdRzMfLYZ2H8dAPD7IIDzAwFKB8P+z6NhXB8VA8oTazNwEVd+NAFcTgW4kAJwMUUYf2MI7FjeE16OUnocL0nJLj3AlVRhHB7/2GdkY6Trj41Swaop7QGuD8Y5BgqC61ub3wHG9lLd8/oPBcD8Z5rBzZ+TwHYqGW4X9wPbbwNhz+reHgGkz+g7YgFt6M7x/lD2iygn+oPt9AAGbE5/LaTHe1e1M9viwHZ2gDAvHs/vSKgIYG8VrMhpBzac5/bxfkxofZ9Mbc/A9RsA/3e0HwBunACAkhTYu8Y7gLSxXZ9EMdYScAS+JOX4Hn5LgQ8tbWFcb++bPFsUz9jH5sXjhe/1lQBcmduOsVu6SbS+f00LUABpDBnwKYPC4cahJLDjGBpXeigRTm9DMM4NgDviNfZ5uQl1FkDGPrRtzC7heaS+xLaTm3SwvqALMjKFAUjA3jycBNNSI7x65DrIQA3zrj+v78s2dZsAvDQINr3XHWY/Hwl2ZCCpsbRRwVZ5diZ1CkB2PsZ9s4dGCiz7VbR3aOAXpbVm51/YqWdAMDXGTR/G8MRbOFOnAKQNUWjy5ZzOzHkwkNBzXvmvCfIGNIUxPZWw6d3ujJESwMTQWchMAt6dGtctBlJWgGHJ6a3xjvCFgKTgdzyeS1nE26MfQ0cyEGwn+wsA4/efv94JXu7lXo3rDICU55IqzscMw3YG7dxJ0c7hxpZmtGUAkppmJWrg990GBiK7FgJNDmaSjqvbDKQjqe/mRd3vqi8Cef1AIuQma1lOTNcb3UMB25Y8JcSHJ4T4sBxVee7fW0BajJrdiDoJIG2I2HVpj8AuyUnsL4xmG52KcSEJnb8s8wmwIxjlxFJRjTf8s5uQ2pk0tQxAZA4Z+TuYSpHRlwDcjVmGBKCUur1PqRumUeVS5oHnE/AURN/AmM9ZSMUZ+/DIgNmZwGyoNG/AAui8eJqc1OqtUY+B/WxFxpAaSvEbAxA3QqBCyd3UjYCkMQS8cyonxYGO9+hQ7Mjat0c/zio4zpsOKABpUeQpCUSaOCtJC6O6K+Drt7o5bJYE4GezOzGVy6SJqOQlpW6iA7GJzGIVHKrClFQWCVi2aTzvuw96sJuSabp/AFdPb4+OS41mReu4yc7icwAp/MhLbgrzhrVkrCOVpNBi/vBH4SaqIVVQJGAIpILhQj0vM7Fi6lYmsQ4Z9evWOFa22rUqioUyTFYJxz2ro1iFhQXbBDbGi5f3GSG7n5aBc18AYrq4IucJGNZJzmqCdI6reKsCVRtAVjhFZzF9cAQrWx3/RgdFH/aAHz/tI6RiZ53CEgw7TiMwk8SKL1NzlrrFODZRflLY7FsjH4MR3cJY0ZNUnAneGFJT8sZH/hPD8mQ2RqzQLElvU8E5VRdAdvNwvce+joGti5+C7ct6QNHSirIdhWqcnkKnmgFIFZSUcAYg2TFBUhwMkRZHC100AdMyBIFUjZzMq66pG7KvZJeBsVMyB85CpoFAWjer413TwFRvkOCcetccQMGmJguFVcx4mAlxFfx8/nCpIu5DAKelIoBHkhCEZLh1rB9TMVp4uZM9+/fczne9L6VuqOZfvNEZ7CUpjoImvSYGj3UTlrjmzLfF65edELw2xY2TBzZ1MPzMd/GMUZTV0PH8TjcA5rQD+wUhdJIcF70m7bnjRmhPb77Y0rcAkiOghZceTLx75y4JLCQVPoNhBiuAUkbhQvuLP+iFsj2BfF648++ltWLZhyeDTVUbcli/fKsDuJrKWEu1Qrg2GNbM6ODw8MK1B7E10PHSXmMlAD8m+4vj2HiprO9NMNQqeMmHADp7YVLHjya3g/XzusBXBV1hTX4HWIC2jL4fJ6ZjzueTOr4z9nH2i52FY1ux4zsvP87U19kZePqFFc23MK01uwa7Dr5+/a/NHTVCSg0Xjm8lfIdHWot0A6UbP31IBI4Tzxnb6t6Ca8xFh8kcicHHcSCpFt1VUk0SYgLdKclhuAOdgHUWchLewHNVZTZGFHo9wakyQ3OPc/pOWovz74QJbOdzqiJmX3ph101J9o0J+6W497ipunGW2/mcxNlEWF2/M2qqdI17yUNJ5eryn3bUA1gPYD2A9QDWAxjYAD6opzlrOYAGjc2ip4eAMN57EOKYwzMGAQqgRnjWVycHc5wCcvo3v5Gb3KI0x2fSvDQvucV1AtEcG0qPdRGQ9loCoMA4Au4D6+Ath7d+OnfPzs2v7P1+20zfSlH+z9vXv/bFm+PXZhi1tyw4nzsQAwxABp49MzH85oGNq+atXPvF6z376HZrwyOv8eHNSvnwSN+Jtllpu07djk5+Zc6ikhMHpuQ/2/GUJU5ZCcSAA9CMm/jpm48LXhg1fm2ToGBoEhwCoWHKSiJXqkCuUrn9rioiRwkOkUOjxk2gZ3TcnotnTuSiqbgm2kZ74AGIxpxs3hLr4K3EvCAEL0yptinVvA2PdmdRqDh7yCOh9pBGcruC4+1h+N71nKoIXsem4jRlDR9pBC/+Y/zaoo/mvE9rEB1LoDGQ2KewH9z86dwefWJ+DAoOtYvgQQVRcRAaFAZtX9RBm79EQ5AsCBRqjn1e6dyqiR0ZaW8a0fzakf37puWKzkXCJVAAZI4DveMNchhoo66TmolMqbBhhQhg1MK/wXO3F0DHNBMENwgRvlfXDERiNKnzkmUrCwpeij5o1oU5WBhgALYoJQ9JRt4TgGEq4RjSWA5dJ6cwEHvMe56BKpcra8RECcDFCOCCETH7azeA0qY5HtW3CbR6LgqevjoX4j4bA0qNBsLCVA6QHxiA4+JUnDmBux6wAJIahyiYPJk/BIaUvAbdpqfW1AZWCUBzvMZUoQubRc/tzTaKjXUCTIXlyDJ1ywjQrRsNz1x/E9q+EMOcSZhCXW323QNAeuCa5E9rPPcoA1AvPu5q1nOFQncKv3has8oAMifSJAxi14yC1HOzITK2I4IXzFSawKOjgncvnsD1BmCm8LTmOUvfliHscdcxvWSNhfZOvDkvyW+eF64GAwX1jYhqB027tUYPHCyAQ98pVIyJZBvdieBkqgEgkgtJZieyOcgnPfJP3Xkyjfhlgv/YwNzkltd3I4CcttmNe9pA9LqhwQqBeUpBrZVNtcwzd5/1NDw5c0gl4du0AHmokrHYHYDvfrBs/oKRsT9JAEqNJ6wJnJUwY+Sj3h3U6omewEY7eDjLyDqc+YsdLD+ECX67jt2O44ZYpuDRdlHMJ8V9ZBeRXarIcNAVjgHDtxNBv2FCJWnatRUCrxACb6dAWq5Q2TEjubWjaNvMaYPblFjiVexpdfGB61vWOG37Cg3apLYnZgP/kt/0TTBobVRaKpwzbl3eK28sphwVN1WuENK0qjkEdCLBDUNZYO1O5G5CHErlGjUOAn3SwO+OFn02h7IhlhWJDclQfVe4a77D+gSKLDziJyxEBnL2LJP2T6qO9Oij20s5KqkygVhlwdxY6UFcz0XmAYEXEdny0qnTF7JmPd/lpFjWIixs6EBupRs1HWROfRXdNN/hh03xF2dCpSTcAJWWqDoybHTaasxRL5N98rUEoSD7/mfol7Ll+Klz2QsnJBeJts9ujheb7iRwy722wpP6pCJN1/lNBw8RRCotbf9k7uLDmOC/v/yjeYuXoqCX9IXQ9d77cHnBjh1F+cXbC9+YNbTLCWfPm4XOFW3fCWo0ITKvgefegSiUmVgN/C/ZJn+xh2JVWidnoc284dEHKbzwlcwfEb1/wciYn8hhUOVbqkabhaDZRgCmx/HRVeoh6GhCptdEUfPBLKO/xIbU8IYYQUCGPRhh3pbNQ06Dmo3ZcxIp7+VGV6uLpXQixYboUM7niups9pc8mYB8ECL98gr3SsTJMvFlEnhSg6Jqtz42x2sjM/T8BjKiQtMZvwHS5zdGMlesCa2RP2aO43Q1As9dC2AEcSq1wiTnIgIptRC2BehfMwihmtTKGT8T93Y708AtrXEHX3e9pKXW79RHNEPP5SOQv+WJTbizxL/ZMwtdfgNGaM3IMqEZt9D2+BYBh/vr6uoPfPLj3HCQgETbODLLwC3LMHCH0dhelfpM+7tki0cqSSHbTlsNXGG2iTdb9ZqOLprn+576xETXPvM0WW6iQmNOUMdn6DWG9AAQWme2nm8plqQ8/n8BD+yHtYgX/ysMWYD/SP8lRk3V9f/9zDHvtfrXWgAAAABJRU5ErkJggg==' alt=><div><h1>Hoosegow</h1><p class=desc>Wild West jailbreak: get yourself and your partner out of the hoosegow before the hanging at dawn. Text adventure in English (Ben Collins-Sussman &amp; Jack Welch, 2010). Non-commercial licence. Type if-hoosegow in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: CC BY-NC-SA 3.0 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=p2bxy33newzb930t'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-hoosegow</code>.</p></aside><article><h1>Hoosegow</h1>
+<h2>The game</h2>
+<p>Wild West jailbreak: get yourself and your partner out of the hoosegow before the hanging at dawn.</p>
+<ul>
+<li><strong>Author:</strong> Ben Collins-Sussman &amp; Jack Welch (2010)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine (Blorb), Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-hoosegow/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-hoosegow</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Hoosegow</strong> © Ben Collins-Sussman &amp; Jack Welch, 2010. Licence: <strong>CC BY-NC-SA 3.0</strong> (non-commercial use only).
+Licence text: <a href="https://github.com/sussman/hoosegow">https://github.com/sussman/hoosegow</a>
+Game source: <a href="https://ifdb.org/viewgame?id=p2bxy33newzb930t">https://ifdb.org/viewgame?id=p2bxy33newzb930t</a></p>
+<blockquote>
+<p>released under the 'Creative Commons Attribution - Noncommercial - Share Alike 3.0' license</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). The story file is redistributed without its pictures (game code only; they cannot be shown here), as the licence allows; the interpreter is unmodified.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

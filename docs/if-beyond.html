@@ -1,0 +1,165 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Beyond (Aldilà) — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Beyond (Aldilà)</h1><p class=desc>Una morte misteriosa e un segreto da svelare, tra scatole di vetro, nell&#x27;aldilà. Versione solo testo. Avventura testuale in italiano (Roberto Grassi, Paolo Lucchesi &amp; Alessandro Peretti, 2005). Licenza non commerciale. Scrivi if-beyond nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: CC BY-NC-ND 2.5 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-beyond</code>.</p></aside><article><h1>Beyond (Aldilà)</h1>
+<h2>Il gioco</h2>
+<p>Una morte misteriosa e un segreto da svelare, tra scatole di vetro, nell'aldilà. Versione solo testo.</p>
+<ul>
+<li><strong>Autore:</strong> Roberto Grassi, Paolo Lucchesi &amp; Alessandro Peretti (2005)</li>
+<li><strong>Lingua del gioco:</strong> italiano</li>
+<li><strong>Formato:</strong> Z-machine (Blorb), interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in italiano, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>ti sposti</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-beyond/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-beyond</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Beyond (Aldilà)</strong> © Roberto Grassi, Paolo Lucchesi &amp; Alessandro Peretti, 2005. Licenza: <strong>CC BY-NC-ND 2.5</strong> (solo uso non commerciale).
+Testo della licenza: <a href="https://creativecommons.org/licenses/by-nc-nd/2.5/">https://creativecommons.org/licenses/by-nc-nd/2.5/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn">https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn</a></p>
+<blockquote>
+<p>Beyond e' rilasciato sotto sotto i termini della licenza CreativeCommons Attribuzione - Non commerciale - Non opere derivate versione 2.5. (README of the IF Archive release)</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Beyond (Aldilà)</h1><p class=desc>A mysterious death and a secret to reveal, among glass boxes, in the world beyond. Text-only version. Text adventure in Italian (Roberto Grassi, Paolo Lucchesi &amp; Alessandro Peretti, 2005). Non-commercial licence. Type if-beyond in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: CC BY-NC-ND 2.5 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-beyond</code>.</p></aside><article><h1>Beyond (Aldilà)</h1>
+<h2>The game</h2>
+<p>A mysterious death and a secret to reveal, among glass boxes, in the world beyond. Text-only version.</p>
+<ul>
+<li><strong>Author:</strong> Roberto Grassi, Paolo Lucchesi &amp; Alessandro Peretti (2005)</li>
+<li><strong>Game language:</strong> Italian</li>
+<li><strong>Format:</strong> Z-machine (Blorb), Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in Italian, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>move</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-beyond/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-beyond</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Beyond (Aldilà)</strong> © Roberto Grassi, Paolo Lucchesi &amp; Alessandro Peretti, 2005. Licence: <strong>CC BY-NC-ND 2.5</strong> (non-commercial use only).
+Licence text: <a href="https://creativecommons.org/licenses/by-nc-nd/2.5/">https://creativecommons.org/licenses/by-nc-nd/2.5/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn">https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn</a></p>
+<blockquote>
+<p>Beyond e' rilasciato sotto sotto i termini della licenza CreativeCommons Attribuzione - Non commerciale - Non opere derivate versione 2.5. (README of the IF Archive release)</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

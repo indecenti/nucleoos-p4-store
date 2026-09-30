@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>The Life (and Deaths) of Doctor M — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>The Life (and Deaths) of Doctor M</h1><p class=desc>Atterri in un paesaggio sconfinato e ventoso e ricostruisci la vita di uno scienziato pazzo. Avventura testuale in inglese (Michael D. Hilborn, 2011). Licenza non commerciale. Scrivi if-doctor-m nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: CC BY-NC-ND 3.0 (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-doctor-m</code>.</p></aside><article><h1>The Life (and Deaths) of Doctor M</h1>
+<h2>Il gioco</h2>
+<p>Atterri in un paesaggio sconfinato e ventoso e ricostruisci la vita di uno scienziato pazzo.</p>
+<ul>
+<li><strong>Autore:</strong> Michael D. Hilborn (2011)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Glulx (Blorb), interprete Glulxe + CheapGlk</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-doctor-m/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-doctor-m</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>The Life (and Deaths) of Doctor M</strong> © Michael D. Hilborn, 2011. Licenza: <strong>CC BY-NC-ND 3.0</strong> (solo uso non commerciale).
+Testo della licenza: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">https://creativecommons.org/licenses/by-nc-nd/3.0/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0">https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0</a></p>
+<blockquote>
+<p>"The Life (and Deaths) of Doctor M" by Michael D. Hilborn is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. (README.txt in the IF Archive release zip)</p>
+</blockquote>
+<p>Interprete: <strong>Glulxe + CheapGlk</strong>, licenza MIT (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>The Life (and Deaths) of Doctor M</h1><p class=desc>You land in an endless, windy landscape and piece together the life of a mad scientist. Text adventure in English (Michael D. Hilborn, 2011). Non-commercial licence. Type if-doctor-m in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: CC BY-NC-ND 3.0 (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-doctor-m</code>.</p></aside><article><h1>The Life (and Deaths) of Doctor M</h1>
+<h2>The game</h2>
+<p>You land in an endless, windy landscape and piece together the life of a mad scientist.</p>
+<ul>
+<li><strong>Author:</strong> Michael D. Hilborn (2011)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Glulx (Blorb), Glulxe + CheapGlk interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-doctor-m/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-doctor-m</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>The Life (and Deaths) of Doctor M</strong> © Michael D. Hilborn, 2011. Licence: <strong>CC BY-NC-ND 3.0</strong> (non-commercial use only).
+Licence text: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">https://creativecommons.org/licenses/by-nc-nd/3.0/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0">https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0</a></p>
+<blockquote>
+<p>"The Life (and Deaths) of Doctor M" by Michael D. Hilborn is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. (README.txt in the IF Archive release zip)</p>
+</blockquote>
+<p>Interpreter: <strong>Glulxe + CheapGlk</strong>, MIT licence (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

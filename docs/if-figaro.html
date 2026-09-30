@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Figaro — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Figaro</h1><p class=desc>Un breve esperimento: prima di giocare decidi tu com&#x27;è il mondo all&#x27;inizio della partita. Avventura testuale in inglese (Victor Gijsbers, 2010). Scrivi if-figaro nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: GPL-3.0 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-figaro</code>.</p></aside><article><h1>Figaro</h1>
+<h2>Il gioco</h2>
+<p>Un breve esperimento: prima di giocare decidi tu com'è il mondo all'inizio della partita.</p>
+<ul>
+<li><strong>Autore:</strong> Victor Gijsbers (2010)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine (Blorb), interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-figaro/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-figaro</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Figaro</strong> © Victor Gijsbers, 2010. Licenza: <strong>GPL-3.0</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/Figaro-source.zip">https://ifarchive.org/if-archive/games/source/inform/Figaro-source.zip</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha">https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha</a></p>
+<blockquote>
+<p>It is released under the GNU Public License 3.0.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Figaro</h1><p class=desc>A short experiment: before playing, you decide what the world is like at the start of the game. Text adventure in English (Victor Gijsbers, 2010). Type if-figaro in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: GPL-3.0 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-figaro</code>.</p></aside><article><h1>Figaro</h1>
+<h2>The game</h2>
+<p>A short experiment: before playing, you decide what the world is like at the start of the game.</p>
+<ul>
+<li><strong>Author:</strong> Victor Gijsbers (2010)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine (Blorb), Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-figaro/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-figaro</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Figaro</strong> © Victor Gijsbers, 2010. Licence: <strong>GPL-3.0</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/Figaro-source.zip">https://ifarchive.org/if-archive/games/source/inform/Figaro-source.zip</a>
+Game source: <a href="https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha">https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha</a></p>
+<blockquote>
+<p>It is released under the GNU Public License 3.0.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Adventure — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Adventure</h1><p class=desc>Colossal Cave Adventure 2.5 (430 punti), la caccia al tesoro nelle caverne da cui è nato il genere. Avventura testuale in inglese (Will Crowther &amp; Don Woods; Glulx port by Daniel Fox Franke, 1977). Scrivi if-adventure nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: BSD-2-Clause (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=fft6pu91j85y4acv'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-adventure</code>.</p></aside><article><h1>Adventure</h1>
+<h2>Il gioco</h2>
+<p>Colossal Cave Adventure 2.5 (430 punti), la caccia al tesoro nelle caverne da cui è nato il genere.</p>
+<ul>
+<li><strong>Autore:</strong> Will Crowther &amp; Don Woods; Glulx port by Daniel Fox Franke (1977)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Glulx, interprete Glulxe + CheapGlk</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-adventure/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-adventure</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Adventure</strong> © Will Crowther &amp; Don Woods; Glulx port by Daniel Fox Franke, 1977. Licenza: <strong>BSD-2-Clause</strong>.
+Testo della licenza: <a href="https://ifarchive.org/indexes/if-archive/games/glulx/">https://ifarchive.org/indexes/if-archive/games/glulx/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=fft6pu91j85y4acv">https://ifdb.org/viewgame?id=fft6pu91j85y4acv</a></p>
+<blockquote>
+<p>Open Adventure was released with permission from Don Woods under a BSD 2-Clause license, and this port retains those terms.</p>
+</blockquote>
+<p>Interprete: <strong>Glulxe + CheapGlk</strong>, licenza MIT (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Adventure</h1><p class=desc>Colossal Cave Adventure 2.5 (430 points), the original cave-crawling treasure hunt that started the genre. Text adventure in English (Will Crowther &amp; Don Woods; Glulx port by Daniel Fox Franke, 1977). Type if-adventure in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: BSD-2-Clause (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=fft6pu91j85y4acv'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-adventure</code>.</p></aside><article><h1>Adventure</h1>
+<h2>The game</h2>
+<p>Colossal Cave Adventure 2.5 (430 points), the original cave-crawling treasure hunt that started the genre.</p>
+<ul>
+<li><strong>Author:</strong> Will Crowther &amp; Don Woods; Glulx port by Daniel Fox Franke (1977)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Glulx, Glulxe + CheapGlk interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-adventure/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-adventure</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Adventure</strong> © Will Crowther &amp; Don Woods; Glulx port by Daniel Fox Franke, 1977. Licence: <strong>BSD-2-Clause</strong>.
+Licence text: <a href="https://ifarchive.org/indexes/if-archive/games/glulx/">https://ifarchive.org/indexes/if-archive/games/glulx/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=fft6pu91j85y4acv">https://ifdb.org/viewgame?id=fft6pu91j85y4acv</a></p>
+<blockquote>
+<p>Open Adventure was released with permission from Don Woods under a BSD 2-Clause license, and this port retains those terms.</p>
+</blockquote>
+<p>Interpreter: <strong>Glulxe + CheapGlk</strong>, MIT licence (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

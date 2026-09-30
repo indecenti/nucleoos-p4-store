@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Book and Volume — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Book and Volume</h1><p class=desc>Un sistemista in una città tecnologica, chiamato dal cercapersone tutta la notte. Satira del lavoro sempre connesso. Avventura testuale in inglese (Nick Montfort, 2005). Licenza non commerciale. Scrivi if-book-and-volume nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: CC BY-NC-SA 2.5 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=timl7wld6zp9otsf'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-book-and-volume</code>.</p></aside><article><h1>Book and Volume</h1>
+<h2>Il gioco</h2>
+<p>Un sistemista in una città tecnologica, chiamato dal cercapersone tutta la notte. Satira del lavoro sempre connesso.</p>
+<ul>
+<li><strong>Autore:</strong> Nick Montfort (2005)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine v5, interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-book-and-volume/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-book-and-volume</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Book and Volume</strong> © Nick Montfort, 2005. Licenza: <strong>CC BY-NC-SA 2.5</strong> (solo uso non commerciale).
+Testo della licenza: <a href="https://ifarchive.org/indexes/if-archive/games/zcode/">https://ifarchive.org/indexes/if-archive/games/zcode/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=timl7wld6zp9otsf">https://ifdb.org/viewgame?id=timl7wld6zp9otsf</a></p>
+<blockquote>
+<p>Creative Commons Attribution-NonCommercial-ShareAlike License 2.5 (IF Archive index entry of bookvol.z5)</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Book and Volume</h1><p class=desc>A sysadmin in a sprawling tech city, paged all night long. A satire of the always-on workplace. Text adventure in English (Nick Montfort, 2005). Non-commercial licence. Type if-book-and-volume in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: CC BY-NC-SA 2.5 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=timl7wld6zp9otsf'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-book-and-volume</code>.</p></aside><article><h1>Book and Volume</h1>
+<h2>The game</h2>
+<p>A sysadmin in a sprawling tech city, paged all night long. A satire of the always-on workplace.</p>
+<ul>
+<li><strong>Author:</strong> Nick Montfort (2005)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine v5, Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-book-and-volume/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-book-and-volume</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Book and Volume</strong> © Nick Montfort, 2005. Licence: <strong>CC BY-NC-SA 2.5</strong> (non-commercial use only).
+Licence text: <a href="https://ifarchive.org/indexes/if-archive/games/zcode/">https://ifarchive.org/indexes/if-archive/games/zcode/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=timl7wld6zp9otsf">https://ifdb.org/viewgame?id=timl7wld6zp9otsf</a></p>
+<blockquote>
+<p>Creative Commons Attribution-NonCommercial-ShareAlike License 2.5 (IF Archive index entry of bookvol.z5)</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

@@ -1,0 +1,165 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Salvate lo Stregatto! — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Salvate lo Stregatto!</h1><p class=desc>Lo Stregatto, mascotte di un&#x27;associazione ludica, è sparito: ritrovalo prima che diventi una pelliccia. Breve commedia. Avventura testuale in italiano (Marco Vallarino, 2013). Scrivi if-stregatto nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: CC BY-SA 4.0 (source code licence) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=1elq80q2fb91e9dd'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-stregatto</code>.</p></aside><article><h1>Salvate lo Stregatto!</h1>
+<h2>Il gioco</h2>
+<p>Lo Stregatto, mascotte di un'associazione ludica, è sparito: ritrovalo prima che diventi una pelliccia. Breve commedia.</p>
+<ul>
+<li><strong>Autore:</strong> Marco Vallarino (2013)</li>
+<li><strong>Lingua del gioco:</strong> italiano</li>
+<li><strong>Formato:</strong> Z-machine v5, interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in italiano, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>ti sposti</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-stregatto/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-stregatto</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Salvate lo Stregatto!</strong> © Marco Vallarino, 2013. Licenza: <strong>CC BY-SA 4.0 (source code licence)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/indexes/if-archive/games/zcode/italian/">https://ifarchive.org/indexes/if-archive/games/zcode/italian/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=1elq80q2fb91e9dd">https://ifdb.org/viewgame?id=1elq80q2fb91e9dd</a></p>
+<blockquote>
+<p>Il file Stregatto.inf è il listato del programma, scritto in Inform 6, rilasciato con licenza CC-BY-SA 4.0 (Stregatto_leggimi.txt; the story file is its compiled form)</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAQpklEQVR42u1dCXRU1RkOiJB9BcLOLAEBsS0utZRaUKt2sbTHU9pTrBtIIJmZbARQrBLaCkJBRBQELIGEzJbJhF0ES8BUoVCWgkSkLIqAAmFJAjEhmff3/+6dN0ySSQgh8SQ4OefnJfPue/e/3/3+7ebkJyCgiV/TAqa1nza8oANfIe0D2t5Xu1EB9tuwBlzx87cyKyajAKozmSkuOzy5b35k65dMca1vbS0GpNgtL6ZNjFs1KEmX91ySNi/TpM3dZtBYzxk0lksGrfWiuLZSSdRaLhq0totGnX0n6+006fJSUrXOH7rB8wayecFTv2fAHjHpHJt48qo0/VqCpOhXkUmX26YkRZdPqfo1Qn8mAn/m2M9rGjNqkL2j6qICfFjaDX5RO5V1iTrLw8k656YUPSZeTcw04t2sTtRaqwzialEMbUuqhd4aSxV057UJME1axwEAedNs9DZXpnwGJgBwPJlLTm5VAOKtIkwEV6LGXJ3MbJwYt56StA7bUz0WxDQJRBW8sb2WRvNubMQLeRIVOLqVRQJpEe4pWes8nKDNvu8GQaR2iLKGHiti2FfsTAd4GsvVWx24OkBqzFXw7ewfL6ggTgug9o0OGAaNbXN63Aa86DsHnheI1XBdbIVnkrTmWBlUGsh5R42S4CVoczIm6r+bzKtr0pYqRGvGYjNcW72mrN5I0OQM5xCPAFH9XQfvGhMtVen6DQBzqsSKbvMROKR9J2rNBQJxrdkPoEcsCueJLqPWft7QwxkjKzGvHNHDvr7WB1N0q+i7EG2bwkLh1rSWDGBl92Yh2Af75ptbZJLsB9A3C3MVo9ZWPCE2qytKZsFENeeboMm+A+XZrZYgN3dUnqhfR8a+lmcF8YYXdJD/8Bc+RPKIQX6w6jdjxggEy6wDIAeNLAmgpcoPVr3iQl5o0FgPm+I2dBKBRAYQrjy01o9S9f4Acn0/aMf3l9P6r+nsCSJTdPYIZl4xjnnkSYUfrAYSa1eyPp9TGssDHgBxQpuosZb4AWwcgKiRkfLVABCntX4AGw+goa9lhB9AP4BtHECjzkYmfV1p6JnrjfP1vtqCeeubu/a4xuj8rQNo1MmFju9tprHdsum52CwhY1ie757NDtbi8zl8jvvP95DCgaue+ys9Y2rKShrL98f3zqFxPVfWeJevcfE9c2robGSd43vl0JhuWR6d8Q7OQBoN5E0DiB3EQqHg1B+spnd++xFZn9tLuWP3UfaTu2jeYwU0cWCeUKo2OPj89Ue30NyfQf5Jyf1yxTgsTtwfxPcf2UJz+B5krpBr4+c8/E+ax8+/ct86mvnTTXLsw77HYZ6/Ddso3qvqDLAy7l9PmX/YQY7n95H12T00/xdbGTy7AL0xIN4UgFAErEvpn0ubJx6mc+YKqlhLpGwios1EVRuIqjcSvc/3ALCqEK5gp51BJh5blqeIcQAfDE7qJxcAQJT3ib7hd1as4+saovLVUjBPOf9MH/BU6f+jL/9R5hnrcxzrc/D1c4JxAA86b33xKF20V1HlOqlz9XtEV1YRHXvnkgAf7L0eiE0GULLETGkDHHTozWK6ukEqCoU+nV9MB+aepaOLLtFVVurjjBNsJjWVAdMOvXmeLq9SqNhSyYtWaDuPg9JJcRLAWSM209mcCjq1/IqQYstV8f4Ltio6vaKcTi67QuetlbQq4RMx3zkeezLzingG4yBfZ39DXy67LObYMf2EMHW8H+OxwQDsvPUqfbbgPL/vsvgZUuZ0CfaOYz2MDYB4EwDaxCIL//w5XV1PVJrnYqXO0PQfbXADZBWKwsTe/d12mtDH7PGV49zgALxz5kraP+cMf090dmUFvfD9VWKsytR0NuP0O53iXftmfy0Y9VVWOb18z1pKvSOXJvE9sAkbOXmwU8y7xlAkxl3OV+jtxwvJxLriHlwGmL/GcFCAB50PzjtH09gFYD2pdzhonalIgAfdji0uIRPPW9s33zSAmGwcO2T4FChRyhN+sbRUKDDWHTQgAAIOGp95R1V8tiH5U2E2h9+6QAt/XSjeg0Wv+ONOsUiMg+J4D65ju6+k3TO/EuYG9gGM8WyOYDJEDVTPdFlOefH7xTgACFPE+3AP7gbPnWKWljnl5r109xpxH2uCvtB136yvxLNwAW+zbt7up1kAxMsQsWwcLOBvIAgaz3ZdIQIBlEwf5BQChkBUBbBYMOY4766L/d6WKUeE4ifYh8EN7Jl5WvgpNeVQWYvP9rx2DUDBNnYhJr1bLx0YLzfHOf6AB8B5jxYw47NZL7tgPgIKwIPO29mkEUjAbrwDVzyfNXqnXBdv6FpjkVhrswMIn7aJgwMmgc/ATmEnJ92Zz+CU0hn2PVjo6RXfiOCCKIl0A2a/4Fcf8jNyEUue+Jj+FJVJH750nCrZFZxnPzftvvXMLrMXiJLx3gBiUxLcbqH2xtYGUIDEACJAYT41uKxncwVg3sENY9/8xTaxJui3ZcrRlmEglNmcfg3ARSP/JZSfPDhfgAAFsdMlDpdQGD4PLIITB1hVHFzg3GH2T0Yuo/k/3yoWjGhrG7PXY8bNBWCyDwDfSzkkPqsN4IJfugFcKyP82G4tZMLwNSJtYHHy9892WSEAeW34JvrL0PdoGwNVvlqCOOvBzYK1CBKIjGX5LgHErldPCfkvBwhEQyyu6I1i6dN01uZjoDuyqyaMefA+fIZ7mAMgP9c1S+SxqmvCZraICav+BDsFgJACYFEAEUr9PmQpL2S/iNC4//eHPmBTXSaCBBaHVARX5GdCNsm8DakHAsqMB94XbFVLsJsFEPewKakcrU9mXhaRtsRRLfR6KjrTE/CQRB/lPBAgQ49Xf/K+mNtXGXhziTQrPoGj2t5ZXwtlARIiKuiPymDqkNX00bQvhK+7lFtNs5mBzzC4AAE5H9iGzH8xJ8//GLWDFo4sFC4BC4N5rUk86Nl5bwBx79Ty6wOouhBvANUMAAk8kmbohfwSaRYqEuR9SJUAHDb+X698LjaxPvBuOg9EWvAil2/Hl5SICVXaIz0AQFhAmZPIxRUCdhKlXgkrB8BhplgMzBoLfDpmOU25axUzU/rP454cTNalABCLg++EC2gIwPwJn4hxYPQbj10D0FNG9rEwOF94xsAFwSJgTZgbOSKKg7SBDk/+2mKlHAID0paNqYdEKoJdBYhQBmAgIiPng/nkPL2bLvJnF2yVzL69HueOxcEPYUNQjaC6QDUB8xrn9lEAcMf0L+mSvVIkuEiRfAEoGDZmnxiH6F+7JFPrbICINOzzpSVCZwCJzYV5I7gg1YI+DbGvGQ8TpP9AAEFyDd+IxcMs1NxKPTwQlQUv3ld5BLYBUJFDuisM7yoA/guf4z31sQLjk/k5jMN7BHCaumUormA/5nuVdYb5ItUS1Uq3bM+hw7d6nIVJwRR5/LRSsFM1Qc/O97XUe7ylgqhWMb5OcMCchp73vMM9rqEyTFY713SGv8Mzqr7f/om0ruYBpe8DTOt1lWtoTGOev5Fx3oeq8mDWf6Tv/52IH0A/gH4A/QD6AfQD6AfQD6AfQD+AjRSlheQWB1BndRl0rF9fLhlbQtQ5GgCzbQKokwxJ7JlLib1tlDog73LaQGdZs8kAlkHOUoCY0CNXnubofOPQ9gAEeLwwALdw9I6C/asvzP7P1oN/2VV4YPquwoPNIrulZBzYeHaGY/Jn9iS9vSKxt90niG0NQMWgsSnJ/exX9uZdmJOV9+7Mu390967OsV1Lort2LYuObR6JwbVr57J+d/b/bOqMSe+c/bT8pak/XPu5LxDbHIBg3t7cc3OfHD/K3rFjKHXsFELBoRF1JCQ8Uoive42REJZOQaHUoUMw3TP07v+cOV76QtrAvBK3b1TaHoDszOHzFo7evhXMA3ih4ZGu8MhoF18VbwmLiFKCbgtWgjqEKGFR0Uoo/1x7TGOE3+OKiIquat8+kJ4aP9q+df7JJQk97WpgaWsAWph9dmX/2uLZQ+4fsrdTYKjiBo9qSEQUBXcKJf1Tw0j3h/upU0AnCouMEp/XGds4UZiRSpdu3UqK9hx7OXVQXqk3C9sKgCJwINru5IDBfqoUZuZmSo0Fh7kBvPftP9ITlfNogOEhCmwXJO9HNg1EMDqQzXnp8kVzZ/6s4JPEXtdY2KYARIqBKAlHXx+AoRHyGnR7CA2e+ksB4pA5vxOghoSEN4mJKoCLly+cO+vRgv23NoDqoqOi2Xw7kuaJe+k3l2bTT/LiKTwmhkLxXEQLA5jQJyeKASxtswDCjIPChHwvYySNPDuD7nrl8ab6wEYBaOxjfqhGFza+sRtdiWRjnbZlwkhBInvF0jDHOPpt6d9JP3qoCCahYZE3zL6GAbQoRp1NMWrt5Wn6/N4CwOEB0zrIXglWZ5roldAq/lqz0QCKIMIpzo9tY+nxU3+j7j8ewOAFCpMGeLiGRfuW+sBtCED02WKSnUrt9XGQ6PQWf8/i28XfC+usKWn6da3l74VvgIHSfGPv7Udd7tJyBA6U4OBeWIRgInyjL5FB5oYArGaSMQOtTg/51G4dCb2y72N0lcTW5APvdJb+m2veqC6dL1/XB3LUDQ4Mk8wLl2Yd3qWziMzf/+tv6HvTR9aRaF1PCgkOFyz2BeDCZQten/XY1v+qAHo1nkgDZoJ86N2B5gn4C2xWvChZ71Raix80anKrD246O6PfoP5HAoPCRKVQr+9CzqfmffCLzK6I7l1pmDOeRnxgouEbjXWky2ANAx8mE2+vRDokLFKJiI6uKNy2ffqUIavPGvrYZO8wnVVJ0uZWMID9azRoUxvJcOH+jDDj1tAzhnccR0v2SUWOF19NX4walcus6jBZpjUuIHAQCWwfLBJrXxLiI8WJiIqp6nB7MA1/dPiHn64rm5XQ26aIqkj0SxDYrPDVjEz0CTTFzQcLDyXrWgULFYPGqpjiHOU4Hbln6JDdqFGDQ4XJKY0Wro3D65HaY0PYZ3a4PYhiu/csPnbyyKSXh64/Lk9k4P9sriSto2KCxn6HxKtWIzKVhUaN9WnR5khjrmol9TDhaAmnI89MeNLKNeoF+KfmFpzEMMO/efDnIwqOnDg8ef6oDwul7wP7zFWiEZvWsrzBVniyTyq1Z7o6ZERuPSDiaGnbW6cXF+058vK7WYvnLMlaNAdRsjlkCb9vUeZbcz8q/HfGZ+vLXntl6HtHJXg2EXlhkSat/Wh895zOknn1tgaVvQNRmZi0uceQcbcOfyh/D4KjpdSBeWUo8JFeNKtwtEXAwPmjepDKa0fS7BLZicZ8f6N6CKoD4nXme9F8EH1SWk1uCF+E431mR4sIoq1OzCNigFFrU0TbU83KcfV2bWuwFZ4WuaHzNLq5oY9eq8kRxW/nWkTkL6/YdYE4ybr8Kv5+nCSWbFB0w62P4/tkd1f7qOKwQe16ewv+0lxR216JtWrzDo/vs3JYk8Dz1QLYqLH/mcP4mYlx69xAmkUL5ETZnLYNAgofJ8sz1UW52yBXsixDD9lmacpN7sAiuvpqzbG8MxkmneNrdDETnW6Z6uxoZfdb9httRdi/UZLOIZpxYy2oMABcks46uHY8aIFu5ubYZK1zjLsNfBGXXJeSdbJBNyJ3axfZI9FezqnJCbSDZ91TjH0dA2qulVqipz61q01p/PzCgM0xE7SWBwz63BE4qW3tkqzPHzE5bkOv1F72oIb+v4AW+4JJq/8VRkAb/1L/S4ymAvd/mnxIOsXglboAAAAASUVORK5CYII=' alt=><div><h1>Salvate lo Stregatto!</h1><p class=desc>The Cheshire Cat, mascot of a games club, is missing: find it before it becomes a fur coat. Short comedy. Text adventure in Italian (Marco Vallarino, 2013). Type if-stregatto in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: CC BY-SA 4.0 (source code licence) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=1elq80q2fb91e9dd'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-stregatto</code>.</p></aside><article><h1>Salvate lo Stregatto!</h1>
+<h2>The game</h2>
+<p>The Cheshire Cat, mascot of a games club, is missing: find it before it becomes a fur coat. Short comedy.</p>
+<ul>
+<li><strong>Author:</strong> Marco Vallarino (2013)</li>
+<li><strong>Game language:</strong> Italian</li>
+<li><strong>Format:</strong> Z-machine v5, Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in Italian, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>move</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-stregatto/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-stregatto</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Salvate lo Stregatto!</strong> © Marco Vallarino, 2013. Licence: <strong>CC BY-SA 4.0 (source code licence)</strong>.
+Licence text: <a href="https://ifarchive.org/indexes/if-archive/games/zcode/italian/">https://ifarchive.org/indexes/if-archive/games/zcode/italian/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=1elq80q2fb91e9dd">https://ifdb.org/viewgame?id=1elq80q2fb91e9dd</a></p>
+<blockquote>
+<p>Il file Stregatto.inf è il listato del programma, scritto in Inform 6, rilasciato con licenza CC-BY-SA 4.0 (Stregatto_leggimi.txt; the story file is its compiled form)</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

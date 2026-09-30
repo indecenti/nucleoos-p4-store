@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Shade — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Shade</h1><p class=desc>Un gioco in una sola stanza, il tuo appartamento, la notte prima di un viaggio nel deserto. Avventura testuale in inglese (Andrew Plotkin, 2000). Licenza non commerciale. Scrivi if-shade nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-shade</code>.</p></aside><article><h1>Shade</h1>
+<h2>Il gioco</h2>
+<p>Un gioco in una sola stanza, il tuo appartamento, la notte prima di un viaggio nel deserto.</p>
+<ul>
+<li><strong>Autore:</strong> Andrew Plotkin (2000)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine v5, interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-shade/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-shade</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Shade</strong> © Andrew Plotkin, 2000. Licenza: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/shade-src.tar.Z">https://ifarchive.org/if-archive/games/source/inform/shade-src.tar.Z</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q">https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q</a></p>
+<blockquote>
+<p>SHADE may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAARH0lEQVR42u1dCVhU9RYfcxlgmLkzqCBlm7nnBszccX3Y+tLMrLTMdnMXFRdghgEHRAVRM3dRS9T6SlPfs3rVZ5aZ2aZlWZmpWFpmpangEgpzzzvn3HuHAQYEHN5jbPi+42Xm/u9/+f1/Z/kfvnvUaGr449RornHGahqw4O8a//upN2iQpj7Nn670+X8yKg0GXgZzimEGZ2fB6BcSKxi9rW19bQLJu+XBNASsvcMqPOMQjauSRWG7zSKcsFkMZ1BOK9e6KjS/0zjnz+2iYRNe45NjDOIgDYPnCaTvfjw7tFsNdzlEYUuyRShK62oEkqkoOBG/klSrEZw0/25GSLHyd3tRhjrbaxqpJgqulI3Ugco6u0W4g4CjgQkwZBwkmYVilCIbXS2C5C9iI5HnzvOn71KsMpi4xm8ISE/Nq7GTcLPOIqSlKDuGg7locJs8EbhahNZFgNI602Ug14216BvXSKVV8Ca2N4RhR+9Qh+oAVxNolQBZpLDxwGSzwVItJpLaktgQfTK0CniXrnbgykoigkimCp3kKZsCotNZhXBNRRo7effvCp6bjYpKI5F+t1t1ERoPn1Cpt0XQ0v7u4HmAWOSUnea7BJ5nuOOVeXazMRY9LTmI4r87eJ4gMqHMhuQKnYqq34kWwzbS/b+Dw6iGY5FQjV0YjfxJvkH1E+XZJwq3UZwXYF8lLETzVo6FnBhASbIY3ucgOcC+ilgo2c3CycmddOFqxKIBRXUTzPo2SNGiqy1A9rVXTpNZ+DQTL1bTQP5H9rxPpwVsX+UiB9iSTTSucgMYWwLgGkbXzCwMgFXBKYUSD/j7gfktNVpOfan5PZvFsDM1YP+qYgfxd8M5Z0xoE7cTSYoxCci8k3QzKWADL8tCjFRcCdHGXiVeuLNgxCAxPwBg1QCkSCUhRritFICUrQ0AWHUAk2KE3gEAAwD6KYB20QjJVhMkd/UQ/OzZJtkqt7HLR8PyfVzmfkkfSjvRWPlc3G1l4X7FiuYveH3mcvPxCYA0SGK0HuJvDYLxbRuxTGjXCCbi56QYA08aHRJM7BDM303qFOItIC253zGkgqif+giSBdvRmPaygODnKV10fF9tJ/8eDJNx3EScTznw8Rnqq/wzJc/WGoA0EQIurXc4rI4T4c0Z/4R3svvC5vQ7YeWIKJjaqwlPLqV7Y1j2dEdYMbwLLBjcRgbWAxhi7LKnOvD9RUPaeQUvpUdjWD60Ewu1m3ZHpAKi0T0X+jy7/814P8rdloTGnjewFc6nKcS31yLIocwwzjTjMxnYF/Xp+UwOXZ/tDEufuJVBpzn4FECiNrFlfVIvyD+QDnDqeYCLSwFcywH+WgxwYQlsSI6FuFYNILvfjVB8bBbf//nDiTCls44XrC46vXcEXPxpJkDhUvh9l600wxHcCbjoVyZ3x36XAPw+B+DSMtiRM5CZTvfd7dpqYefKRwCKcgBOzAU4jXM6Mx/gz3lw6ZcsOPVtKnz20uOQ1fcGnHswpHQL475fiu8q933yuZJn6HpuERQens7AJ8Z4YXxNAbTjjkxCai8f2lkeDCcr/TYbftk5Gb5/YyT8/NEkHvzN6XfD2Jb1Yda9N8D5gxkg4aTy3o3zCmDB92kg4SbQs+U2Csf6/o0R/Pylo5ngQhD//MoBju5hbmYwgO20sH3pQyCdWcDtCnFTLuRNh6KfswDyFzCQULAAzh2ewZpA6k5ArkHtkfAetbt4JJOfuZCXARexjxNf2n0PIFGaVGE37ibtlHTiOdgytx/bmQRUDwLlhZHRDDAtKqvv9TwpyJ8Ph7eOg8QoPThwwSQ2BGDa7c3g7A/pvBm0CZ7gkbrRBtBiaJOOfBAvA4Jgvzgqmu2U6sBorA+XDeRxaFPXJfZE8xIBzz14C7xmj4XT302F4l+z+dk/dtt4A4iBa8aJCvvmwycvPIIbGg7Z990Es1BzMu9p7hW4KwTQyEZ278ahvHM0obez+sCYFtdAQlQoL5zBxN8JrMw+JQAe2jIWxqFa086TTECnQwCc3V8eQAJlPKopMZkY/Req0+o4iww2ft798hMMgOr5SwGIgJBdi2vdkDc0rlV9mHP/zXAe+2Bzghu/ZrwVRt1UD9ZOsMoAFiyELXPuhWGRGibIOHyWbLzPnYg6WXIaZO8uHpkJEqrV7leeZGNNKpeAk3agjSFGEoC0eDg9D379eAosffJWWIEGmoQM/OoxZjh/KIMXVYqBioof2R6PNnUxHMUrbdyhLXG8WFL79NuacRuHFwBXjY5hL+roGsZOKK51A/goZxBvlIRs27boARh5gwZemtCV1ZtMyJ51T8GiR9sy+CvQEc57qCWrr08BtCuhCQGUtzWOF0fqRUwsPj4b9v5rGKsAhw7RMgMLf5zBbaTj1G6ebI88pPiXWXw9hgC7bR8+vxAXw2p3diFsndefF/wWsp1tGvbzypQezELy9GUBJBWP91Dx+PZBqMr/kB0ebtautY8hAzUyA/FzMZkGcj70PM2xOAe+2TSMnysb1165FyZ2oHpSx+8+fx/kkwqSPfxtDi/uPAI2/5HWrArk9VQAXQQGge0h9H1ZAN1OYclDDB45BQpRRuOCZ6Jdov5onO82D2fGp5A9uyyAWtiY0lv2sMjAT3MfhZE3EgMVAFG1aRxyIOcPToNCnNfnax6D+A61AKDKEo4FcWJpseHwesZdcJ68HoGB3u7gO2PcTkRW4efhGKro/Idbw+LH27MQw1YO68Je2lOFOfZDUMjbEhj0/IG3R8MPb41CGc02lcwGeVraIAqSaR4VqjAylGwaAaKGKm9l3gMjSIUpjCEbiN99jGGQE71uFjquTOyXHFxFMeAVM5CcxMRbg93HnbG31OdAuAhZRos7jXEX7fyMu6+TAcSF5aH9Gt+mIas3CS2aFujpRNhJIXMIAFose10Kl1ClOMajK24Qf4+2kAL3eOX04AngSrRj4xQnQnNbOLgtFB7NYi1woSl5flArDrPWjle8MPa5dd59MApBnYyhFoFPsa7PASTwJnfS8Q6+PKkbHoeMHNuRVyU2XUIGuv6YCyf3JLMBJpVTAaQwhoBXPWeSlzCGACRgv3z1KX7GdTybA+cNjlgGi9Tw/QUDZKajPfvxvfE8TikGoi17NaEHOFEz5j7QAjal3gYFOAbbU7TZn+UOgckIDqm/ZxijMpBDGLTdJJ7xps/iQDLcZGDp9HD8s0TY/59RHCRzoEuOAk8dH6CXI8+XVY1AmgAkgAnUc7hgCYE4g/EbtR2HfRFI49s04s36bVcS37+ETCQ2URhFQLsDabSTF9C7y0xd4D5d7MNgXzU/xNrygXQGmwiac+GxbI4UJrIdNPoOQFYXjPpJheD8IlSr5bJ6oWEnFSYDTe0ILLJRVT3KnfgymY9om9PvkI9XKHvWPc3qRHaMWEshCQG5g9hWuISf24HhyfDmGvhk1WCPo9x891GOgDn2aQL8O+1OHlMOfcLYw3o9ypGQt8a+V+LZemJ7HwKoGnkKY5bgYXsDqtTbs/pweLEOz8ZzBrTgBTPtzUL1kgmPtePF0elhOcViKHQa8Ewc2BTgM+68Vk4CDOviPprNxmCZ4rdSyQTse/aAm/lZcmqqGaosmcAJhWc6cd+0wV6zP1fqhWnxfJrASZWksrQywzzyb9VLZwXzRNmIK6klPt2Uzf95pqGUfqlNReksmpMaHlXYj+czHp85kBZrKR/IidCupZOp3pKd1U2oliRGq5I8NZVKa3lNqIrGShLCFSVU5b5sYiClH/ibSADAAIABCQAYADAAYADAgAQADADoRaRakqscQNHoslmMks2MZ9XaEB7D5KoMTD8FkN+ckpK6BEFSdAhM7Rl+bmrPZmd9Kc5/NCsgEJM6a/lv17hZ0tUBoCgzjoBbPabvtv1b1md/8dH7077YuT3dl7Lnkx1p+z94febbM0avT7aaCm04njcQ/QxABk9ydGt8ft9ba+fkrt+c2cXaY1eTiMj8sPBmZ8PCI30mpibNzrZs3/EH27RZy04e/NqReU/rn7yB6G8MlIh53725Zu6QYXHrtdogaBQUDCGhhnKiMwgs3u5VRXQoQcE6aNCwEUR37bX7xJE8W2rPiHzFNkr+ByA6DLJ5uWPu/SD3tc2ZBF6owegyGMNceJU8RS+YpOD6IVJwA52kN4VJofi5bJuqCPbjEkyNi+rXbwBPjBiz/uMXM5fTHGTn5XcMRNWJDpHI5nURu+3RBoVICnhQSgQThGhD4ZYnekCLR6yg1WhBbzTx9+XaVk0kZKTUNOLa/H1ffZk6tZfsXFQW+guA7DjI25LDCIuILCA1U5hSasF6BUDz4kfhwYvzoO3Y2yGoXrB831gzEInRpM45q9bMXfhwzLdJUcFuFvoZgM3OkockI18RgKGCfA1uqIMOyX0ZxKg5AxlUnc5QIyaqAC5FABcPtuy9ugFUF20KQ/VtBDc9aIb7z2RDz40jwNC4MYSGCm6Qaw1AW0fBhMFjgd8CSGocrGfplNYf+v8xEzpO7VdTG1g1AKOF292v+tNrm8jAL+ht9SSz4PI3FdYhy4zNI6DHhuEwoGA23DKkGzuTUL2x2uyrDEAil51eurYIFxxm0/UMoPq6q000bHLWnbc1qwwgO5FGodB93bPQ79h0iOzeFsELYpUm8OiqD/MuFYFbGYAO+W3NY3O7Ng/m111HxGgaygAK8XXofeFqMFBW3whzK2ja8Wb0wEEyOHRPLzATyTZ6E9nJVEOFkVxIMomqvrnJp77yT9V5HHhsqUs20NkrsmAXAojHrHOXtYHodUOC9DLzDLJaG5o2Yc/cOeN+6JTev5yEtbgOdCEGZrE3ABevXPXckiHi124GKoUnEi3CJMJMJR8XTxjXUqPFie9LseLxqY7YQbtZX7z/w9dntmrX8RAuiE8KFdouivnUuI/sIrJLiAyHHptGQO+t4yD2nbhy0rTDTQi8Xg68PQJpnV6Q8ERSuGP79vSMO278wxYTSvNxoZbSC9eFNou+dakCbevd5Z6MTylq/P+3g6IJj3JaeCNj5AbbtKwcOqPioor18jGtag4BnUjQNSEcWHsTnZcQh45yDRpqIfauPh/mvbdxFp7FqUaCpBYkSzQLq70VI6tH3lhh4f46wkJUY4PksJounDz4jSPK2vOLa/CMSqpMIFZZ8GxsqEDKtkXmAYEXHtn85OGjxxNm3dvuRyUjQ1i40IEUppj1bVS8vNfNEo1PTqsrzkTk8zBk9mn1E2VHnhw+9lU8o54i++Rr0QaHEPv+6n13322HfjqWuGLY3TtsUZxIkDxKP+VWWgpPrZOKbnqDQtc6A+LUXhH5n+Zm5ezHA/7y3LVzclDIS/pCqL+lL+TO3bljR9qP2zZlZfdrm2fz8LwpViPZvrxJMaFNKi0NqtyoZ+spmOwWw+HUulJHhkBEQ06ppVQMbeiAv3iwuJdCDF/JkkfFr8lhJEWhyiqJVA6cSXXRpNli9NaylT29V69UKxlZDOYU0XhKOZ0U1Yn0FjNCDxRW1IbI3pbHkVD7qNiYRMc2DFuGV6sUqNqQyl+miMKvTpmJRXUmRiQga0OUP16R6aLCi+hMi1Tw1ApP1aobTdf4mJBIu1JHlZMNdQdI3//5QDFXShHaA1NiTD1qBJ63EsBoE1Ow09/TSoBUSwi7/LRgmaQW1lVNlLK2i8mi8UVbTSv4VlSUVi7CrYtwWIQ0BPI3GoyKlSlFrNXqty6+1nWR7RuxjEs7K9pVSMDZzaYOZf1BLVQz10WgbRyqlIHflywazqgFuv1FKCWFpukoJQZSRSHeHhPattZr6hMTy1Ka1Hwm0t0uGnuhu+9Nmdq6LjRPpxjWfKKckqrw/wuotR8uEa/8VxgaP/9R/0uMmgL3X+b8PmbEPyFDAAAAAElFTkSuQmCC' alt=><div><h1>Shade</h1><p class=desc>A one-room game set in your apartment, the night before a trip to the desert. Text adventure in English (Andrew Plotkin, 2000). Non-commercial licence. Type if-shade in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-shade</code>.</p></aside><article><h1>Shade</h1>
+<h2>The game</h2>
+<p>A one-room game set in your apartment, the night before a trip to the desert.</p>
+<ul>
+<li><strong>Author:</strong> Andrew Plotkin (2000)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine v5, Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-shade/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-shade</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Shade</strong> © Andrew Plotkin, 2000. Licence: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/shade-src.tar.Z">https://ifarchive.org/if-archive/games/source/inform/shade-src.tar.Z</a>
+Game source: <a href="https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q">https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q</a></p>
+<blockquote>
+<p>SHADE may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

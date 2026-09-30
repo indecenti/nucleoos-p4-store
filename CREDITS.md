@@ -10,25 +10,34 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | 5 Mazes | `gbh-5-mazes` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-Mazes) |
 | 5 Mazes: Master Levels | `gbh-5-mazes-master-levels` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-mazes-Master-levels) |
 | 5 More Mazes | `gbh-5-more-mazes` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-more-mazes) |
+| A Change in the Weather | `if-change-in-the-weather` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=00wlim27k5d1hmf2) |
 | A Simple Space Invaders game | `simple-space-invaders` | LogicProjects | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/simple-space-invaders) |
 | ABC 123 | `abc123` |  |  |  |
+| Adventure | `if-adventure` | Will Crowther & Don Woods; Glulx port by Daniel Fox Franke; interpreter: Glulxe + CheapGlk | BSD-2-Clause (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=fft6pu91j85y4acv) |
 | AIRPLANZ | `gbh-airplanz` | NotImplementedLife; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/NotImplementedLife/AIRPLANZ) |
+| All Things Devours | `if-all-things-devours` | Toby Ord (half sick of shadows); interpreter: Frotz 2.55 | Public domain (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=5e23lnq25gon9tp3) |
 | Annoying Robots | `annoyingrobots` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/annoyingrobots) |
 | Antcopter | `antcopter` | Eduardo Bart | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/antcopter) |
 | Apple Game | `apple-game` | João Gabriel de Campos Nassar | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/apple-game) |
 | Assemblio | `assemblio` | Philipp Lühmann | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/assemblio) |
 | BASIC | `basic` | Adam Dunkels (uBASIC), Nucleo port | BSD-3-Clause | [link](https://github.com/adamdunkels/ubasic) |
 | Beneath a Steel Sky | `svm-bass` | Revolution Software (1994); ScummVM | Freeware (Revolution Software licence) | [link](https://www.scummvm.org/games/) |
+| Beyond (Aldilà) | `if-beyond` | Roberto Grassi, Paolo Lucchesi & Alessandro Peretti; interpreter: Frotz 2.55 | CC BY-NC-ND 2.5 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn) |
 | Big Space Iron | `big-space-iron` | kzerot | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/big-space-iron) |
 | Big2Small | `gbh-big2small` | Matthew D. Steele (mdsteele); Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (game); MIT (emulator) | [link](https://github.com/mdsteele/big2small) |
+| Bigger Than You Think | `if-bigger-than-you-think` | Andrew Plotkin; interpreter: Glulxe + CheapGlk | Free distribution, non-commercial (author's permission) (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=h9x354wyakeeanik) |
 | Bit Bang | `gbh-bit-bang` | StudioGuma; Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (code), CC BY-SA 4.0 (assets) (game); MIT (emulator) | [link](https://github.com/StudioGuma/bit_bang) |
+| Blue Chairs | `if-blue-chairs` | Chris Klimas; interpreter: Frotz 2.55 | CC BY-NC-SA 3.0 (source code licence) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=uva1vc6ico5u65zg) |
 | Bombfighters | `bombfighters` | Patbox | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bombfighters) |
+| Book and Volume | `if-book-and-volume` | Nick Montfort; interpreter: Frotz 2.55 | CC BY-NC-SA 2.5 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=timl7wld6zp9otsf) |
 | Break-It | `break-it` | douglett | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/break-it) |
 | Bubblewrap | `bubblewrap` | Henrik Zenkert | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bubblewrap) |
 | Cannon | `cannon` |  |  |  |
 | Carazu | `gbh-carazu` | Martin Holtkamp; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/mholtkamp/carazu) |
+| Changes | `if-changes` | David Given; interpreter: Frotz 2.55 | CC BY-ND (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=3q8lfs4x52le1vu0) |
 | Chess | `chess` | NucleoOS | MIT | [link](https://github.com/gissio/mcu-max) |
 | CHIP-8 Arcade | `chip8` | NucleoOS; games by the CHIP-8 Community Archive authors | CC0 (games), PolyForm Noncommercial (interpreter) | [link](https://github.com/JohnEarnest/chip8Archive) |
+| Cold Iron | `if-cold-iron` | Andrew Plotkin (as Lyman Clive Charles); interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge) |
 | comic-sans | `comic-sans` | Eduardo Minholi, Nuno Abilio | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/comic-sans) |
 | Cosmic Hopper | `cosmic-hopper` | Bernardo Wilchen de Oliveira | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-hopper) |
 | Cosmic Inw4ders | `cosmic-inw4ders` | Pierro | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-inw4ders) |
@@ -36,6 +45,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Customizable Pong | `custom-pong` | UnusualEgg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/custom-pong) |
 | Dashy Dango | `dashy-dango` | samX500 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dashy-dango) |
 | Dashy no Witch | `gbh-dashy-no-witch` | voxel; Peanut-GB by Mahyar Koshkouei | 0BSD (game); MIT (emulator) | [link](https://voxel.itch.io/dashy-no-witch) |
+| Delightful Wallpaper | `if-delightful-wallpaper` | Andrew Plotkin (as Edgar O. Weyrd); interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=jf4rk3cvmlajhl2r) |
 | Devices | `devices` | NucleoOS | MIT |  |
 | disk-0 MADNESS | `disk-0-madness` | Max Curzi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/disk-0-madness) |
 | Dodgeball | `dodgeball` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dodgeball) |
@@ -47,11 +57,15 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Dragon Poker Draw | `dragon-poker-draw` | LoneGrayWolf2000 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dragon-poker-draw) |
 | Drascula: The Vampire Strikes Back | `svm-drascula` | Alcachofa Soft (1996); ScummVM | Freeware (Alcachofa Soft) | [link](https://www.scummvm.org/games/) |
 | DreamWeb | `svm-dreamweb` | Creative Reality (1994); ScummVM | Freeware (Creative Reality, unmodified) | [link](https://www.scummvm.org/games/) |
+| Dual Transform | `if-dual-transform` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=xfezh9wz188ihlel) |
 | Duck Maze | `duck-maze` | Julia Marques Sanches | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/duck-maze) |
 | Earth Invaders | `earth-invaders` | Yara F. Scramin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/earth-invaders) |
+| Edge Valley Bigfoot Society | `if-bigfoot-society` | NegSec; interpreter: Glulxe + CheapGlk | GPL (version not stated) (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=vefh91bon5y6jfp0) |
 | Endless Runner | `endless-runner` | Richard McCormack | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/endless-runner) |
 | Escape Guldur | `escape-guldur` | Chris Heyes | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/escape-guldur) |
 | Explore the Grotto | `explore-the-grotto` | Donatien Rabiller | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/explore-the-grotto) |
+| Fate | `if-fate` | Victor Gijsbers; interpreter: Frotz 2.55 | GPL-2.0-or-later (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=az8jb9bddngurwr7) |
+| Figaro | `if-figaro` | Victor Gijsbers; interpreter: Frotz 2.55 | GPL-3.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha) |
 | First Flight | `first-flight` | bootra | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/first-flight) |
 | Flight of the Amazon Queen | `svm-fotaq` | Interactive Binary Illusions (1995); ScummVM | Freeware (John Passfield, Steve Stamatiadis) | [link](https://www.scummvm.org/games/) |
 | Floppy Fish | `floppy-fish` | Chris Breece | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/floppy-fish) |
@@ -73,7 +87,9 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | HAMMER JOE | `hammer-joe` | MFauzan26 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hammer-joe) |
 | Hero of the Woods v3 | `hotw` | BigRobCoder | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hotw) |
 | Hills in the Moonlight | `hills-moonlight` | Samarth Hattangady | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hills-moonlight) |
+| Hoist Sail for the Heliopause and Home | `if-heliopause` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=ykccumi5xc5rltev) |
 | Home | `casa` | NucleoOS | MIT |  |
+| Hoosegow | `if-hoosegow` | Ben Collins-Sussman & Jack Welch; interpreter: Frotz 2.55 | CC BY-NC-SA 3.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=p2bxy33newzb930t) |
 | Image Carousel | `image-carousel` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/image-carousel) |
 | IOCCC 98 Flight Sim | `ioccc98flightsim` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ioccc98flightsim) |
 | It's Corn! | `corn` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/corn) |
@@ -85,13 +101,16 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | JSON | `cjson` | Dave Gamble and cJSON contributors | MIT | [link](https://github.com/DaveGamble/cJSON) |
 | Jump 'n' Shoot | `jump-n-shoot` | Matheus Foltran Consonni | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/jump-n-shoot) |
 | Kitty Game | `kittygame` | Cannon Tuttle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/kittygame) |
+| La Pietra della Luna | `if-pietra-della-luna` | Paolo Lucchesi; interpreter: Frotz 2.55 | GPL-2.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=mom3zbtso4xadex4) |
 | Lad 2024 | `lad2024` | YAMAMOTO Takashi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lad2024) |
 | Lake Shooter | `lakeshooter` | Jimmy Cartrette | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lakeshooter) |
 | Last Train Home | `last-train-home` | Reuben Dunnington | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/last-train-home) |
 | Lava Hop! | `lava-hop` | Cannon Tuttle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lava-hop) |
+| Le Lande di Erisvalle | `if-lande-di-erisvalle` | Paolo Lucchesi; interpreter: Glulxe + CheapGlk | GPL-2.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v) |
 | Libbet and the Magic Floor | `gblibbet` | Damian Yerrick (game); Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/pinobatch/libbet) |
 | Lime Volleyball | `lime-volleyball` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lime-volleyball) |
 | Lingword | `lingword` | Jonathan Derque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lingword) |
+| Lists and Lists | `if-lists-and-lists` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t) |
 | Lua | `lua` | Lua.org, PUC-Rio | MIT | [link](https://www.lua.org) |
 | Lumber Night | `lumber-night` | Vitaly | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lumber-night) |
 | Lure of the Temptress | `svm-lure` | Revolution Software (1992); ScummVM | Freeware (Revolution Software licence) | [link](https://www.scummvm.org/games/) |
@@ -133,6 +152,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Platformer Test | `platformer-test` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/platformer-test) |
 | Plutonia 2 | `plutonia2` | The PL2 team | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/pl2) |
 | Pl¢tfarmer | `plctfarmer` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/plctfarmer) |
+| Pogoman GO! | `if-pogoman-go` | Jack Welch & Ben Collins-Sussman; interpreter: Glulxe + CheapGlk | CC BY-NC-SA 3.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=hc6dudpdc9i2pmja) |
 | Pomodoro Desk Hub | `deskhub` |  |  |  |
 | Pong | `pong` | Fabrizio Vitale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pong) |
 | PostBot | `gbh-postbot` | Tobias Rojahn; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/MasterIV/PostBot) |
@@ -145,14 +165,19 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Raw Assembly Test | `raw-assembly` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/raw-assembly) |
 | Rex Run | `gbh-rex-run` | el_seyf; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/elseyf/rex-run-gb) |
 | Rex Runner GB | `gbh-rex-runner` | The Void (etdv-thevoid); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/etdv-thevoid/rex-runner-gb) |
+| Risorgimento Represso | `if-risorgimento-represso` | Michael J. Coyne; interpreter: Frotz 2.55 | CC BY-NC (source code licence) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=t0pidhghzbo91i12) |
 | Rolly Dango | `rolly-dango` | William Guimont-Martin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rolly-dango) |
+| Rover's Day Out | `if-rovers-day-out` | Jack Welch & Ben Collins-Sussman; interpreter: Glulxe + CheapGlk | CC BY-NC-SA 3.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn) |
 | Rubido | `rubido` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rubido) |
+| Salvate lo Stregatto! | `if-stregatto` | Marco Vallarino; interpreter: Frotz 2.55 | CC BY-SA 4.0 (source code licence) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=1elq80q2fb91e9dd) |
 | Samurai Revenge | `samurai-revenge` | Krylan, Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/samurai-revenge) |
+| Save the Cheshire Cat! | `if-cheshire-cat` | Marco Vallarino; interpreter: Frotz 2.55 | CC BY-SA 4.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=j6purjagso6i5b0) |
 | ScummVM | `scummvm` | The ScummVM Team; NucleoOS port | GPL-3.0-or-later | [link](https://www.scummvm.org) |
 | Scythe | `scythe` | Erik Alm | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/scythe) |
 | Seal Adventure | `seal-adventure` | katspaugh | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seal-adventure) |
 | Seed Creator Showcase | `seed-creator-showcase` | huntrss@posteo.me | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seed-creator-showcase) |
 | Sfinx | `svm-sfinx` | L.K. Avalon (1994); ScummVM | Freeware (L.K. Avalon) | [link](https://www.scummvm.org/games/) |
+| Shade | `if-shade` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q) |
 | Shieldshooter | `shieldshooter` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/shieldshooter) |
 | Shock Lobster | `gbh-shock-lobster` | Dave VanEe (tbsp); Peanut-GB by Mahyar Koshkouei | Zlib (game); MIT (emulator) | [link](https://github.com/tbsp/shock-lobster) |
 | SIGIL (DOS edition) | `sigil` | John Romero, adapted by the_kovic | Freely distributable (idgames, with Romero's permission) | [link](https://www.doomworld.com/idgames/levels/doom/s-u/sigildos) |
@@ -161,12 +186,15 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Smash Sugar Parallelepipeds | `smash-sugar-parallelepipeds` | Lázaro Albuquerque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/smash-sugar-parallelepipeds) |
 | Snake | `snake` | Tomas Tulka | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/snake) |
 | Snakery | `snakery` | hahahahaman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/snakery) |
+| So Far | `if-so-far` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=rcrihauxixy48svr) |
 | Sokoban | `sokoban` | Lars Hamre | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sokoban) |
 | Soltys | `svm-soltys` | L.K. Avalon (1995); ScummVM | Freeware (L.K. Avalon) | [link](https://www.scummvm.org/games/) |
 | Sound Demo | `sound-demo` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sound-demo) |
 | Sound Test | `sound-test` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sound-test) |
 | Space Delivery | `space-delivery` | kirinokirino | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-delivery) |
 | Space Kommand | `space-kommand` | korhadris | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-kommand) |
+| Spider and Web | `if-spider-and-web` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=2xyccw3pe0uovfad) |
+| SpiritWrak | `if-spiritwrak` | Daniel S. Yu; interpreter: Frotz 2.55 | GPL-2.0-or-later (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=tqpowvmdoemtooqf) |
 | Spunky | `spunky` | Richard McCormack | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/spunky) |
 | SQLite | `sqlite3` | SQLite developers (D. Richard Hipp et al.) | Public domain | [link](https://sqlite.org) |
 | Squishy the Turtle | `gbh-squishy-the-turtle` | cppchriscpp (potatolain); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/potatolain/SquishyTheTurtle) |
@@ -181,7 +209,9 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Tank Wars | `tank-wars` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tank-wars) |
 | Tankle | `tankle` | Milky Natas | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankle) |
 | Tankle Adventure | `tankle-adventure` | Milky Natas | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankle-adventure) |
+| The Art of Fugue | `if-art-of-fugue` | Victor Gijsbers, Jimmy Maher, Dorte Lassen & Johan; interpreter: Glulxe + CheapGlk | GPL-3.0-or-later (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=7hvoj3p9khotuqca) |
 | The Legend of GEML: Awakening | `the-legend-of-geml-awakening` | Robby Zampino, Ethan Hunter | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/the-legend-of-geml-awakening) |
+| The Life (and Deaths) of Doctor M | `if-doctor-m` | Michael D. Hilborn; interpreter: Glulxe + CheapGlk | CC BY-NC-ND 3.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0) |
 | The Romans Are Coming | `the-romans-are-coming` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/the-romans-are-coming) |
 | The Royal Game of Ur | `ur` | Gelatin Studios | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ur) |
 | Tic Tac Toe | `tictactoe` | Christopher Kleine | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tictactoe) |
@@ -194,10 +224,12 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Touhou Spirits | `touhou-spirits` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/touhou-spirits) |
 | Train! | `train` | Davidian1024 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/train) |
 | Trials of the dark sea | `trials-of-the-dark-sea` | ericvilcu | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/trials-of-the-dark-sea) |
+| Tristam Island | `if-tristam-island` | Hugo Labrande; interpreter: Frotz 2.55 | CC0 1.0 (cover art excluded) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=6gtq9ahrolz2ry2) |
 | UEM Mini Game | `uem-mini-game` | Thiago Calvi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/uem-mini-game) |
 | Untangle | `untangle` | Mota Link | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/untangle) |
 | Vertice Bass | `bass` | NucleoOS |  |  |
 | Vertice GP | `vxgp` | NucleoOS |  |  |
+| Villa Morgana | `if-villa-morgana` | Paolo Lucchesi; interpreter: Frotz 2.55 | GPL-2.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=57wq8ncspbsdktg2) |
 | W4 Test | `w4test` |  |  |  |
 | WASM Invaders | `wasminvaders` | Lorenzo Henrique Zanetti, Matheus Cener | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasminvaders) |
 | Wasm Wars | `wasm-wars` | Daniel Kiyoshi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasm-wars) |
@@ -215,6 +247,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Wormhole | `wormhole` | David Sims | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wormhole) |
 | Wumpus Hunt | `wumpus-hunt` | Troy Wiegand | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wumpus-hunt) |
 | You Will Return | `you-will-return` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/you-will-return) |
+| ZenFactor Spa | `if-zenfactor-spa` | Tristano Ajmone; interpreter: Frotz 2.55 | Public domain (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=kj5hyq3wkvl8x8yf) |
 | Zigbee | `zigbee` | NucleoOS | MIT |  |
 | Zigtris | `zigtris` | Toby Jaffey | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zigtris) |
 | Zip | `zip` | Rich Geldreich and contributors (miniz) | MIT | [link](https://github.com/richgel999/miniz) |

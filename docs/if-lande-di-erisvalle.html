@@ -1,0 +1,165 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Le Lande di Erisvalle — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Le Lande di Erisvalle</h1><p class=desc>Esplora le lontane Lande di Erisvalle alla ricerca delle sette reliquie dell&#x27;antico regno e delle sette rune del potere. Avventura testuale in italiano (Paolo Lucchesi, 2022). Scrivi if-lande-di-erisvalle nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: GPL-2.0 (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-lande-di-erisvalle</code>.</p></aside><article><h1>Le Lande di Erisvalle</h1>
+<h2>Il gioco</h2>
+<p>Esplora le lontane Lande di Erisvalle alla ricerca delle sette reliquie dell'antico regno e delle sette rune del potere.</p>
+<ul>
+<li><strong>Autore:</strong> Paolo Lucchesi (2022)</li>
+<li><strong>Lingua del gioco:</strong> italiano</li>
+<li><strong>Formato:</strong> Glulx, interprete Glulxe + CheapGlk</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in italiano, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>ti sposti</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-lande-di-erisvalle/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-lande-di-erisvalle</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Le Lande di Erisvalle</strong> © Paolo Lucchesi, 2022. Licenza: <strong>GPL-2.0</strong>.
+Testo della licenza: <a href="http://www.paololucchesi.it/at/erisvalle.html">http://www.paololucchesi.it/at/erisvalle.html</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v">https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v</a></p>
+<blockquote>
+<p>I file erisvalle.gblorb, erisvalle_nomouse.gblorb e erisvalle_acv.ulx sono distribuiti secondo i termini della Gnu Public License (GPL) vers. 2 (README of the release zip)</p>
+</blockquote>
+<p>Interprete: <strong>Glulxe + CheapGlk</strong>, licenza MIT (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Le Lande di Erisvalle</h1><p class=desc>Explore the far lands of Erisvalle in search of seven relics of an ancient kingdom and seven runes of power. Text adventure in Italian (Paolo Lucchesi, 2022). Type if-lande-di-erisvalle in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: GPL-2.0 (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-lande-di-erisvalle</code>.</p></aside><article><h1>Le Lande di Erisvalle</h1>
+<h2>The game</h2>
+<p>Explore the far lands of Erisvalle in search of seven relics of an ancient kingdom and seven runes of power.</p>
+<ul>
+<li><strong>Author:</strong> Paolo Lucchesi (2022)</li>
+<li><strong>Game language:</strong> Italian</li>
+<li><strong>Format:</strong> Glulx, Glulxe + CheapGlk interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in Italian, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>move</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-lande-di-erisvalle/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-lande-di-erisvalle</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Le Lande di Erisvalle</strong> © Paolo Lucchesi, 2022. Licence: <strong>GPL-2.0</strong>.
+Licence text: <a href="http://www.paololucchesi.it/at/erisvalle.html">http://www.paololucchesi.it/at/erisvalle.html</a>
+Game source: <a href="https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v">https://ifdb.org/viewgame?id=1jkbbgyvk7gyg0v</a></p>
+<blockquote>
+<p>I file erisvalle.gblorb, erisvalle_nomouse.gblorb e erisvalle_acv.ulx sono distribuiti secondo i termini della Gnu Public License (GPL) vers. 2 (README of the release zip)</p>
+</blockquote>
+<p>Interpreter: <strong>Glulxe + CheapGlk</strong>, MIT licence (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

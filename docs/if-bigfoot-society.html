@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Edge Valley Bigfoot Society — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Edge Valley Bigfoot Society</h1><p class=desc>Un Bigfoot più sveglio del solito viene catturato dai cacciatori: riuscirà a fuggire? Sei finali. Avventura testuale in inglese (NegSec, 2025). Scrivi if-bigfoot-society nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: GPL (version not stated) (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=vefh91bon5y6jfp0'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-bigfoot-society</code>.</p></aside><article><h1>Edge Valley Bigfoot Society</h1>
+<h2>Il gioco</h2>
+<p>Un Bigfoot più sveglio del solito viene catturato dai cacciatori: riuscirà a fuggire? Sei finali.</p>
+<ul>
+<li><strong>Autore:</strong> NegSec (2025)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Glulx (Blorb), interprete Glulxe + CheapGlk</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-bigfoot-society/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-bigfoot-society</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Edge Valley Bigfoot Society</strong> © NegSec, 2025. Licenza: <strong>GPL (version not stated)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/indexes/if-archive/games/glulx/">https://ifarchive.org/indexes/if-archive/games/glulx/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=vefh91bon5y6jfp0">https://ifdb.org/viewgame?id=vefh91bon5y6jfp0</a></p>
+<blockquote>
+<p>Edge Valley Bigfoot Society, by NegSec. Version 1.0.2 (Release 1 / Serial number 251022). General Public License. (IF Archive index, games/glulx)</p>
+</blockquote>
+<p>Interprete: <strong>Glulxe + CheapGlk</strong>, licenza MIT (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Edge Valley Bigfoot Society</h1><p class=desc>A smarter-than-usual Bigfoot is caught by hunters: can he escape their facility? Six endings. Text adventure in English (NegSec, 2025). Type if-bigfoot-society in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: GPL (version not stated) (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=vefh91bon5y6jfp0'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-bigfoot-society</code>.</p></aside><article><h1>Edge Valley Bigfoot Society</h1>
+<h2>The game</h2>
+<p>A smarter-than-usual Bigfoot is caught by hunters: can he escape their facility? Six endings.</p>
+<ul>
+<li><strong>Author:</strong> NegSec (2025)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Glulx (Blorb), Glulxe + CheapGlk interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-bigfoot-society/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-bigfoot-society</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Edge Valley Bigfoot Society</strong> © NegSec, 2025. Licence: <strong>GPL (version not stated)</strong>.
+Licence text: <a href="https://ifarchive.org/indexes/if-archive/games/glulx/">https://ifarchive.org/indexes/if-archive/games/glulx/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=vefh91bon5y6jfp0">https://ifdb.org/viewgame?id=vefh91bon5y6jfp0</a></p>
+<blockquote>
+<p>Edge Valley Bigfoot Society, by NegSec. Version 1.0.2 (Release 1 / Serial number 251022). General Public License. (IF Archive index, games/glulx)</p>
+</blockquote>
+<p>Interpreter: <strong>Glulxe + CheapGlk</strong>, MIT licence (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

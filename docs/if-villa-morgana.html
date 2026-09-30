@@ -1,0 +1,165 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Villa Morgana — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Villa Morgana</h1><p class=desc>Chiuso in un vecchio palazzo, alla ricerca di un&#x27;amica: un&#x27;introduzione alle avventure testuali con una guida passo passo. Avventura testuale in italiano (Paolo Lucchesi, 2006). Scrivi if-villa-morgana nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: GPL-2.0 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=57wq8ncspbsdktg2'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-villa-morgana</code>.</p></aside><article><h1>Villa Morgana</h1>
+<h2>Il gioco</h2>
+<p>Chiuso in un vecchio palazzo, alla ricerca di un'amica: un'introduzione alle avventure testuali con una guida passo passo.</p>
+<ul>
+<li><strong>Autore:</strong> Paolo Lucchesi (2006)</li>
+<li><strong>Lingua del gioco:</strong> italiano</li>
+<li><strong>Formato:</strong> Z-machine (Blorb), interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in italiano, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>ti sposti</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-villa-morgana/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-villa-morgana</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Villa Morgana</strong> © Paolo Lucchesi, 2006. Licenza: <strong>GPL-2.0</strong>.
+Testo della licenza: <a href="https://ifarchive.org/indexes/if-archive/games/zcode/italian/">https://ifarchive.org/indexes/if-archive/games/zcode/italian/</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=57wq8ncspbsdktg2">https://ifdb.org/viewgame?id=57wq8ncspbsdktg2</a></p>
+<blockquote>
+<p>I file villa.zblorb e villa.gblorb sono distribuiti secondo i termini della Gnu Public License (GPL) versione 2 (README of the IF Archive release)</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Villa Morgana</h1><p class=desc>Locked in an old mansion, looking for a friend: an introduction to text adventures with a step-by-step guide. Text adventure in Italian (Paolo Lucchesi, 2006). Type if-villa-morgana in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: GPL-2.0 (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=57wq8ncspbsdktg2'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-villa-morgana</code>.</p></aside><article><h1>Villa Morgana</h1>
+<h2>The game</h2>
+<p>Locked in an old mansion, looking for a friend: an introduction to text adventures with a step-by-step guide.</p>
+<ul>
+<li><strong>Author:</strong> Paolo Lucchesi (2006)</li>
+<li><strong>Game language:</strong> Italian</li>
+<li><strong>Format:</strong> Z-machine (Blorb), Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in Italian, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUARDA</code></td>
+<td><code>G / L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTARIO</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORD, SUD, EST, OVEST, SU, GIÙ</code></td>
+<td><code>N S E O ALTO BASSO</code></td>
+<td>move</td>
+</tr>
+<tr>
+<td><code>ESAMINA lampada</code></td>
+<td><code>X / ESA</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>PRENDI lampada / LASCIA lampada</code></td>
+<td></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>APRI porta, PARLA CON uomo</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>SALVA / CARICA</code></td>
+<td><code>SAVE / RESTORE</code></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>FINE</code></td>
+<td><code>QUIT</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-villa-morgana/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-villa-morgana</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Villa Morgana</strong> © Paolo Lucchesi, 2006. Licence: <strong>GPL-2.0</strong>.
+Licence text: <a href="https://ifarchive.org/indexes/if-archive/games/zcode/italian/">https://ifarchive.org/indexes/if-archive/games/zcode/italian/</a>
+Game source: <a href="https://ifdb.org/viewgame?id=57wq8ncspbsdktg2">https://ifdb.org/viewgame?id=57wq8ncspbsdktg2</a></p>
+<blockquote>
+<p>I file villa.zblorb e villa.gblorb sono distribuiti secondo i termini della Gnu Public License (GPL) versione 2 (README of the IF Archive release)</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

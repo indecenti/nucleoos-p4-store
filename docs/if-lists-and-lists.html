@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Lists and Lists — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Lists and Lists</h1><p class=desc>Un genio ti insegna una versione ridotta del linguaggio LISP, con enigmi da risolvere programmando. Avventura testuale in inglese (Andrew Plotkin, 1996). Scrivi if-lists-and-lists nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: Free distribution (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-lists-and-lists</code>.</p></aside><article><h1>Lists and Lists</h1>
+<h2>Il gioco</h2>
+<p>Un genio ti insegna una versione ridotta del linguaggio LISP, con enigmi da risolvere programmando.</p>
+<ul>
+<li><strong>Autore:</strong> Andrew Plotkin (1996)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine v5, interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-lists-and-lists/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-lists-and-lists</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Lists and Lists</strong> © Andrew Plotkin, 1996. Licenza: <strong>Free distribution (author's permission)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/lists.tar.Z">https://ifarchive.org/if-archive/games/source/inform/lists.tar.Z</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t">https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t</a></p>
+<blockquote>
+<p>It may be copied, distributed, and played freely.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Lists and Lists</h1><p class=desc>A genie teaches you a small version of the LISP programming language, with puzzles to solve in code. Text adventure in English (Andrew Plotkin, 1996). Type if-lists-and-lists in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: Free distribution (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-lists-and-lists</code>.</p></aside><article><h1>Lists and Lists</h1>
+<h2>The game</h2>
+<p>A genie teaches you a small version of the LISP programming language, with puzzles to solve in code.</p>
+<ul>
+<li><strong>Author:</strong> Andrew Plotkin (1996)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine v5, Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-lists-and-lists/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-lists-and-lists</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Lists and Lists</strong> © Andrew Plotkin, 1996. Licence: <strong>Free distribution (author's permission)</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/lists.tar.Z">https://ifarchive.org/if-archive/games/source/inform/lists.tar.Z</a>
+Game source: <a href="https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t">https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t</a></p>
+<blockquote>
+<p>It may be copied, distributed, and played freely.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

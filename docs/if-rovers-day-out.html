@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Rover&#x27;s Day Out — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Rover&#x27;s Day Out</h1><p class=desc>Vincitore dell&#x27;IFComp 2009: la routine del mattino, un cane e un&#x27;astronave su un pianeta a 1200 gradi. Avventura testuale in inglese (Jack Welch &amp; Ben Collins-Sussman, 2009). Licenza non commerciale. Scrivi if-rovers-day-out nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: CC BY-NC-SA 3.0 (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-rovers-day-out</code>.</p></aside><article><h1>Rover's Day Out</h1>
+<h2>Il gioco</h2>
+<p>Vincitore dell'IFComp 2009: la routine del mattino, un cane e un'astronave su un pianeta a 1200 gradi.</p>
+<ul>
+<li><strong>Autore:</strong> Jack Welch &amp; Ben Collins-Sussman (2009)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Glulx (Blorb), interprete Glulxe + CheapGlk</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-rovers-day-out/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-rovers-day-out</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Rover's Day Out</strong> © Jack Welch &amp; Ben Collins-Sussman, 2009. Licenza: <strong>CC BY-NC-SA 3.0</strong> (solo uso non commerciale).
+Testo della licenza: <a href="https://github.com/sussman/rovers-day-out">https://github.com/sussman/rovers-day-out</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn">https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn</a></p>
+<blockquote>
+<p>released it on the Creative Commons Attribution - Noncommercial - Share Alike 3.0 license</p>
+</blockquote>
+<p>Interprete: <strong>Glulxe + CheapGlk</strong>, licenza MIT (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). Il file della storia è ridistribuito senza le immagini, che qui non si possono mostrare (resta il codice di gioco), come la licenza consente; l'interprete è invariato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Rover&#x27;s Day Out</h1><p class=desc>Winner of IFComp 2009: a morning routine, a dog, and a spaceship on a 1200-degree exoplanet. Text adventure in English (Jack Welch &amp; Ben Collins-Sussman, 2009). Non-commercial licence. Type if-rovers-day-out in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: CC BY-NC-SA 3.0 (game), MIT (interpreter) · <a href='https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-rovers-day-out</code>.</p></aside><article><h1>Rover's Day Out</h1>
+<h2>The game</h2>
+<p>Winner of IFComp 2009: a morning routine, a dog, and a spaceship on a 1200-degree exoplanet.</p>
+<ul>
+<li><strong>Author:</strong> Jack Welch &amp; Ben Collins-Sussman (2009)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Glulx (Blorb), Glulxe + CheapGlk interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-rovers-day-out/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-rovers-day-out</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Rover's Day Out</strong> © Jack Welch &amp; Ben Collins-Sussman, 2009. Licence: <strong>CC BY-NC-SA 3.0</strong> (non-commercial use only).
+Licence text: <a href="https://github.com/sussman/rovers-day-out">https://github.com/sussman/rovers-day-out</a>
+Game source: <a href="https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn">https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn</a></p>
+<blockquote>
+<p>released it on the Creative Commons Attribution - Noncommercial - Share Alike 3.0 license</p>
+</blockquote>
+<p>Interpreter: <strong>Glulxe + CheapGlk</strong>, MIT licence (<a href="https://github.com/erkyrath/glulxe">https://github.com/erkyrath/glulxe</a>). The story file is redistributed without its pictures (game code only; they cannot be shown here), as the licence allows; the interpreter is unmodified.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

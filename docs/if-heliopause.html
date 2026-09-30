@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Hoist Sail for the Heliopause and Home — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAOGElEQVR42u2dCXRU1RmA35t5s2/JJJn3JplkkswkYEzQnrIIYVEprQtFSq0ePQdFEG1BFO1x3yJ1AQu2inqkrQQRKFBcW5UqNYa4y6JobaXaenpKcWcLCIR5f///3jeZl8yaZEIzMDnn52Xe/G/uvd/9t3tz5iIIvf8xoEiaGITc+xFRjFr/jdrro/KTpDGvWxA8BbkhwYKejS174GKWZlbqDCb5EtGsNIsmudVg9n1pMMu7UXZp14EquzR5G/v9JPZ7riDJw7Xx6ceadXj8F4tvAjb8Inagw2D2AxcFRc4xUTSJ9l/ZhgYxnUxDF6LEbMQJgwZuPAen6IEd4SDZVc0xOaLrv6qD+b4Gss/W2OmuCK5JBy6iAwbHkGjj4iAxNK0RhNKi3kLU4Lm9CG89n5lOcHCMS6QzPJmU7YKkDOspRJFLaREFWg3e4eMAXHfp0DzuGx1EQ8YJAy3vpeMYni7Gs9D1uSD4ZH1OSAevKQ+vqyWSQWnwjCnhSVZlHD6gHifxrgcQyaB8N6WKhwZufb4WzffzAGOiasnlay0zi91rRCOv9eTT8vBSWyGFt0RWSNZnQOt7OQ8wpRWSfCUIsk9XsXDXNZuLBsWq8jyw5FkZY6FFnqYBlDr/oZta5s1bX2o3VkVJaY4DKJrl5RrAjjyolKsUioPbEZkl6sJsDwxvvpaPfxnFQSpn2gXBWazLIYUeCo5dlfKS3AqViGT1j9EB9BTgG3vyADMGCFTydQe4Ow+wRwBPzQP8fwCUrDKYNMEPSaxjielI3XRM1tRiTKKbsk8p2ovTs8lg1olkPcoABcEXE0MyHb2e7r7U7flEIiXRlVL1KXF7UTFqgAUxcfv0fg9A9g3giIZSGD8C5ZQyKFUUEKWYJdKVXjfU+lGnjOnUVvnZPSyTwOFS4LRhpXD6cJRhCQTvezz8M52kO5Tfo2ec7q5t6ds7IeRnbZHUhfxd9AhMdDIqSv1w3oQyuH5qOdwyrRxmTA7ASYP9neAzhNhzgORWotbhj1ZVA2yuAdhWC5eeE2CNkytEXY5eP7ugEuDdWqbz4M8reAeNfKDwKj77JsobKK+Fu8obYRheX8r0TwyjbhvqvEV6NVBf448bJLkj6S67OcjagvdqYcVtQXaPuTP1x+CDAo8MD18bhF1/DvN239YE+9HRGobn76uEuioOMgOIfQO4ZWk1RDaGIYIdufjsxABXz6uECA6adBbNiQEcVO2H/S+G4fDLYTj4F20wb2lA6fpODQxv4AAJdjsOuKMlDAdeCkNdODnARxAOtRV5vQZ+dwMHaLGjDlqeXKzAlmU46Vtq2GexNkleD3OA2BeC+eX6MAytw7bFtBD7BvDdZuzMq2E24GkTEwNc+4vKTjj3XdkVIMGIvBKGQ9jxm9GNpp0VgBloydN/iNdJAZBLFAZqcFS3lcNOBXDJdcHOiXj0xmCsT9jmCwurmMe048RRv1feXgnnjS+DyWPLYPE1QTiMfTmwgYP9x+pqcLs5eKPlKACkAUtGH9idPKPZHDJ7/Yc70wDUoFSWK3EBnWIlgRpU1TeAJJMQElkXWT29f+PF5XHtXYRepKI1Mh0EffUF5V2Mov8AYsfOxZkUhJJunSrBOFTZ6ZapAJaXxQPkVpwdgGswlKh4L9IWZv2mPlApoy9jSK/lAbRSdH8V4/DGB6tANPj62QKxoSMY4J+4qxJuxVlturQcbpuO1xnl7PW2x6qhYyMP1MkAkgs/cHUF02fPXlYBMzErRsuS3gJcehMHaEVv+HAF9hXjNcXWe35aEWdZ9LuI9268qJzpUGjZ8VQI3AUK628SiFkAiCZ/iOLG6zzwx0kbD/ywKR7gt/jcEezo4RY+MAru7PphLcvwQtSFq/sGsASTx+fPhFhbNJGzfhxICJDuUTKk5ynJ7H4hBGV+hdW4/QuQsmhbOL4UQVFx0AQqHcD9CGgfxp69mAEPosW2PVyVXYDPagBxgub8pBxEMbEFXjIxBvDr50I8kfUrQIREZQqVKBOw0J04pgzObCxjV3rdinEk8mpqFyYoZ48ug0EVfjixhktVuZ+1kQ0XpoT2t5XVoGouvPhqLTvbY89TqUP35s2sYDo08eQFFhsv/PsPoJZEzp8QSJhEVjZllkRqqjgUtlLAGScdc5IkQqsbo5EPmq17KQnYM0gib/Fi+dN1IXA4eDv0GSS0YqGS5f3l1SzRkO4q7Hs0mfV7GUO1m9HAZ5satGKn6HWmZUwwEJ+F+Xo1HmCijB1doiUEiO5KXkET3a6VMSsQjt0aWw9L+Pz9aJn0XLTUoWVqvwLciisRlWbrzeSFNJt5KgtQZ1ECgBRrCAoV3EtwFUGrh0cQQnNTECafWta5EkmnS4BI97fXB1lb6hu6lYiNbx6suYOWlTVsVUNJjzLz4rlBuP+qCjYWuscAow4tCTNYzvUN4Ado7rRmpQRBFpgIIJU3bK2JOr+eGwNIqwu2nKIJ2Mg/A7bqMvEntXDvFXwQ9bVpdD+uhVunl7OQwdbCm/j9KAQCaMQ45sQi/zlajWytiSW9aLVAVQR5E37mOuyzVXsmRQ3Yd4BtD1XBrvUh2IXZ9MIfJAbYjIPYhdZDOnddHgNYU+mHnU+H4Ks/heCLP4bgMywz6DXJf54MwZdoaddN5SuBwaE0uvjZs8/lABdfU8Haojbp96gLsoRE9Ry66pXnYX2Kk79/g1Y94KS0o/5mDEmX/yjAYqMopYXX9+0sDxaZXi9KkcKK1UQ6LndMx+HquhnL7icT1KdlYXQy0unaNF3a+qLXJPR7973A6D4mGQJNzLjvlsJYFLbVZoq9lwG8LGyoGnViSqIj6XR0G6Fi9+cTiabPBpZO15S6Pb0HUdYWk2y+mmxHcUeaZikqmegYU72XSHqgm0wvab8SbP8b839Uyv9VLg8wDzAPMA8wDzAPMA8wD/A4Athf3+A8tgFKFiVitCiqIJVAfwhfryuRNAxyDyBBo34JQgEIohfs7mC7wxPc53BnUTyVexlIwYPrcF+0zWMAYNTixCI47XtTWlaseuLeDRtemdfS0npHNqW1ta3pqaefv3vaJVetNdv8B6m9JBBzByB2UhWlEtXqCOxfuuz3C5955ql7ThnZ+I5P8e8plpV9xbI/a1LkU/bV1dd/dM+CBY9sfe+vNwcqGj5NAjGHAGJfREMRPNq8atGsWbPWGs1WMFlsYHe648XtAQdKwvcyFIvNAaLRDCNHj960ffsnNzjdwT0ij41qzgHEmY9QzBs3fsorZHkSwnO6CyLuAm8Er6peXJ5C1Wa0qzbJoboKvaoTX3fXyUTwcyKewqIOwSDBz3DCbp+38DfUB+pLLgJURdGrUswbccrIrSarXdXgQRfxFILd4oTQ1EaoPn8EWAQLuAoK2f043cxERWtUfUrpnk2bttyKCWav0NUKcwIgSxx2V0X7hg0vz/PJ/r3kYpqldBmwSwM49KELYMqhX8Hg2aeDVbTx9wt6B5Esmtx5+fLliwbXj/pAEAr1Vpg7AKm8oAxJQT4ZQKeHX20mB9TfdBaD+J2F5zKoDoe7V5aoB1g3ZPS2YxtgdNCFXnRfM1ROGQrn7L4XRj9xGbiLisDp9HRC7k+AhfjG3pwFSG5sczEZ0jQJJn1xNzTcNrG3MTBTgKd3OYVNNPs26w7WySkXdqCVFQRkaFw3Eybv/SWELhzJkonTVdBj60sDMLpmPiBYC8sF/Xde+UFcA+bbmhkDZEnE7IRRa2bAxB13gn/UYIRnZS5N8Ojq8iaWZHDTAKT+7UBktujXXU3MDM3+uQPo+8I9sEDuvvLQGihpqMIMbOVw6D2Xh1kixcZEwpNMjwDSOTIqGZve+NhX/iVJGaYddzJwYiAu8AlgUYnSnjYGYta1W13c8tzcrd0lxSwzn/SLc2DIHZPixFtdBg67m1lxIoDNzc33nXjS2Pd0ALXjT5RrNIAm/XFPFoNJ/lCDOCDioFEqOUIL/BPqGj422xxspZA0dlHNF637KC6idXn8Pmh88jI4dcMcGLf+ijgpqa9E8C5eeOsKaYfLo3oKiw/S5Hl9g74QjMXR3EBsDprNxbXdj4JiR3gYTMrFA+XcBNqXo62lqdPmrJs/f/4SUTIDLrOOuPgyLbOEgEnEarCzwjqROBKUOLSUM0gW+P4ZZ25cuebpBaLBq2obCvwEI7P8WKJjT6JnQpEV/n2AWKFqMPnQlfwHaHdkVGPjZlqjkisTxIwF18ZJpZsuWh4QPMUf+Grnzp3XBipP/pdg8Ebdl+SgYC4alOwMragVXjRQkgnbfRaLoKy84VPaHZk1e/ZqXKN+Q/EJXZrtnmRLzFYHWd+3Z5x5VsuOHTuuGzP27DYt9qmdh+6Y5WXpjsIz8gN45HUDDSJtLTXNW7SEFvjLH3984eMolCWzIfRZy5YtW9Ta1ta0eu2z84OVJ3/SPfOiYeE9f3G6o0G1M6EqCvGBfw6UupBBNNJ2eyFl5n20wK8bMmYblRjZEsq2RZQwRC/oNlK1UEa74vKITM8Q5AqSMpQOH9QgDghLZHuEEgfZL2IojrajxrIujt/km9nTUyyNGsRhaIn/1UFUB8IutZH/da4/JGp12umVSocOntS7o4/txX7dOaoDBmQ//a1ZC1d0fqq8XZJKGnsLL+4IYIPZdwta4+c6kNEjhCM5ClTVHazb0QnOLB8SzcrSvpzgmySx4I/DJ7PjQU3KZwkO4Y7kmHQ7jFs+yMCZ5PpER0Fn9TRzAkmHVdMx8Hz5R5uxCuSW+A5g3//deRy82T/4aJypLyYwaSOZO50lRbu0uSKCrSwgCAFbyv8voJ//KwmpL8F1AP0Y+/JfevwPBAzSAPS1WscAAAAASUVORK5CYII=' alt=><div><h1>Hoist Sail for the Heliopause and Home</h1><p class=desc>Un breve racconto di scoperta in un futuro lontano, su una nave che veleggia nel vento solare. Avventura testuale in inglese (Andrew Plotkin, 2010). Licenza non commerciale. Scrivi if-heliopause nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=ykccumi5xc5rltev'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-heliopause</code>.</p></aside><article><h1>Hoist Sail for the Heliopause and Home</h1>
+<h2>Il gioco</h2>
+<p>Un breve racconto di scoperta in un futuro lontano, su una nave che veleggia nel vento solare.</p>
+<ul>
+<li><strong>Autore:</strong> Andrew Plotkin (2010)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine (Blorb), interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-heliopause/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-heliopause</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Hoist Sail for the Heliopause and Home</strong> © Andrew Plotkin, 2010. Licenza: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/Heliopause.ni">https://ifarchive.org/if-archive/games/source/inform/Heliopause.ni</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=ykccumi5xc5rltev">https://ifdb.org/viewgame?id=ykccumi5xc5rltev</a></p>
+<blockquote>
+<p>It may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Hoist Sail for the Heliopause and Home</h1><p class=desc>A short far-future story of discovery, told through a ship sailing the solar wind. Text adventure in English (Andrew Plotkin, 2010). Non-commercial licence. Type if-heliopause in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=ykccumi5xc5rltev'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-heliopause</code>.</p></aside><article><h1>Hoist Sail for the Heliopause and Home</h1>
+<h2>The game</h2>
+<p>A short far-future story of discovery, told through a ship sailing the solar wind.</p>
+<ul>
+<li><strong>Author:</strong> Andrew Plotkin (2010)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine (Blorb), Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-heliopause/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-heliopause</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Hoist Sail for the Heliopause and Home</strong> © Andrew Plotkin, 2010. Licence: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/Heliopause.ni">https://ifarchive.org/if-archive/games/source/inform/Heliopause.ni</a>
+Game source: <a href="https://ifdb.org/viewgame?id=ykccumi5xc5rltev">https://ifdb.org/viewgame?id=ykccumi5xc5rltev</a></p>
+<blockquote>
+<p>It may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

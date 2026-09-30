@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>All Things Devours — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>All Things Devours</h1><p class=desc>Entra di nascosto in un laboratorio per sabotare una macchina del tempo: un rompicapo sui viaggi nel tempo, serrato e spietato. Avventura testuale in inglese (Toby Ord (half sick of shadows), 2004). Scrivi if-all-things-devours nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: Public domain (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=5e23lnq25gon9tp3'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-all-things-devours</code>.</p></aside><article><h1>All Things Devours</h1>
+<h2>Il gioco</h2>
+<p>Entra di nascosto in un laboratorio per sabotare una macchina del tempo: un rompicapo sui viaggi nel tempo, serrato e spietato.</p>
+<ul>
+<li><strong>Autore:</strong> Toby Ord (half sick of shadows) (2004)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine v5, interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-all-things-devours/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-all-things-devours</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>All Things Devours</strong> © Toby Ord (half sick of shadows), 2004. Licenza: <strong>Public domain</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/devours.inf">https://ifarchive.org/if-archive/games/source/inform/devours.inf</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=5e23lnq25gon9tp3">https://ifdb.org/viewgame?id=5e23lnq25gon9tp3</a></p>
+<blockquote>
+<p>It is in the public domain and may thus be freely copied or modified.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAQF0lEQVR42u2dCXRU1RmAs2+zvskyMyEsWcjMJIEEEwhJwLCGLYCGTRDZSQi7UBDCInvYUU6t2lOBcvQc8ABa23pwOSBQTxeLrVqttiJqxSriAgRISGb+/v99705eJrMlmaEZyJzzM5PMve/d+91/vcPcBAW1/hESFFQcJgq9DrhHMEqoNP5Q6ec78nB6M50uTa3pmq0NFHE+tQl+BRkq1zSdISNDk5gxU2uwHNQYzWe0evN3GoP5J63B/CM9t1eh8THRm/+CYz+BY1+q1mf0keYnB+lzeOyhNpqH4o1fx0HUC4mZwMSYAfi7gBIaMxMcv9ZoAY3B8r5Gb5kVlJER0eii2q6NwVzrNAnpgwkcvzECRDE1oNTja3w22wJMGmTjtwkIkcE0WD5gIJ0oTyuChPjQ6E0bZOCs4o3ZIOAuEjavRpDmo6pEc2xrITJ46qQMHa7ISemCHBzc5ULzrJfm/C+1Ib13SyGS2QYTfXK04oVMt+8BcA6CEEXf/oMMYojXAQMv8Ma9C88OsUFyW98qErL08pgQ5CYPEn3ePQ/PURNNb0jwQj1onrkYO0hR6l6HJ4NICpVgqnLnD0MkgKclte0A2CioUBYrxoTvpcgc7JgjctMd2AHPvRaSe3OmhaR9IdjwVAdAt1po0+pNVxT6lARZxiKarirRZKLy7C5MkH0blUUtnCHyYzs57B8y3xlS5O3QPvdmTAp2UNLAMPs/CPCwBLC+A5S7KsXCKpSgtLRIbsJsD0xjML/d4f+88oOArGqUxtw4ewQRUnI1qHlXJLodPtCDFqKiWbXG7v3tANkurcF8tbUABZS4xIxmojNa3PaLxfed9fNW5Nf3eC0jiYW18zQuLwBSIBnoCPCn1gAkeCq9CYKEZAfpBpHxaSC4GWxIbKqTft5LeFwauz8JvfbYR5fC7hkV353dn4AKrQc4oM0A6eaKhHRI75YD24ZOgq1DJsJWfN6Mz9XDp8ConsVssI4rTv3UCH1R0WjYPmwy60f9vZUt2H47Xn9y3lB2f5KH80rY77Y4uRZdf8PgCbC8/1h4KHcI5Kb3YeMI0iWDEvvGtkwjfQeQVpAGsWZAGcD6/QCP7QJYtVt8XvckvDN9mQjQBfh/zl4JsPaJxn7eCrXH+x0bNxfCUPNIXh5f0XQMzfpI/VbshNqlW+C9WStgE4JN7tKTaWULIPpeA9+Ztgzql2+HmiWb4OaSzXALhQZJkm/qC5E4QbkW8n5/mLoEapdtg+uLN7K+JDdQbknXYLJ0M7tmzWLxPWpzDdvX/mw7PDd6OjNdksNjZ0H9ih2sHe/L2zNZvMn+XsOjWwGwP4H9esF6mNq7pCUQfQOQgETgwO/PKIR6hFCPgyKxSq9vITxacTIp0tI4JwDfn7kCoGovTmYH0wxRdkCD7HokNvwZVu5sbEPtUXOPlM1h2kcAX3hgNrsfLRr1YZDwWvZ+K3eJWogLTW3qUAgmLK9mbeYXjkKIKd5A9A1A0XxTYC/6HRoYaQoN+qPZj7HBkdAE3pv5M+bvHPvT70p63A+TcofChPsGw0SUcb0Gw1T0Zd/OX8+g0URtqCnnpy+HMdkDse0Q1nY8yiT0f0XmApoIhKL2cIAEhfpeRS2dlT8cynoNYn6vomAk7B8xFT4rX81g3pYWhwHH9nUoBXg9R2vxG0CNlLr8e84qZg63pZXfiM76OpqKFV/TIK24woMz+zFtdVxd0hxadQIQRhEZF0SZYILPy6uYZjANQe14ddJ8CNJ0Ye2pLQn1I/9KCxniABAQxpWFGyABx0fRl64djNfmlrATAxeNuU6CSItPfX83sRLvkep/gASCBjU2ZyDTstqloilcqlwLKV2z4eM5j7EB3qDJoHbuH/FwMzPmbiBWEv5eUlIP+KJiTROAbzy0gMGKRyCxsj68vzOA3yPA7pgdkKbz/I8WXGPAlEvbFaoxOtO1yVJuSyZPvjY7NQ+i0b24gegbgLSi5Lhp0OSc6fnYuHIIUibBc2NmMHAMIPqcT+euZpPXSP7PXT5p7JTVDODrCDDchWm5A0iLSb5WcFg07kI+xCyAXESdFPDItMvR1Glusf4CSINR4s27du4p+arGic5EnxOk6sx8FGmm3Bc+gNoa6ibS3SmAJPEIgCxi85AJYh8KKCzo7YZ96NOdWYvPAMZJ2kcOmlaMO+0rCx6H1K45zNQ6JWXBf+aJEG4uEf3LobEzWb+4dgCQ+tBiTmALvdOeclF/uo6HlKZtAOnC4XiDVydVsskxM0WQv5kwj01S3ymTDe55aUIE0IYw/lu5Djp37sEgCe0AYBgGC8oCeADkJnxifLlbS2kTQKooYnBAWam5YqRdtlUcMA58Vv4IVv/SjSnyTbxvCJt8rWxwj/Qe5jLXuuMAsU9p9gCWU9bJNPDIg3P8B5DnfiuLHxRzPxwsJc5XF22E3un5kIiTT8ZBd8JI2jMtDy438ZG0uhUuB3cnAXI3NL+w1J58cx/4pIuMwScABUkD/zTtUSl92cLCP938OyyJyA9y+Q6FzLee54M4qR9xUrTxEONkUnc6iBDAo1jJMD8us5J5BaPc+upWA6TBU5ZeZCloUrrdlrL5BlnpxUsp+j1PsLmJLCgqZVoc52SH5k4ApHSKkuVeab2hhqonbHtbGj/LA9P8lAfynReWxbPSbUtjnUq7HE5lNwNhB4gw3py8kFUlujsAkLRdoyeNa0y8uQv5o2RFrCZeKrqY306cx3yjXyoRjaSFn0hVBgEhs6Rc8KlRj8DTDvJM6TTmTy5g7UnlXJ20yjfsq9y92Q6NLwFSKUftcXJM44MxeJE2Ull5fsbyJlUIE+xT5K9amEet0VLUum13urvgV6OnY/KcZK9lubCflZ1g3cBxdo3ljnr1gDKnOzS+AMgXtgb7/nzkVNgx9CHYg1ZD1RHtT7LdF1mSzyxj1R5YhYHRg+9rPUAetQ6OmWnP3MUKYydMzB3CTFKfmNmkTqVCnoIFrSr3mbVSVfJnNB9H3+RLgPbtLPsGL99MFcGxPUsaC+0JrhS33EI9m27rAPLSjaqLS/PWMqdLA6DnbzA57oIlndJFcsxrTtrSsuJgqR9bdZxcgcNGqxzgxfIqpkU3KNfESZ+cNN8jwOexLrcibH4PkhtsU1UU/nu+/0dAP62ogil5Q1l/wV9b+nzjoBLDO1TtE1eNZM0+lte524TkeeOeYVOw/ROyvk/AfjQveTSWA7yMKRDTGJps1V44+/BitwCDEQBtZNCY2PVpI9VRqOLAhft6/jp4DQPZwqLRYMCqqYXb+a3UQDS3vPQ+MDpnEIxCPzgqu5i9zkzJZe8Jbjce0rFGzsb2A1lfyv7p9f2WwmZlHQ9UJVn9mb+lD6WobT90A+5KQLKAPpjIy+/hKMOwbOuLWk8WQy6HlIKsI7blH3G23AfSIGmTgG98hkmbmjFu4DlOkG+EcomQPpJ01odvnPL7sI9HPdyDj8+VUO1L16Gx8H1EoW2fC7csjRFkAYKL4OXqCZKpOW6Gutuw8Lats81ZV6JrPTT/fCp3D//Xjg6AHQA7AHYA7AAYwAD99Q3Ouxsgpk04eItNnWACNeagvhYpHbJ6YBB4AAWjqCHRQgooYtPA0DWnxtgt57pPJbnXNVqYKG0K++8itFB3BUCucYq47lBaNuP0i8d/v/PUW2c3nTlzbqOv5DQ9n3t7wyuvvrmtcsmaF3WJmbV0PxcQAwcgVg0EzxbXOevGC0df3v3SS8er+xYUvBOvN16N0xuu+06M12MT9NczMrM+2Va97ZkPPvxkTXrP/p8r4tKcQQwkgBabkv7v35GX9lRWVrwYFhEN4ZExEKNUNxOFWsPE2XveSmS0AoLDIqGgsPCvFy5eXGXolnNV8o22gANIASNaSIVRZdPfIs0jeEq11qrW6qz4bJOLSiPYokNjbNFhCptK0NmU+LNjG28Er2PVCLH1QSHhUIELVr37F78kvyuIgSXgANowYNjI5/XJ7/u3iKgYmwQPmohGgJhIJaQ+UgQpk/IhMigSVFqB/b5ZW+/EhtpoSzAYr7777t/XYYC55qCFAQHQRoM2dM2uOXXq7Cb0edfIxCRNaTJhlQQw76nJUFa3D8wLBkFUcLT4vrZ1EEmjyZwPHTq0J6/fyH/E6FLlWhg4ACm9oChJjt4VQKVGfI4OV0BW1UgGsdfu8QyqQqFulSbKAfbpX/r+3Q2QT1rQoflGQLeyPBj7007od7wc1LGxoFRq7JD9B7BLDwEBXgtYgGTG0SomPTeMgTGXt0GP9aWt9YFeAkwf1Phl6+LiMK3BdL7xYJ3AMmEFapk2SQ9Fx+bCA9d2QeqUAhZMlCpti7XPA0DxS9cG800hMbNzkPw7r1q96UQ7+ram1wBZEIlQQuHR2VB6aQsYC80IL4qZNMGjZ5XOubiC6wEgffh1KSmpb7T0ddfccOlsrKXt6PvCLdBA0Xz1ed0hvkcyRuAoEQ69p9IwTSTf6EzEINMigA3iiSaWEzLle1w85smQ3lsQ1bPd+MDE5JxrBDA2PqHGow/EqBsTpRI1Ty2atTo+jkXm7M1joefGMc1El9IJFDFqpsXOAB44cGBv3+Ix7zUClA6eMJiXifxE5RMPT0hLi8TI8pFWPDOmnfhBUwMV+OaMrE9xQqxScOm7KOfjeR/5RdQujTEBik6Uw4A3F0HxyYXNJD6rG4JXiYm3LJFWqDQ2rEhqz5w5s7GbOf+ySvx2JzfhWlWiOd3xKCh+6M709nJuAu3L0dZSxaLVx6qrtz4bgjUqTqpBJZZp3gUEDCJRITEssXYmCicpDpVyIeGRUFIy/Ozxl0/uoGpI3FCwH3vya2fHnohnQqEWavXmj7XiDsT/WwttOFibLjHzJu2OYIF/nmpUMmWC6LVgbexSHNqi5gHBMxiTrnz11VcrLL0GXKT9R8n/WUXtM5lcnaHFtXBaewkmrB6OSwPaWrpw8YtV8+bPO4I16g/kn3wtEVEK0r5bJcNHnL705ZcrS0ZPOSf5Prn2HfJwFB47fCwEtfBYe4NIW0vb9zz9LBX4hw8f3k1CUdIXQtc6ePDgnjPnzm048cpr21HzLjSNvMwiLyiN6XGejgZlZ0JRZYIdPpNOLWtoDxBVGJWjcVKU2lCBn4/pRR8fCkVbChhksrKNVObKKDtR6S353p4hKKU1pjzs+IMEsb49fC5CGkHpDWmHP4SiLYGTzNYqnq2KZVuCeW5LT7EM5bkhOs6vZRDbRY4ofTrnB+Efb9pPr6zXGO3wwlp19HFMnNmIF5XOUbW0J5B++KxZdFf8/FTBmF4kOyOrbedHI7y1KN/KQPIjhK0BCtTWeLCu6KIkcHUoB9pygq/TwEIvFAnJeo3esgEBftN4CDc/3NpsDTBhB3DbD+PGHI/ACXpzlrOjoH3waDwenQ5kpcOq6Rh4rdH8EW3GCkbZ6eABIJiq3URgX/Lj4GON6WZPfy/AR38Bodk586HsyGRj9/60SxsoouvUI0naknL59wL8/Kck7H8KI9AfoW35kx7/A8MxnjDgQFjMAAAAAElFTkSuQmCC' alt=><div><h1>All Things Devours</h1><p class=desc>Sneak into a research lab to sabotage a time machine: a tight, unforgiving time-travel puzzle. Text adventure in English (Toby Ord (half sick of shadows), 2004). Type if-all-things-devours in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: Public domain (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=5e23lnq25gon9tp3'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-all-things-devours</code>.</p></aside><article><h1>All Things Devours</h1>
+<h2>The game</h2>
+<p>Sneak into a research lab to sabotage a time machine: a tight, unforgiving time-travel puzzle.</p>
+<ul>
+<li><strong>Author:</strong> Toby Ord (half sick of shadows) (2004)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine v5, Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-all-things-devours/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-all-things-devours</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>All Things Devours</strong> © Toby Ord (half sick of shadows), 2004. Licence: <strong>Public domain</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/devours.inf">https://ifarchive.org/if-archive/games/source/inform/devours.inf</a>
+Game source: <a href="https://ifdb.org/viewgame?id=5e23lnq25gon9tp3">https://ifdb.org/viewgame?id=5e23lnq25gon9tp3</a></p>
+<blockquote>
+<p>It is in the public domain and may thus be freely copied or modified.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

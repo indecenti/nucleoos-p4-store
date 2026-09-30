@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Cold Iron — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Cold Iron</h1><p class=desc>La tua ascia è sparita e forse l&#x27;hanno rubata i folletti. Una breve fiaba popolare. Avventura testuale in inglese (Andrew Plotkin (as Lyman Clive Charles), 2011). Licenza non commerciale. Scrivi if-cold-iron nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-cold-iron</code>.</p></aside><article><h1>Cold Iron</h1>
+<h2>Il gioco</h2>
+<p>La tua ascia è sparita e forse l'hanno rubata i folletti. Una breve fiaba popolare.</p>
+<ul>
+<li><strong>Autore:</strong> Andrew Plotkin (as Lyman Clive Charles) (2011)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine v8, interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-cold-iron/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-cold-iron</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Cold Iron</strong> © Andrew Plotkin (as Lyman Clive Charles), 2011. Licenza: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/coldiron.ni">https://ifarchive.org/if-archive/games/source/inform/coldiron.ni</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge">https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge</a></p>
+<blockquote>
+<p>It may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Cold Iron</h1><p class=desc>Your good axe has gone missing, and maybe the piskeys stole it. A short folk tale. Text adventure in English (Andrew Plotkin (as Lyman Clive Charles), 2011). Non-commercial licence. Type if-cold-iron in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-cold-iron</code>.</p></aside><article><h1>Cold Iron</h1>
+<h2>The game</h2>
+<p>Your good axe has gone missing, and maybe the piskeys stole it. A short folk tale.</p>
+<ul>
+<li><strong>Author:</strong> Andrew Plotkin (as Lyman Clive Charles) (2011)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine v8, Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-cold-iron/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-cold-iron</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Cold Iron</strong> © Andrew Plotkin (as Lyman Clive Charles), 2011. Licence: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/coldiron.ni">https://ifarchive.org/if-archive/games/source/inform/coldiron.ni</a>
+Game source: <a href="https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge">https://ifdb.org/viewgame?id=x8ohk12d1a6f12ge</a></p>
+<blockquote>
+<p>It may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

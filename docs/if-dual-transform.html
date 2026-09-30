@@ -1,0 +1,195 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Dual Transform — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Dual Transform</h1><p class=desc>Una stanza, ma non sempre la stessa, e un solo oggetto che nasconde più di quanto sembri. Sperimenta. Avventura testuale in inglese (Andrew Plotkin, 2010). Licenza non commerciale. Scrivi if-dual-transform nel Terminale o tocca l&#x27;icona.</p><p class=meta>versione 1.0 · Licenza: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=xfezh9wz188ihlel'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>if-dual-transform</code>.</p></aside><article><h1>Dual Transform</h1>
+<h2>Il gioco</h2>
+<p>Una stanza, ma non sempre la stessa, e un solo oggetto che nasconde più di quanto sembri. Sperimenta.</p>
+<ul>
+<li><strong>Autore:</strong> Andrew Plotkin (2010)</li>
+<li><strong>Lingua del gioco:</strong> inglese</li>
+<li><strong>Formato:</strong> Z-machine (Blorb), interprete Frotz 2.55</li>
+</ul>
+<h2>Come si gioca</h2>
+<p>È un'<strong>avventura testuale</strong> (interactive fiction): il gioco descrive dove sei, tu scrivi cosa fare
+in frasi brevi, in inglese, e premi Invio. Si comincia quasi sempre guardandosi intorno.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Abbreviazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>descrive dove sei</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>cosa porti con te</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>ti sposti (anche NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>guarda da vicino un oggetto</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>prendi / lascia</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>agisci su cose e persone</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>ripete l'ultimo comando</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>lascia passare il tempo</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>salva / carica la partita</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>annulla una mossa</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>esci dal gioco</td>
+</tr>
+</tbody>
+</table>
+<p>Consigli: esamina tutto (<code>EXAMINE</code> / <code>X</code>), prendi quello che puoi, prova le direzioni elencate nelle
+descrizioni, e se ti blocchi rileggi la stanza con <code>LOOK</code>. Molti giochi capiscono <code>HELP</code> o <code>HINT</code>.
+Con <code>UNDO</code> torni indietro di una mossa.</p>
+<h2>Salvare la partita</h2>
+<p><code>SAVE</code> chiede un nome di file (Invio accetta quello proposto) e lo scrive nella cartella dati
+dell'app sulla SD (<code>/sdcard/apps/if-dual-transform/data</code>). <code>RESTORE</code> lo ricarica, anche dopo aver chiuso
+il Terminale. <code>QUIT</code> esce dal gioco.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il gioco già avviato, oppure apri <strong>Terminale</strong> e scrivi <code>if-dual-transform</code>.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al gioco.</li>
+<li><strong>STOP</strong> interrompe subito il gioco (senza salvare).</li>
+</ul>
+<h2>Crediti e licenza</h2>
+<p><strong>Dual Transform</strong> © Andrew Plotkin, 2010. Licenza: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Testo della licenza: <a href="https://ifarchive.org/if-archive/games/source/inform/dualtransform.ni">https://ifarchive.org/if-archive/games/source/inform/dualtransform.ni</a>
+Fonte del gioco: <a href="https://ifdb.org/viewgame?id=xfezh9wz188ihlel">https://ifdb.org/viewgame?id=xfezh9wz188ihlel</a></p>
+<blockquote>
+<p>It may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interprete: <strong>Frotz 2.55</strong>, licenza GPL-2.0-or-later (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Gioco e interprete sono ridistribuiti invariati; NucleoOS aggiunge solo l'avvio e l'accesso al file della storia incorporato.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Dual Transform</h1><p class=desc>One room, but not always the same one, and one object with more to it than it seems. Experiment. Text adventure in English (Andrew Plotkin, 2010). Non-commercial licence. Type if-dual-transform in the Terminal or tap the icon.</p><p class=meta>version 1.0 · License: Free distribution, non-commercial (author&#x27;s permission) (game), GPL-2.0-or-later (interpreter) · <a href='https://ifdb.org/viewgame?id=xfezh9wz188ihlel'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>if-dual-transform</code>.</p></aside><article><h1>Dual Transform</h1>
+<h2>The game</h2>
+<p>One room, but not always the same one, and one object with more to it than it seems. Experiment.</p>
+<ul>
+<li><strong>Author:</strong> Andrew Plotkin (2010)</li>
+<li><strong>Game language:</strong> English</li>
+<li><strong>Format:</strong> Z-machine (Blorb), Frotz 2.55 interpreter</li>
+</ul>
+<h2>How to play</h2>
+<p>This is a <strong>text adventure</strong> (interactive fiction): the game tells you where you are, you type what to
+do in short sentences, in English, and press Enter. Start by looking around.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Short</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LOOK</code></td>
+<td><code>L</code></td>
+<td>describe where you are</td>
+</tr>
+<tr>
+<td><code>INVENTORY</code></td>
+<td><code>I</code></td>
+<td>what you are carrying</td>
+</tr>
+<tr>
+<td><code>NORTH, SOUTH, EAST, WEST, UP, DOWN</code></td>
+<td><code>N S E W U D</code></td>
+<td>move (also NE, NW, SE, SW, IN, OUT)</td>
+</tr>
+<tr>
+<td><code>EXAMINE lamp</code></td>
+<td><code>X LAMP</code></td>
+<td>look closely at something</td>
+</tr>
+<tr>
+<td><code>TAKE lamp / DROP lamp</code></td>
+<td><code>GET</code></td>
+<td>pick up / put down</td>
+</tr>
+<tr>
+<td><code>OPEN door, PUSH button, TALK TO man</code></td>
+<td></td>
+<td>act on things and people</td>
+</tr>
+<tr>
+<td><code>AGAIN</code></td>
+<td><code>G</code></td>
+<td>repeat the last command</td>
+</tr>
+<tr>
+<td><code>WAIT</code></td>
+<td><code>Z</code></td>
+<td>let time pass</td>
+</tr>
+<tr>
+<td><code>SAVE / RESTORE</code></td>
+<td></td>
+<td>save / load the game</td>
+</tr>
+<tr>
+<td><code>UNDO</code></td>
+<td></td>
+<td>take back one move</td>
+</tr>
+<tr>
+<td><code>QUIT</code></td>
+<td><code>Q</code></td>
+<td>leave the game</td>
+</tr>
+</tbody>
+</table>
+<p>Tips: examine everything (<code>EXAMINE</code> / <code>X</code>), take what you can, try the exits the descriptions
+mention, and if you are stuck read the room again with <code>LOOK</code>. Many games understand <code>HELP</code> or <code>HINT</code>.
+<code>UNDO</code> takes back one move.</p>
+<h2>Saving</h2>
+<p><code>SAVE</code> asks for a file name (Enter accepts the suggested one) and writes it to the app's data folder
+on the SD card (<code>/sdcard/apps/if-dual-transform/data</code>). <code>RESTORE</code> loads it back, even after closing the
+Terminal. <code>QUIT</code> leaves the game.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the game already running, or open <strong>Terminal</strong> and type <code>if-dual-transform</code>.</li>
+<li>Type in the bottom line and press Enter: the line goes to the game.</li>
+<li><strong>STOP</strong> kills the game right away (without saving).</li>
+</ul>
+<h2>Credits and licence</h2>
+<p><strong>Dual Transform</strong> © Andrew Plotkin, 2010. Licence: <strong>Free distribution, non-commercial (author's permission)</strong>.
+Licence text: <a href="https://ifarchive.org/if-archive/games/source/inform/dualtransform.ni">https://ifarchive.org/if-archive/games/source/inform/dualtransform.ni</a>
+Game source: <a href="https://ifdb.org/viewgame?id=xfezh9wz188ihlel">https://ifdb.org/viewgame?id=xfezh9wz188ihlel</a></p>
+<blockquote>
+<p>It may be distributed for free, but not sold or included in any for-profit collection without written permission from the author.</p>
+</blockquote>
+<p>Interpreter: <strong>Frotz 2.55</strong>, GPL-2.0-or-later licence (<a href="https://gitlab.com/DavidGriffith/frotz">https://gitlab.com/DavidGriffith/frotz</a>). Game and interpreter are redistributed unmodified; NucleoOS only adds the launcher and access to the embedded story file.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
