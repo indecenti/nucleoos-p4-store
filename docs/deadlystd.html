@@ -1,0 +1,157 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Deadly Standards — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Deadly Standards</h1><p class=desc>Un primo episodio della comunità costruito con regole di design rigide.</p><p class=meta>versione 1.0.1 · Licenza: CC BY-NC 4.0 · <a href='https://www.doomworld.com/idgames/levels/doom/Ports/s-u/standard'>Sito del progetto</a></p></div></header><article><h1>Deadly Standards</h1>
+<h2>A cosa serve</h2>
+<p>Un primo episodio della comunità costruito con regole di design rigide.</p>
+<h2>Primo avvio</h2>
+<p>Il primo avvio scarica i file del gioco dallo Store (serve il Wi-Fi) con una barra di avanzamento; se si interrompe, riaprendo il gioco riprende da dove era rimasto. Dopo funziona anche senza rete.</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tastiera</th>
+<th>Mouse</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avanti / indietro</td>
+<td>W S oppure ↑ ↓</td>
+<td>–</td>
+<td>levetta sinistra</td>
+</tr>
+<tr>
+<td>Girarsi</td>
+<td>← →</td>
+<td>movimento orizzontale</td>
+<td>levetta destra</td>
+</tr>
+<tr>
+<td>Passo laterale</td>
+<td>A D (oppure Alt + ← →)</td>
+<td>tasto centrale + movimento</td>
+<td>levetta sinistra a destra/sinistra</td>
+</tr>
+<tr>
+<td>Sparare</td>
+<td>Ctrl</td>
+<td>tasto sinistro</td>
+<td>grilletto destro (RT) o X</td>
+</tr>
+<tr>
+<td>Aprire porte, premere interruttori</td>
+<td>E o Spazio</td>
+<td>tasto destro</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Correre</td>
+<td>Shift (tenuto)</td>
+<td>–</td>
+<td>grilletto sinistro (LT)</td>
+</tr>
+<tr>
+<td>Cambiare arma</td>
+<td>1 – 7</td>
+<td>rotellina</td>
+<td>LB / Y indietro, RB / B avanti</td>
+</tr>
+<tr>
+<td>Mappa</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (salva, carica, opzioni)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>Nei menu: frecce e Invio sulla tastiera; sul joypad croce o levetta, A conferma, B torna indietro. Alle domande «sì/no» premi Y (o A sul joypad).</p>
+<p>Con il touch: un tocco apre il menu fuori dal gioco e spara durante il gioco. Il gesto Indietro apre il menu. Per giocare davvero serve una tastiera, un mouse o un joypad (USB o Bluetooth).</p>
+<h2>Salvataggi e impostazioni</h2>
+<p>Salva e carica dal menu (Esc → Save Game / Load Game). I salvataggi e le impostazioni restano nella cartella privata di ogni gioco. La sensibilità del mouse, il volume di effetti e musica e la dimensione dello schermo si cambiano in Esc → Options.</p>
+<p>I file WAD scaricati stanno in <code>/home/doom</code>: li vedi dall'app File, e lì puoi mettere anche i tuoi (per esempio <code>doom.wad</code> o <code>doom2.wad</code> delle versioni che possiedi), che poi trovi nell'app Doom Engine.</p>
+<h2>Crediti e licenza</h2>
+<p>Deadly Standards: Various authors. Licenza: CC BY-NC 4.0. Fonte: https://www.doomworld.com/idgames/levels/doom/Ports/s-u/standard. I file sono ridistribuiti invariati insieme al loro file di testo (standard.txt), che trovi anche in <code>/home/doom</code>. Gira sopra Freedoom (freedoom1.wad, licenza BSD), scaricato una volta sola per tutti i giochi.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Deadly Standards</h1><p class=desc>A community first episode built under strict design rules.</p><p class=meta>version 1.0.1 · License: CC BY-NC 4.0 · <a href='https://www.doomworld.com/idgames/levels/doom/Ports/s-u/standard'>Project site</a></p></div></header><article><h1>Deadly Standards</h1>
+<h2>What it is</h2>
+<p>A community first episode built under strict design rules.</p>
+<h2>First start</h2>
+<p>The first start downloads the game files from the Store (Wi-Fi needed) with a progress bar; if it stops, opening the game again resumes it. After that it also works offline.</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Keyboard</th>
+<th>Mouse</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forward / back</td>
+<td>W S or ↑ ↓</td>
+<td>–</td>
+<td>left stick</td>
+</tr>
+<tr>
+<td>Turn</td>
+<td>← →</td>
+<td>horizontal motion</td>
+<td>right stick</td>
+</tr>
+<tr>
+<td>Strafe</td>
+<td>A D (or Alt + ← →)</td>
+<td>middle button + motion</td>
+<td>left stick left/right</td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Ctrl</td>
+<td>left button</td>
+<td>right trigger (RT) or X</td>
+</tr>
+<tr>
+<td>Open doors, press switches</td>
+<td>E or Space</td>
+<td>right button</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>Shift (held)</td>
+<td>–</td>
+<td>left trigger (LT)</td>
+</tr>
+<tr>
+<td>Change weapon</td>
+<td>1 – 7</td>
+<td>wheel</td>
+<td>LB / Y previous, RB / B next</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (save, load, options)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>In menus: arrows and Enter on the keyboard; on a gamepad the d-pad or stick, A confirms, B goes back. At "yes/no" questions press Y (or A on the gamepad).</p>
+<p>With touch: a tap opens the menu outside the game and fires while playing. The Back gesture opens the menu. To really play you need a keyboard, a mouse or a gamepad (USB or Bluetooth).</p>
+<h2>Saves and settings</h2>
+<p>Save and load from the menu (Esc → Save Game / Load Game). Saves and settings stay in each game's private folder. Mouse sensitivity, sound and music volume and screen size are in Esc → Options.</p>
+<p>Downloaded WAD files live in <code>/home/doom</code>: you can see them in the Files app, and you can put your own there too (for example <code>doom.wad</code> or <code>doom2.wad</code> from copies you own); they then show up in the Doom Engine app.</p>
+<h2>Credits and license</h2>
+<p>Deadly Standards: Various authors. License: CC BY-NC 4.0. Source: https://www.doomworld.com/idgames/levels/doom/Ports/s-u/standard. The files are redistributed unchanged together with their text file (standard.txt), which you also find in <code>/home/doom</code>. It runs on top of Freedoom (freedoom1.wad, BSD license), downloaded once for every game.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

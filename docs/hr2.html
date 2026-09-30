@@ -1,0 +1,157 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Hell Revealed II — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Hell Revealed II</h1><p class=desc>Il seguito difficilissimo di Hell Revealed: 32 mappe.</p><p class=meta>versione 1.0.1 · Licenza: Freely distributable (idgames) · <a href='https://www.doomworld.com/idgames/themes/hr/hr2final'>Sito del progetto</a></p></div></header><article><h1>Hell Revealed II</h1>
+<h2>A cosa serve</h2>
+<p>Il seguito difficilissimo di Hell Revealed: 32 mappe.</p>
+<h2>Primo avvio</h2>
+<p>Il primo avvio scarica i file del gioco dallo Store (serve il Wi-Fi) con una barra di avanzamento; se si interrompe, riaprendo il gioco riprende da dove era rimasto. Dopo funziona anche senza rete.</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tastiera</th>
+<th>Mouse</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avanti / indietro</td>
+<td>W S oppure ↑ ↓</td>
+<td>–</td>
+<td>levetta sinistra</td>
+</tr>
+<tr>
+<td>Girarsi</td>
+<td>← →</td>
+<td>movimento orizzontale</td>
+<td>levetta destra</td>
+</tr>
+<tr>
+<td>Passo laterale</td>
+<td>A D (oppure Alt + ← →)</td>
+<td>tasto centrale + movimento</td>
+<td>levetta sinistra a destra/sinistra</td>
+</tr>
+<tr>
+<td>Sparare</td>
+<td>Ctrl</td>
+<td>tasto sinistro</td>
+<td>grilletto destro (RT) o X</td>
+</tr>
+<tr>
+<td>Aprire porte, premere interruttori</td>
+<td>E o Spazio</td>
+<td>tasto destro</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Correre</td>
+<td>Shift (tenuto)</td>
+<td>–</td>
+<td>grilletto sinistro (LT)</td>
+</tr>
+<tr>
+<td>Cambiare arma</td>
+<td>1 – 7</td>
+<td>rotellina</td>
+<td>LB / Y indietro, RB / B avanti</td>
+</tr>
+<tr>
+<td>Mappa</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (salva, carica, opzioni)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>Nei menu: frecce e Invio sulla tastiera; sul joypad croce o levetta, A conferma, B torna indietro. Alle domande «sì/no» premi Y (o A sul joypad).</p>
+<p>Con il touch: un tocco apre il menu fuori dal gioco e spara durante il gioco. Il gesto Indietro apre il menu. Per giocare davvero serve una tastiera, un mouse o un joypad (USB o Bluetooth).</p>
+<h2>Salvataggi e impostazioni</h2>
+<p>Salva e carica dal menu (Esc → Save Game / Load Game). I salvataggi e le impostazioni restano nella cartella privata di ogni gioco. La sensibilità del mouse, il volume di effetti e musica e la dimensione dello schermo si cambiano in Esc → Options.</p>
+<p>I file WAD scaricati stanno in <code>/home/doom</code>: li vedi dall'app File, e lì puoi mettere anche i tuoi (per esempio <code>doom.wad</code> o <code>doom2.wad</code> delle versioni che possiedi), che poi trovi nell'app Doom Engine.</p>
+<h2>Crediti e licenza</h2>
+<p>Hell Revealed II: Jonas Feragen et al.. Licenza: Freely distributable (idgames). Fonte: https://www.doomworld.com/idgames/themes/hr/hr2final. I file sono ridistribuiti invariati insieme al loro file di testo (hr2final.txt), che trovi anche in <code>/home/doom</code>. Gira sopra Freedoom (freedoom2.wad, licenza BSD), scaricato una volta sola per tutti i giochi.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Hell Revealed II</h1><p class=desc>The very hard sequel to Hell Revealed: 32 maps.</p><p class=meta>version 1.0.1 · License: Freely distributable (idgames) · <a href='https://www.doomworld.com/idgames/themes/hr/hr2final'>Project site</a></p></div></header><article><h1>Hell Revealed II</h1>
+<h2>What it is</h2>
+<p>The very hard sequel to Hell Revealed: 32 maps.</p>
+<h2>First start</h2>
+<p>The first start downloads the game files from the Store (Wi-Fi needed) with a progress bar; if it stops, opening the game again resumes it. After that it also works offline.</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Keyboard</th>
+<th>Mouse</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forward / back</td>
+<td>W S or ↑ ↓</td>
+<td>–</td>
+<td>left stick</td>
+</tr>
+<tr>
+<td>Turn</td>
+<td>← →</td>
+<td>horizontal motion</td>
+<td>right stick</td>
+</tr>
+<tr>
+<td>Strafe</td>
+<td>A D (or Alt + ← →)</td>
+<td>middle button + motion</td>
+<td>left stick left/right</td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Ctrl</td>
+<td>left button</td>
+<td>right trigger (RT) or X</td>
+</tr>
+<tr>
+<td>Open doors, press switches</td>
+<td>E or Space</td>
+<td>right button</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>Shift (held)</td>
+<td>–</td>
+<td>left trigger (LT)</td>
+</tr>
+<tr>
+<td>Change weapon</td>
+<td>1 – 7</td>
+<td>wheel</td>
+<td>LB / Y previous, RB / B next</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (save, load, options)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>In menus: arrows and Enter on the keyboard; on a gamepad the d-pad or stick, A confirms, B goes back. At "yes/no" questions press Y (or A on the gamepad).</p>
+<p>With touch: a tap opens the menu outside the game and fires while playing. The Back gesture opens the menu. To really play you need a keyboard, a mouse or a gamepad (USB or Bluetooth).</p>
+<h2>Saves and settings</h2>
+<p>Save and load from the menu (Esc → Save Game / Load Game). Saves and settings stay in each game's private folder. Mouse sensitivity, sound and music volume and screen size are in Esc → Options.</p>
+<p>Downloaded WAD files live in <code>/home/doom</code>: you can see them in the Files app, and you can put your own there too (for example <code>doom.wad</code> or <code>doom2.wad</code> from copies you own); they then show up in the Doom Engine app.</p>
+<h2>Credits and license</h2>
+<p>Hell Revealed II: Jonas Feragen et al.. License: Freely distributable (idgames). Source: https://www.doomworld.com/idgames/themes/hr/hr2final. The files are redistributed unchanged together with their text file (hr2final.txt), which you also find in <code>/home/doom</code>. It runs on top of Freedoom (freedoom2.wad, BSD license), downloaded once for every game.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

@@ -1,0 +1,157 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Ultimate Doom The Way id Did — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Ultimate Doom The Way id Did</h1><p class=desc>Un nuovo quarto episodio come se l&#x27;avesse fatto id Software nel 1995. Si gioca su Freedoom 1.</p><p class=meta>versione 1.0.1 · Licenza: Freely distributable (idgames) · <a href='https://www.doomworld.com/idgames/levels/doom/s-u/udtwid'>Sito del progetto</a></p></div></header><article><h1>Ultimate Doom The Way id Did</h1>
+<h2>A cosa serve</h2>
+<p>Un nuovo quarto episodio come se l'avesse fatto id Software nel 1995. Si gioca su Freedoom 1.</p>
+<h2>Primo avvio</h2>
+<p>Il primo avvio scarica i file del gioco dallo Store (serve il Wi-Fi) con una barra di avanzamento; se si interrompe, riaprendo il gioco riprende da dove era rimasto. Dopo funziona anche senza rete.</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tastiera</th>
+<th>Mouse</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avanti / indietro</td>
+<td>W S oppure ↑ ↓</td>
+<td>–</td>
+<td>levetta sinistra</td>
+</tr>
+<tr>
+<td>Girarsi</td>
+<td>← →</td>
+<td>movimento orizzontale</td>
+<td>levetta destra</td>
+</tr>
+<tr>
+<td>Passo laterale</td>
+<td>A D (oppure Alt + ← →)</td>
+<td>tasto centrale + movimento</td>
+<td>levetta sinistra a destra/sinistra</td>
+</tr>
+<tr>
+<td>Sparare</td>
+<td>Ctrl</td>
+<td>tasto sinistro</td>
+<td>grilletto destro (RT) o X</td>
+</tr>
+<tr>
+<td>Aprire porte, premere interruttori</td>
+<td>E o Spazio</td>
+<td>tasto destro</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Correre</td>
+<td>Shift (tenuto)</td>
+<td>–</td>
+<td>grilletto sinistro (LT)</td>
+</tr>
+<tr>
+<td>Cambiare arma</td>
+<td>1 – 7</td>
+<td>rotellina</td>
+<td>LB / Y indietro, RB / B avanti</td>
+</tr>
+<tr>
+<td>Mappa</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (salva, carica, opzioni)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>Nei menu: frecce e Invio sulla tastiera; sul joypad croce o levetta, A conferma, B torna indietro. Alle domande «sì/no» premi Y (o A sul joypad).</p>
+<p>Con il touch: un tocco apre il menu fuori dal gioco e spara durante il gioco. Il gesto Indietro apre il menu. Per giocare davvero serve una tastiera, un mouse o un joypad (USB o Bluetooth).</p>
+<h2>Salvataggi e impostazioni</h2>
+<p>Salva e carica dal menu (Esc → Save Game / Load Game). I salvataggi e le impostazioni restano nella cartella privata di ogni gioco. La sensibilità del mouse, il volume di effetti e musica e la dimensione dello schermo si cambiano in Esc → Options.</p>
+<p>I file WAD scaricati stanno in <code>/home/doom</code>: li vedi dall'app File, e lì puoi mettere anche i tuoi (per esempio <code>doom.wad</code> o <code>doom2.wad</code> delle versioni che possiedi), che poi trovi nell'app Doom Engine.</p>
+<h2>Crediti e licenza</h2>
+<p>Ultimate Doom The Way id Did: Various authors. Licenza: Freely distributable (idgames). Fonte: https://www.doomworld.com/idgames/levels/doom/s-u/udtwid. I file sono ridistribuiti invariati insieme al loro file di testo (udtwid.txt), che trovi anche in <code>/home/doom</code>. Gira sopra Freedoom (freedoom1.wad, licenza BSD), scaricato una volta sola per tutti i giochi.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAPKUlEQVR42u2de5BT9RXHfzePzSbZV5J9P/NO9gHLLvte9s0ui1ocleVdQFvsH7Udqn9VOwrjOKJjtT7a6bQjoNZpFcQHdrQoCIhasdiqFB1mtIpFeRPUIpDce3rO794sSTbZ7CYsz2Tm60k29577O597zu91h8hYgq+7GFN1dTENid6zS+8lDDGmpvaTpc/n5aqxLjboNGd11WbndFVc/LoW2xk1tqEJBEngQjNtsMpcNVCVd+OA17JmwGPZ1u+xHEb5UMcVe7GK2nd8wGveie3eMODOXT5QZW5SEiMU5DnPOv7CC/djAzbhxf0zK3OBNOi1AH6G/ktIM7DNg5UW3v4Bar/b/OGAx3xTVRVLU0JVnYtsFIJZN91t6ev3mDbRhUnT3Wboc5kD011mP7dus3Qpido83H78TAlAQBHkR30IMlryjPc1XK59LtMKvDswA9XrMokovLgJG2GCy0g8rn5MDKqofpf5mb7iTEuiEDm8ltIsc58r59VBrwLOmRO4zKCNUK+Tx+mfgTH3u017O21ZjeOFSHUv9HkzLeho5wyPCXocOWfwPVxRcuT4ESBMd5mO9SkQxzRdC5LucWS/NgMddDuyz+B7uBKFsWMfSUCzD/bajAVKcsWGGBy+uxzZKwbcOdBtv3LhDUO0Z/v7ESIlFMGLWcrBL7qtOV19zmyp254VQEFKKFsWQswme3vM/jBY3922zDcQIHTZUgCD6rJnSd2OLLHbnnlUGZmFsDlikGhnhbGnF0/otGUGumyZkNJZdVoz/dMdWfR+xYgsVLJP1WHN2NJrzwS0gU5rBqQUJqnLliGhPdJqN+YPz1iCpdtmzfTgl346MAUrujoqMgJ9lGAVmUv5YNvFNPJ/8EV/7LFlwLRyY6CjwggpjdS0CqO/h2ehcU0UgMYnFYD+FKyYAMUuK9pyw95BJ9PxEg7u700r079FX7aXGwJ4AKQUVVJHhQEZ6b/rcmfkDg8i0+2m7Lay9CPTyvXQXqaXUJBSdLWV6cXOcr2IvDqGAdIubVtp+olpZSmAYwQIbSW6njCArSXpvvbSdECQUptsU4qi1tJ0saMsHdpLdN0pgOcOIMtpLdb5MC2htUQntco2pShqKdGJ00p10BwJsKUozddanAYtxWlSi2xTiqLm4jSxvSTt/AFsLRm/zpXf8wqwuVDraynSQnORVmqWbdJqLNBAQ/44heeM5rOlWAtNhWPz1RjHVyJqKtKKbdiG5gL1xAKkIDuteuh1GqHXMUbhsT0Og3J+bL/TytOhzxnfV7dNH9PPOQVYiwCxYb5mbBxaqUm2CYuypCabwfr7p8GRvy+Afa/Nhv9uHhpVX74+BF+9MQf2/vU6GHAboSFPhQ0O90uf63JVsOl3vXDorfmw7/XofunvB3fMg+2P90MrntOcZDyhaizUiNxnGMBsltNYoPY1Fagx7dVSo2wTFgValcnglUe7QdqzFHzvLoBv31s4qr7ZuRBOvr8Ivt42F1xFenBlCdBarAnzWWsS4Lo6E/jwpnz3j0Xw7c7ovk7g9QIfLYF3nr4KcvUCTM7F8wuTiylEYgv6mno+AL78my448+ESOILZcvydBaPq2NsLOMR9mEE5pnQoMzBoK6Y+UfbZgu+9RgarllVBYPdSOLIjts+jeL3T/1wMW9cOAoYHlWYVtEw0wIZ8la8xX4Wdr0pqkG3CasILVGYgwIc7wY+ZcPTt+TxrRhMFTtnz5ZYhyEOA5QiLN1Tx2Viogsk5Ai/L0x8sQeCxfdJ3Z/61GLY9MQgqQYBKE3YHBcnFFCKRfF0UAI+9M59nC4kyiv72OfaXuREAGwsIHoNZtdmYzfOwRBeOejNCAQrnC+DUPMHXkCcAWmmqbBMWBUzlNhpAyrjv3/8hwL+XysKyhE9u5GWcb9HzEqaG1qO/Jsw+t57BPTd5efkScO5jTAAZeLHvbMpPLqYQidyXhYUDrMtlvqm5DOpzmVQv24TVgBfwGKgP7OSdeTDgyAD/8kAX3DBQAUMzbXDDDCvMHrTBrOkVoNaqoRwzmBoa9FeTxWDrH6fDmZDy/eZdecCIl4FezN7GvORiCpFIvi4oQPoMODrffvNk3smnodSKtKicNAYeDLqBGop3naZEV9dkwuEdc3n5HsfSpxH4C5z6HNg+l2dtPIAN5xBgQzSAUyzMV29hUGdhUp1sExYFTSW3cTSAWLYrb6kHtVrA0RZHyQKBqxnFs0XxRTfDqWOwcokHRKV8g4Cefagb9my8Dk7uWsS7hFgAPXgDGnKTiylEIiVa7YQDTI8PcMVP63gG0vFTzCxcii+661VYzlt+38enRASHBp9T2H/euqQaPn75IgFYa2a+Ornx0ohgxqn6XAFcmDUbHxpbBtIgEeyk6dygnzqLANU4nxyszIBDb4aX7/4tc6CzoQD+s2k2TqoXjgrQnc1LDpKNS5FIiTYC4GQT800x4RcmJtXKNmFR4M60OABD+kDKVoeWgV2DfZ9ebij5IZh2/Pudi9xh5ev/YDFsXj0DivMN8NXWuRzoaABdOADVm5OLKUQiJRoyu3AAKdj/4VLsvWevgbWrOuD5Bzph/X0dsPHRHrj7R1VQqZd9EEgajF7DtW+wfDn8j5fCPcvrIcOghYNvzosPMPM8AJyUzXy1OFrhhFWaLNuENcUs8Ix6KQbAyHkgze1odQFf3AwvPtILeSrGNw0qcS7Z786Ag8pIy5dpCEfcvQSu7iyFLKMWS3tsACk5ko1LkcgT7UIDjFyJHNo+DwKYZY/f28HLmgBSSd8x3zU8eSZIBJKmLjTZLrWkw+EQuBcUIE5UfZOxs0WQ0iTZJizaNaHg4wGMNrCsva+TA6w1q/hA9LfHesH/4ZKw/m/Lmhn8mEmlBjiCAE/EAejEUZySI9m4FInkqzoSII52vknY2SJIqUa2CYsW/Ta1AnD3+DJwtZKBtBTscxjhwNY5wxl2RBl8qP+jY9rtRji0LX4GOtAXJUeycSkSydcFBxi5FhYRHuy7GZ7FPpDgVOD5v5zrxAw+u/YNZuBV2P/RMbTrfPBiAYiTVV8N9hUIUqqWbcKalC2AFQeCFx8c21p4Dq2FB6wwdI0dmuryORwrdgGvPNLNy5eOD2537X9jDhQXGEGnEmDAlYEZGhvg9icHQaPBriBTAEqOZONSJHJfxgsIMHIeqEEJqOC6OFNg0Gk1hJUvH33R13MP9/DjdKiWAi18HQMg7ytXy31lHqo6Y4IB4pTBRxdBkFKVbBNWTZYAFYICcHf8lchUiwqmYNmT6k0qsOK5t11vD4MfzKp1uP6djVm77Gor3LHAA4ffHLk/SKuV73F598GGWTAXs3vZVRXQkKcBryG5uBSJPNFGADQwXxX2FQhSqpRtwqrGkinHu/7ir0cHuOIWeS1MwIPn0vtSRpsH3uHVR2i/eXKX3G9K+B3tNY62w02ZCR/fCCexr+1xZvBVTXWGAEnGJ1KieS52gHcu8owAGMyu4Mgd71EBPWchkPS0r7zICBbM7EnYNu9EAPTqmQ8hUppLXtkmrCq8y2UI4YU4AFf+TC7hyTkqDp1E78tw5LwLAcZ7eBTa78XKQirvAzhSlyBAEwKsyZD3KpOIT6wyXAwAQwaRMgyshMmi88yoFYu9fIv/BD3CxNE3mmhUjjdBp62uo2/Ng7KJBFiBAD3pzIcQaTdE8sg2YVUa5TJ84YHoACM3E9bf3wnrcAXyDE6iX3qsD34y0wq/mGWDo9iHfbZpNt95DtPmIfj89dn8CV6s5yIEnibe+7bMgb2vXI9THwOYaDQ2ypu9ScQn0maHRxcB0I0AESJtLUlu2SYsr0Hg2RQLYOREmvo6Ej3voMn0H25vhnytCuqK9GDJ0YE5Jz1MFlM6ZGfpoNJp4ttZ0aYxp3HE3vHUTP6I1Iw+GHYL+TiIUPCu5OITvekXAcDIpVzocu7eW6fy0nakMchXjVSBWi7zyYX6mPNAmvIEH6xT6ZYgPBuurT1JxhYdIGM5uHD3ufECaCWXbBOWVy9AETb8+TgAY20o3H9bA59Y042gbqUyQlX4dwdC7CwzjLoS4Q/WccVixRtRhee5k4xLkYjwwHE+AD53fwecxhUBZVZopsVSMANXKRno0csPlCLlSseJOmZiW4kB9m+eI2807DjrhybX3+N8kXZtaC1cppWzxzWRAJ1pzOfCO4VWcso2YXkwwEIE8OpvewG+WAYB6tuCD9BHUUDpAx+9o1nZ6hei+nfp5JVOe6mRD0Y0WZY+Whq+MfHpj2HXuh+cBahLLqYQie60KAAdWuZzavmzCckh24RFAZZigHctrYZ1uHalLSra54snOu7PD/fComudvISdOiGqf2eavNaut+jg6bvb4SkcxdesOutnDY7sf3qwG1b+HCfq2I5SDbYpLbmYQiS6yKonEGBQNJUxKJsE45UOA7fH8U9bZgVx/NDDegLo1E4wQLuG+Rwa/mRMsss2aVGmUDY60sYnu1bg21ljuQb5d8bykzZ2P+OQ6NREAMR1q8mmYd+ca4CXqThAu5r1Dv9GTBdjGpuK7aKpAZaFaJNtSiMlITgJ7UkHY2VBgPyfu1oFtsGOHTN2zgGrbFMaKUlhtB/7dz3/565TGdPyflDFltOXaP0pUDEVQEYSJVto8vF/8o9EG/ELqUIWpDRS5QLz2wSeZLcSs2Dy8R9PcDKmwwP2KBDFFLAR4smFjE7ZGHNH/kAb/wkP7BWXWOU9uQDtKKcUpoBVtk+EMgv9wTEVZSHC+wQPktCKZcoGZ0qcRwB1CiF6Yv2GVjALF1fIJ/lT4IblJyY4TqyNln2REFV44Ppy+QR/qWyvZFElSmg/LWIsN95Pg/LfhKKVCZ7wWZn8nCJwJcNTJCGH5siBY9Rfr0R4DXjSsVIZoj/40OcKUqBEzjx6vyxe6UbtD2luWMzYV+QErR8lFcvvL2dRjMGE8YfA04z3d1TVykZDETp8VYFIO82XK0gJYwsUK+WLdi9+bk8UHotM2ULGfoUOD5acBRkgmCixSL44XGKSlLYH4+Cli/Y0ajXGaBlv2Y46sNCbfMYK0PkK1IHQu6c0SLxUVChb3u7is+BOEbgCxmqi/RT0uXgN3wkCiRe6CRuyBi+6B63vUstAbP9JbPc+1Ab8vBzljYh1Qn5TX4iS0mpKd2xABzaq+1IRZl2psiU1Yh58Xv5XEkrHqmGX/kutxJEQuP8DYVv0fk8oDpQAAAAASUVORK5CYII=' alt=><div><h1>Ultimate Doom The Way id Did</h1><p class=desc>A new fourth episode made as if id Software had shipped it in 1995. Plays on Freedoom 1.</p><p class=meta>version 1.0.1 · License: Freely distributable (idgames) · <a href='https://www.doomworld.com/idgames/levels/doom/s-u/udtwid'>Project site</a></p></div></header><article><h1>Ultimate Doom The Way id Did</h1>
+<h2>What it is</h2>
+<p>A new fourth episode made as if id Software had shipped it in 1995. Plays on Freedoom 1.</p>
+<h2>First start</h2>
+<p>The first start downloads the game files from the Store (Wi-Fi needed) with a progress bar; if it stops, opening the game again resumes it. After that it also works offline.</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Keyboard</th>
+<th>Mouse</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forward / back</td>
+<td>W S or ↑ ↓</td>
+<td>–</td>
+<td>left stick</td>
+</tr>
+<tr>
+<td>Turn</td>
+<td>← →</td>
+<td>horizontal motion</td>
+<td>right stick</td>
+</tr>
+<tr>
+<td>Strafe</td>
+<td>A D (or Alt + ← →)</td>
+<td>middle button + motion</td>
+<td>left stick left/right</td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Ctrl</td>
+<td>left button</td>
+<td>right trigger (RT) or X</td>
+</tr>
+<tr>
+<td>Open doors, press switches</td>
+<td>E or Space</td>
+<td>right button</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>Shift (held)</td>
+<td>–</td>
+<td>left trigger (LT)</td>
+</tr>
+<tr>
+<td>Change weapon</td>
+<td>1 – 7</td>
+<td>wheel</td>
+<td>LB / Y previous, RB / B next</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (save, load, options)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>In menus: arrows and Enter on the keyboard; on a gamepad the d-pad or stick, A confirms, B goes back. At "yes/no" questions press Y (or A on the gamepad).</p>
+<p>With touch: a tap opens the menu outside the game and fires while playing. The Back gesture opens the menu. To really play you need a keyboard, a mouse or a gamepad (USB or Bluetooth).</p>
+<h2>Saves and settings</h2>
+<p>Save and load from the menu (Esc → Save Game / Load Game). Saves and settings stay in each game's private folder. Mouse sensitivity, sound and music volume and screen size are in Esc → Options.</p>
+<p>Downloaded WAD files live in <code>/home/doom</code>: you can see them in the Files app, and you can put your own there too (for example <code>doom.wad</code> or <code>doom2.wad</code> from copies you own); they then show up in the Doom Engine app.</p>
+<h2>Credits and license</h2>
+<p>Ultimate Doom The Way id Did: Various authors. License: Freely distributable (idgames). Source: https://www.doomworld.com/idgames/levels/doom/s-u/udtwid. The files are redistributed unchanged together with their text file (udtwid.txt), which you also find in <code>/home/doom</code>. It runs on top of Freedoom (freedoom1.wad, BSD license), downloaded once for every game.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

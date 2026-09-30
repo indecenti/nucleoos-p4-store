@@ -1,0 +1,157 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>DTWID: The Lost Episodes — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>DTWID: The Lost Episodes</h1><p class=desc>Altri quattro episodi di mappe nello stile classico del 1993. Si gioca su Freedoom 1.</p><p class=meta>versione 1.0.1 · Licenza: Freely distributable (idgames) · <a href='https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le'>Sito del progetto</a></p></div></header><article><h1>DTWID: The Lost Episodes</h1>
+<h2>A cosa serve</h2>
+<p>Altri quattro episodi di mappe nello stile classico del 1993. Si gioca su Freedoom 1.</p>
+<h2>Primo avvio</h2>
+<p>Il primo avvio scarica i file del gioco dallo Store (serve il Wi-Fi) con una barra di avanzamento; se si interrompe, riaprendo il gioco riprende da dove era rimasto. Dopo funziona anche senza rete.</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tastiera</th>
+<th>Mouse</th>
+<th>Joypad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avanti / indietro</td>
+<td>W S oppure ↑ ↓</td>
+<td>–</td>
+<td>levetta sinistra</td>
+</tr>
+<tr>
+<td>Girarsi</td>
+<td>← →</td>
+<td>movimento orizzontale</td>
+<td>levetta destra</td>
+</tr>
+<tr>
+<td>Passo laterale</td>
+<td>A D (oppure Alt + ← →)</td>
+<td>tasto centrale + movimento</td>
+<td>levetta sinistra a destra/sinistra</td>
+</tr>
+<tr>
+<td>Sparare</td>
+<td>Ctrl</td>
+<td>tasto sinistro</td>
+<td>grilletto destro (RT) o X</td>
+</tr>
+<tr>
+<td>Aprire porte, premere interruttori</td>
+<td>E o Spazio</td>
+<td>tasto destro</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Correre</td>
+<td>Shift (tenuto)</td>
+<td>–</td>
+<td>grilletto sinistro (LT)</td>
+</tr>
+<tr>
+<td>Cambiare arma</td>
+<td>1 – 7</td>
+<td>rotellina</td>
+<td>LB / Y indietro, RB / B avanti</td>
+</tr>
+<tr>
+<td>Mappa</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (salva, carica, opzioni)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>Nei menu: frecce e Invio sulla tastiera; sul joypad croce o levetta, A conferma, B torna indietro. Alle domande «sì/no» premi Y (o A sul joypad).</p>
+<p>Con il touch: un tocco apre il menu fuori dal gioco e spara durante il gioco. Il gesto Indietro apre il menu. Per giocare davvero serve una tastiera, un mouse o un joypad (USB o Bluetooth).</p>
+<h2>Salvataggi e impostazioni</h2>
+<p>Salva e carica dal menu (Esc → Save Game / Load Game). I salvataggi e le impostazioni restano nella cartella privata di ogni gioco. La sensibilità del mouse, il volume di effetti e musica e la dimensione dello schermo si cambiano in Esc → Options.</p>
+<p>I file WAD scaricati stanno in <code>/home/doom</code>: li vedi dall'app File, e lì puoi mettere anche i tuoi (per esempio <code>doom.wad</code> o <code>doom2.wad</code> delle versioni che possiedi), che poi trovi nell'app Doom Engine.</p>
+<h2>Crediti e licenza</h2>
+<p>DTWID: The Lost Episodes: Various authors. Licenza: Freely distributable (idgames). Fonte: https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le. I file sono ridistribuiti invariati insieme al loro file di testo (dtwid-le.txt), che trovi anche in <code>/home/doom</code>. Gira sopra Freedoom (freedoom1.wad, licenza BSD), scaricato una volta sola per tutti i giochi.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>DTWID: The Lost Episodes</h1><p class=desc>Four more episodes of classic 1993-style Doom maps. Plays on Freedoom 1.</p><p class=meta>version 1.0.1 · License: Freely distributable (idgames) · <a href='https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le'>Project site</a></p></div></header><article><h1>DTWID: The Lost Episodes</h1>
+<h2>What it is</h2>
+<p>Four more episodes of classic 1993-style Doom maps. Plays on Freedoom 1.</p>
+<h2>First start</h2>
+<p>The first start downloads the game files from the Store (Wi-Fi needed) with a progress bar; if it stops, opening the game again resumes it. After that it also works offline.</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Keyboard</th>
+<th>Mouse</th>
+<th>Gamepad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forward / back</td>
+<td>W S or ↑ ↓</td>
+<td>–</td>
+<td>left stick</td>
+</tr>
+<tr>
+<td>Turn</td>
+<td>← →</td>
+<td>horizontal motion</td>
+<td>right stick</td>
+</tr>
+<tr>
+<td>Strafe</td>
+<td>A D (or Alt + ← →)</td>
+<td>middle button + motion</td>
+<td>left stick left/right</td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Ctrl</td>
+<td>left button</td>
+<td>right trigger (RT) or X</td>
+</tr>
+<tr>
+<td>Open doors, press switches</td>
+<td>E or Space</td>
+<td>right button</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>Shift (held)</td>
+<td>–</td>
+<td>left trigger (LT)</td>
+</tr>
+<tr>
+<td>Change weapon</td>
+<td>1 – 7</td>
+<td>wheel</td>
+<td>LB / Y previous, RB / B next</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Tab</td>
+<td>–</td>
+<td>Back</td>
+</tr>
+<tr>
+<td>Menu (save, load, options)</td>
+<td>Esc</td>
+<td>–</td>
+<td>Start</td>
+</tr>
+</tbody>
+</table>
+<p>In menus: arrows and Enter on the keyboard; on a gamepad the d-pad or stick, A confirms, B goes back. At "yes/no" questions press Y (or A on the gamepad).</p>
+<p>With touch: a tap opens the menu outside the game and fires while playing. The Back gesture opens the menu. To really play you need a keyboard, a mouse or a gamepad (USB or Bluetooth).</p>
+<h2>Saves and settings</h2>
+<p>Save and load from the menu (Esc → Save Game / Load Game). Saves and settings stay in each game's private folder. Mouse sensitivity, sound and music volume and screen size are in Esc → Options.</p>
+<p>Downloaded WAD files live in <code>/home/doom</code>: you can see them in the Files app, and you can put your own there too (for example <code>doom.wad</code> or <code>doom2.wad</code> from copies you own); they then show up in the Doom Engine app.</p>
+<h2>Credits and license</h2>
+<p>DTWID: The Lost Episodes: Various authors. License: Freely distributable (idgames). Source: https://www.doomworld.com/idgames/levels/doom/Ports/megawads/dtwid-le. The files are redistributed unchanged together with their text file (dtwid-le.txt), which you also find in <code>/home/doom</code>. It runs on top of Freedoom (freedoom1.wad, BSD license), downloaded once for every game.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
