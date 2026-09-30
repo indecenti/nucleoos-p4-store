@@ -18,11 +18,13 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Bubblewrap | `bubblewrap` | Henrik Zenkert | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bubblewrap) |
 | Cannon | `cannon` |  |  |  |
 | Chess | `chess` | NucleoOS | MIT | [link](https://github.com/gissio/mcu-max) |
+| CHIP-8 Arcade | `chip8` | NucleoOS; games by the CHIP-8 Community Archive authors | CC0 (games), PolyForm Noncommercial (interpreter) | [link](https://github.com/JohnEarnest/chip8Archive) |
 | comic-sans | `comic-sans` | Eduardo Minholi, Nuno Abilio | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/comic-sans) |
 | Cosmic Hopper | `cosmic-hopper` | Bernardo Wilchen de Oliveira | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-hopper) |
 | Cosmic Inw4ders | `cosmic-inw4ders` | Pierro | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-inw4ders) |
 | Customizable Pong | `custom-pong` | UnusualEgg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/custom-pong) |
 | Dashy Dango | `dashy-dango` | samX500 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dashy-dango) |
+| Devices | `devices` | NucleoOS | MIT |  |
 | disk-0 MADNESS | `disk-0-madness` | Max Curzi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/disk-0-madness) |
 | Dodgeball | `dodgeball` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dodgeball) |
 | Don't Smash Into Obstacles | `dont-smash-into-obstacles` | Mateusz Czarnecki | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dont-smash-into-obstacles) |
@@ -43,9 +45,11 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Game of Life: Zig Edition | `game-of-life-zig-edition` | David Roman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life-zig-edition) |
 | Glitch Dungeon | `glitch-dungeon` | jakeonaut, Wormi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glitch-dungeon) |
 | Glowfish Chess | `glowfish-chess` | Analog Hors | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glowfish-chess) |
+| Glulxe | `glulxe` | Andrew Plotkin (Glulxe, CheapGlk) | MIT | [link](https://github.com/erkyrath/glulxe) |
 | HAMMER JOE | `hammer-joe` | MFauzan26 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hammer-joe) |
 | Hero of the Woods v3 | `hotw` | BigRobCoder | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hotw) |
 | Hills in the Moonlight | `hills-moonlight` | Samarth Hattangady | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hills-moonlight) |
+| Home | `casa` | NucleoOS | MIT |  |
 | Image Carousel | `image-carousel` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/image-carousel) |
 | IOCCC 98 Flight Sim | `ioccc98flightsim` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ioccc98flightsim) |
 | It's Corn! | `corn` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/corn) |
@@ -167,8 +171,9 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Wormhole | `wormhole` | David Sims | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wormhole) |
 | Wumpus Hunt | `wumpus-hunt` | Troy Wiegand | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wumpus-hunt) |
 | You Will Return | `you-will-return` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/you-will-return) |
+| Zigbee | `zigbee` | NucleoOS | MIT |  |
 | Zigtris | `zigtris` | Toby Jaffey | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zigtris) |
 | Zip | `zip` | Rich Geldreich and contributors (miniz) | MIT | [link](https://github.com/richgel999/miniz) |
 | Zoop Zoop Bee Adventures 7 | `zoopzoop` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zoopzoop) |
-| Zork | `zork` | Infocom / Microsoft; MojoZork by Ryan C. Gordon | MIT (games), zlib (interpreter) | [link](https://github.com/historicalsource/zork1) |
+| Zork I-III | `zork` | Infocom / Microsoft; MojoZork by Ryan C. Gordon | MIT (games), zlib (interpreter) | [link](https://github.com/historicalsource/zork1) |
 | ZxZ | `zxz` | cisaw Dercz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zxz) |
