@@ -21,7 +21,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Apple Game | `apple-game` | João Gabriel de Campos Nassar | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/apple-game) |
 | Assemblio | `assemblio` | Philipp Lühmann | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/assemblio) |
 | BASIC | `basic` | Adam Dunkels (uBASIC), Nucleo port | BSD-3-Clause | [link](https://github.com/adamdunkels/ubasic) |
-| Beneath a Steel Sky | `svm-bass` | Revolution Software (1994); ScummVM | Freeware (Revolution Software licence) | [link](https://www.scummvm.org/games/) |
 | Beyond (Aldilà) | `if-beyond` | Roberto Grassi, Paolo Lucchesi & Alessandro Peretti; interpreter: Frotz 2.55 | CC BY-NC-ND 2.5 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=80s6vtj6yjwmt7sn) |
 | Big Space Iron | `big-space-iron` | kzerot | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/big-space-iron) |
 | Big2Small | `gbh-big2small` | Matthew D. Steele (mdsteele); Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (game); MIT (emulator) | [link](https://github.com/mdsteele/big2small) |
@@ -55,8 +54,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | DOOM Shareware | `doomsw` | id Software | Shareware (freely distributable, unmodified) | [link](https://www.doomworld.com/idgames/idstuff/doom/doom19s) |
 | Doom The Way id Did | `dtwid` | Various authors | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom/megawads/dtwid) |
 | Dragon Poker Draw | `dragon-poker-draw` | LoneGrayWolf2000 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dragon-poker-draw) |
-| Drascula: The Vampire Strikes Back | `svm-drascula` | Alcachofa Soft (1996); ScummVM | Freeware (Alcachofa Soft) | [link](https://www.scummvm.org/games/) |
-| DreamWeb | `svm-dreamweb` | Creative Reality (1994); ScummVM | Freeware (Creative Reality, unmodified) | [link](https://www.scummvm.org/games/) |
 | Dual Transform | `if-dual-transform` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=xfezh9wz188ihlel) |
 | Duck Maze | `duck-maze` | Julia Marques Sanches | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/duck-maze) |
 | Earth Invaders | `earth-invaders` | Yara F. Scramin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/earth-invaders) |
@@ -67,7 +64,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Fate | `if-fate` | Victor Gijsbers; interpreter: Frotz 2.55 | GPL-2.0-or-later (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=az8jb9bddngurwr7) |
 | Figaro | `if-figaro` | Victor Gijsbers; interpreter: Frotz 2.55 | GPL-3.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha) |
 | First Flight | `first-flight` | bootra | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/first-flight) |
-| Flight of the Amazon Queen | `svm-fotaq` | Interactive Binary Illusions (1995); ScummVM | Freeware (John Passfield, Steve Stamatiadis) | [link](https://www.scummvm.org/games/) |
 | Floppy Fish | `floppy-fish` | Chris Breece | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/floppy-fish) |
 | Fool's Paradise | `fools-paradise` | Dave Purdum | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fools-paradise) |
 | Formula 1 | `formula-1` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/formula-1) |
@@ -113,7 +109,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Lists and Lists | `if-lists-and-lists` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t) |
 | Lua | `lua` | Lua.org, PUC-Rio | MIT | [link](https://www.lua.org) |
 | Lumber Night | `lumber-night` | Vitaly | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lumber-night) |
-| Lure of the Temptress | `svm-lure` | Revolution Software (1992); ScummVM | Freeware (Revolution Software licence) | [link](https://www.scummvm.org/games/) |
 | Mandelbrot | `mandelbrot` | LukeGrahamLandry | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/mandelbrot) |
 | Markdown | `md` | Martin Mitá (md4c) | MIT | [link](https://github.com/mity/md4c) |
 | Match3 | `match3` | Ben Smith | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/match3) |
@@ -133,7 +128,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Mouse Demo | `mouse-demo` | David Sims | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/mouse-demo) |
 | NAIR DEMAKE | `nairdemake` | MiguelGSS | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/nairdemake) |
 | Ninja vs Knights | `ninja-vs-knights` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ninja-vs-knights) |
-| Nippon Safes, Inc. | `svm-nippon` | Dynabyte (1992); ScummVM | Freeware (Dynabyte) | [link](https://www.scummvm.org/games/) |
 | Number Slide | `number-slide` | Giovana Ferreira Waterkemper, Jamily Go | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/number-slide) |
 | Nyan Cat | `nyancat` | Jake Ledoux | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/nyancat) |
 | One Slime Army | `one-slime-army` | Isaiah Billingsley | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/one-slime-army) |
@@ -172,11 +166,9 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Salvate lo Stregatto! | `if-stregatto` | Marco Vallarino; interpreter: Frotz 2.55 | CC BY-SA 4.0 (source code licence) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=1elq80q2fb91e9dd) |
 | Samurai Revenge | `samurai-revenge` | Krylan, Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/samurai-revenge) |
 | Save the Cheshire Cat! | `if-cheshire-cat` | Marco Vallarino; interpreter: Frotz 2.55 | CC BY-SA 4.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=j6purjagso6i5b0) |
-| ScummVM | `scummvm` | The ScummVM Team; NucleoOS port | GPL-3.0-or-later | [link](https://www.scummvm.org) |
 | Scythe | `scythe` | Erik Alm | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/scythe) |
 | Seal Adventure | `seal-adventure` | katspaugh | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seal-adventure) |
 | Seed Creator Showcase | `seed-creator-showcase` | huntrss@posteo.me | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seed-creator-showcase) |
-| Sfinx | `svm-sfinx` | L.K. Avalon (1994); ScummVM | Freeware (L.K. Avalon) | [link](https://www.scummvm.org/games/) |
 | Shade | `if-shade` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q) |
 | Shieldshooter | `shieldshooter` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/shieldshooter) |
 | Shock Lobster | `gbh-shock-lobster` | Dave VanEe (tbsp); Peanut-GB by Mahyar Koshkouei | Zlib (game); MIT (emulator) | [link](https://github.com/tbsp/shock-lobster) |
@@ -188,7 +180,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Snakery | `snakery` | hahahahaman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/snakery) |
 | So Far | `if-so-far` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=rcrihauxixy48svr) |
 | Sokoban | `sokoban` | Lars Hamre | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sokoban) |
-| Soltys | `svm-soltys` | L.K. Avalon (1995); ScummVM | Freeware (L.K. Avalon) | [link](https://www.scummvm.org/games/) |
 | Sound Demo | `sound-demo` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sound-demo) |
 | Sound Test | `sound-test` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sound-test) |
 | Space Delivery | `space-delivery` | kirinokirino | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-delivery) |
