@@ -1,0 +1,149 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Scacchi — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Scacchi</h1><p class=desc>Scacchi contro il computer, con il motore mcu-max. Giochi col bianco: tocca un pezzo, poi la casella. Tre livelli, annulla mossa, scacco, matto e patta, e la partita resta salvata.</p><p class=meta>versione 1.0.0 · Licenza: MIT · <a href='https://github.com/gissio/mcu-max'>Sito del progetto</a></p></div></header><article><h1>Scacchi</h1>
+<p>Una partita a scacchi contro il computer. Tu giochi con il <strong>bianco</strong> e muovi per primo, il computer
+risponde con il nero.</p>
+<h2>Come si muove</h2>
+<ol>
+<li><strong>Tocca un tuo pezzo.</strong> La casella si illumina e compaiono le mosse possibili:
+   - un <strong>pallino</strong> indica una casella libera dove puoi andare;
+   - gli <strong>angoli scuri</strong> indicano un pezzo avversario che puoi catturare.</li>
+<li><strong>Tocca la casella di arrivo.</strong> Il pezzo si sposta e il computer inizia a pensare.</li>
+</ol>
+<p>Puoi anche trascinare il pezzo con il dito e lasciarlo sulla casella di arrivo.
+Per cambiare pezzo basta toccarne un altro; toccando di nuovo lo stesso pezzo lo deselezioni.</p>
+<p>Le regole sono quelle ufficiali: arrocco (sposta il re di due caselle verso la torre), presa
+<em>en passant</em> e promozione. Quando un pedone arriva in fondo diventa automaticamente una <strong>donna</strong>.</p>
+<p>L'ultima mossa giocata resta evidenziata in giallo. Se il tuo re è sotto scacco, la sua casella si
+colora di rosso.</p>
+<h2>I pulsanti</h2>
+<ul>
+<li><strong>Annulla</strong> — torna indietro di una mossa tua (e della risposta del computer). Puoi usarlo più
+  volte, anche a partita finita.</li>
+<li><strong>Nuova partita</strong> — ricomincia da capo. Se una partita è in corso il pulsante diventa
+  <strong>Conferma?</strong>: toccalo di nuovo entro tre secondi per ricominciare davvero.</li>
+<li><strong>Livello</strong> — scegli quanto è forte il computer. Il cambio vale dalla sua mossa successiva, anche
+  a partita in corso.</li>
+</ul>
+<h2>I livelli</h2>
+<table>
+<thead>
+<tr>
+<th>Livello</th>
+<th>Com'è il computer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Facile</strong></td>
+<td>Guarda poco avanti e ogni tanto gioca una mossa a caso. Adatto a chi impara.</td>
+</tr>
+<tr>
+<td><strong>Medio</strong></td>
+<td>Gioca in modo solido e punisce gli errori evidenti.</td>
+</tr>
+<tr>
+<td><strong>Difficile</strong></td>
+<td>Pensa più a lungo (circa due secondi) e calcola parecchie mosse avanti.</td>
+</tr>
+</tbody>
+</table>
+<p>Mentre il computer pensa, nel riquadro di stato compaiono tre puntini animati. Puoi comunque
+toccare <strong>Annulla</strong> o <strong>Nuova partita</strong>: il computer si ferma subito.</p>
+<h2>Come finisce una partita</h2>
+<ul>
+<li><strong>Scacco matto</strong> — il re sotto scacco non ha modo di salvarsi: vince chi ha dato il matto.</li>
+<li><strong>Patta per stallo</strong> — chi deve muovere non ha mosse legali ma non è sotto scacco.</li>
+<li><strong>Patta: pezzi insufficienti</strong> — sulla scacchiera non resta abbastanza materiale per dare matto
+  (per esempio re contro re, o re e cavallo contro re).</li>
+<li><strong>Patta per ripetizione</strong> — la stessa posizione si è ripetuta tre volte.</li>
+<li><strong>Patta: regola delle 50 mosse</strong> — cinquanta mosse per parte senza catture né mosse di pedone.</li>
+</ul>
+<h2>Il riquadro dei pezzi catturati</h2>
+<p>Sotto lo stato vedi i pezzi che tu (<strong>Tu</strong>) e il computer avete catturato. Il numero con il <strong>+</strong>
+indica chi è in vantaggio di materiale (pedone 1, cavallo e alfiere 3, torre 5, donna 9).</p>
+<h2>La partita resta salvata</h2>
+<p>Ogni mossa viene salvata: se chiudi l'app e la riapri, ritrovi la partita esattamente dove l'avevi
+lasciata, con il livello scelto.</p>
+<h2>Consigli</h2>
+<ul>
+<li>Nelle prime mosse porta fuori pedoni centrali, cavalli e alfieri, poi arrocca per mettere il re al
+  sicuro.</li>
+<li>Prima di muovere chiediti: <em>quale pezzo lascio indifeso?</em> Il computer se ne accorge subito.</li>
+<li>Sbagliato qualcosa? <strong>Annulla</strong> e riprova: è il modo più veloce per imparare.</li>
+<li>Se vinci facilmente, sali di livello.</li>
+</ul>
+<hr />
+<p>Il motore di gioco è <a href="https://github.com/gissio/mcu-max">mcu-max</a> di Gissio (licenza MIT), basato su
+micro-Max di H.G. Muller.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Chess</h1><p class=desc>Chess against the computer, powered by the mcu-max engine. You play white: tap a piece, then its square. Three levels, undo, check, mate and draw rules, and your game is saved.</p><p class=meta>version 1.0.0 · License: MIT · <a href='https://github.com/gissio/mcu-max'>Project site</a></p></div></header><article><h1>Chess</h1>
+<p>A game of chess against the computer. You play <strong>white</strong> and move first; the computer answers with
+black.</p>
+<h2>How to move</h2>
+<ol>
+<li><strong>Tap one of your pieces.</strong> Its square lights up and the possible moves appear:
+   - a <strong>dot</strong> marks an empty square you can go to;
+   - <strong>dark corners</strong> mark an enemy piece you can capture.</li>
+<li><strong>Tap the destination square.</strong> The piece moves and the computer starts thinking.</li>
+</ol>
+<p>You can also drag the piece with your finger and drop it on the destination square.
+To pick another piece just tap it; tapping the same piece again deselects it.</p>
+<p>The rules are the official ones: castling (move the king two squares towards the rook), <em>en passant</em>
+and promotion. A pawn that reaches the last rank automatically becomes a <strong>queen</strong>.</p>
+<p>The last move stays highlighted in yellow. If your king is in check, its square turns red.</p>
+<h2>The buttons</h2>
+<ul>
+<li><strong>Undo</strong> — takes back your last move (and the computer's reply). You can use it several times,
+  even after the game has ended.</li>
+<li><strong>New game</strong> — starts over. While a game is in progress the button turns into <strong>Confirm?</strong>: tap
+  it again within three seconds to really restart.</li>
+<li><strong>Level</strong> — how strong the computer is. The change applies from its next move, even mid-game.</li>
+</ul>
+<h2>The levels</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>What the computer is like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Easy</strong></td>
+<td>Looks only a little ahead and now and then plays a random move. Good for learning.</td>
+</tr>
+<tr>
+<td><strong>Medium</strong></td>
+<td>Plays solidly and punishes obvious mistakes.</td>
+</tr>
+<tr>
+<td><strong>Hard</strong></td>
+<td>Thinks longer (about two seconds) and calculates several moves ahead.</td>
+</tr>
+</tbody>
+</table>
+<p>While the computer thinks, three animated dots appear in the status box. You can still tap <strong>Undo</strong>
+or <strong>New game</strong>: the computer stops at once.</p>
+<h2>How a game ends</h2>
+<ul>
+<li><strong>Checkmate</strong> — the king in check has no way out: whoever gave mate wins.</li>
+<li><strong>Stalemate (draw)</strong> — the side to move has no legal move but is not in check.</li>
+<li><strong>Draw: insufficient material</strong> — not enough material is left to mate (for example king against
+  king, or king and knight against king).</li>
+<li><strong>Draw by repetition</strong> — the same position has occurred three times.</li>
+<li><strong>Draw: 50-move rule</strong> — fifty moves each without a capture or a pawn move.</li>
+</ul>
+<h2>The captured-pieces box</h2>
+<p>Below the status you see the pieces you (<strong>You</strong>) and the computer have captured. The number with
+the <strong>+</strong> shows who is ahead in material (pawn 1, knight and bishop 3, rook 5, queen 9).</p>
+<h2>Your game is saved</h2>
+<p>Every move is saved: close the app and reopen it and you find the game exactly where you left it,
+with the level you chose.</p>
+<h2>Tips</h2>
+<ul>
+<li>In the first moves bring out the centre pawns, knights and bishops, then castle to keep your
+  king safe.</li>
+<li>Before moving ask yourself: <em>which piece am I leaving undefended?</em> The computer notices at once.</li>
+<li>Made a mistake? <strong>Undo</strong> and try again: it is the quickest way to learn.</li>
+<li>If you win easily, move up a level.</li>
+</ul>
+<hr />
+<p>The chess engine is <a href="https://github.com/gissio/mcu-max">mcu-max</a> by Gissio (MIT license), based on
+micro-Max by H.G. Muller.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
