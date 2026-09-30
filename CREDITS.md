@@ -4,6 +4,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 
 | App | Id | Author | License | Source |
 |---|---|---|---|---|
+| 1000 Lines 2 | `thousandlines2` | Liberation and the 1000 Lines team | CC BY 4.0 | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/1klinecp2) |
 | 2048 | `2048` | Peter Hellberg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/2048) |
 | 2048 (Game Boy) | `gb2048` | Sanqui (game), tiles by beware; Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/Sanqui/2048-gb) |
 | 5 Mazes | `gbh-5-mazes` | godai (Gniazdo wiatów); music by AJ Booker; Peanut-GB by Mahyar Koshkouei | MIT (Homebrew Hub lists CC BY-SA 4.0) (game); MIT (emulator) | [link](https://github.com/godai78/5-Mazes) |
@@ -38,6 +39,10 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | disk-0 MADNESS | `disk-0-madness` | Max Curzi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/disk-0-madness) |
 | Dodgeball | `dodgeball` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dodgeball) |
 | Don't Smash Into Obstacles | `dont-smash-into-obstacles` | Mateusz Czarnecki | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dont-smash-into-obstacles) |
+| Doom 2 Reloaded | `d2reload` | Andy Stewart | Freely distributable, non-commercial (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/d2reload) |
+| Doom Engine | `doom` | NucleoOS (doomgeneric, Chocolate Doom, emu8950) | GPL-2.0 | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/ports/doom) |
+| DOOM Shareware | `doomsw` | id Software | Shareware (freely distributable, unmodified) | [link](https://www.doomworld.com/idgames/idstuff/doom/doom19s) |
+| Doom The Way id Did | `dtwid` | Various authors | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom/megawads/dtwid) |
 | Dragon Poker Draw | `dragon-poker-draw` | LoneGrayWolf2000 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dragon-poker-draw) |
 | Duck Maze | `duck-maze` | Julia Marques Sanches | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/duck-maze) |
 | Earth Invaders | `earth-invaders` | Yara F. Scramin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/earth-invaders) |
@@ -48,6 +53,8 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Floppy Fish | `floppy-fish` | Chris Breece | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/floppy-fish) |
 | Fool's Paradise | `fools-paradise` | Dave Purdum | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fools-paradise) |
 | Formula 1 | `formula-1` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/formula-1) |
+| Freedoom: Phase 1 | `freedoom1` | The Freedoom project | BSD-3-Clause | [link](https://freedoom.github.io) |
+| Freedoom: Phase 2 | `freedoom2` | The Freedoom project | BSD-3-Clause | [link](https://freedoom.github.io) |
 | FULL STEAM AHEAD TO THE RESCUE | `full-steam-ahead-to-the-rescue` | lluq | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/full-steam-ahead-to-the-rescue) |
 | Future Avoid | `future-avoid` | Joakim Hentula | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/future-avoid) |
 | Fuzzy World Cup | `fuzzy-world-cup` | Damian Girardi, Sebastian Alvarez | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fuzzy-world-cup) |
@@ -91,6 +98,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Mazethingie | `mazethingie` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/mazethingie) |
 | Melancholy: cart 0 | `melancholy-cart-0` | e-Alchmst | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/melancholy-cart-0) |
 | Melancholy: cart 3 | `melancholy-cart-3` | e-Alchmst | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/melancholy-cart-3) |
+| Memento Mori | `mementomori` | The Memento Mori team | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/themes/mm/mm_allup) |
 | Meteoroids | `meteoroids` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/meteoroids) |
 | Micro Quest | `micro-quest` | André L. Alvares | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/micro-quest) |
 | MIKU-15 | `miku-15` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/miku-15) |
@@ -117,6 +125,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Pixel vs Zombies | `pixelvszombies` | Vitor Lorençone | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pixelvszombies) |
 | Plasma Cube | `plasma-cube` | unnick | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/plasma-cube) |
 | Platformer Test | `platformer-test` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/platformer-test) |
+| Plutonia 2 | `plutonia2` | The PL2 team | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/pl2) |
 | Pl¢tfarmer | `plctfarmer` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/plctfarmer) |
 | Pomodoro Desk Hub | `deskhub` |  |  |  |
 | Pong | `pong` | Fabrizio Vitale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pong) |
@@ -134,10 +143,12 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Rubido | `rubido` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rubido) |
 | Samurai Revenge | `samurai-revenge` | Krylan, Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/samurai-revenge) |
 | ScummVM | `scummvm` | The ScummVM Team; NucleoOS port | GPL-3.0-or-later | [link](https://www.scummvm.org) |
+| Scythe | `scythe` | Erik Alm | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/scythe) |
 | Seal Adventure | `seal-adventure` | katspaugh | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seal-adventure) |
 | Seed Creator Showcase | `seed-creator-showcase` | huntrss@posteo.me | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seed-creator-showcase) |
 | Shieldshooter | `shieldshooter` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/shieldshooter) |
 | Shock Lobster | `gbh-shock-lobster` | Dave VanEe (tbsp); Peanut-GB by Mahyar Koshkouei | Zlib (game); MIT (emulator) | [link](https://github.com/tbsp/shock-lobster) |
+| SIGIL (DOS edition) | `sigil` | John Romero, adapted by the_kovic | Freely distributable (idgames, with Romero's permission) | [link](https://www.doomworld.com/idgames/levels/doom/s-u/sigildos) |
 | Simple Rocket | `simple-rocket` | Venkatesh.H | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/simple-rocket) |
 | Skip Ahead | `skipahead` | Dennis Ranke | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/skipahead) |
 | Smash Sugar Parallelepipeds | `smash-sugar-parallelepipeds` | Lázaro Albuquerque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/smash-sugar-parallelepipeds) |
@@ -199,6 +210,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Zigbee | `zigbee` | NucleoOS | MIT |  |
 | Zigtris | `zigtris` | Toby Jaffey | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zigtris) |
 | Zip | `zip` | Rich Geldreich and contributors (miniz) | MIT | [link](https://github.com/richgel999/miniz) |
+| Zone 300 | `zone300` | Paul Corfiatis | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/zone300) |
 | Zoop Zoop Bee Adventures 7 | `zoopzoop` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zoopzoop) |
 | Zork I-III | `zork` | Infocom / Microsoft; MojoZork by Ryan C. Gordon | MIT (games), zlib (interpreter) | [link](https://github.com/historicalsource/zork1) |
 | ZxZ | `zxz` | cisaw Dercz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zxz) |
