@@ -1,0 +1,9 @@
+title REKKR
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file rekkr.wad 41960202 114bfe1ba0819292ad2b94af048ff9f1c75c9522
+file rekkr.deh 61321 136344e247152a2500bc2c92a45bdceffd6ce310
+file rekkr.txt 3188 c0cc26c2d841cda0f8df9640c0b58ecfe9ba9920
+file rek_creds.txt 4848 623e4e7903fb50ca7776d83e877f69912e9074fb
+iwad freedoom1.wad
+pwad rekkr.wad
+deh rekkr.deh

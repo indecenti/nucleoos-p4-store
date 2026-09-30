@@ -1,0 +1,47 @@
+Patch File for DeHackEd v3.0
+# Created with WhackEd4 1.0.4
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+
+[STRINGS]
+C4TEXT = Victory!\n\nHell is defeated and the network is\nsafe.  And as for you?  Well, who\nknows where you are now ...\n\n\nAdam would like to thank:\niD software for this awesome game.\nNick Baker and submerge for the\ntextures used.\nAlfonzo, Jimmy, PRIMEVAL and\nSilent Zorah for music.\nDemon of the Well, Never_Again and\nSteveD for main playtesting duties.\nEveryone else who gave feedback.\nYou, for playing Doom404 :)
+HUSTR_18 = 18: bad sector
+HUSTR_19 = 19: crash
+HUSTR_16 = 16: defrag
+HUSTR_17 = 17: cpu
+HUSTR_14 = 14: recycle bin
+HUSTR_15 = 15: password protected
+HUSTR_12 = 12: machine code
+HUSTR_13 = 13: bugged
+HUSTR_10 = 10: fat32
+HUSTR_11 = 11: infinite loop
+HUSTR_4 = 04: system access
+HUSTR_5 = 05: server room
+HUSTR_6 = 06: interface
+HUSTR_7 = 07: firewall
+C6TEXT = Great.  This stupid game has a\nsecret level.\n\nTime to kill more Nazis.
+HUSTR_1 = 01: trouble ticket
+HUSTR_2 = 02: bad signal
+HUSTR_3 = 03: pebkac
+HUSTR_8 = 08: random access
+HUSTR_9 = 09: hard drive
+C1TEXT = Somehow the forces of hell itself have\ncorrupted the UAC computer system.\nYou've exterminated the first wave of\ndemons they sent through, but the whole\nsystem is corrupted.\n\nThe only way to reverse the process is\nto enter the machine.  Become a digital \navatar and wipe the servers clean.\n\nNo doubt you'll get a warn reception on\nthe other side, but these freaks are\nfighting on your turf, now.
+C5TEXT = You've fallen into an ancient game some\nuser snuck onto the server.  Doesn't\nanyone read the IT Security Policy?\n\nGuess it is time to play NAZI SHOOTER!
+C3TEXT = The servers are cleared, but the virus\ncould return at any time.  There is only\none way to go: forward!\n\nIt's time to become flesh again and enter\nthe demons' own territory.  Time to take\nthe fight to them, and to answer the\nquestion that burns in your brain:\n\nWhat Operating System does hell use,\nanyway?
+C2TEXT = You're deep in the electronic bowels of\nthe machine, but there's a lot of code\nbetween you and wherever these monsters\nare from.\n\nThe rules of reality don't apply in\nthis digihell realm and you're sure it\nis only gonna get weirder from here.\n\nThe only way out is through.  Time to\n404 these freaks.
+HUSTR_29 = 29: hellmaker
+HUSTR_28 = 28: icon
+HUSTR_23 = 23: biomatrix
+HUSTR_22 = 22: terrorbyte
+HUSTR_21 = 21: daemon
+HUSTR_20 = 20: portal
+HUSTR_27 = 27: demesne
+HUSTR_26 = 26: encryption
+HUSTR_25 = 25: hexadeathimal
+HUSTR_24 = 24: sintax
+HUSTR_30 = 30: terminal
+HUSTR_31 = 31: nazi shooter!
+HUSTR_32 = 32: thule

@@ -1,0 +1,8 @@
+title Doom 2 The Way id Did
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file d2twid.wad 6753456 b1114af574b5fcb965bbd63a76a6bdc0af45c09e
+file d2twid.deh 7272 bfad76990c62d3f2747b993d83a6b7f0fe33f461
+file d2twid.txt 5938 8243886cb44ae4719d3008553260651c6d9c9f54
+iwad freedoom2.wad
+pwad d2twid.wad
+deh d2twid.deh

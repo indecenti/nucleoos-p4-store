@@ -1,0 +1,6 @@
+title Lunar Catastrophe
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file lunar.wad 5023006 0ea13dc6560ac6662bf3e25c577f983319c3301c
+file lunar.txt 3697 9ebcd4e986b3a721340780e1a84e1a41552d3cf3
+iwad freedoom1.wad
+pwad lunar.wad

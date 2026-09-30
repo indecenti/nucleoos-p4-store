@@ -1,0 +1,177 @@
+===========================================================================
+Advanced engine needed  : Limit-Removing Ports
+Primary purpose         : Single Play + Coop
+===========================================================================
+Title                   : Deadly Standards
+Filename                : standard.wad
+Release date            : 
+Author                  : Various: See the text at the bottom for more 
+                          info.
+Email Address           : [redacted]
+Other Files By Author   : A lot.
+              
+
+Misc. Author Info       : Just some people modding a 20+ year old FPS.
+
+Description             : A community made Episode 1 replacement for 
+                          Ultimate Doom. The only limit given was to use 
+                          the stock IWAD resources (graphics, sounds). 
+                          The exception being a new midi/soundtrack. 
+
+                          A list of maps with author descriptions and 
+                          other info is at the bottom.
+
+Story                   : A distress signal is received from the UAC 
+                          settlement on Phobos. Shortly after, a mysterious 
+                          white mist envelops the moon; 
+                          blocking all visuals and jamming the comms. 
+                          Recon units are sent out from 
+                          the main base on Mars; but all go missing.  
+                          As part of the last team going in, 
+                          your dropship is hit with multiple 
+                          rockets during descent, 
+                          and crashes with you as the sole survivor. 
+                          Patching up your injuries with a nearby Medikit, 
+                          you grab your trusty pistol and go on to find 
+                          the source of this anomaly...
+
+Additional Credits to   : Doomworld members for participating in this
+                          community project.
+                          mrthejoshmon for starting the project.
+                          Walter Confalonieri \ Confetti for ressurecting
+                          and leading until the final release.
+                          Spectre01 for the big help coordinating this
+                          project, writing the lore for this episode, and
+                          the E1M8 demo.
+                          PRIMEVAL for original music.
+                          Also, everyone else who gave feedback and
+                          posted in the thread!
+===========================================================================
+* What is included *
+
+New levels              : 9
+Sounds                  : No
+Music                   : Yes
+Graphics                : No 
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes (DEMO1, DEMO2 and DEMO3 in-game 
+                          and e1m8_S01_1430.lmp)
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom
+Map #                   : E1M1 - E1M9
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 11 months
+              
+Editor(s) used          : Doom Builder 2, SLADE3, WadSpy
+                          GZDoomBuilder-bugfix
+Known Bugs              : e1m8 gives a sector problem on prboom 2.5.1.3
+May Not Run With...     : Vanilla Doom or ports with vanilla limits.
+Tested With             : prboom 2.5.1.3, prboom 2.1.5.4, zandronum 3.0,
+                          chocolate doom, crispy-doom 3.2, zdoom, gzdoom
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+-----------------------------------------------------------------------------
+    MAPLIST
+-----------------------------------------------------------------------------
+(stolen from DMP2015 textfile yolo)
+
+E1M1 - No Crates On Phobos
+Author: Philip "Liberation" Brown.
+Description: Was taking a break from making tech bases.. So decided to make 
+             another tech base?!? 
+Music: Back in the Fray by PRIMEVAL. 
+Build time: 2 weeks 
+
+E1M2 - Janus Complex
+Author: Adam Windsor / Capellan
+Description: Knee Deep in the Van Der Veken
+Music: Primeval - Frantic
+Build time: Heck if i know
+
+E1M3 - Main Reckon Facility
+Author: riderr3
+Description: Tech-base located somewhere in the mountains. Mostly in E1 
+             style, with a little pinch of E2.
+Music: Dio - Fever Dreams.mid
+Build time: 9 days
+
+E1M4 - Research Station
+Author: The_SloVinator
+Description: Something I threw together on a whim.
+Music: Primeval - Industrial Machine
+Build time: 4 days, 1-2 hours each day
+
+E1M5 - Third Moon Lab
+Author: CarpetolA
+Description: A short, but nasty techbase map which started as a part of 
+             an E1-remake that I planned years ago but sadly didn't see 
+             the light of day. Now ascended as a part of this map set, 
+             it may look different to its ancestral counterpart, 
+             but it's still just as deadly. 
+Music: "Tension" by PRIMEVAL
+Build time: I have no clue... Two months total?
+Made in Vanilla Doom format with Doom Builder 2
+Tested with Chocolate Doom, ZDoom and GZDoom
+Other editors used: SLADE3
+
+E1M6 - The Inner Port
+Author: mrthejoshmon (and minor thing editing by Walter Confalonieri)
+Description: A map that was not planned and was 100% improvised as I 
+             went along. 
+Music: Primeval - Lurking Fear
+Build time: a month, yes really I just hardly touched it.
+
+E1M7 - Eden Log
+Author: Angry Saint
+Description: this is what happens when you play too much with the 
+             "draw curve mode" in GZdoom Builder
+Music: none
+Build time: I didn't count.
+
+E1M8 - Obliterate Anomalies
+Author: Spectre01
+Description: An action-oriented, modern interpretation of the original
+             Phobos Anomaly. Lots of enemies and generous ammo to shoot
+             them with. The finale can be quite deadly, so finding 
+             secrets is highly recommended on UV.
+Music: "Frivolous Encounter" by Mark Klem
+Build time: A few weeks to a month; spread over the course of a year.
+
+E1M9 - To the surface
+Author: riderr3
+Description: Escape from the depths to the surface through the nukage 
+             treatment base.
+Music: "Hangar 7" by James Paddock
+Build time: 10 days

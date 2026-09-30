@@ -1,0 +1,8 @@
+title DTWID: The Lost Episodes
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file dtwid-le.wad 8251802 75ce68a15d0e5628749a35b11b18eec3256c2413
+file dtwid-le.deh 2047 56fb9bb41c3ba4e8264960dfe631533eb26b61b3
+file dtwid-le.txt 11179 ff80016398a89e57ea6f90ef53b08ba491aa81c2
+iwad freedoom1.wad
+pwad dtwid-le.wad
+deh dtwid-le.deh

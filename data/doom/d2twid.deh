@@ -1,0 +1,452 @@
+Patch File for DeHackEd v3.0
+
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+
+Thing 24 (Dopefish)
+Hit points = 5000
+Alert sound = 0
+Attack sound = 87
+Pain chance = 0
+Pain sound = 101
+Death frame = 745
+Exploding frame = 0
+Speed = 12
+Width = 2097152
+Height = 5242880
+Mass = 10000
+Missile damage = 10
+Action sound = 87
+Respawn frame = 0
+
+Thing 25 (Yorp)
+Initial frame = 731
+Hit points = 1
+First moving frame = 729
+Injury frame = 729
+Pain chance = 0
+Pain sound = 0
+Close attack frame = 763
+Far attack frame = 763
+Death frame = 766
+Death sound = 103
+Speed = 10
+Height = 3670016
+Bits = 4718598
+
+Thing 116 (Garg)
+Initial frame = 732
+Hit points = 100
+First moving frame = 740
+Attack sound = 66
+Injury frame = 740
+Pain sound = 66
+Far attack frame = 750
+Death frame = 777
+Death sound = 104
+Speed = 8
+Height = 3670016
+Mass = 10000
+Missile damage = 5
+Bits = 4719622
+
+Frame 726
+Sprite subnumber = 32768
+
+Frame 727
+Sprite subnumber = 32769
+
+Frame 728
+Sprite subnumber = 32768
+Duration = 1
+Next frame = 728
+
+Frame 729
+Sprite number = 52
+Sprite subnumber = 32771
+Duration = 4
+
+Frame 730
+Sprite number = 52
+Sprite subnumber = 32772
+Duration = 4
+Next frame = 729
+
+Frame 731
+Sprite number = 52
+Sprite subnumber = 32768
+Duration = 10
+Next frame = 731
+
+Frame 732
+Sprite number = 95
+Sprite subnumber = 32768
+Duration = 6
+
+Frame 733
+Sprite number = 95
+Sprite subnumber = 32769
+Duration = 6
+
+Frame 734
+Sprite number = 95
+Sprite subnumber = 32770
+Duration = 6
+
+Frame 735
+Sprite number = 95
+Sprite subnumber = 32771
+Duration = 6
+Next frame = 732
+
+Frame 736
+Sprite subnumber = 32769
+Duration = 0
+
+Frame 737
+Sprite subnumber = 32769
+Duration = 15
+
+Frame 738
+Sprite subnumber = 32770
+Duration = 15
+
+Frame 739
+Sprite subnumber = 32769
+Duration = 5
+Next frame = 738
+
+Frame 740
+Sprite number = 95
+Sprite subnumber = 32772
+
+Frame 741
+Sprite number = 95
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 740
+
+Frame 742
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 1
+Next frame = 728
+
+Frame 743
+Sprite number = 95
+Duration = -1
+Next frame = 0
+
+Frame 744
+Sprite subnumber = 32772
+Duration = 10
+Next frame = 747
+
+Frame 745
+Sprite subnumber = 32771
+Duration = 20
+Next frame = 744
+
+Frame 746
+Sprite subnumber = 32775
+Duration = -1
+
+Frame 747
+Sprite subnumber = 32773
+Duration = 10
+
+Frame 748
+Sprite subnumber = 32774
+Duration = 10
+Next frame = 749
+
+Frame 749
+Sprite subnumber = 32775
+Duration = 40
+Next frame = 746
+
+Frame 750
+Sprite number = 95
+Sprite subnumber = 32768
+Duration = 10
+
+Frame 751
+Sprite number = 95
+Sprite subnumber = 32772
+Duration = 0
+
+Frame 752
+Sprite number = 95
+Sprite subnumber = 32772
+Duration = 2
+
+Frame 753
+Sprite number = 95
+Sprite subnumber = 32773
+Duration = 2
+Next frame = 752
+
+Frame 754
+Sprite number = 1
+
+Frame 755
+Sprite number = 1
+
+Frame 756
+Sprite number = 1
+
+Frame 757
+Sprite subnumber = 32775
+
+Frame 758
+Sprite subnumber = 32774
+
+Frame 759
+Sprite subnumber = 32773
+
+Frame 760
+Sprite subnumber = 32772
+
+Frame 761
+Sprite subnumber = 32771
+
+Frame 762
+Sprite subnumber = 32771
+
+Frame 763
+Sprite subnumber = 32768
+Duration = 6
+Next frame = 764
+
+Frame 764
+Sprite subnumber = 32769
+
+Frame 765
+Sprite subnumber = 32768
+Next frame = 767
+
+Frame 766
+Sprite subnumber = 32773
+Duration = 0
+Next frame = 774
+
+Frame 767
+Sprite subnumber = 32770
+
+Frame 768
+Sprite subnumber = 32768
+
+Frame 769
+Sprite subnumber = 32769
+
+Frame 770
+Sprite subnumber = 32768
+
+Frame 771
+Sprite subnumber = 32770
+Next frame = 729
+
+Frame 772
+Sprite number = 95
+Sprite subnumber = 32775
+Duration = -1
+
+Frame 773
+Sprite number = 1
+Sprite subnumber = 0
+
+Frame 774
+Sprite subnumber = 32773
+Duration = 0
+
+Frame 775
+Sprite subnumber = 32773
+Duration = 5
+Next frame = 776
+
+Frame 776
+Sprite subnumber = 32774
+Duration = 5
+Next frame = 775
+
+Frame 777
+Sprite number = 95
+Sprite subnumber = 32774
+Duration = 12
+Next frame = 743
+
+Pointer 388 (Frame 700)
+Codep Frame = 774
+
+Pointer 408 (Frame 731)
+Codep Frame = 174
+
+Pointer 409 (Frame 732)
+Codep Frame = 174
+
+Pointer 410 (Frame 733)
+Codep Frame = 174
+
+Pointer 411 (Frame 734)
+Codep Frame = 174
+
+Pointer 412 (Frame 735)
+Codep Frame = 174
+
+Pointer 413 (Frame 736)
+Codep Frame = 157
+
+Pointer 415 (Frame 738)
+Codep Frame = 590
+
+Pointer 417 (Frame 740)
+Codep Frame = 176
+
+Pointer 418 (Frame 741)
+Codep Frame = 176
+
+Pointer 419 (Frame 743)
+Codep Frame = 160
+
+Pointer 421 (Frame 746)
+Codep Frame = 783
+
+Pointer 422 (Frame 750)
+Codep Frame = 184
+
+Pointer 423 (Frame 751)
+Codep Frame = 590
+
+Pointer 426 (Frame 777)
+Codep Frame = 190
+
+Text 164 166
+CONGRATULATIONS, YOU'VE FOUND THE SECRET
+LEVEL! LOOKS LIKE IT'S BEEN BUILT BY
+HUMANS, RATHER THAN DEMONS. YOU WONDER
+WHO THE INMATES OF THIS CORNER OF HELL
+WILL BE.AS YOU ENTER THE STRANGE PORTAL, YOU
+EMERGE... ON MARS! YET THINGS ARE NOT
+QUITE HOW YOU REMEMBER. THIS REALM
+EVOKES AN UNCANNY FEELING:
+A KEEN SENSE OF OF DEJA VU...
+
+Text 92 93
+CONGRATULATIONS, YOU'VE FOUND THE
+SUPER SECRET LEVEL!  YOU'D BETTER
+BLAZE THROUGH THIS ONE!
+AS YOU DIVE INTO THE WELL,
+A MADDENING PHRASE ECHOES
+IN YOUR HEAD.
+
+"SWIM, SWIM, HUNGRY..."
+
+
+
+Text 17 16
+level 1: entryway1: loading bay  
+
+Text 19 16
+level 2: underhalls2: the compound 
+
+Text 20 20
+level 3: the gantlet3: water main       
+
+Text 18 16
+level 4: the focus4: the terminal 
+
+Text 26 24
+level 5: the waste tunnels5: the boiler           
+
+Text 20 20
+level 6: the crusher6: the gorge        
+
+Text 20 20
+level 7: dead simple7: counterpoint     
+
+Text 25 24
+level 8: tricks and traps8: starstruct, inc.     
+
+Text 16 16
+level 9: the pit9: the gambit   
+
+Text 24 24
+level 10: refueling base10: reservoirs          
+
+Text 29 28
+level 11: 'o' of destruction!11: the garrison            
+
+Text 21 20
+level 12: the factory12: the shipyard    
+
+Text 18 16
+level 13: downtown13: the wharf   
+
+Text 25 24
+level 14: the inmost dens14: flooded library     
+
+Text 25 24
+level 15: industrial zone15: the causeway        
+
+Text 17 16
+level 16: suburbs16: cul-de-sac  
+
+Text 19 16
+level 17: tenements17: the precinct
+
+Text 23 20
+level 18: the courtyard18: the sanctum     
+
+Text 21 20
+level 19: the citadel19: bedlam          
+
+Text 17 17
+level 20: gotcha!20: leap of faith
+
+Text 17 16
+level 21: nirvana21: exile       
+
+Text 23 20
+level 22: the catacombs22: borderlands     
+
+Text 24 24
+level 23: barrels o' fun23: the crucible        
+
+Text 19 19
+level 24: the chasm24: crushed spirits
+
+Text 20 20
+level 25: bloodfalls25: dead sea        
+
+Text 29 28
+level 26: the abandoned mines26: damned strait!          
+
+Text 23 20
+level 27: monster condo27: the bloodwash   
+
+Text 26 24
+level 28: the spirit world28: abyss               
+
+Text 24 24
+level 29: the living end29: the mortal coil     
+
+Text 21 20
+level 30: icon of sin30: hell on earth   
+
+Text 21 20
+level 31: wolfenstein31: vorticon        
+
+Text 16 18
+level 32: grosse32: well of wishes
+
+Text 4 4
+SSWVDOPE
+
+Text 4 4
+KEENYORP
+
+Text 4 4
+SMT2GARG

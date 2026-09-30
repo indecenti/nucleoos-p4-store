@@ -1,0 +1,8 @@
+title Rowdy Rudy II
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file rudy2.wad 14817215 1ee2fd35f4b847e8a0f6c54f36c228aef4e142c1
+file rudy2.deh 25298 d06694ce51879c68ff44f3873801777adbfe4efb
+file rudy2.txt 18284 2af26a3182eb6697d93257dbcb182cf8ed452441
+iwad freedoom2.wad
+pwad rudy2.wad
+deh rudy2.deh

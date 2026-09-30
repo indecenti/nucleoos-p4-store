@@ -1,0 +1,311 @@
+===========================================================================
+Advanced engine needed  : Vanilla Compatible
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Rowdy Rudy II: POWERTRIP!   20 Vanilla Maps
+Filename                : rudy2.wad rudyext.wad rudy2.deh
+Release date            : November 7th, 2020
+Author                  : Doomkid & Co
+Email Address           : [redacted]
+Other Files By Author   : https://doomwiki.org/wiki/Doomkid#Body_of_work
+
+Description             : Rowdy Rudy is back and he's madder than ever!
+                          
+                          THE BACKSTORY:
+                          8 months have passed since Rudy took out the evil
+                          cult known as the Protectors, avenged his brother
+                          and saved his home city.
+                          
+                          Impressed by his efforts, many different entities
+                          reached out to him and offered him money for
+                          mercenary work. Rudy was not interested, he just
+                          wanted to live a somewhat normal life and
+                          continually refused offers. Having realized it
+                          wouldn't stop and could potentially lead to
+                          confrontation, Rudy decided to relocate and change
+                          his name to get away from his former life.
+                          
+                          With his bags packed and ready to go, Rudy heard an
+                          aggressive knock at the front door. He quickly
+                          grabbed a pistol and stuffed it in his back pocket.
+                          As he reached toward the door, it suddenly flew
+                          open and two burly, suited men grabbed him and
+                          restrained him. Rudy struggled to reach for his
+                          gun, but he couldn't move and had already been
+                          disarmed. "You ugly fucks are gonna pay for this",
+                          Rudy howled.
+                          
+                          A third, slimmer man entered his home. "Listen,
+                          Rudy. We know who you are. We know every last
+                          detail about you. I'm giving you a chance to play
+                          nice right now - you can try to get away and end up
+                          dead, or you can cooperate and end up richer than
+                          you ever imagined... The choice is yours."
+                          
+                          Rudy glared directly at the thin man and didn't
+                          blink - a piercing death stare that seemed to last
+                          an eternity. "...Okay, you asshole. Tell me what
+                          you want me to do... and if what you say doesn't
+                          piss me off, maybe I'll let you and those slack-jawed
+                          goons of yours live."
+                          
+                          Then thin man's expression curled into a wicked
+                          smile and he let out a hearty laugh. "I knew you'd
+                          make the right decision, Rudy. In fact, this is a
+                          job I think you might just enjoy." The man nodded
+                          towards his goons and they released Rudy. He pulled
+                          out a folder with a few documents in it and tossed
+                          it on the coffee table.
+                          
+                          "We've got some bases up north, hidden away in the
+                          mountains. Some of the research they've been doing
+                          there has gotten a bit.. Messy, you might say. An
+                          experimental soldier enhancement formula seemed to
+                          be working well, so it was sent to several bases to
+                          be used and further documented. After a few months,
+                          our super soldiers started going insane - some of
+                          them had high level access and ended up freeing
+                          hundreds of aliens we had held in captivity.
+                          Between the bloodthirsty super soldiers who have
+                          lost all trace of humanity and the army of aliens
+                          on the loose, we've been looking for any solution
+                          we could to contain this wave of chaos before it
+                          reaches civilians. As you might have guessed, YOU
+                          are the solution we have in mind."
+                          
+                          Rudy looked through the documents, let out a deep
+                          sigh and rested his face in his palms. The man
+                          hissed, "Come on Rudy, don't be like that! We know
+                          what we're asking is a tall order, so we plan to
+                          reimburse you... $40 million dollars, plus new
+                          guns, ammo and armor - on the house."
+                          
+                          Rudy eyes darted back up at the man. "So, 40
+                          million, huh?" he asked. The man looked Rudy dead
+                          in the eyes. "That's right - no bullshit. It's not
+                          often we fuck up on this scale. If you can fix it,
+                          we'll set you up for life and leave you alone for
+                          good. You have my word - scout's honor."
+                          
+                          Rudy chuckled. Despite being fully aware this was a
+                          trap of some sort, he reluctantly agreed to the
+                          offer. "I had faith in you from the start, Rudy.
+                          Meet us at the address on the inside  of that
+                          folder at 6 AM sharp tomorrow. We'll discuss the
+                          details then."
+                          
+                          The men quickly filed out and slammed the door
+                          behind them. Rudy stared at the door for a minute,
+                          although it felt like half an hour. He briefly
+                          rubbed his temples, then headed to the bathroom to
+                          run himself one last hot bath.
+                          
+                          THE PRESENT:
+                          Two weeks have passed since the suited men barged
+                          into his home. After several days of hiking, Rudy
+                          arrives at a small cave near the first hidden
+                          mountain base. He takes his heavy backpack off
+                          which lands with a THUD, he then wipes the dirty
+                          sweat from his brow. "Jesus fuckin' Christ, why did
+                          I agree to this shit. I'm so sick of it already."
+                          Rudy pulls a sleeping bag out and lays it down in
+                          the cave, then starts a small fire out front,
+                          lights a cigarette and begins roasting some pork.
+                          
+                          "Tomorrow morning.. Shit goes down", Rudy mutters
+                          to himself. "Hopefully I'll be in and out without
+                          much trouble. Who the hell knows..." Rudy makes
+                          sure his assault rifle is locked and loaded, rests
+                          it by his side and tucks himself into his sleeping
+                          bag, using his backpack as a pillow. He listens to
+                          the sound of the waves crashing on the nearby beach
+                          and falls into a restless sleep, knowing full well
+                          that endless carnage lies ahead the next morning.
+                          Out of sheer anger, Rowdy vows to score as many
+                          kills as he possibly can.
+                          
+                          MOD INFO:
+                          Despite being 100% vanilla compatible, POWERTRIP
+                          has many substantial changes to the enemy roster.
+                          
+                          Zombieman - 40 HP
+                          Shotgunner - 60 HP
+                          Plasma Guy - 60 HP (replaces Spectre)
+                          Chaingunner - 80 HP (replaces WolfSS)
+                          Flamethrower Guy - 80 HP (replaces Keen)
+                          Rocketman - 120 HP (replaces Hell Knight)
+                          Psycho Imp - 150 HP (replaces Arachnotron)
+                          Blood Demon - 180 HP
+                          Toxicacodemon - 400 HP
+                          Flame Caco - 600 HP (replaces Pain Elemental)
+                          Mini Mastermind - 500 HP (replaces Chaingunner)
+                          (Height: 56 / Diameter: 96 / Drops Chaingun)
+                          Flying Mastermind - 2000 HP (replaces Spiderdemon)
+                          (Height: 100 / Diameter: 200)
+                          
+                          Of course, many of the classic enemies remain
+                          untouched:
+                          
+                          Imp - 60 HP
+                          Lost Soul - 100 HP
+                          Revenant - 300 HP
+                          Mancubus - 600 HP
+                          Archvile - 700 HP
+                          Baron of Hell - 1000 HP
+                          Cyberdemon - 4000 HP
+                          
+                          The weapons have also undergone some substantial
+                          changes:
+                          
+                          - The fists are faster and far more powerful.
+                          - The chainsaw is double bladed, so it's twice as
+                          tough! Makes sense, right?
+                          - The pistol is now an assault rifle with 100%
+                          accuracy. It's very slightly less powerful than the
+                          normal chaingun, but the pinpoint precision more
+                          than makes up for it's somewhat slow ROF.
+                          - The shotgun is now totally automatic. Hold the
+                          fire button down and watch it go! Lays down whole
+                          waves of enemies in seconds.
+                          - The double-barrel is now pump-action! Deliver two
+                          loads of buckshot quicker than ever before.
+                          - The chaingun has a much faster ROF making it very
+                          effective and stunning even the meatier baddies.
+                          - The rocket launcher has a faster ROF. Uhh I
+                          couldn't think of anything else but it works ok
+                          sheesh
+                          - The plasma rifle doesn't have that little recoil
+                          animation anymore. Also GREEN! Whas you problem
+                          Gren?
+                          - The BFG9000 now shoots big fireballs that emit 2
+                          damage tracers rather than just one, making it even
+                          deadlier than usual.
+                          
+                          MAPS AND CREDITS:
+                          Map01 - Storming the Bayside Base by Doomkid
+                          Map02 - Initial Hurdles by @sluggard
+                          Map03 - Further Infiltration by @DavidN
+                          Map04 - The Hydrocore by @Voltcom
+                          Map05 - In the Thick of It by Doomkid
+                          Map06 - Clutched Cargo by Doomkid
+                          Map07 - Secluded Rifts by @riderr3
+                          Map08 - Cliffside Punchout by @TravyB
+                          Map09 - Security Station by @DFF
+                          Map10 - Black Gold by DFF
+                          Map11 - Ambush! by TravyB
+                          Map12 - Clearing Inventory by @RonnieJamesDiner
+                          Map13 - Mutagen Plant by @Moustachio
+                          Map14 - Rumble in the Canyon by RonnieJamesDiner
+                          Map15 - Jungle Hijinx by @Aurelius
+                          Map16 - Grim Sector by @Doom_Dude
+                          Map17 - Plutonic Relations by Doomkid
+                          Map18 - Drowning Pits by @Solmyr
+                          Map19 - Cyber Factory by @Philnemba
+                          Map20 - Death God's Shrine by @xdarkmasterx
+                          Bonus Map 21 - Sinners' Woods by @NeedHealth
+                          Bonus Map 22 - Jungle Assault by @MikeyScoots
+                          
+                          Note that the bonus maps are only for advanced
+                          source ports such as PrBoom+ or ZDoom-family ports.
+                          They use Boom features thus are not compatible with
+                          Vanilla or Chocolate Doom (although the main
+                          campaign is very much vanilla!)
+                          
+                          I'd also like to give a huge thanks to the
+                          following:
+                          
+                          Aurelius for lots of general support, DeHackEd
+                          assistance and testing,
+                          Tango for tips with fast weapon switching and help
+                          with decals,
+                          Gez for the awesome titlescreen, help with switches
+                          and other contributions,
+                          RonnieJamesDiner for help with glow effects in
+                          GZDoom and Zand,
+                          and our testers: Dimon12321, Horus, FrancisT18,
+                          DavidN and Aurelius. You guys are very cool, thanks
+                          again!
+
+Additional Credits to   : The composers of the following MIDIs:
+                          Title - Inca Roads by Frank Zappa
+                          Intermission - Intermission MIDI from Dwango20
+                          Story - Jack the World by GWAR
+                          01 - Covenant Dance from Halo
+                          02 - Goin' Down the Fast Way from Rise of the Triad
+                          03 - Nuts n' Bolts from Donkey Kong Country 3
+                          04 - Track 2 from Metaltech: Earthsiege
+                          05 - Hooligan Rhapsody from Beavis & Butthead
+                          06 - The Awakening by Les Claypool
+                          07 - Zombie Remix (D_COUNTD).mid by Viscra Maelstrom
+                          08 - Record Skipping from Beavis & Butthead
+                          09 - Fear Factory from Donkey Kong Country
+                          10 - Venus Nickel-Iron Mine from Descent
+                          11 - Immigrant Song by Led Zeppelin
+                          12 - Cacophony of Asian Donut Shops by AD_79
+                          13 - Mysterious Forest from Zelda: Link's Awakening
+                          14 - Rumble in the Jungle by AD_79
+                          15 - Upper Brinstar (Jungle Floor) from Super Metroid
+                          16 - When the Levee Breaks by Led Zeppelin
+                          17 - The Graveyard from Heretic
+                          18 - Deadly Town by Jimmy
+                          19 - Death Wind from F-Zero
+                          20 - Master of Puppets by Metallica
+                          21/Victory - Legends of Rock from Beavis & Butthead
+                          21/Bonus 1 - Accelerator by AD_79
+                          22/Bonus 2 - Jungle Assault by MikeyScoots
+===========================================================================
+* What is included *
+
+New levels              : 20 + 2 Boom Compatible
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01 - Map20
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : Survival
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : The original Rowdy Rudy
+Build Time              : About 14 relaxed months
+Editor(s) used          : Doom Builder, Slade, and a whole lotta others
+Known Bugs              : You think we didn't try and squash them all?! If
+                          you find any please report them!
+May Not Run With        : Runs in vanilla!
+Tested With             : Vanilla, Chocolate, ZDaemon, Odamex, PrBoom+,
+                          Zandronum, GZDoom
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: doomshack.org
+           doomworld.com
+           ...and all the other Doom WAD sites!
+FTP sites: The usual stuff.

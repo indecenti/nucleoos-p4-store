@@ -1,0 +1,191 @@
+===========================================================================
+Archive Maintainer      : None
+Update to               : 
+Advanced engine needed  : None
+Primary purpose         : Single play
+===========================================================================
+Title                   : 1000 Lines 3 - Community Project Version 1a
+Filename                : 1k3v1a.wad
+Release date            : 27/08/2024
+Author                  : Liberation and others
+Email Address           : [redacted]
+Other Files By Author   : Numerous.
+Misc. Author Info       : N/A
+
+Description             : A 32 map (with 2 bonus levels) megawad made for vanilla Doom 2, made by the community with a strict line limit of 1000 lines. Using the power of Votex, a vanilla version of the OTEX v1.1 texture pack by Ola Björling (ukiro). 1k3 also features a near totally original soundtrack by AD_79, Psyrus, Dragonfly and Tristan Clark. We also have 4 new monsters and a whole heap of new scenery, some of which was made just for 1k3.
+
+Carrying the story on from the last time, the player must fight through 3 new brutal episodes to end this nightmare once and for all.
+
+However, this time the player will have a slightly beefed up arsenal, but the hellspawn will also have a few surprises for the you...
+
+- STORY - 
+
+You step through the portal after the last battle, ready for what lies ahead. However Mars City was not what you were expecting.. You have been here before, prior to the invasion. 
+It doesn't seem like things have changed much, but then you hated this place anyway.
+
+Grabbing your new pistol, you walk once again into the city. Just need to avoid the "Salty Cydonian" pub this time around... 
+
+
+-END OF STORY-
+
+
+- Maps / Mappers / Music track and Musicians -
+
+** Episode 1 - Mars City **
+
+Map01 - Dust Devils / Aquila / Last Call For All Passengers by AD_79
+Map02 - Tharsis Awakens / Eris and Dragonfly / Stargaze by Psyrus
+Map03 - Lower city grime / Liberation / Isosceles by Psyrus
+Map04 - Monuments of Mars / reflex17 / Digislide by Psyrus
+Map05 - Martian Vista / Walter / Undefined by AD_79 
+Map06 - A Memory From Earth / Aurelius / Creators by Psyrus
+Map07 - Back Alleys and Interlopers / Chester / Patterns by Psyrus
+Map08 - Concrete Avalanche / Scotty / Sludge by Dragonfly
+Map09 - Martian Midnight / DMPhobos / Dark Matter by Tristan Clark
+Map10 - Red Alley / Alter / Fabricated Paradise by AD_79
+Map11 - In Kasei Valles / Aurelius / On The Outer by Alfonzo
+
+** Episode 2 - Tudor Times **
+
+Map12 - Forlorn Hope / Liberation / Eminence by Psyrus
+Map13 - Viridical Mines / Worm / Solstice by AD_79
+Map14 - Bad Manor / Nootrac4571 / Lost in Scripture by AD_79
+Map15 - The Black Ramparts / Bauul / Our Final Dance by Tristan Clark
+Map16 - Corruption / Pegleg / Pathfinder by Psyrus
+Map17 - Ceremony of a Thousand Stars / AD_79 / Where Time Ceases to Be by Ad_79 (Additional texture and flats made by Jimmy)
+Map18 - A Farewell to the Dark Ages / antares031 / Darkest Hour by Tristan Clark 
+Map19 - Gutter Waltz / Dac / Jellyfish by Psyrus
+Map20 - Wall of Omens / WH-Wilou84 / Paleblood waltz by AD_79
+
+** Episode 3 - Tropic Nightmare **
+
+Map21 - Skull / Lord_Z / Timeweaver by Psyrus
+Map22 - Crossbones / Dreadopp / Sanctuary by AD_79
+Map23 - Exile's Path / Misty / Smog by AD_79
+Map24 - Efflorescence / Dragonfly / Hourglass by Dragonfly
+Map25 - Where Lies the Strangling Fruit / Major / Yearning for Clarity by AD_79
+Map26 - A Trail of Scorched Earth / Chester / The Primordial Sludge by AD_79
+Map27 - Nightfall / DMPhobos / Satelites for lunch by AD_79
+Map28 - Tropical warfare / Guardsoul / Maelstrom made by Psyrus
+Map29 - Path of the Withered Vine / Bridgeburner / Fear not the withering of our world by AD_79
+Map30 - False Deity / Aurelius / Catalyst by Psyrus
+
+** Secrets maps **
+Map31 - Farfarout / Xyzzy / Moonlight Butterfly/Dark Sun Gwyndolin from Dark Souls
+Map32 - Vintage Murderfest / Roofi / To Drink the Blood of Stars By AD_79 
+
+** Bonus maps - IDCLEV 33 or 34 required for these levels **
+Map33 - Terminal Transit / Wolf McBeard - A short episode 1 map. 
+Map34 - Test Map / Liberation -This was made to showcase the new features. 
+
+*******************************************************************************************************************
+
+** Project team leader - Liberation **
+
+** Credits **
+
+Aurelius - All the dehacked/Decorate/Edf work, sprite edits, texture edits and generally helping to bring this all together.
+
+Additional 1K Lines 3 MIDI Music:
+
+Title: '1000 Lines 3 Main Theme' - By Dragonfly
+Inter: 'Intermission Music' - by Psyrus
+Text: 'Text Screen Music' - By Dragonfly
+
+DMPhobos for alot of the graphic work, titlepic/credits/Bossback/M_Doom/logo and internal testing.
+
+Aquila Chrysaetos - for the Invul palette, colourmap.
+
+Bridgeburner - Discord management - Streaming, internal testing.
+
+Misty - For internal testing.
+
+Everyone in the 1k discord that has helped with testing.
+
+ukiro, once again, for the awesome OTEX texture pack.
+
+Additional textures: Liberation, Aurelius, AD_79, antares031 and Scotty.
+
+Skies: Liberation, sky2 edited by Nootrac4571.
+
+Realm667 for: Plasma zombie, Gargoyle, Hellscorcher, rocks, palm trees.
+
+Status Bar: Dragonfly
+
+rf' for: torch sprites
+
+New scenery, including ep2 trees, techlamps, lamps and keys by Ultra64.
+
+Assault rifle sprites : Complex Doom, with edits by Aurelius and pickup sprite by antares031.
+
+Pistol sprites : Complex Doom, with edits by Aurelius.
+
+Shotgun, Super Shotgun and Plasma gun additional frames from Smooth Doom, with a few frames by Scuba Steve (vanilla Smooth Doom).
+
+Big Boss : Hell-Forged by Amuscaria.
+
+Ambient sounds : Quake 2, Twilight Warrior TC
+
+UMAPINFO: by rfomin
+
+GLDEFS of 1k3: By ReaperAA
+===========================================================================
+Using Votex for your own projects-
+
+An offical Votex 1.1 will released soon.
+
+
+The source for the dehacked and the UDB tools have been included for all to use.
+===========================================================================
+* What is included *
+
+New levels              : 34
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes - Tons of changes, too many to list
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01 - Map32. Maps 33/34 bonus
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes - Coop is supported, however map30 might not work as intended on Zdaemon, but killing the final boss will end the map still.
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 8 Months
+Editor(s) used          : Slade3, GZDbuilder/UDB, Eureka and ZokumBSP.
+Known Bugs              : None at this time.
+May Not Run With        : William Shatner's Tekwar and sadly it does not run on Operation: Bodycount. Sorry folks.
+Tested With             : Chocolate Doom, Crispy Doom, PrBoom+ (-complevel 2), DSDA-Doom (-complevel 2), Woof! (-complevel 2), Eternity, GZDoom, Zdoom 2.8.1 and Zandronum.
+
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: 
+FTP sites: 

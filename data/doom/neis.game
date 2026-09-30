@@ -1,0 +1,8 @@
+title No End In Sight
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file neis.wad 19830307 ff55b676a1fe6e873d710652e0e1f3c5d9184adc
+file neis.deh 6052 518c5578f1a35faa300d46523e157ef850bad7c9
+file neis.txt 6847 2d1fb872cd46e406f58baf5efd69f8845bdab150
+iwad freedoom1.wad
+pwad neis.wad
+deh neis.deh

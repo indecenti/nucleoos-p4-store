@@ -1,0 +1,115 @@
+Patch File for DeHackEd v3.0
+
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+
+Text 12 13
+E1M1: HangarE1M1: Outpost
+
+Text 19 18
+E1M2: Nuclear PlantE1M2: Supply Depot
+
+Text 20 20
+E1M3: Toxin RefineryE1M3: Nukage Dump   
+
+Text 21 21
+E1M4: Command ControlE1M4: Quarantine Zone
+
+Text 16 19
+E1M5: Phobos LabE1M5: Kepler Dorsum
+
+Text 24 24
+E1M6: Central ProcessingE1M6: Pumping Station   
+
+Text 22 20
+E1M7: Computer StationE1M7: Transport Hub 
+
+Text 20 20
+E1M8: Phobos AnomalyE1M8: Darkside Lab  
+
+Text 19 19
+E1M9: Military BaseE1M9: Relay Station
+
+Text 20 20
+E2M1: Deimos AnomalyE2M1: Biosphere     
+
+Text 22 20
+E2M2: Containment AreaE2M2: Cooling Towers
+
+Text 14 15
+E2M3: RefineryE2M3: Infirmary
+
+Text 16 17
+E2M4: Deimos LabE2M4: Waste Plant
+
+Text 20 22
+E2M5: Command CenterE2M5: Logistics Center
+
+Text 25 24
+E2M6: Halls of the DamnedE2M6: Rend of Misery    
+
+Text 19 18
+E2M7: Spawning VatsE2M7: Dark Passage
+
+Text 20 20
+E2M8: Tower of BabelE2M8: The Gate      
+
+Text 25 24
+E2M9: Fortress of MysteryE2M9: Petersen Station  
+
+Text 15 14
+E3M1: Hell KeepE3M1: Hell Gap
+
+Text 23 20
+E3M2: Slough of DespairE3M2: Manufactorium 
+
+Text 17 19
+E3M3: PandemoniumE3M3: Necromanteion
+
+Text 19 16
+E3M4: House of PainE3M4: Tartarus  
+
+Text 22 20
+E3M5: Unholy CathedralE3M5: Purgatorio    
+
+Text 16 19
+E3M6: Mt. ErebusE3M6: Stygian Caves
+
+Text 11 11
+E3M7: LimboE3M7: Sheol
+
+Text 9 10
+E3M8: DisE3M8: Boss
+
+Text 13 12
+E3M9: WarrensE3M9: Hollow
+
+Text 18 16
+E4M1: Hell BeneathE4M1: Bridge    
+
+Text 20 20
+E4M2: Perfect HatredE4M2: Demonic Halls 
+
+Text 22 20
+E4M3: Sever The WickedE4M3: Despair       
+
+Text 17 16
+E4M4: Unruly EvilE4M4: Phlegethon
+
+Text 22 20
+E4M5: They Will RepentE4M5: Diabolico     
+
+Text 27 24
+E4M6: Against Thee WickedlyE4M6: The Mourning Halls
+
+Text 23 20
+E4M7: And Hell FollowedE4M7: Babel's Gate  
+
+Text 20 21
+E4M8: Unto The CruelE4M8: Temple Guardian
+
+Text 10 11
+E4M9: FearE4M9: BEANS

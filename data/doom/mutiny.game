@@ -1,0 +1,8 @@
+title Mutiny
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file mutiny.wad 16184974 66e387be6182ff418f5c4f07f972f4817437605d
+file mutiny.deh 3996 5d871c89657a1ea8c9b7c117e75bba519736f126
+file mutiny.txt 8273 f8cb1397260c09947ee1e0d85de146903af2e00f
+iwad freedoom2.wad
+pwad mutiny.wad
+deh mutiny.deh

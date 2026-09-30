@@ -1,0 +1,8 @@
+title Ultimate Doom The Way id Did
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file udtwid.wad 2015266 20f06479c9aad7a883fd103b5736352ead6fa289
+file udtwid.deh 2064 970a077ebd9843a15eaf1e96c45f84662cb1b806
+file udtwid.txt 4255 8730a52bca74464cfc99674184ffce120d5cfe12
+iwad freedoom1.wad
+pwad udtwid.wad
+deh udtwid.deh

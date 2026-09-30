@@ -1,0 +1,8 @@
+title Doom 404
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file doom404.wad 4065440 53a2d1f61e6322cc9121a91ff258465c42a871a5
+file doom404.deh 2739 a96a548efac05034c0799934b8d89a8be163a263
+file doom404.txt 5364 e63416bdf2dc2f0661f46905438e7cd6742c3169
+iwad freedoom2.wad
+pwad doom404.wad
+deh doom404.deh

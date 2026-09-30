@@ -1,0 +1,65 @@
+//Sinister Seven - Vanilla Compatible SP/Coop maps
+===========================================================================
+Advanced engine needed  : Vanilla (some HOMs on Map07)
+Primary purpose         : Single Player / Coop / Survival!
+===========================================================================
+Title                   : Sinister Seven - Vanilla Maps by Doomkid
+Filename                : SinSeven.wad
+Release date            : 2/07/15
+Author                  : Doomkid [Adam P.]
+Email Address           : thedevilzworker@hotmail.com
+Other Files By Author   : KID_DUEL.wad, Z-Match: 3rd Strike, Doomkid's Deathmatch Series, The Devilz Work (tdevil2.wad), UAC Rebellion, Revenge of the 90's, Deathmatch Revival, Dwango20.wad, nitecap.wad and more.
+
+Description		: 7 sp/coop maps, vanilla compatible (besides map07), with some fresh sprites - I added the extra marine and zombieman rotation angles (Thanks Mr. Romero!). Some of these maps are from submissions to communtiy projects. Special thanks to The_Miano, MrCrispy, Scifista42, TimeOfDeath, pcorf, Buckshot, and everyone else out there who helped or inspired me in some way to make these maps :) STORY: (Continues from the end of 'UAC Rebellion') "The UAC recovered from the destruction left in the rebel's wake. He had taken out most of the head men with brute force and even managed to close the gate to hell they had opened. Most of the survivors thought he was crazy, but some said he was a twisted hero who saw the bigger picture. The fact is, his attempt to stop the UAC failed - He was killed shortly after his return to Earth by a group of hostiles who had survived his rampage. They immediately began rebuilding the destroyed facilities. They rewrote history, erasing the evidence that the UAC had ever experimented on humans, painted the rebel as nothing more than a "cold hearted lunatic", gained support and funding from Earth's remaining population and used it to continue their interdimensional research. I knew the rebel personally. I was with the group of supporters who he let go. I knew the UAC were corrupt bastards as soon as people started going missing. I heard they killed the rebel and were rebuilding, so I prepared myself. Today, it happened - The sky turned a bright red. Two massive portals opened above us. The demonic aliens swept through our base and took out or possessed almost everyone.. Those evil UAC bastards had done it again, only worse. Their plan to brainwash the masses worked, and now destruction incarnate is pouring in from the sky. I can't explain why they want to see the world burn - but here I am, presumably the only survivor in a military base full of hellspawn. It's time to put my training to the test. I know of a spot where I can escape to sea and ride this invasion out on the water. I wonder if anyone else has survived.."   I hope you all have fun with these. Difficulty levels are very thoroughly implemented, so if you're finding it too hard, just turn it down a notch! These should also be perfect for survival mode (one of my favorite gamemodes!)
+
+Credits			: Doomkid, the_miano (testing), MrCrispy (testing), TheDevilzWork for music.
+
+===========================================================================
+* What is included *
+
+New levels              : 7 coop/SP maps.
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : Yes, but record some for me to watch!!
+Other                   : No
+Other files required    : Nothing but DOOM2.wad
+
+
+* Play Information *
+
+Game                    : Doom2
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (Great for Survival)
+Deathmatch 2-4 Player   : Yes
+Other game styles       : None
+Difficulty Settings     : Not Implemented
+
+
+* Construction *
+
+Base                    : Turn up the Base
+
+Build Time		: Yes
+
+Editors Used		: Doom Builder, XWE, Guitar Pro 5, Midi 2 Mus
+
+
+* Copyright / Permissions *
+
+You MAY use these levels as a base for modification provided you give me credit!
+The same applies for any older files by Doomkid (myself) - Just include this text file for clarification.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc.. Yeah, like ANYONE uses that stuff anymore!) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+=======================================
+Thanks for downloading!!

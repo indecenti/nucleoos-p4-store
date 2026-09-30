@@ -1,0 +1,6 @@
+title NOVA: The Birth
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file nova.wad 22873782 5afff24a5d2f6a653b186d5b2b5be9cb639d5e9b
+file nova.txt 3683 7796a37e5b78095804f3a63515c9e1a7c7a0fa1d
+iwad freedoom2.wad
+pwad nova.wad

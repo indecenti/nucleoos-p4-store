@@ -1,0 +1,6 @@
+title Base Ganymede
+file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
+file bgcomp.wad 6281097 12ad212def400b25c883656e6627fa127145e566
+file bgcomp.txt 3419 cfa9afa5081c71124f168bf94e1cfde030e1785f
+iwad freedoom1.wad
+pwad bgcomp.wad

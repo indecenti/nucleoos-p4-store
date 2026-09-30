@@ -1,0 +1,246 @@
+Patch File for DeHackEd v3.0
+
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+
+Text 440 442
+Once you beat the big badasses and
+clean out the moon base you're supposed
+to win, aren't you? Aren't you? Where's
+your fat reward and ticket home? What
+the hell is this? It's not supposed to
+end this way!
+
+It stinks like rotten meat, but looks
+like the lost Deimos base.  Looks like
+you're stuck on The Shores of Hell.
+The only way out is through.
+
+To continue the DOOM experience, play
+The Shores of Hell and its amazing
+sequel, Inferno!
+Funny... the last time you were marooned
+on this godforsaken rock and gazed into
+the abyss between worlds, the prospect of
+being thrust into yet another nightmare
+seemed much less appealing. Yet now, you
+can't think of any place you'd rather be.
+
+"Phobos," you monologue as if you're a
+travel brochure. "Come for the view.
+Stay because you're a flesh-hungry zombie."
+It's the ideal getaway spot. Can't bring a
+shotgun to Cancun, now, can you?
+
+Text 466 464
+You've done it! The hideous cyber-
+demon lord that ruled the lost Deimos
+moon base has been slain and you
+are triumphant! But ... where are
+you? You clamber to the edge of the
+moon and look down to see the awful
+truth.
+
+Deimos floats above Hell itself!
+You've never heard of anyone escaping
+from Hell, but you'll make the bastards
+sorry they ever heard of you! Quickly,
+you rappel down to  the surface of
+Hell.
+
+Now, it's on to the final chapter of
+DOOM! -- Inferno.In a grand display of parallel fate,
+the twisted corpse of the cyberdemon
+clatters to the hard dirt beneath you.
+Though familiar, this particular sight
+never gets old.
+
+The revelation that Deimos and Hell
+are jointed at the hip long ago
+ceased to amaze, yet you feel a
+familiar rush as you leap from the
+edge of the now-barren rock toward
+the gates of Hades itself.
+Or maybe it's the adrenaline.
+
+Either way, thank God for your
+complete immunity to falling damage!
+
+Text 492 492
+The loathsome spiderdemon that
+masterminded the invasion of the moon
+bases and caused so much death has had
+its ass kicked for all time.
+
+A hidden doorway opens and you enter.
+You've proven too tough for Hell to
+contain, and now Hell at last plays
+fair -- for you emerge from the door
+to see the green fields of Earth!
+Home at last.
+
+You wonder what's been happening on
+Earth while you were battling evil
+unleashed. It's good that no Hell-
+spawn could have come through that
+door with you ...Spiderdemon, meet Mr. Metaphorical
+Fly Swatter. 'Nuff said.
+
+Having driven back the denizens of
+Hell once again, you ponder your
+next move. There's no end in sight
+to the invasion, though you suspect
+the swath of destruction you've left
+in your wake will make them think
+twice before messing with Earth again.
+
+...Well, assuming those bastards
+even know how to think. You suspect
+the masterminds' brains are just for
+show at this point.
+
+Whatever. Next stop: Earth. For real.                 
+
+Text 503 501
+the spider mastermind must have sent forth
+its legions of hellspawn before your
+final confrontation with that terrible
+beast from hell.  but you stepped forward
+and brought forth eternal damnation and
+suffering upon the horde as a true hero
+would in the face of something so evil.
+
+besides, someone was gonna pay for what
+happened to daisy, your pet rabbit.
+
+but now, you see spread before you more
+potential pain and gibbitude as a nation
+of demons run amok among our cities.
+
+next stop, hell on earth!Welp. You've done it. Kind of. Earth is a
+wreck, but you've driven the last
+slavering nasties away from the planet
+for good... back to Hell, which is a bit
+counter-productive, but whatever.
+
+Though the human race is kaput, you
+manage to scrounge up enough tech to spin
+up an instance of the hit video game Doom,
+and resign yourself to blasting away
+virtual demons now that there aren't any
+real ones to worry about.
+
+Plus, with so much custom content
+available, your entertainment has
+no end in sight!
+
+Text 12 14
+E1M1: HangarE1M1: Terminal
+
+Text 19 18
+E1M2: Nuclear PlantE1M2: Slime Trails
+
+Text 20 22
+E1M3: Toxin RefineryE1M3: Logistics Center
+
+Text 21 23
+E1M4: Command ControlE1M4: Abandoned Factory
+
+Text 16 16
+E1M5: Phobos LabE1M5: Warehouse 
+
+Text 24 24
+E1M6: Central ProcessingE1M6: Power Core        
+
+Text 22 20
+E1M7: Computer StationE1M7: Biosphere     
+
+Text 20 20
+E1M8: Phobos AnomalyE1M8: Enigma        
+
+Text 19 16
+E1M9: Military BaseE1M9: Silos     
+
+Text 20 23
+E2M1: Deimos AnomalyE2M1: Receiving Station
+
+Text 22 21
+E2M2: Containment AreaE2M2: Proving Grounds
+
+Text 14 15
+E2M3: RefineryE2M3: Contagion
+
+Text 16 16
+E2M4: Deimos LabE2M4: Derelict  
+
+Text 20 20
+E2M5: Command CenterE2M5: Deep Storage  
+
+Text 25 24
+E2M6: Halls of the DamnedE2M6: Poison Control    
+
+Text 19 18
+E2M7: Spawning VatsE2M7: Gateway Labs
+
+Text 20 20
+E2M8: Tower of BabelE2M8: Rubicon       
+
+Text 25 25
+E2M9: Fortress of MysteryE2M9: Castle of Illusions
+
+Text 15 15
+E3M1: Hell KeepE3M1: Hell Gate
+
+Text 23 20
+E3M2: Slough of DespairE3M2: Emblem of Doom
+
+Text 17 17
+E3M3: PandemoniumE3M3: The Grinder
+
+Text 19 19
+E3M4: House of PainE3M4:Fortuna Bridge
+
+Text 22 23
+E3M5: Unholy CathedralE3M5: Forgotten Caverns
+
+Text 16 16
+E3M6: Mt. ErebusE3M6: Anomaly II
+
+Text 11 11
+E3M7: LimboE3M7:Nether
+
+Text 9 10
+E3M8: DisE3M8: Req.
+
+Text 13 15
+E3M9: WarrensE3M9: Lake Fire
+
+Text 18 16
+E4M1: Hell BeneathE4M1: Nexus     
+
+Text 20 20
+E4M2: Perfect HatredE4M2: Parallels     
+
+Text 22 20
+E4M3: Sever The WickedE4M3: Square Zero   
+
+Text 17 18
+E4M4: Unruly EvilE4M4: Wartorn City
+
+Text 22 23
+E4M5: They Will RepentE4M5: The Blood Beneath
+
+Text 27 24
+E4M6: Against Thee WickedlyE4M6: Sanctuary of Filth
+
+Text 23 23
+E4M7: And Hell FollowedE4M7: Vacuum Consortium
+
+Text 20 21
+E4M8: Unto The CruelE4M8: No End In Sight
+
+Text 10 11
+E4M9: FearE4M9: Cross

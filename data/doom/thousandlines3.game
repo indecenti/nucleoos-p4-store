@@ -1,0 +1,8 @@
+title 1000 Lines 3
+file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
+file 1k3v1a.wad 41519227 2b5db5f8b7aad682ca91d9a1bf3729d5aab406b7
+file 1k3v1a.deh 48231 eee725f54cfaf250456cd18e667b57b3f52521c2
+file 1k3v1a.txt 7953 8e42977f0d2721fc6e5e84470eeacc9fd9f8d826
+iwad freedoom2.wad
+pwad 1k3v1a.wad
+deh 1k3v1a.deh

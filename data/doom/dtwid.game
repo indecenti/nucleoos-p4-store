@@ -1,6 +1,8 @@
 title Doom The Way id Did
 file freedoom1.wad 28795076 97bb88094a51457a8dcad98c58be22a2d0fa9a37
 file dtwid.wad 5073423 ae8fa5c60b74baac9c8fdc125c995589c3d0338b
+file dtwid.deh 2047 2cec9b60b23a615ae24bd92303e2aa321c8be12a
 file dtwid.txt 8448 afff310f13d50b7539dfef4002414767608d88ae
 iwad freedoom1.wad
 pwad dtwid.wad
+deh dtwid.deh

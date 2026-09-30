@@ -1,0 +1,91 @@
+
+           ▓▓▓▓▓▓▓█  ▓▓▓▓▓▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓▓▓▓▓▓█
+           ▓▓████▓▓█ ▓▓██████ ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓████▓▓█
+           ▓▓█   ▓▓█ ▓▓█      ▓▓█  ▓▓█  ▓▓█  ▓▓█  ▓▓█   ▓▓█
+           ▓▓▓▓▓▓▓█  ▓▓▓▓▓█   ▓▓▓▓▓▓█   ▓▓▓▓▓▓█   ▓▓▓▓▓▓▓█
+           ▓▓████▓▓█ ▓▓████   ▓▓███▓▓█  ▓▓███▓▓█  ▓▓████▓▓█
+           ▓▓█   ▓▓█ ▓▓█      ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█   
+           ▓▓█   ▓▓█ ▓▓▓▓▓▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█ ▓▓█   ▓▓█
+           ▐██   ▐██ ▐███████ ▐██   ▐██ ▐██   ▐██ ▐██   ▐██
+
+Lead/Etc: 
+Revae
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Textures/Flats:
+Beginning with "dv", "A_", or no prefix - Revae.
+
+Beginning with "ks_" are almost all edits that LupinxKassman did. 
+In particular these are wholly his:
+KS_WHL*
+KS_DOME*
+KS_SKYL*
+KS_SEC*
+KS_S2C*
+KS_SCRU*
+KS_SC2*
+KS_BEER*
+
+Details for all KS_* resources may be found described individually in 
+OldResourceCredits.txt and Credits.txt of LKTex.
+
+So if you want to use any of those I'd ask him.  Otherwise Use anything
+else for whatever, just don't sell it.  I'd appreciate it if you 
+credit.
+
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Music:
+Tom Jensen AKA Hexenmapper - thespidersrepublic@hotmail.com
+https://soundcloud.com/psllbof
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Sounds:
+TerminusEst13
+http://terminusest13.tumblr.com/
+
+Additional Sounds:
+Revae
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Maps:
+E1M4 - SuperCupcakeTactics: Blade Swamp, Revae: Deathmatch arena
+E1M7 - LupinxKassman: Dripstone Wharf, Revae: Deathmatch arena
+E2M4 - JawsInSpace: Initial Layout, Revae: Finishing
+E2M5 - AngrySaint
+E2M6 - VelcroSasquatch
+E3M4 - AD_79: Primary, Revae:Secondary
+E3M7 - TerminusEst13/Jimmy: Siege, Revae: Deathmatch arena
+Rest - Revae
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Testing:
+Eric, Sarioya, Hexenmapper, Wartorn, Playe
+by default everyone listed as a mapper
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+Other:
+Mirror mode code - TehRealSalt
+
+Custom cheats code - m8f
+https://github.com/mmaulwurff/custom-cheats
+
+Thanks to: 
+Bzzrak for the original E4M1 (still included in the free mod version)
+Marrub for early dehacked help
+Gageat for the hitscan dummy idea
+Popsoap10 for fixing the GLDEFS
+ShadowHog for fixing the music in Vanilla
+NightFright for the original releases iwadinfo lump
+LupinxKassman for iwadifying the original release
+anyone who gave me advice over the last few years and I forgot (sorry)
+Doomworld and the Zdoom forums for pointing out all the faults.
+/vr/ for all the fun 
+
+Oh. And my dad for getting me into all this.
+
+Thanks from lupinx-Kassman to:
+Playe for sketching a reference for KS_SEC25 and KS_S2C25
+rml for the Trash Knight comic which inspired the barren 
+terrain/foliage in E1M7's mirror secret
+Team TNT/Team Eternal for the glass streaks the KS_DOME5 
+texture was based on in prior versions
+Kama Sutra and Alien Vendetta for largely inspiring E1M7. The small 
+room surrounding sector 312 in prior versions was a tribute 
+to Martin Aalen Hunsager's "Nemesis" (its sector 350 room)
+
+∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞

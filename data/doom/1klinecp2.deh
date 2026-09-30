@@ -1,0 +1,208 @@
+Patch File for DeHackEd v3.0
+# Created with WhackEd4 1.2.0 BETA
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 19
+Patch format = 6
+
+
+Text 405 299
+YOU HAVE ENTERED DEEPLY INTO THE INFESTED
+STARPORT. BUT SOMETHING IS WRONG. THE
+MONSTERS HAVE BROUGHT THEIR OWN REALITY
+WITH THEM, AND THE STARPORT'S TECHNOLOGY
+IS BEING SUBVERTED BY THEIR PRESENCE.
+
+AHEAD, YOU SEE AN OUTPOST OF HELL, A
+FORTIFIED ZONE. IF YOU CAN GET PAST IT,
+YOU CAN PENETRATE INTO THE HAUNTED HEART
+OF THE STARBASE AND FIND THE CONTROLLING
+SWITCH WHICH HOLDS EARTH'S POPULATION
+HOSTAGE.Fighting across the ruined landscape has
+been bad enough, but now you are entering
+deep within the planet. The air is thick 
+with the stench of decay, this is not going
+to be easy
+
+Hopefully you can find a portal and get off
+this damn rock and be one step closer to 
+home.
+
+That is the plan anyway..
+Text 617 337
+YOU HAVE WON! YOUR VICTORY HAS ENABLED
+HUMANKIND TO EVACUATE EARTH AND ESCAPE
+THE NIGHTMARE.  NOW YOU ARE THE ONLY
+HUMAN LEFT ON THE FACE OF THE PLANET.
+CANNIBAL MUTATIONS, CARNIVOROUS ALIENS,
+AND EVIL SPIRITS ARE YOUR ONLY NEIGHBORS.
+YOU SIT BACK AND WAIT FOR DEATH, CONTENT
+THAT YOU HAVE SAVED YOUR SPECIES.
+
+BUT THEN, EARTH CONTROL BEAMS DOWN A
+MESSAGE FROM SPACE: "SENSORS HAVE LOCATED
+THE SOURCE OF THE ALIEN INVASION. IF YOU
+GO THERE, YOU MAY BE ABLE TO BLOCK THEIR
+ENTRY.  THE ALIEN BASE IS IN THE HEART OF
+YOUR OWN HOME CITY, NOT FAR FROM THE
+STARPORT." SLOWLY AND PAINFULLY YOU GET
+UP AND RETURN TO THE FRAY.Stepping through the portal you are
+instantly hit by a chilling breeze.
+
+A barran ice world confronts you, hell
+it's better than the last place at least.
+You wonder who once lived here, you can
+almost recognise the buildings ahead but
+no signs of life are present.
+
+No matter, time to fight through this world
+and find the next portal.  
+Text 312 233
+YOU ARE AT THE CORRUPT HEART OF THE CITY,
+SURROUNDED BY THE CORPSES OF YOUR ENEMIES.
+YOU SEE NO WAY TO DESTROY THE CREATURES'
+ENTRYWAY ON THIS SIDE, SO YOU CLENCH YOUR
+TEETH AND PLUNGE THROUGH IT.
+
+THERE MUST BE A WAY TO CLOSE IT ON THE
+OTHER SIDE. WHAT DO YOU CARE IF YOU'VE
+GOT TO GO THROUGH HELL TO GET TO IT?You arrive through the portal, but what
+the hell is this place? 
+
+A large planet covered in marble buildings,
+a monument to a fallen civilisation lies 
+before you.
+
+It's time to end this and get home, or 
+to whats left of it anyway. 
+Text 494 482
+THE HORRENDOUS VISAGE OF THE BIGGEST
+DEMON YOU'VE EVER SEEN CRUMBLES BEFORE
+YOU, AFTER YOU PUMP YOUR ROCKETS INTO
+HIS EXPOSED BRAIN. THE MONSTER SHRIVELS
+UP AND DIES, ITS THRASHING LIMBS
+DEVASTATING UNTOLD MILES OF HELL'S
+SURFACE.
+
+YOU'VE DONE IT. THE INVASION IS OVER.
+EARTH IS SAVED. HELL IS A WRECK. YOU
+WONDER WHERE BAD FOLKS WILL GO WHEN THEY
+DIE, NOW. WIPING THE SWEAT FROM YOUR
+FOREHEAD YOU BEGIN THE LONG TREK BACK
+HOME. REBUILDING EARTH OUGHT TO BE A
+LOT MORE FUN THAN RUINING IT WAS.
+The overlord of the marble palace planet
+lies dead and mangled.
+
+You've done this before and were expecting
+a new portal to form, but not this time.
+After searching around you find a hidden
+door, typically if you had found it you could
+have skipped this last battle, but where is
+fun in that?
+
+Stepping through the portal, you hope to arrive
+back on earth, but we will have to wait and see
+won't we.
+
+
+Once again, a big thank you to everyone involved in
+project! 
+
+- Liberation 2020
+Text 164 135
+CONGRATULATIONS, YOU'VE FOUND THE SECRET
+LEVEL! LOOKS LIKE IT'S BEEN BUILT BY
+HUMANS, RATHER THAN DEMONS. YOU WONDER
+WHO THE INMATES OF THIS CORNER OF HELL
+WILL BE.A hidden techbase? You wonder who built
+this.. Not that it really matters.
+
+Smash all before you or fly through.
+
+The choice is yours. 
+Text 92 95
+CONGRATULATIONS, YOU'VE FOUND THE
+SUPER SECRET LEVEL!  YOU'D BETTER
+BLAZE THROUGH THIS ONE!
+Your rocket launcher won't save you today.
+Only your wits.
+
+Hope you brought a brain with you.
+
+Text 7 7
+SLIME16BACKEP1
+Text 7 7
+RROCK14BACKEP2
+Text 7 7
+RROCK07BACKEP3
+Text 7 7
+RROCK17BACKSM1
+Text 7 7
+RROCK13BACKSM2
+Text 7 7
+RROCK19BACKSM2
+Text 17 17
+level 1: entryway1: Severed Dreams
+Text 19 15
+level 2: underhalls2: Reprocessing
+Text 20 14
+level 3: the gantlet3: Milliphobia
+Text 18 11
+level 4: the focus4: Vedauwoo
+Text 26 12
+level 5: the waste tunnels5: Corrosion
+Text 20 19
+level 6: the crusher6: Wastewater Falls
+Text 20 16
+level 7: dead simple7: Into the Dark
+Text 25 20
+level 8: tricks and traps8: Immortal Industry
+Text 16 14
+level 9: the pit9: Stone Steel
+Text 24 18
+level 10: refueling base10: Subterraqueous
+Text 29 25
+level 11: 'o' of destruction!11: Deep But Not Profound
+Text 21 16
+level 12: the factory12: Thirty Below
+Text 18 16
+level 13: downtown13: Zero Degrees
+Text 25 12
+level 14: the inmost dens14: Negelida
+Text 25 21
+level 15: industrial zone15: Abstract Thoughts
+Text 17 17
+level 16: suburbs16: Cold Shoulder
+Text 19 17
+level 17: tenements17: Snow Frontier
+Text 23 14
+level 18: the courtyard18: Dour Tower
+Text 21 21
+level 19: the citadel19: Crystalline Vault
+Text 17 17
+level 20: gotcha!20: The Pale Helm
+Text 17 19
+level 21: nirvana21:Gardeners of Edn
+Text 23 9
+level 22: the catacombs22: Tuama
+Text 24 11
+level 23: barrels o' fun23: Oratory
+Text 19 14
+level 24: the chasm24: Marblelous
+Text 20 16
+level 25: bloodfalls25: Metamorphism
+Text 29 20
+level 26: the abandoned mines26: Heavenly Gantlet
+Text 23 18
+level 27: monster condo27: THUNDERBASTARD
+Text 26 26
+level 28: the spirit world28: The Halls of Reckoning
+Text 24 20
+level 29: the living end29: Marble Tombstone
+Text 21 12
+level 30: icon of sin30: Eldritch
+Text 21 19
+level 31: wolfenstein31: Crimson Complex
+Text 16 13
+level 32: grosse32: Ephemeral

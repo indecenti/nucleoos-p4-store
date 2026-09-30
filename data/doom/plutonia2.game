@@ -1,6 +1,8 @@
 title Plutonia 2
 file freedoom2.wad 28787748 975f781e6d801c0a23e3caa33f70493efe68a880
 file pl2.wad 18131932 4ef41ba4b3c0d39d79fc592b2b258765bca36657
+file pl2.deh 7359 aa4b313dcb1bee7f2d96d2d4fab715ae443c05ed
 file pl2.txt 3915 d20259a8b1fde7eb2d6dfb6ce7fe1078a653f71f
 iwad freedoom2.wad
 pwad pl2.wad
+deh pl2.deh
