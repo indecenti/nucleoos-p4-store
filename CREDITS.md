@@ -108,6 +108,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Projectron | `projectron` | James McMurray | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/projectron) |
 | Punch'Em Up | `punch-em-up` | Louis Pearson | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/punch-em-up) |
 | Puyo | `puyo` | Shigeki Karita | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/puyo) |
+| Puzzles | `puzzles` | Simon Tatham et al. | MIT | [link](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/) |
 | Racer | `racer` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/racer) |
 | Raw Assembly Test | `raw-assembly` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/raw-assembly) |
 | Rolly Dango | `rolly-dango` | William Guimont-Martin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rolly-dango) |
