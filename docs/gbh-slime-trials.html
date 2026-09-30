@@ -1,0 +1,155 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Slime Trials — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Slime Trials</h1><p class=desc>Slime Trials di Canight, in gara alla Game Boy Competition 2023: un platform di precisione in cui una piccola melma si fa strada attraverso stanze insidiose, contro il cronometro. Licenza MIT (github.com/Canite/SlimeTrials).</p><p class=meta>versione 1.0.0 · Licenza: MIT (game); MIT (emulator) · <a href='https://github.com/Canite/SlimeTrials'>Sito del progetto</a></p></div></header><article><h1>Slime Trials</h1>
+<p>Un platform di precisione di <strong>Canight</strong>, realizzato per la Game Boy Competition 2023. Porta la melma fino all'uscita di ogni stanza il più in fretta possibile: in alto sullo schermo trovi il numero di morti, il livello e il cronometro.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Salvataggi</h2>
+<p>La cartuccia ha la batteria: i dati salvati restano sul dispositivo tra una partita e l'altra.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Slime Trials di Canight (Canite su GitHub), licenza MIT.</p>
+<p>La ROM è quella originale, non modificata, dal database Homebrew Hub (https://hh.gbdev.io/game/canight__slime-trials).</p>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT).</p>
+<p>Testi delle licenze:</p>
+<h3>Slime Trials</h3>
+<p>https://github.com/Canite/SlimeTrials</p>
+<pre><code>Copyright (c) 2023 Canite
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Slime Trials</h1><p class=desc>Slime Trials by Canight, a Game Boy Competition 2023 entry: a precision platformer where a little slime makes its way through tricky rooms against the clock. MIT license (github.com/Canite/SlimeTrials).</p><p class=meta>version 1.0.0 · License: MIT (game); MIT (emulator) · <a href='https://github.com/Canite/SlimeTrials'>Project site</a></p></div></header><article><h1>Slime Trials</h1>
+<p>A precision platformer by <strong>Canight</strong>, made for the Game Boy Competition 2023. Guide the slime through each room to the exit as fast as you can: the top of the screen shows deaths, the level number and the timer.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Saves</h2>
+<p>The cartridge has a battery: its save data stays on the device between sessions.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Slime Trials by Canight (Canite on GitHub), MIT license.</p>
+<p>The ROM is the original, unmodified, from the Homebrew Hub database (https://hh.gbdev.io/game/canight__slime-trials).</p>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license).</p>
+<p>License texts:</p>
+<h3>Slime Trials</h3>
+<p>https://github.com/Canite/SlimeTrials</p>
+<pre><code>Copyright (c) 2023 Canite
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

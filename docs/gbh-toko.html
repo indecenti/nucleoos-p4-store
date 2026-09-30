@@ -1,0 +1,151 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Toko — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Toko</h1><p class=desc>Toko di demekala, un piccolo gioco di piattaforme realizzato per la Game Boy Competition 2023. Licenza MIT (github.com/kopalaGitHub/tokoGame).</p><p class=meta>versione 1.0.0 · Licenza: MIT (game); MIT (emulator) · <a href='https://github.com/kopalaGitHub/tokoGame'>Sito del progetto</a></p></div></header><article><h1>Toko</h1>
+<p>Un piccolo gioco di piattaforme di <strong>demekala</strong>, in gara alla Game Boy Competition 2023. Muovi il personaggio nella stanza e trova la strada per andare avanti.</p>
+<h2>Comandi</h2>
+<ul>
+<li><strong>Touch</strong>: croce direzionale a sinistra, <strong>A</strong> e <strong>B</strong> a destra (puoi far scivolare il pollice dall'uno all'altro), <strong>SELECT</strong> in basso a sinistra, <strong>START</strong> in basso a destra. Più dita insieme funzionano.</li>
+<li><strong>Gamepad</strong> USB o Bluetooth: croce o levetta sinistra; A e Y = A; B e X = B; Start; Back/View = Select.</li>
+<li><strong>Tastiera USB</strong>: frecce o WASD; Spazio/X/Invio = A; Z/C/Backspace = B; P o Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (in alto a sinistra), i dorsali L/R o il tasto Guide del gamepad mettono in pausa.</li>
+</ul>
+<h2>Il menu di pausa</h2>
+<p><strong>Continua</strong>, <strong>Ricomincia</strong> (spegne e riaccende la console), <strong>Zoom</strong> 4x o 3x (più piccolo, lascia più spazio ai comandi), <strong>Colori</strong> (verde, grigio, Pocket, colori stile Game Boy Color) e <strong>Esci</strong> chiude il gioco. Zoom e colori restano memorizzati. Il gesto indietro del sistema apre il menu; ripetuto, esce.</p>
+<h2>Audio</h2>
+<p>Il suono è emulato (i quattro canali del Game Boy). Se un'altra app sta usando l'altoparlante (per esempio Musica), il gioco parte muto e riprova ogni pochi secondi.</p>
+<h2>Crediti e licenze</h2>
+<p>Toko di demekala (sabaKopala), licenza MIT.</p>
+<p>La ROM è quella originale, non modificata, dal database Homebrew Hub (https://hh.gbdev.io/game/demekala__toko).</p>
+<p>Emulatore: Peanut-GB di Mahyar Koshkouei, audio MiniGB APU di Alex Baines e Mahyar Koshkouei (licenza MIT).</p>
+<p>Testi delle licenze:</p>
+<h3>Toko</h3>
+<p>https://github.com/kopalaGitHub/tokoGame</p>
+<pre><code>Copyright (c) 2023 sabaKopala
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Toko</h1><p class=desc>Toko by demekala, a small platform game made for the Game Boy Competition 2023. MIT license (github.com/kopalaGitHub/tokoGame).</p><p class=meta>version 1.0.0 · License: MIT (game); MIT (emulator) · <a href='https://github.com/kopalaGitHub/tokoGame'>Project site</a></p></div></header><article><h1>Toko</h1>
+<p>A small platform game by <strong>demekala</strong>, entered in the Game Boy Competition 2023. Move the little character around the room and find the way forward.</p>
+<h2>Controls</h2>
+<ul>
+<li><strong>Touch</strong>: D-pad on the left, <strong>A</strong> and <strong>B</strong> on the right (you can slide your thumb from one to the other), <strong>SELECT</strong> bottom left, <strong>START</strong> bottom right. Several fingers at once work.</li>
+<li>USB or Bluetooth <strong>gamepad</strong>: D-pad or left stick; A and Y = A; B and X = B; Start; Back/View = Select.</li>
+<li>USB <strong>keyboard</strong>: arrows or WASD; Space/X/Enter = A; Z/C/Backspace = B; P or Tab = Start; Esc = Select.</li>
+<li><strong>MENU</strong> (top left), the L/R shoulder buttons or the pad's Guide button pause the game.</li>
+</ul>
+<h2>The pause menu</h2>
+<p><strong>Resume</strong>, <strong>Reset</strong> (power-cycles the console), <strong>Zoom</strong> 4x or 3x (smaller, more room for the controls), <strong>Colours</strong> (green, grey, Pocket, Game Boy Color style) and <strong>Exit</strong> closes the game. Zoom and colours are remembered. The system back gesture opens the menu; twice, it exits.</p>
+<h2>Sound</h2>
+<p>Sound is emulated (the Game Boy's four channels). If another app holds the speaker (the Music app, say), the game starts muted and retries every few seconds.</p>
+<h2>Credits and licenses</h2>
+<p>Toko by demekala (sabaKopala), MIT license.</p>
+<p>The ROM is the original, unmodified, from the Homebrew Hub database (https://hh.gbdev.io/game/demekala__toko).</p>
+<p>Emulator: Peanut-GB by Mahyar Koshkouei, MiniGB APU sound by Alex Baines and Mahyar Koshkouei (MIT license).</p>
+<p>License texts:</p>
+<h3>Toko</h3>
+<p>https://github.com/kopalaGitHub/tokoGame</p>
+<pre><code>Copyright (c) 2023 sabaKopala
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>Peanut-GB</h3>
+<p>https://github.com/deltabeard/Peanut-GB</p>
+<pre><code>Copyright (c) 2018-2023 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h3>MiniGB APU</h3>
+<p>https://github.com/deltabeard/Peanut-GB/tree/master/examples/sdl2/minigb_apu</p>
+<pre><code>Copyright (c) 2017 Alex Baines
+Copyright (c) 2019 Mahyar Koshkouei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
