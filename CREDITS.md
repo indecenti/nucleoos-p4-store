@@ -170,4 +170,5 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Zigtris | `zigtris` | Toby Jaffey | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zigtris) |
 | Zip | `zip` | Rich Geldreich and contributors (miniz) | MIT | [link](https://github.com/richgel999/miniz) |
 | Zoop Zoop Bee Adventures 7 | `zoopzoop` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zoopzoop) |
+| Zork | `zork` | Infocom / Microsoft; MojoZork by Ryan C. Gordon | MIT (games), zlib (interpreter) | [link](https://github.com/historicalsource/zork1) |
 | ZxZ | `zxz` | cisaw Dercz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zxz) |

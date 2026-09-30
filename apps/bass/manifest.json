@@ -1,10 +1,10 @@
 {
   "id": "bass",
   "name": "Vertice Bass",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "entry": "run",
-  "abi": 9,
-  "requires": { "vertice": "1.1" },
+  "abi": 11,
+  "requires": { "vertice": "1.2" },
   "ram_budget": 262144,
   "stack_kb": 32,
   "timeout_ms": 120000,
