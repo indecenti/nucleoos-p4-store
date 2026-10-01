@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 16777216,
@@ -30,6 +30,6 @@
     "it": "Dama inglese per due giocatori sullo stesso schermo: tocca una pedina, poi dove va; le prese sono obbligatorie. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "d7d22276b656d5d313bbf2770bddcd394ca306fb7a599b770c6fe5f56355c18d"
+    "c0c38db99ba0198fca0f0aebe89a327135e5a9be376ea95cdfd469f51037ee53"
   ]
 }

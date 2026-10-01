@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Un platform a schermata singola: corri, sali le scale e salta i robot per salvare i gattini della casa. Croce direzionale e Salto sullo schermo. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "b8e1893c134bb39353033d9b45f56681bd0466ba357ee0a7bd72dd2d5efd6888"
+    "067407b05aefec2371ef2b3e28cfb0854fafd53fac18fc8622b27d560cdb634e"
   ]
 }

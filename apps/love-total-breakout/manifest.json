@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Rompi tutti i mattoni con la pallina e la racchetta. Frecce e Via sullo schermo, o tastiera e joypad. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "b77f11a64d726827672cb4d947c93338c0ef4794ccd7e6c8dcbe7fdecc274f92"
+    "cbb23d66ce78c18b4b19da0ceb215a9de8d011cde079c1123fb4bc198658f2ef"
   ]
 }

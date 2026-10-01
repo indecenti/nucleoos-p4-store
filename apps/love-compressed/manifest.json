@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Un gioco in meno di 200 righe: schiva e schiaccia i blocchi che cadono, concatena i salti per la combo. Croce direzionale e Salto sullo schermo. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "7cf9385c6eafb6459acd913e66f7b4d28ba0bc5a4763dfdfcc8ac0ebb4abfbf5"
+    "cd20424f2e732a6e7dcd750c49e6ab8209b55565310d14269b6e25fb6e03d806"
   ]
 }

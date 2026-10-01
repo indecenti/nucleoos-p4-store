@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Schiaccia le mosche prima che invadano lo schermo, e attento alle bombe. Tocca dove c'è la mosca. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "6d396151696c4940cd95dad782dca634da0dfa11dc33044eb3c202df6e1ae70c"
+    "29ca23d6127f2a558be1bfeb1a981b437d91b64333cc322fe3982cb41127f952"
   ]
 }

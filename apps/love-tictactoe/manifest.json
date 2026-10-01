@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Tris contro un amico o contro un bot minimax imbattibile, con tre livelli. Tocca per giocare. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "eeb90ab619147506c7bb20c9f4b7b7142b69be1a448cf16cf1a0c90efe71ac11"
+    "6e1f6245ad71df37b573a3501e22033234422fd942684b81b2b62992cbb2fd81"
   ]
 }

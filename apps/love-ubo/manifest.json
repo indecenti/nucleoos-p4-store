@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Un gioco alla Qix: traccia linee per ritagliare e conquistare parti del campo mentre i nemici vagano. Croce direzionale e Traccia sullo schermo. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "526a6edfcb22fc1c45d93a4171ac8e5fa06a1a7818a65d080ca511105a89612f"
+    "94d21bd584300b601756fbc4adae5d8886565439c5ee7f1119ecde7eb24c4f67"
   ]
 }

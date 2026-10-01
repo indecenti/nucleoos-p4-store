@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Pong contro il computer. Tieni premute le frecce sullo schermo (o Su/Giù su tastiera o joypad) per muovere la racchetta. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "56af518fa27c6501d2c0113df05c6da82881f943eeec86fce66cfbfe562c3906"
+    "8d62dd5efa41cbda9d0785524d46424f78a6e0cf66699fa48951a1f2ca05b39d"
   ]
 }

@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Artiglieria tra i pianeti: mira, scegli la potenza e lascia che la gravità curvi il colpo verso l'altra astronave. Due giocatori sullo stesso schermo. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "75d2ca18b65e0bc8be4ab492cd9693fa7c1ba2fa0463fac4625d6a37f52d844a"
+    "7304990e109389b97e5dd5ec6c28b7e415d4e820f0304537b13ea358630bac89"
   ]
 }

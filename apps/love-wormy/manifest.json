@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Il gioco del serpente: mangia le mele, diventa più lungo, non morderti e non sbattere contro i muri. Scorri per girare; tastiera: frecce. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "08c27fae82505f658031eb98886a07a8fbf8f935722e3d8d90a8a305a59ecb55"
+    "b7f1a20f26b57c8b820426d16f62ee9335a849bc36e3872dd342ef407dd6c3d7"
   ]
 }

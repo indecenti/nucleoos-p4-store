@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Un piccolo sparatutto: muoviti a destra e sinistra e colpisci il panda che rimbalza prima che lui colpisca te. Frecce e Fuoco sullo schermo, o tastiera e joypad. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "0fff57c4f66a4273a2f10a99c255d59114337807cd395edd4aaa8a7d5a8064b7"
+    "0758925a7167c91ca3d3426a7b03bbf8facf6f2527e02be0db25104ec68e1d0a"
   ]
 }

@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Il classico rompicapo delle mine: tocca una casella per scoprirla, i numeri dicono quante mine la toccano. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "6c96b569a15ef45f1db8da27b0a026d725285acc151587dfe8d7345b14dde94f"
+    "5407364bfcedc5c221798efd224ac886e76693528a82788111d98f41403e0673"
   ]
 }

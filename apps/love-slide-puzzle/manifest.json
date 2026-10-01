@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Il gioco del quindici: rimetti in ordine le tessere numerate. Tocca una tessera vicina al buco per farla scorrere, oppure scorri. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "9813bd908421d75f3119030fd177126d8b2a56db274ce21e1c83b615ba03cb23"
+    "4835f81864b48d6cea36dc7137d28ad89ed53680304e30e466f2afab9032b802"
   ]
 }

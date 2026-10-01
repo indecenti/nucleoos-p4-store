@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 8388608,
@@ -30,6 +30,6 @@
     "it": "Fai scorrere le tessere e unisci i numeri uguali fino a 2048. Scorri in qualsiasi direzione; tastiera: frecce. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "d3b752ef8bb61ec4d59f379be47cb1e27f1aab0aeb2a9f780cf190501bc355ef"
+    "ca09c7e20c2fc41a6ee7ca1c2c3ab3f6eba2f73b357765f7ddcf0691fcac8697"
   ]
 }

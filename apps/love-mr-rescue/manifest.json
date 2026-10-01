@@ -6,7 +6,7 @@
   "abi": 14,
   "engine": "luaapp",
   "requires": {
-    "luaapp": "1.1",
+    "luaapp": "1.2",
     "wasi": "1.1"
   },
   "ram_budget": 16777216,
@@ -31,6 +31,6 @@
     "it": "Un pompiere con l'idrante risale palazzi in fiamme, lancia dalle finestre le persone che salva e affronta i piromani. Croce direzionale, Salto, Acqua, Prendi sullo schermo. Un gioco LÖVE sul motore Lua App."
   },
   "args": [
-    "0b93eb0876d700b252ebb4990a4484fe4a19dbb38128118c67756b3eea137f0a"
+    "6e9dab565d3cf9872a522640ce98c728eb698bf8204359711707d870830346cf"
   ]
 }
