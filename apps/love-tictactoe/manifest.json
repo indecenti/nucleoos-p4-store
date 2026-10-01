@@ -1,0 +1,35 @@
+{
+  "id": "love-tictactoe",
+  "name": "Tic Tac Toe",
+  "version": "1.0.0",
+  "entry": "run",
+  "abi": 14,
+  "engine": "luaapp",
+  "requires": {
+    "luaapp": "1.1",
+    "wasi": "1.1"
+  },
+  "ram_budget": 8388608,
+  "stack_kb": 128,
+  "timeout_ms": 120000,
+  "permissions": [
+    "gfx",
+    "fs",
+    "net",
+    "log"
+  ],
+  "canvas_w": 1024,
+  "canvas_h": 600,
+  "category": "games",
+  "author": "Rafael Jacov Medel",
+  "license": "MIT",
+  "source": "https://github.com/rafaeljacov/tictactoe_minimax",
+  "description": "Noughts and crosses against a friend or an unbeatable minimax bot with three levels. Tap to play. A LÖVE game on the Lua App engine.",
+  "descriptions": {
+    "en": "Noughts and crosses against a friend or an unbeatable minimax bot with three levels. Tap to play. A LÖVE game on the Lua App engine.",
+    "it": "Tris contro un amico o contro un bot minimax imbattibile, con tre livelli. Tocca per giocare. Un gioco LÖVE sul motore Lua App."
+  },
+  "args": [
+    "eeb90ab619147506c7bb20c9f4b7b7142b69be1a448cf16cf1a0c90efe71ac11"
+  ]
+}

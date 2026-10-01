@@ -1,0 +1,35 @@
+{
+  "id": "love-gravity-wars",
+  "name": "Gravity Wars",
+  "version": "1.0.0",
+  "entry": "run",
+  "abi": 14,
+  "engine": "luaapp",
+  "requires": {
+    "luaapp": "1.1",
+    "wasi": "1.1"
+  },
+  "ram_budget": 8388608,
+  "stack_kb": 128,
+  "timeout_ms": 120000,
+  "permissions": [
+    "gfx",
+    "fs",
+    "net",
+    "log"
+  ],
+  "canvas_w": 1024,
+  "canvas_h": 600,
+  "category": "games",
+  "author": "Boris (whyboris)",
+  "license": "MIT",
+  "source": "https://github.com/whyboris/Gravity-Wars",
+  "description": "Artillery among the planets: aim, choose the power and let gravity bend the shot towards the other ship. Two players on one screen. A LÖVE game on the Lua App engine.",
+  "descriptions": {
+    "en": "Artillery among the planets: aim, choose the power and let gravity bend the shot towards the other ship. Two players on one screen. A LÖVE game on the Lua App engine.",
+    "it": "Artiglieria tra i pianeti: mira, scegli la potenza e lascia che la gravità curvi il colpo verso l'altra astronave. Due giocatori sullo stesso schermo. Un gioco LÖVE sul motore Lua App."
+  },
+  "args": [
+    "75d2ca18b65e0bc8be4ab492cd9693fa7c1ba2fa0463fac4625d6a37f52d844a"
+  ]
+}

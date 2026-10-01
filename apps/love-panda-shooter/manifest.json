@@ -1,0 +1,35 @@
+{
+  "id": "love-panda-shooter",
+  "name": "Panda Shooter",
+  "version": "1.0.0",
+  "entry": "run",
+  "abi": 14,
+  "engine": "luaapp",
+  "requires": {
+    "luaapp": "1.1",
+    "wasi": "1.1"
+  },
+  "ram_budget": 8388608,
+  "stack_kb": 128,
+  "timeout_ms": 120000,
+  "permissions": [
+    "gfx",
+    "fs",
+    "net",
+    "log"
+  ],
+  "canvas_w": 1024,
+  "canvas_h": 600,
+  "category": "games",
+  "author": "PR454D",
+  "license": "GPL-3.0",
+  "source": "https://github.com/PR454D/panda-shooter",
+  "description": "A tiny shooter: move left and right and hit the bouncing panda boss before it gets you. On-screen arrows and Fire, or a keyboard or pad. A LÖVE game on the Lua App engine.",
+  "descriptions": {
+    "en": "A tiny shooter: move left and right and hit the bouncing panda boss before it gets you. On-screen arrows and Fire, or a keyboard or pad. A LÖVE game on the Lua App engine.",
+    "it": "Un piccolo sparatutto: muoviti a destra e sinistra e colpisci il panda che rimbalza prima che lui colpisca te. Frecce e Fuoco sullo schermo, o tastiera e joypad. Un gioco LÖVE sul motore Lua App."
+  },
+  "args": [
+    "0fff57c4f66a4273a2f10a99c255d59114337807cd395edd4aaa8a7d5a8064b7"
+  ]
+}
