@@ -1,0 +1,97 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>qrencode — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>qrencode</h1><p class=desc>qrencode trasforma testo, link e credenziali Wi-Fi in un codice QR disegnato direttamente nel Terminale, pronto da inquadrare con il telefono, o salvato come file SVG. Scrivi qrencode https://example.org.</p><p class=meta>versione 4.1.1 · Licenza: LGPL-2.1-or-later · <a href='https://fukuchi.org/works/qrencode/'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>qrencode</code>.</p></aside><article><h1>qrencode</h1>
+<h2>A cosa serve</h2>
+<p>Trasforma un testo in un codice QR disegnato direttamente nel Terminale, da inquadrare con il telefono: un link da aprire, un numero, un appunto, oppure la tua rete Wi-Fi così gli ospiti si collegano senza digitare la password. Il codice si può anche salvare come immagine SVG.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qrencode https://example.org</code></td>
+<td>disegna il QR del link nel Terminale</td>
+</tr>
+<tr>
+<td><code>qrencode 'WIFI:S:NomeRete;T:WPA;P:password;;'</code></td>
+<td>QR per collegarsi a una rete Wi-Fi</td>
+</tr>
+<tr>
+<td><code>qrencode -o codice.svg 'testo'</code></td>
+<td>salva il QR in <code>codice.svg</code> nella home</td>
+</tr>
+<tr>
+<td><code>qrencode -l H 'testo'</code></td>
+<td>più correzione d'errore (L, M, Q, H): si legge anche se rovinato</td>
+</tr>
+<tr>
+<td><code>echo testo \| qrencode</code></td>
+<td>prende il testo dall'input</td>
+</tr>
+<tr>
+<td><code>qrencode -t ascii 'testo'</code></td>
+<td>versione fatta di <code>#</code>, per incollarla dove i blocchi non si vedono</td>
+</tr>
+</tbody>
+</table>
+<p>Con la shell: <code>cat appunti.txt | qrencode</code> mette un file intero nel QR (fino a circa 2900 caratteri).</p>
+<h2>Limiti</h2>
+<p>Niente PNG: per un'immagine usa <code>-o nome.svg</code> (anche <code>.eps</code> e <code>.xpm</code>). Un testo lungo dà un QR più grande del Terminale: tienilo corto, o salvalo in SVG. Il QR a schermo è bianco su nero: se il telefono fa fatica, allontanalo un po' o alza la luminosità.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>qrencode</h1><p class=desc>qrencode turns text, links and Wi-Fi credentials into a QR code drawn right in the Terminal, ready to scan with a phone, or saved as an SVG file. Type qrencode https://example.org.</p><p class=meta>version 4.1.1 · License: LGPL-2.1-or-later · <a href='https://fukuchi.org/works/qrencode/'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>qrencode</code>.</p></aside><article><h1>qrencode</h1>
+<h2>What it is for</h2>
+<p>It turns text into a QR code drawn right in the Terminal, to scan with a phone: a link to open, a number, a note, or your Wi-Fi network so guests join without typing the password. The code can also be saved as an SVG picture.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qrencode https://example.org</code></td>
+<td>draws the link's QR code in the Terminal</td>
+</tr>
+<tr>
+<td><code>qrencode 'WIFI:S:NetworkName;T:WPA;P:password;;'</code></td>
+<td>QR code to join a Wi-Fi network</td>
+</tr>
+<tr>
+<td><code>qrencode -o code.svg 'text'</code></td>
+<td>saves the QR code to <code>code.svg</code> in the home folder</td>
+</tr>
+<tr>
+<td><code>qrencode -l H 'text'</code></td>
+<td>more error correction (L, M, Q, H): still reads when damaged</td>
+</tr>
+<tr>
+<td><code>echo text \| qrencode</code></td>
+<td>takes the text from the input</td>
+</tr>
+<tr>
+<td><code>qrencode -t ascii 'text'</code></td>
+<td>made of <code>#</code>, to paste where the blocks don't show</td>
+</tr>
+</tbody>
+</table>
+<p>With the shell: <code>cat notes.txt | qrencode</code> puts a whole file in the code (up to about 2900 characters).</p>
+<h2>Limits</h2>
+<p>No PNG: for a picture use <code>-o name.svg</code> (also <code>.eps</code> and <code>.xpm</code>). Long text makes a code bigger than the Terminal: keep it short, or save it as SVG. The on-screen code is white on black: if the phone struggles, move it back a little or raise the brightness.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

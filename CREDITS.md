@@ -127,6 +127,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Glove | `ab-glove` | fuopy; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/glove) |
 | Glowfish Chess | `glowfish-chess` | Analog Hors | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glowfish-chess) |
 | Glulxe | `glulxe` | Andrew Plotkin (Glulxe, CheapGlk) | MIT | [link](https://github.com/erkyrath/glulxe) |
+| GNU units | `units` | Adrian Mariano, Russ Rogers and the Free Software Foundation | GPL-3.0-or-later | [link](https://www.gnu.org/software/units/) |
 | Gravity Wars | `love-gravity-wars` | Boris (whyboris) | MIT | [link](https://github.com/whyboris/Gravity-Wars) |
 | HAMMER JOE | `hammer-joe` | MFauzan26 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/hammer-joe) |
 | Hangman | `ab-hangman` | serisman; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/serisman/arduboy-hangman) |
@@ -239,6 +240,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Punch'Em Up | `punch-em-up` | Louis Pearson | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/punch-em-up) |
 | Puyo | `puyo` | Shigeki Karita | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/puyo) |
 | Puzzles | `puzzles` | Simon Tatham et al. | MIT | [link](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/) |
+| qrencode | `qrencode` | Kentaro Fukuchi and the libqrencode contributors | LGPL-2.1-or-later | [link](https://fukuchi.org/works/qrencode/) |
 | Quarto! | `ab-quarto` | obono; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/quarto) |
 | Racer | `racer` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/racer) |
 | Randocity | `ab-randocity` | pmwasson; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/pmwasson/Randocity) |
