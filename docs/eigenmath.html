@@ -1,0 +1,117 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Eigenmath — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Eigenmath</h1><p class=desc>Eigenmath, matematica simbolica nel Terminale: derivate, integrali, equazioni, matrici e numeri esatti di qualsiasi grandezza. Scrivi eigenmath per il prompt, oppure eigenmath -e &#x27;d(sin(x)^2,x)&#x27; per una risposta.</p><p class=meta>versione 2026.09.17 · Licenza: BSD-2-Clause · <a href='https://georgeweigt.github.io'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>eigenmath</code>.</p></aside><article><h1>Eigenmath</h1>
+<h2>A cosa serve</h2>
+<p>Matematica simbolica: derivate, integrali, radici di polinomi, matrici, serie di Taylor e numeri esatti di qualsiasi lunghezza (frazioni, radicali, interi enormi). Dove la calcolatrice dà 0,333 Eigenmath risponde 1/3.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>eigenmath</code></td>
+<td>prompt <code>?</code>: scrivi un'espressione per riga, <strong>EOF</strong> per uscire</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'd(sin(x)^2,x)'</code></td>
+<td>derivata, risultato su una riga</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'integral(x^2*exp(x),x)'</code></td>
+<td>integrale indefinito</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'defint(x^2,x,0,1)'</code></td>
+<td>integrale definito</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'roots(x^2-5x+6)'</code></td>
+<td>radici esatte (<code>nroots</code> per quelle numeriche)</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'inv(((1,2),(3,4)))'</code></td>
+<td>matrice inversa (<code>det</code> per il determinante)</td>
+</tr>
+<tr>
+<td><code>eigenmath -e '212^17'</code></td>
+<td>interi esatti di qualsiasi grandezza</td>
+</tr>
+<tr>
+<td><code>eigenmath conti.txt</code></td>
+<td>esegue un file di espressioni dalla home</td>
+</tr>
+</tbody>
+</table>
+<p>Altre funzioni: <code>simplify</code>, <code>rationalize</code>, <code>float</code> (valore decimale), <code>taylor(f,x,n)</code>, <code>sum(k,1,10,f)</code>, <code>product(k,1,10,f)</code>. Si possono definire funzioni: <code>f(x)=x^2+1</code> e poi <code>f(3)</code>.</p>
+<h2>Con Anima</h2>
+<p>È un programma di sistema: Anima lo usa da sola quando serve una risposta esatta. Puoi anche chiederle di usarlo, per esempio "quanto fa l'integrale di x^2 e^x?".</p>
+<h2>Limiti</h2>
+<p>Non disegna grafici (<code>draw</code> non fa nulla). I risultati vengono sempre sviluppati: non c'è una funzione per fattorizzare. Al prompt i risultati sono disegnati su più righe (frazioni, matrici); con <code>-e</code> stanno su una riga.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Eigenmath</h1><p class=desc>Eigenmath, symbolic math in the Terminal: derivatives, integrals, equations, matrices and exact numbers of any size. Type eigenmath for the prompt, or eigenmath -e &#x27;d(sin(x)^2,x)&#x27; for one answer.</p><p class=meta>version 2026.09.17 · License: BSD-2-Clause · <a href='https://georgeweigt.github.io'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>eigenmath</code>.</p></aside><article><h1>Eigenmath</h1>
+<h2>What it is for</h2>
+<p>Symbolic math: derivatives, integrals, polynomial roots, matrices, Taylor series and exact numbers of any length (fractions, radicals, huge integers). Where a calculator says 0.333, Eigenmath answers 1/3.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>eigenmath</code></td>
+<td><code>?</code> prompt: one expression per line, <strong>EOF</strong> to leave</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'd(sin(x)^2,x)'</code></td>
+<td>derivative, result on one line</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'integral(x^2*exp(x),x)'</code></td>
+<td>indefinite integral</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'defint(x^2,x,0,1)'</code></td>
+<td>definite integral</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'roots(x^2-5x+6)'</code></td>
+<td>exact roots (<code>nroots</code> for numeric ones)</td>
+</tr>
+<tr>
+<td><code>eigenmath -e 'inv(((1,2),(3,4)))'</code></td>
+<td>inverse matrix (<code>det</code> for the determinant)</td>
+</tr>
+<tr>
+<td><code>eigenmath -e '212^17'</code></td>
+<td>exact integers of any size</td>
+</tr>
+<tr>
+<td><code>eigenmath sums.txt</code></td>
+<td>runs a file of expressions from the home folder</td>
+</tr>
+</tbody>
+</table>
+<p>More: <code>simplify</code>, <code>rationalize</code>, <code>float</code> (decimal value), <code>taylor(f,x,n)</code>, <code>sum(k,1,10,f)</code>, <code>product(k,1,10,f)</code>. Define functions: <code>f(x)=x^2+1</code>, then <code>f(3)</code>.</p>
+<h2>With Anima</h2>
+<p>It is a system program: Anima uses it by itself when an exact answer is needed. You can also ask for it, for example "what is the integral of x^2 e^x?".</p>
+<h2>Limits</h2>
+<p>No plots (<code>draw</code> does nothing). Results are always expanded: there is no factoring function. At the prompt results are drawn over several lines (fractions, matrices); with <code>-e</code> they stay on one line.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

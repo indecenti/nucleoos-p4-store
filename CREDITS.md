@@ -73,6 +73,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Dark & Under | `ab-dark-and-under` | Garage Collective (Cyril Guichard (Luxregina), Simon Holmes (Filmote), Pharap); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/Dark-And-Under) |
 | Dashy Dango | `dashy-dango` | samX500 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/dashy-dango) |
 | Dashy no Witch | `gbh-dashy-no-witch` | voxel; Peanut-GB by Mahyar Koshkouei | 0BSD (game); MIT (emulator) | [link](https://voxel.itch.io/dashy-no-witch) |
+| dateutils | `dateutils` | Sebastian Freundt | BSD-3-Clause | [link](https://www.fresse.org/dateutils/) |
 | Deadly Standards | `deadlystd` | Various authors | CC BY-NC 4.0 | [link](https://www.doomworld.com/idgames/levels/doom/Ports/s-u/standard) |
 | Deathless | `deathless` | Jimmy (James Paddock) | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom/Ports/megawads/deathless) |
 | Delightful Wallpaper | `if-delightful-wallpaper` | Andrew Plotkin (as Edgar O. Weyrd); interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=jf4rk3cvmlajhl2r) |
@@ -97,6 +98,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Duck Maze | `duck-maze` | Julia Marques Sanches | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/duck-maze) |
 | Earth Invaders | `earth-invaders` | Yara F. Scramin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/earth-invaders) |
 | Edge Valley Bigfoot Society | `if-bigfoot-society` | NegSec; interpreter: Glulxe + CheapGlk | GPL (version not stated) (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=vefh91bon5y6jfp0) |
+| Eigenmath | `eigenmath` | George Weigt | BSD-2-Clause | [link](https://georgeweigt.github.io) |
 | El Dueloroso | `gbh-el-dueloroso` | Adrián JG; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/ajgalan/el-dueloroso) |
 | Endless Runner | `endless-runner` | Richard McCormack | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/endless-runner) |
 | Escape Guldur | `escape-guldur` | Chris Heyes | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/escape-guldur) |
@@ -141,6 +143,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Home | `casa` | NucleoOS | MIT |  |
 | Hoosegow | `if-hoosegow` | Ben Collins-Sussman & Jack Welch; interpreter: Frotz 2.55 | CC BY-NC-SA 3.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=p2bxy33newzb930t) |
 | Hopper | `ab-hopper` | OBONO; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/hopper) |
+| html2text | `html2text` | Martin Bayer, Arno Unkrig and the html2text contributors | GPL-2.0-or-later | [link](https://github.com/grobian/html2text) |
 | Humanity Revenge DC | `ab-humanity-revenge` | giangregorioc; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/Humanity_Revenge_DC) |
 | i4arduboy | `ab-l4arduboy` | Amamoriya Yomogimaru; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/i4arduboy) |
 | Image Carousel | `image-carousel` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/image-carousel) |
@@ -170,6 +173,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Lists and Lists | `if-lists-and-lists` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t) |
 | Lite Out | `ab-lite-out` | K. M. Kroski; Arduboy2 library by Scott Allen and contributors | Unlicense (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/ArduboyLiteOut) |
 | LoveRush | `ab-loverush` | Stephane Cote (Vampirics); Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/vampirics/LoveRush) |
+| lowdown | `lowdown` | Kristaps Dzonsons | ISC | [link](https://kristaps.bsd.lv/lowdown/) |
 | Lua | `lua` | Lua.org, PUC-Rio | MIT | [link](https://www.lua.org) |
 | Lua App | `luaapp` | NucleoOS (Lua 5.4 by Lua.org, PUC-Rio; json.lua by rxi; Montserrat by the Montserrat Project) | MIT (engine, Lua, json.lua), SIL OFL 1.1 (Montserrat font) | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/ports/luaapp) |
 | Lumber Night | `lumber-night` | Vitaly | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lumber-night) |
@@ -357,7 +361,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Vertice Bass | `bass` | NucleoOS |  |  |
 | Vertice GP | `vxgp` | NucleoOS |  |  |
 | Villa Morgana | `if-villa-morgana` | Paolo Lucchesi; interpreter: Frotz 2.55 | GPL-2.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=57wq8ncspbsdktg2) |
-| W4 Test | `w4test` |  |  |  |
 | WASM Invaders | `wasminvaders` | Lorenzo Henrique Zanetti, Matheus Cener | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasminvaders) |
 | Wasm Wars | `wasm-wars` | Daniel Kiyoshi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasm-wars) |
 | WASM-4 City | `wasm4-city` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasm4-city) |

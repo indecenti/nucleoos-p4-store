@@ -1,0 +1,99 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>html2text — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>html2text</h1><p class=desc>html2text trasforma pagine web e file HTML in testo semplice leggibile: titoli, elenchi, tabelle, link. Scrivi curl -s https://example.org | html2text, oppure html2text pagina.html.</p><p class=meta>versione 2.2.3 · Licenza: GPL-2.0-or-later · <a href='https://github.com/grobian/html2text'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>html2text</code>.</p></aside><article><h1>html2text</h1>
+<h2>A cosa serve</h2>
+<p>Trasforma una pagina web o un file HTML in testo semplice da leggere: titoli, paragrafi, elenchi e tabelle restano, script, stili e menu spariscono. Con <code>curl</code> legge le pagine direttamente da internet.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>curl -s https://example.org \| html2text</code></td>
+<td>una pagina web come testo</td>
+</tr>
+<tr>
+<td><code>curl -s URL \| html2text \| less</code></td>
+<td>da sfogliare con calma</td>
+</tr>
+<tr>
+<td><code>html2text pagina.html</code></td>
+<td>un file HTML della home</td>
+</tr>
+<tr>
+<td><code>html2text -links pagina.html</code></td>
+<td>in fondo l'elenco degli indirizzi dei link</td>
+</tr>
+<tr>
+<td><code>html2text -width 60 pagina.html</code></td>
+<td>va a capo a 60 colonne</td>
+</tr>
+<tr>
+<td><code>curl -s URL \| html2text &gt; pagina.txt</code></td>
+<td>salva il testo in un file</td>
+</tr>
+</tbody>
+</table>
+<h2>Con Anima</h2>
+<p>È un programma di sistema: Anima lo usa da sola quando serve una risposta esatta. Puoi anche chiederle di usarlo, per esempio "leggimi le notizie da questa pagina".</p>
+<h2>Limiti</h2>
+<p>Le pagine costruite da JavaScript (molti siti moderni) arrivano quasi vuote: il testo lo crea il browser, non c'è nell'HTML. Le pagine senza codifica dichiarata sono lette come UTF-8.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>html2text</h1><p class=desc>html2text turns web pages and HTML files into readable plain text: headings, lists, tables, links. Type curl -s https://example.org | html2text, or html2text page.html.</p><p class=meta>version 2.2.3 · License: GPL-2.0-or-later · <a href='https://github.com/grobian/html2text'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>html2text</code>.</p></aside><article><h1>html2text</h1>
+<h2>What it is for</h2>
+<p>It turns a web page or an HTML file into plain readable text: headings, paragraphs, lists and tables stay, scripts, styles and menus go. With <code>curl</code> it reads pages straight from the internet.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>curl -s https://example.org \| html2text</code></td>
+<td>a web page as text</td>
+</tr>
+<tr>
+<td><code>curl -s URL \| html2text \| less</code></td>
+<td>to page through it</td>
+</tr>
+<tr>
+<td><code>html2text page.html</code></td>
+<td>an HTML file in the home folder</td>
+</tr>
+<tr>
+<td><code>html2text -links page.html</code></td>
+<td>the link targets listed at the end</td>
+</tr>
+<tr>
+<td><code>html2text -width 60 page.html</code></td>
+<td>wraps at 60 columns</td>
+</tr>
+<tr>
+<td><code>curl -s URL \| html2text &gt; page.txt</code></td>
+<td>saves the text to a file</td>
+</tr>
+</tbody>
+</table>
+<h2>With Anima</h2>
+<p>It is a system program: Anima uses it by itself when an exact answer is needed. You can also ask for it, for example "read me the news on this page".</p>
+<h2>Limits</h2>
+<p>Pages built by JavaScript (many modern sites) come out nearly empty: the browser makes that text, it is not in the HTML. Pages that declare no encoding are read as UTF-8.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

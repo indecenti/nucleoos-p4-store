@@ -1,0 +1,125 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>dateutils — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>dateutils</h1><p class=desc>dateutils: calcoli con le date nel Terminale. dateadd, datediff, dateseq, dateconv, dateround, datetest, dategrep e strptime contano giorni, settimane, mesi e giorni lavorativi. Scrivi datediff 2026-10-02 2026-12-25.</p><p class=meta>versione 0.4.12 · Licenza: BSD-3-Clause · <a href='https://www.fresse.org/dateutils/'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>dateutils</code>.</p></aside><article><h1>dateutils</h1>
+<h2>A cosa serve</h2>
+<p>Calcoli con le date senza sbagliare: quanti giorni mancano, che giorno sarà fra 45 giorni o fra 10 giorni lavorativi, sequenze di scadenze, conversione di formati.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>datediff 2026-10-02 2026-12-25</code></td>
+<td>giorni tra due date (<code>-f '%w weeks %d days'</code> per settimane e giorni)</td>
+</tr>
+<tr>
+<td><code>dateadd 2026-10-02 +45d</code></td>
+<td>data fra 45 giorni (<code>+3w</code> settimane, <code>+2mo</code> mesi, <code>-1y</code> anni)</td>
+</tr>
+<tr>
+<td><code>dateadd 2026-10-02 +10b</code></td>
+<td>fra 10 giorni lavorativi (salta sabati e domeniche)</td>
+</tr>
+<tr>
+<td><code>dateseq 2026-10-01 +1w 2026-11-01</code></td>
+<td>una data ogni settimana tra le due</td>
+</tr>
+<tr>
+<td><code>dateconv 2026-10-02 -f '%A %d %B %Y'</code></td>
+<td>la data scritta per esteso</td>
+</tr>
+<tr>
+<td><code>dateround 2026-10-02 Mon</code></td>
+<td>il prossimo lunedì</td>
+</tr>
+<tr>
+<td><code>datetest 2026-10-02 --lt 2026-12-25</code></td>
+<td>confronto (risponde con lo stato di uscita)</td>
+</tr>
+<tr>
+<td><code>dategrep '&gt;=2026-10-01' &lt; scadenze.txt</code></td>
+<td>le righe con date da ottobre in poi</td>
+</tr>
+<tr>
+<td><code>strptime -i '%d/%m/%Y' 02/10/2026</code></td>
+<td>legge date scritte all'italiana</td>
+</tr>
+</tbody>
+</table>
+<p><code>now</code> e <code>today</code> valgono come data di oggi. <code>dateutils</code> da solo elenca i comandi; ognuno ha <code>--help</code>.</p>
+<h2>Con Anima</h2>
+<p>È un programma di sistema: Anima lo usa da sola quando serve una risposta esatta. Puoi anche chiederle di usarlo, per esempio "quanti giorni lavorativi mancano a Natale?".</p>
+<h2>Limiti</h2>
+<p>Gli orari sono in UTC e i fusi orari (<code>datezone</code>) richiedono i file zoneinfo, che non sono inclusi. I nomi di giorni e mesi sono in inglese. <code>datesort</code> non c'è.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>dateutils</h1><p class=desc>dateutils: date arithmetic in the Terminal. dateadd, datediff, dateseq, dateconv, dateround, datetest, dategrep and strptime count days, weeks, months and business days. Type datediff 2026-10-02 2026-12-25.</p><p class=meta>version 0.4.12 · License: BSD-3-Clause · <a href='https://www.fresse.org/dateutils/'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>dateutils</code>.</p></aside><article><h1>dateutils</h1>
+<h2>What it is for</h2>
+<p>Date arithmetic without mistakes: how many days are left, which day it will be in 45 days or in 10 business days, series of deadlines, format conversions.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>datediff 2026-10-02 2026-12-25</code></td>
+<td>days between two dates (<code>-f '%w weeks %d days'</code> for weeks and days)</td>
+</tr>
+<tr>
+<td><code>dateadd 2026-10-02 +45d</code></td>
+<td>the date in 45 days (<code>+3w</code> weeks, <code>+2mo</code> months, <code>-1y</code> years)</td>
+</tr>
+<tr>
+<td><code>dateadd 2026-10-02 +10b</code></td>
+<td>in 10 business days (skips weekends)</td>
+</tr>
+<tr>
+<td><code>dateseq 2026-10-01 +1w 2026-11-01</code></td>
+<td>one date per week between the two</td>
+</tr>
+<tr>
+<td><code>dateconv 2026-10-02 -f '%A %d %B %Y'</code></td>
+<td>the date written out</td>
+</tr>
+<tr>
+<td><code>dateround 2026-10-02 Mon</code></td>
+<td>the next Monday</td>
+</tr>
+<tr>
+<td><code>datetest 2026-10-02 --lt 2026-12-25</code></td>
+<td>comparison (answers with the exit status)</td>
+</tr>
+<tr>
+<td><code>dategrep '&gt;=2026-10-01' &lt; deadlines.txt</code></td>
+<td>lines with dates from October on</td>
+</tr>
+<tr>
+<td><code>strptime -i '%d/%m/%Y' 02/10/2026</code></td>
+<td>reads dates in other formats</td>
+</tr>
+</tbody>
+</table>
+<p><code>now</code> and <code>today</code> mean today. <code>dateutils</code> alone lists the tools; each one takes <code>--help</code>.</p>
+<h2>With Anima</h2>
+<p>It is a system program: Anima uses it by itself when an exact answer is needed. You can also ask for it, for example "how many business days until Christmas?".</p>
+<h2>Limits</h2>
+<p>Times are UTC and time zones (<code>datezone</code>) need the zoneinfo files, which are not included. Day and month names are English. <code>datesort</code> is not included.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

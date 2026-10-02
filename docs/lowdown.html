@@ -1,0 +1,99 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>lowdown — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>lowdown</h1><p class=desc>lowdown mostra i file Markdown formattati nel Terminale e li converte in HTML, pagine man, LaTeX o OpenDocument. Scrivi lowdown -tterm LEGGIMI.md.</p><p class=meta>versione 3.0.1 · Licenza: ISC · <a href='https://kristaps.bsd.lv/lowdown/'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>lowdown</code>.</p></aside><article><h1>lowdown</h1>
+<h2>A cosa serve</h2>
+<p>Legge i file Markdown (<code>.md</code>, quelli delle guide e dei LEGGIMI) e li mostra formattati nel Terminale, con titoli, grassetti, elenchi e tabelle. Li converte anche in HTML, pagine man, LaTeX e OpenDocument (<code>.fodt</code>, si apre con LibreOffice).</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lowdown -tterm note.md</code></td>
+<td>il file formattato nel Terminale</td>
+</tr>
+<tr>
+<td><code>lowdown -tterm note.md \| less</code></td>
+<td>da sfogliare</td>
+</tr>
+<tr>
+<td><code>lowdown -thtml -s note.md -o note.html</code></td>
+<td>una pagina HTML completa</td>
+</tr>
+<tr>
+<td><code>lowdown -s -tfodt note.md -o note.fodt</code></td>
+<td>un documento per LibreOffice</td>
+</tr>
+<tr>
+<td><code>lowdown -tman pagina.md</code></td>
+<td>una pagina man</td>
+</tr>
+<tr>
+<td><code>cat note.md \| lowdown -tterm</code></td>
+<td>legge dall'input</td>
+</tr>
+</tbody>
+</table>
+<h2>Con Anima</h2>
+<p>È un programma di sistema: Anima lo usa da sola quando serve una risposta esatta. Puoi anche chiederle di usarlo, per esempio "trasforma i miei appunti in una pagina HTML".</p>
+<h2>Limiti</h2>
+<p>Le immagini nei documenti diventano un riferimento testuale nel Terminale. I colori seguono il tema del Terminale.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>lowdown</h1><p class=desc>lowdown shows Markdown files formatted in the Terminal and converts them to HTML, man pages, LaTeX or OpenDocument. Type lowdown -tterm README.md.</p><p class=meta>version 3.0.1 · License: ISC · <a href='https://kristaps.bsd.lv/lowdown/'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>lowdown</code>.</p></aside><article><h1>lowdown</h1>
+<h2>What it is for</h2>
+<p>It reads Markdown files (<code>.md</code>, like guides and READMEs) and shows them formatted in the Terminal, with headings, bold, lists and tables. It also converts them to HTML, man pages, LaTeX and OpenDocument (<code>.fodt</code>, opens in LibreOffice).</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lowdown -tterm notes.md</code></td>
+<td>the file formatted in the Terminal</td>
+</tr>
+<tr>
+<td><code>lowdown -tterm notes.md \| less</code></td>
+<td>to page through it</td>
+</tr>
+<tr>
+<td><code>lowdown -thtml -s notes.md -o notes.html</code></td>
+<td>a complete HTML page</td>
+</tr>
+<tr>
+<td><code>lowdown -s -tfodt notes.md -o notes.fodt</code></td>
+<td>a document for LibreOffice</td>
+</tr>
+<tr>
+<td><code>lowdown -tman page.md</code></td>
+<td>a man page</td>
+</tr>
+<tr>
+<td><code>cat notes.md \| lowdown -tterm</code></td>
+<td>reads from the input</td>
+</tr>
+</tbody>
+</table>
+<h2>With Anima</h2>
+<p>It is a system program: Anima uses it by itself when an exact answer is needed. You can also ask for it, for example "turn my notes into an HTML page".</p>
+<h2>Limits</h2>
+<p>Images in documents become a text reference in the Terminal. Colours follow the Terminal theme.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
