@@ -245,6 +245,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Punch'Em Up | `punch-em-up` | Louis Pearson | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/punch-em-up) |
 | Puyo | `puyo` | Shigeki Karita | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/puyo) |
 | Puzzles | `puzzles` | Simon Tatham et al. | MIT | [link](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/) |
+| Python | `python` | MicroPython (Damien P. George and contributors) | MIT | [link](https://micropython.org) |
 | qrencode | `qrencode` | Kentaro Fukuchi and the libqrencode contributors | LGPL-2.1-or-later | [link](https://fukuchi.org/works/qrencode/) |
 | Quarto! | `ab-quarto` | obono; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/quarto) |
 | Racer | `racer` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/racer) |

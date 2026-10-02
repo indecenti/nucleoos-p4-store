@@ -1,0 +1,119 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Python — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Python</h1><p class=desc>Python 3 (MicroPython 1.26) nel Terminale: prompt interattivo, script e moduli (os, json, re, math, random...). Scrivi python, oppure python script.py.</p><p class=meta>versione 1.26.1 · Licenza: MIT · <a href='https://micropython.org'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>python</code>.</p></aside><article><h1>Python</h1>
+<h2>A cosa serve</h2>
+<p>Python 3 nella versione MicroPython 1.26: lo stesso linguaggio, pensato per dispositivi piccoli. Qui hai il prompt interattivo, per provare al volo, e l'esecuzione di file <code>.py</code> con i loro moduli.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>python</code></td>
+<td>apre il prompt interattivo (<code>&gt;&gt;&gt;</code>)</td>
+</tr>
+<tr>
+<td><code>python script.py</code></td>
+<td>esegue un file dalla cartella home</td>
+</tr>
+<tr>
+<td><code>python script.py a b</code></td>
+<td>passa argomenti, letti in <code>sys.argv</code></td>
+</tr>
+<tr>
+<td><code>python -c "print(2**100)"</code></td>
+<td>esegue una riga di codice</td>
+</tr>
+<tr>
+<td><code>python -m modulo</code></td>
+<td>importa ed esegue un modulo</td>
+</tr>
+</tbody>
+</table>
+<p>Nel prompt i blocchi (<code>for</code>, <code>def</code>, <code>if</code>) continuano con <code>...</code>: una riga vuota li chiude.</p>
+<pre><code class="language-python">&gt;&gt;&gt; sum(x * x for x in range(10))
+285
+&gt;&gt;&gt; import json; json.dumps({&quot;a&quot;: [1, 2]})
+'{&quot;a&quot;: [1, 2]}'
+</code></pre>
+<p>Moduli inclusi, pronti da importare:</p>
+<ul>
+<li><strong>sistema e file</strong>: <code>os</code> (con <code>os.path</code>, <code>os.walk</code>, <code>os.makedirs</code>), <code>pathlib</code>, <code>shutil</code>, <code>tempfile</code>, <code>stat</code>, <code>sys</code>, <code>io</code>, <code>gc</code>, <code>errno</code></li>
+<li><strong>dati e testo</strong>: <code>json</code>, <code>re</code>, <code>string</code>, <code>textwrap</code>, <code>html</code>, <code>base64</code>, <code>binascii</code>, <code>struct</code>, <code>pprint</code></li>
+<li><strong>numeri e tempo</strong>: <code>math</code>, <code>cmath</code>, <code>random</code>, <code>datetime</code>, <code>time</code>, <code>bisect</code>, <code>heapq</code></li>
+<li><strong>strutture e funzioni</strong>: <code>collections</code> (anche <code>defaultdict</code>), <code>itertools</code>, <code>functools</code>, <code>operator</code>, <code>copy</code>, <code>contextlib</code>, <code>abc</code>, <code>types</code>, <code>inspect</code></li>
+<li><strong>archivi e sicurezza</strong>: <code>gzip</code>, <code>tarfile</code>, <code>deflate</code>, <code>hashlib</code>, <code>hmac</code></li>
+<li><strong>programmi</strong>: <code>argparse</code>, <code>logging</code>, <code>unittest</code>, <code>traceback</code>, <code>warnings</code>, <code>locale</code>, <code>keyword</code></li>
+</ul>
+<p>I tuoi moduli vanno accanto allo script, in <code>/lib</code> o in <code>/py</code> (cioè <code>/sdcard/home/lib</code>, <code>/sdcard/home/py</code>).</p>
+<p>Per uscire: <strong>EOF</strong>, oppure <code>exit()</code>.</p>
+<h2>Limiti</h2>
+<p>È MicroPython, non CPython: niente <code>pip</code>, <code>threading</code>, <code>socket</code>, <code>asyncio</code>, <code>subprocess</code>. Ricorsione fino a circa 1000 livelli (come CPython), poi <code>RuntimeError</code>. Memoria: fino a 8 MB.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D). <strong>STOP</strong> interrompe subito il programma.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Python</h1><p class=desc>Python 3 (MicroPython 1.26) in the Terminal: interactive prompt, scripts and modules (os, json, re, math, random...). Type python, or python script.py.</p><p class=meta>version 1.26.1 · License: MIT · <a href='https://micropython.org'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>python</code>.</p></aside><article><h1>Python</h1>
+<h2>What it is</h2>
+<p>Python 3 as MicroPython 1.26: the same language, built for small devices. You get the interactive prompt, to try things out, and <code>.py</code> file execution with your own modules.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>python</code></td>
+<td>opens the interactive prompt (<code>&gt;&gt;&gt;</code>)</td>
+</tr>
+<tr>
+<td><code>python script.py</code></td>
+<td>runs a file from the home folder</td>
+</tr>
+<tr>
+<td><code>python script.py a b</code></td>
+<td>passes arguments, read from <code>sys.argv</code></td>
+</tr>
+<tr>
+<td><code>python -c "print(2**100)"</code></td>
+<td>runs one line of code</td>
+</tr>
+<tr>
+<td><code>python -m module</code></td>
+<td>imports and runs a module</td>
+</tr>
+</tbody>
+</table>
+<p>At the prompt, blocks (<code>for</code>, <code>def</code>, <code>if</code>) continue with <code>...</code>: an empty line closes them.</p>
+<pre><code class="language-python">&gt;&gt;&gt; sum(x * x for x in range(10))
+285
+&gt;&gt;&gt; import json; json.dumps({&quot;a&quot;: [1, 2]})
+'{&quot;a&quot;: [1, 2]}'
+</code></pre>
+<p>Built-in modules, ready to import:</p>
+<ul>
+<li><strong>system and files</strong>: <code>os</code> (with <code>os.path</code>, <code>os.walk</code>, <code>os.makedirs</code>), <code>pathlib</code>, <code>shutil</code>, <code>tempfile</code>, <code>stat</code>, <code>sys</code>, <code>io</code>, <code>gc</code>, <code>errno</code></li>
+<li><strong>data and text</strong>: <code>json</code>, <code>re</code>, <code>string</code>, <code>textwrap</code>, <code>html</code>, <code>base64</code>, <code>binascii</code>, <code>struct</code>, <code>pprint</code></li>
+<li><strong>numbers and time</strong>: <code>math</code>, <code>cmath</code>, <code>random</code>, <code>datetime</code>, <code>time</code>, <code>bisect</code>, <code>heapq</code></li>
+<li><strong>structures and functions</strong>: <code>collections</code> (also <code>defaultdict</code>), <code>itertools</code>, <code>functools</code>, <code>operator</code>, <code>copy</code>, <code>contextlib</code>, <code>abc</code>, <code>types</code>, <code>inspect</code></li>
+<li><strong>archives and security</strong>: <code>gzip</code>, <code>tarfile</code>, <code>deflate</code>, <code>hashlib</code>, <code>hmac</code></li>
+<li><strong>programs</strong>: <code>argparse</code>, <code>logging</code>, <code>unittest</code>, <code>traceback</code>, <code>warnings</code>, <code>locale</code>, <code>keyword</code></li>
+</ul>
+<p>Your own modules go next to the script, in <code>/lib</code> or in <code>/py</code> (that is <code>/sdcard/home/lib</code>, <code>/sdcard/home/py</code>).</p>
+<p>To leave: <strong>EOF</strong>, or <code>exit()</code>.</p>
+<h2>Limits</h2>
+<p>It is MicroPython, not CPython: no <code>pip</code>, <code>threading</code>, <code>socket</code>, <code>asyncio</code>, <code>subprocess</code>. Recursion up to about 1000 levels (like CPython), then <code>RuntimeError</code>. Memory: up to 8 MB.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> closes the input (like Ctrl-D). <strong>STOP</strong> stops the program at once.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): to the program that folder is <code>/</code>.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
