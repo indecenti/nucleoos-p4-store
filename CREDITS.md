@@ -217,6 +217,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Panda Shooter | `love-panda-shooter` | PR454D | GPL-3.0 | [link](https://github.com/PR454D/panda-shooter) |
 | panelpon4 | `panelpon4` | CanyonTurtle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/panelpon4) |
 | Particle Editor v1.0 | `particle-editor` | Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/particle-editor) |
+| PDFio tools | `pdfio` | Michael R Sweet | Apache-2.0 (PDFio); Zlib (zlib) | [link](https://www.msweet.org/pdfio/) |
 | Pega-Pega: the game | `pega-pega-the-game` | Ana Paula Crippa, Maria Eduarda Polican | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pega-pega-the-game) |
 | Pelmanism | `gbh-pelmanism` | TeamKNOx (Osamu Ohashi); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://gitlab.com/teamknox/gbccardgame) |
 | pForth | `pforth` | Phil Burk, Larry Polansky, David Rosenboom | 0BSD | [link](https://github.com/philburk/pforth) |
@@ -388,5 +389,6 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Zone 300 | `zone300` | Paul Corfiatis | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/zone300) |
 | Zoop Zoop Bee Adventures 7 | `zoopzoop` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zoopzoop) |
 | Zork I-III | `zork` | Infocom / Microsoft; MojoZork by Ryan C. Gordon | MIT (games), zlib (interpreter) | [link](https://github.com/historicalsource/zork1) |
+| zstd | `zstd` | Meta Platforms (zstd), Jean-loup Gailly and Mark Adler (zlib), the Tukaani project (xz) | BSD-3-Clause (zstd); Zlib (zlib); 0BSD (liblzma) | [link](https://facebook.github.io/zstd/) |
 | ZxZ | `zxz` | cisaw Dercz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zxz) |
 | Zypher | `gbh-zypher` | PixelPhobicGames; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/PixelPhobicGames/Zypher) |

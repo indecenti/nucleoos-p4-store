@@ -1,0 +1,99 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>PDFio tools — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>PDFio tools</h1><p class=desc>Strumenti PDF di PDFio: pdftotext estrae il testo di un PDF, pdfinfo ne mostra dati e pagine, pdfmerge unisce più PDF. Scrivi pdftotext documento.pdf.</p><p class=meta>versione 1.6.5 · Licenza: Apache-2.0 (PDFio); Zlib (zlib) · <a href='https://www.msweet.org/pdfio/'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>pdfio</code>.</p></aside><article><h1>Strumenti PDF (PDFio)</h1>
+<h2>A cosa serve</h2>
+<p>Legge i PDF dal Terminale: estrae il testo di tutte le pagine, mostra titolo, autore, date e numero di pagine, e unisce più PDF in uno solo. Con il testo estratto Anima può riassumere un documento, cercare una cifra in una bolletta o rispondere a domande su un manuale.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pdftotext bolletta.pdf</code></td>
+<td>il testo di tutte le pagine</td>
+</tr>
+<tr>
+<td><code>pdftotext manuale.pdf \| less</code></td>
+<td>da sfogliare</td>
+</tr>
+<tr>
+<td><code>pdftotext manuale.pdf \| grep -i garanzia</code></td>
+<td>cerca una parola</td>
+</tr>
+<tr>
+<td><code>pdftotext doc.pdf &gt; doc.txt</code></td>
+<td>salva il testo in un file</td>
+</tr>
+<tr>
+<td><code>pdfinfo doc.pdf</code></td>
+<td>titolo, autore, date, pagine e formato</td>
+</tr>
+<tr>
+<td><code>pdfmerge -o tutto.pdf a.pdf b.pdf</code></td>
+<td>unisce più PDF</td>
+</tr>
+</tbody>
+</table>
+<h2>Con Anima</h2>
+<p>È un programma di sistema: chiedi per esempio "riassumimi il PDF che ho scaricato" o "quanto devo pagare nella bolletta?".</p>
+<h2>Limiti</h2>
+<p>I PDF scansionati sono solo immagini: non contengono testo da estrarre. L'ordine del testo segue quello del file, quindi colonne e tabelle complesse possono uscire mescolate. Niente immagini né moduli.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>PDFio tools</h1><p class=desc>PDF tools from PDFio: pdftotext extracts the text of a PDF, pdfinfo shows its details and pages, pdfmerge joins several PDFs. Type pdftotext document.pdf.</p><p class=meta>version 1.6.5 · License: Apache-2.0 (PDFio); Zlib (zlib) · <a href='https://www.msweet.org/pdfio/'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>pdfio</code>.</p></aside><article><h1>PDF tools (PDFio)</h1>
+<h2>What it is for</h2>
+<p>It reads PDFs from the Terminal: extracts the text of every page, shows title, author, dates and page count, and joins several PDFs into one. With the extracted text Anima can summarise a document, find an amount in a bill or answer questions about a manual.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pdftotext bill.pdf</code></td>
+<td>the text of every page</td>
+</tr>
+<tr>
+<td><code>pdftotext manual.pdf \| less</code></td>
+<td>to page through it</td>
+</tr>
+<tr>
+<td><code>pdftotext manual.pdf \| grep -i warranty</code></td>
+<td>finds a word</td>
+</tr>
+<tr>
+<td><code>pdftotext doc.pdf &gt; doc.txt</code></td>
+<td>saves the text to a file</td>
+</tr>
+<tr>
+<td><code>pdfinfo doc.pdf</code></td>
+<td>title, author, dates, pages and size</td>
+</tr>
+<tr>
+<td><code>pdfmerge -o all.pdf a.pdf b.pdf</code></td>
+<td>joins several PDFs</td>
+</tr>
+</tbody>
+</table>
+<h2>With Anima</h2>
+<p>It is a system program: ask for example "summarise the PDF I downloaded" or "how much do I owe on this bill?".</p>
+<h2>Limits</h2>
+<p>Scanned PDFs are only images: there is no text to extract. Text comes out in the file's order, so columns and complex tables may come out mixed. No images or forms.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
