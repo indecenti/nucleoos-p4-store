@@ -1,0 +1,6 @@
+nucleoos-data-v1
+wiki-es-top
+2026.7
+anima/kb
+9f31ee98ec2bdcb4baf0d547bda854bec466b2a2ca5428ec32746eacb75b3ff0 33740210 wikipedia_es_top.akb6 https://github.com/indecenti/nucleoos-p4-store/releases/download/kb-2026.10/wikipedia_es_top.akb6
+sig 3044022066e501e7ba54169706f441d378f7e7a201e09026aa63487c2718d83e87cfcce602205a243b9c46681e7d1394df1e1dcf693dafcf0db94a9150b91584dd775dc8d505
