@@ -6,6 +6,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 |---|---|---|---|---|
 | 1000 Lines 2 | `thousandlines2` | Liberation and the 1000 Lines team | CC BY 4.0 | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/1klinecp2) |
 | 1000 Lines 3 | `thousandlines3` | Liberation and the 1000 Lines team | CC BY 4.0 | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/1k3v1a) |
+| 1nvader | `ab-1nvader` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/1nvader) |
 | 2048 | `2048` | Peter Hellberg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/2048) |
 | 2048 | `love-2048` | Przemek Bdaruk (Przemekkkth) | MIT | [link](https://github.com/Przemekkkth/love-2048) |
 | 2048 (Game Boy) | `gb2048` | Sanqui (game), tiles by beware; Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/Sanqui/2048-gb) |
@@ -15,7 +16,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | 7heaven | `gbh-7heaven` | Nikku4211; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/nikku4211/7heaven) |
 | A Change in the Weather | `if-change-in-the-weather` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=00wlim27k5d1hmf2) |
 | A Simple Space Invaders game | `simple-space-invaders` | LogicProjects | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/simple-space-invaders) |
-| ABC 123 | `abc123` |  |  |  |
+| ABC 123 | `abc123` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Abducted | `gbh-abducted` | Micheal MacLean (grimmrobegames); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/mrmmaclean/Abducted) |
 | Adventure | `if-adventure` | Will Crowther & Don Woods; Glulx port by Daniel Fox Franke; interpreter: Glulxe + CheapGlk | BSD-2-Clause (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=fft6pu91j85y4acv) |
 | Air quality | `aria` | NucleoOS (data: Open-Meteo, CAMS) | MIT (app), CC BY 4.0 (data) | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/apps/aria) |
@@ -24,12 +25,15 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | All Things Devours | `if-all-things-devours` | Toby Ord (half sick of shadows); interpreter: Frotz 2.55 | Public domain (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=5e23lnq25gon9tp3) |
 | Annoying Robots | `annoyingrobots` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/annoyingrobots) |
 | Antcopter | `antcopter` | Eduardo Bart | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/antcopter) |
+| APara | `ab-apara` | leovt; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/APara) |
 | Apple Game | `apple-game` | João Gabriel de Campos Nassar | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/apple-game) |
 | ARDecipher | `ab-ardecipher` | databhor; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/databhor/ARDecipher) |
 | Ardu Buggy | `ab-ardu-buggy` | NonoNano; Arduboy2 library by Scott Allen and contributors | Unlicense (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/ArduBuggy) |
+| Ardu-man | `ab-ardu-man` | Seth Robinson; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/arduman_arduboylib11) |
 | ArduboyLife | `ab-arduboy-life` | Scott Allen (MLXXXp); Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/MLXXXp/ArduboyLife) |
 | ARDUBULLETs | `ab-ardubullets` | obono; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/ardubullets) |
 | ArduLO | `ab-ardulo` | Jon Thysell; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/jonthysell/ArduLO) |
+| Ardusweeper | `ab-ardusweeper` | Julien Bellue; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/minesweeper) |
 | Assemblio | `assemblio` | Philipp Lühmann | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/assemblio) |
 | Base Ganymede | `bganymede` | Khorus | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom/megawads/bgcomp) |
 | BASIC | `basic` | Adam Dunkels (uBASIC), Nucleo port | BSD-3-Clause | [link](https://github.com/adamdunkels/ubasic) |
@@ -42,6 +46,8 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Big2Small | `gbh-big2small` | Matthew D. Steele (mdsteele); Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (game); MIT (emulator) | [link](https://github.com/mdsteele/big2small) |
 | Bigger Than You Think | `if-bigger-than-you-think` | Andrew Plotkin; interpreter: Glulxe + CheapGlk | Free distribution, non-commercial (author's permission) (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=h9x354wyakeeanik) |
 | Bit Bang | `gbh-bit-bang` | StudioGuma; Peanut-GB by Mahyar Koshkouei | GPL-3.0-or-later (code), CC BY-SA 4.0 (assets) (game); MIT (emulator) | [link](https://github.com/StudioGuma/bit_bang) |
+| Blackjack | `ab-blackjack` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | Apache-2.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Blackjack) |
+| Blocks | `ab-blocks` | w3woody; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/blocks) |
 | Blue Chairs | `if-blue-chairs` | Chris Klimas; interpreter: Frotz 2.55 | CC BY-NC-SA 3.0 (source code licence) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=uva1vc6ico5u65zg) |
 | Bombfighters | `bombfighters` | Patbox | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bombfighters) |
 | Book and Volume | `if-book-and-volume` | Nick Montfort; interpreter: Frotz 2.55 | CC BY-NC-SA 2.5 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=timl7wld6zp9otsf) |
@@ -51,8 +57,10 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Breksta's Cat | `gbh-brekstas-cat` | NotImplementedLife; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/NotImplementedLife/brekstascat) |
 | Bubblewrap | `bubblewrap` | Henrik Zenkert | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/bubblewrap) |
 | Bustfree! | `gbh-bustfree` | Adam Smith (adamsmasher); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/adamsmasher/bustfree) |
-| Cannon | `cannon` |  |  |  |
+| Buttons Trail | `ab-buttons-trail` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/ButtonsTrail) |
+| Cannon | `cannon` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Carazu | `gbh-carazu` | Martin Holtkamp; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/mholtkamp/carazu) |
+| Catacombs of the Damned | `ab-catacombs` | James Howard; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/jhhoward/Arduboy3D) |
 | Changes | `if-changes` | David Given; interpreter: Frotz 2.55 | CC BY-ND (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=3q8lfs4x52le1vu0) |
 | Checkers | `love-checkers` | Henrique Barcia Lang | MIT | [link](https://github.com/henriqueblang/checkers) |
 | Chess | `chess` | NucleoOS | MIT | [link](https://github.com/gissio/mcu-max) |
@@ -67,6 +75,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Cosmic Inw4ders | `cosmic-inw4ders` | Pierro | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/cosmic-inw4ders) |
 | CosmicPods | `ab-cosmicpods` | cubic9com; Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/CosmicPods) |
 | Crate Confusion | `ab-crate-confusion` | Dominic Szablewski (phoboslab); Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/phoboslab/arduboy-games/tree/master/crate-confusion) |
+| Cribbage | `ab-cribbage` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Cribbage) |
 | CrossConnect | `gbh-crossconnect` | Quinn Painter; WitchFont8 by Lavenfurr; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/QuinnPainter/CrossConnect) |
 | Customizable Pong | `custom-pong` | UnusualEgg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/custom-pong) |
 | Cyberdreams | `cyberdreams` | Pérez de la Ossa and Valls | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/cydreams) |
@@ -104,11 +113,14 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Escape Guldur | `escape-guldur` | Chris Heyes | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/escape-guldur) |
 | Evade | `ab-evade` | Modus Create; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/evade-arduboy-game) |
 | Explore the Grotto | `explore-the-grotto` | Donatien Rabiller | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/explore-the-grotto) |
+| Farkle | `ab-farkle` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | Apache-2.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Farkle) |
 | Fate | `if-fate` | Victor Gijsbers; interpreter: Frotz 2.55 | GPL-2.0-or-later (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=az8jb9bddngurwr7) |
 | Figaro | `if-figaro` | Victor Gijsbers; interpreter: Frotz 2.55 | GPL-3.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=xnpdrkjsezmjl2ha) |
 | FIGlet | `figlet` | Glenn Chappell, Ian Chai, John Cowan, Christiaan Keet, Claudio Matsuoka | BSD-3-Clause | [link](http://www.figlet.org) |
+| Fire Panic | `ab-fire-panic` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/FirePanic) |
 | First Flight | `first-flight` | bootra | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/first-flight) |
 | Flight of the Amazon Queen | `svm-fotaq` | Interactive Binary Illusions (1995); ScummVM | Freeware (John Passfield, Steve Stamatiadis) | [link](https://www.scummvm.org/games/) |
+| Flood Fill | `ab-flood-fill` | Gary Franz (garyfranz); Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/arduboy_floodfill) |
 | Floppy Fish | `floppy-fish` | Chris Breece | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/floppy-fish) |
 | Fly Swatter | `love-fly-swatter` | sleepycharlyy | GPL-3.0 | [link](https://github.com/sleepycharlyy/fly_swatter.love) |
 | Fool's Paradise | `fools-paradise` | Dave Purdum | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fools-paradise) |
@@ -125,6 +137,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Game of Life: Zig Edition | `game-of-life-zig-edition` | David Roman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life-zig-edition) |
 | GB Corp. | `gbh-gb-corp` | Dr. Ludos; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/drludos/GBcorp) |
 | GB-Wordyl | `gbh-gb-wordyl` | bbbbbr (based on the original by stacksmashing); Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/bbbbbr/gb-wordyl) |
+| German Whist | `ab-german-whist` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/GermanWhist) |
 | Glitch Dungeon | `glitch-dungeon` | jakeonaut, Wormi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glitch-dungeon) |
 | Glove | `ab-glove` | fuopy; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/glove) |
 | Glowfish Chess | `glowfish-chess` | Analog Hors | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glowfish-chess) |
@@ -153,12 +166,16 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | JavaScript | `js` | QuickJS-ng project (Bellard, Gordon, contributors) | MIT | [link](https://github.com/quickjs-ng/quickjs) |
 | Journey to Entorus | `journey-to-entorus` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/journey-to-entorus) |
 | Journey to the Steam Planet | `journey-to-the-steam-planet` | QuaternionWake | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/journey-to-the-steam-planet) |
+| Joustish | `ab-joustish` | wuuff; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/wuuff/joustish) |
 | JP | `gbh-jp` | Graham Coulby (IonicLimb); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/gcoulby/JP) |
 | jq | `jq` | Stephen Dolan and the jq contributors (regex: Oniguruma, K. Kosako) | MIT; Oniguruma BSD-2-Clause | [link](https://jqlang.org) |
 | JSON | `cjson` | Dave Gamble and cJSON contributors | MIT | [link](https://github.com/DaveGamble/cJSON) |
 | Jump 'n' Shoot | `jump-n-shoot` | Matheus Foltran Consonni | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/jump-n-shoot) |
+| KeyKat - I.T. | `ab-keykat` | pngwen; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/keykat-it) |
 | Kitty Game | `kittygame` | Cannon Tuttle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/kittygame) |
 | Knight Move | `ab-knight-move` | obono; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/knightmove) |
+| Kong | `ab-kong` | Press Play On Tape (Filmote and Vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Kong) |
+| Kong II | `ab-kong-ii` | Press Play on Tapes (Vampirics and Filmote); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Kong-II) |
 | La Pietra della Luna | `if-pietra-della-luna` | Paolo Lucchesi; interpreter: Frotz 2.55 | GPL-2.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=mom3zbtso4xadex4) |
 | Lad 2024 | `lad2024` | YAMAMOTO Takashi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lad2024) |
 | Lake Shooter | `lakeshooter` | Jimmy Cartrette | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lakeshooter) |
@@ -170,8 +187,10 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Libbet and the Magic Floor | `gblibbet` | Damian Yerrick (game); Peanut-GB by Mahyar Koshkouei | zlib (game), MIT (emulator) | [link](https://github.com/pinobatch/libbet) |
 | Lime Volleyball | `lime-volleyball` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lime-volleyball) |
 | Lingword | `lingword` | Jonathan Derque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/lingword) |
+| Lion | `ab-lion` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Lion) |
 | Lists and Lists | `if-lists-and-lists` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=zj3ie12ewi1mrj1t) |
 | Lite Out | `ab-lite-out` | K. M. Kroski; Arduboy2 library by Scott Allen and contributors | Unlicense (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/ArduboyLiteOut) |
+| Logix | `ab-logix` | Filmote (Simon Holmes); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/Logix) |
 | LoveRush | `ab-loverush` | Stephane Cote (Vampirics); Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/vampirics/LoveRush) |
 | lowdown | `lowdown` | Kristaps Dzonsons | ISC | [link](https://kristaps.bsd.lv/lowdown/) |
 | Lua | `lua` | Lua.org, PUC-Rio | MIT | [link](https://www.lua.org) |
@@ -201,6 +220,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Mouse Demo | `mouse-demo` | David Sims | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/mouse-demo) |
 | MQTT Explorer | `mqttx` | NucleoOS | MIT | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/apps/mqttx) |
 | Mr. Rescue | `love-mr-rescue` | Tangram Games (Simon Larsen) | zlib (code), CC BY-SA 3.0 (graphics, sounds) | [link](https://github.com/SimonLarsen/mrrescue) |
+| Multiplication Table | `ab-multiplication` | luxurydab; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/luxurydab/arduboy-multiplication-table-game) |
 | Mutiny | `mutiny` | Doomworld community | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mutiny) |
 | NAIR DEMAKE | `nairdemake` | MiguelGSS | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/nairdemake) |
 | Night Raid | `ab-night-raid` | Evan Barger; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/night-raid) |
@@ -210,6 +230,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | NOVA: The Birth | `nova` | TeamNOVA | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/nova) |
 | Number Slide | `number-slide` | Giovana Ferreira Waterkemper, Jamily Go | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/number-slide) |
 | Nyan Cat | `nyancat` | Jake Ledoux | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/nyancat) |
+| OBS | `ab-obs` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/OBS) |
 | Omega Chase | `ab-omega-chase` | Karl P. Williams; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Karl-Williams/OmegaChase) |
 | One Slime Army | `one-slime-army` | Isaiah Billingsley | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/one-slime-army) |
 | openHASP | `openhasp` | openHASP contributors (HASwitchPlate) | MIT | [link](https://github.com/HASwitchPlate/openHASP) |
@@ -222,7 +243,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Pelmanism | `gbh-pelmanism` | TeamKNOx (Osamu Ohashi); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://gitlab.com/teamknox/gbccardgame) |
 | pForth | `pforth` | Phil Burk, Larry Polansky, David Rosenboom | 0BSD | [link](https://github.com/philburk/pforth) |
 | PHANTOM SHIFT | `phantom-shift` | Sergey Poznyak | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/phantom-shift) |
-| Pianino | `pianino` |  |  |  |
+| Pianino | `pianino` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Piano | `piano` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/piano) |
 | PID Controller | `pid-controller` | rezajamesahmed | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pid-controller) |
 | PING | `ping` | Cannon Tuttle | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ping) |
@@ -234,7 +255,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Pl¢tfarmer | `plctfarmer` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/plctfarmer) |
 | Pogoman GO! | `if-pogoman-go` | Jack Welch & Ben Collins-Sussman; interpreter: Glulxe + CheapGlk | CC BY-NC-SA 3.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=hc6dudpdc9i2pmja) |
 | Poitto | `ab-poitto` | inajob; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/poitto) |
-| Pomodoro Desk Hub | `deskhub` |  |  |  |
+| Pomodoro Desk Hub | `deskhub` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Pong | `pong` | Fabrizio Vitale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/pong) |
 | Pong Hau K'i | `ab-ponghauki` | databhor; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/databhor/PongHauKi) |
 | Poop Panic! | `ab-poop-panic` | inajob; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/poop-panic) |
@@ -247,6 +268,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Puzzles | `puzzles` | Simon Tatham et al. | MIT | [link](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/) |
 | Python | `python` | MicroPython (Damien P. George and contributors) | MIT | [link](https://micropython.org) |
 | qrencode | `qrencode` | Kentaro Fukuchi and the libqrencode contributors | LGPL-2.1-or-later | [link](https://fukuchi.org/works/qrencode/) |
+| Quadrastic | `ab-quadrastic` | dragula96; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/Quadrastic) |
 | Quarto! | `ab-quarto` | obono; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/quarto) |
 | Racer | `racer` | Claudio Mattera | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/racer) |
 | Randocity | `ab-randocity` | pmwasson; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/pmwasson/Randocity) |
@@ -259,9 +281,11 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Rex Runner GB | `gbh-rex-runner` | The Void (etdv-thevoid); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/etdv-thevoid/rex-runner-gb) |
 | Rhythm Land | `gbh-rhythm-land` | martendo (programming, music), Adrian-kwok (art, design); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/sinusoid-studios/rhythm-land) |
 | Risorgimento Represso | `if-risorgimento-represso` | Michael J. Coyne; interpreter: Frotz 2.55 | CC BY-NC (source code licence) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=t0pidhghzbo91i12) |
+| Road Trip | `ab-road-trip` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/RoadTrip) |
 | Robo House | `love-robo-house` | Foppygames | GPL-3.0 | [link](https://github.com/Foppygames/robo-house) |
 | Rolly Dango | `rolly-dango` | William Guimont-Martin | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/rolly-dango) |
 | Rooftop Rescue | `ab-rooftop-rescue` | Bert van't Veer; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/BertVeer/Rooftop) |
+| Roshambo | `ab-roshambo` | CDR_Xavier; Arduboy2 library by Scott Allen and contributors | GPL-2.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/CDRXavier/Roshambo) |
 | Rover's Day Out | `if-rovers-day-out` | Jack Welch & Ben Collins-Sussman; interpreter: Glulxe + CheapGlk | CC BY-NC-SA 3.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=jf5zkjj3jqfllwcn) |
 | Rowdy Rudy II | `rowdyrudy2` | Doomkid and co. | CC BY 4.0 | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/rudy2) |
 | RPN Calc | `rpncalc` | NucleoOS | MIT | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/apps/rpncalc) |
@@ -283,6 +307,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Scythe 2 | `scythe2` | Erik Alm | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/scythe2) |
 | Seal Adventure | `seal-adventure` | katspaugh | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seal-adventure) |
 | Seed Creator Showcase | `seed-creator-showcase` | huntrss@posteo.me | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/seed-creator-showcase) |
+| SFCave | `ab-sfcave` | Slade1972; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/SFCave) |
 | Sfinx | `svm-sfinx` | L.K. Avalon (1994); ScummVM | Freeware (L.K. Avalon) | [link](https://www.scummvm.org/games/) |
 | Shade | `if-shade` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution, non-commercial (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=hsfc7fnl40k4a30q) |
 | Shieldshooter | `shieldshooter` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/shieldshooter) |
@@ -295,6 +320,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Slide Puzzle | `love-slide-puzzle` | Przemysaw Bdaruk (Przemekkkth), after Al Sweigart | MIT | [link](https://github.com/Przemekkkth/love-slide-puzzle) |
 | Slime Trials | `gbh-slime-trials` | Canight (Canite); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/Canite/SlimeTrials) |
 | Smash Sugar Parallelepipeds | `smash-sugar-parallelepipeds` | Lázaro Albuquerque | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/smash-sugar-parallelepipeds) |
+| Snake | `ab-snake` | CDR_Xavier; Arduboy2 library by Scott Allen and contributors | GPL-2.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/CDRXavier/SNAKE) |
 | Snake | `snake` | Tomas Tulka | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/snake) |
 | Snakery | `snakery` | hahahahaman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/snakery) |
 | So Far | `if-so-far` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=rcrihauxixy48svr) |
@@ -304,6 +330,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Sound Test | `sound-test` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/sound-test) |
 | Space Cab | `ab-space-cab` | Stephane C (vampirics) and Simon Holmes (filmote); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/vampirics/SpaceCab) |
 | Space Delivery | `space-delivery` | kirinokirino | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-delivery) |
+| Space Fighter | `ab-space-fighter` | Maicon Hieronymus (PolygonAndPixel); Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/SpaceFighter) |
 | Space Kommand | `space-kommand` | korhadris | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-kommand) |
 | Spider and Web | `if-spider-and-web` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=2xyccw3pe0uovfad) |
 | SpiritWrak | `if-spiritwrak` | Daniel S. Yu; interpreter: Frotz 2.55 | GPL-2.0-or-later (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=tqpowvmdoemtooqf) |
@@ -331,16 +358,18 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Tetronimo | `tetronimo` | Przemekkkth (after Al Sweigart's Tetromino) | MIT | [link](https://github.com/Przemekkkth/love-tetronimo) |
 | The Art of Fugue | `if-art-of-fugue` | Victor Gijsbers, Jimmy Maher, Dorte Lassen & Johan; interpreter: Glulxe + CheapGlk | GPL-3.0-or-later (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=7hvoj3p9khotuqca) |
 | The Bounce | `ab-the-bounce` | Joshimuz; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/TheBounceArduboy) |
+| The Curse of Astarok | `ab-curse-of-astarok` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/The-Curse-Of-AstaroK) |
 | The Darkening Episode 2 | `darken2` | The Darkening team | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/darken2) |
 | The Legend of GEML: Awakening | `the-legend-of-geml-awakening` | Robby Zampino, Ethan Hunter | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/the-legend-of-geml-awakening) |
 | The Life (and Deaths) of Doctor M | `if-doctor-m` | Michael D. Hilborn; interpreter: Glulxe + CheapGlk | CC BY-NC-ND 3.0 (game), MIT (interpreter) | [link](https://ifdb.org/viewgame?id=uqy4x2pm6cslbrs0) |
+| The Quest for Truth | `ab-quest-for-truth` | Timmy O'Toole (Guillaume Elias); Arduboy2 library by Scott Allen and contributors | LGPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/GuillaumeElias/TheQuestForTruth) |
 | The Romans Are Coming | `the-romans-are-coming` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/the-romans-are-coming) |
 | The Royal Game of Ur | `ur` | Gelatin Studios | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ur) |
 | The Social Distance Game | `ab-social-distance` | msanatan; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/msanatan/TheSocialDistanceGame) |
 | Tic Tac Toe | `love-tictactoe` | Rafael Jacov Medel | MIT | [link](https://github.com/rafaeljacov/tictactoe_minimax) |
 | Tic Tac Toe | `tictactoe` | Christopher Kleine | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tictactoe) |
 | TicTacCurly | `ab-tictaccurly` | curly; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/TicTacCurly) |
-| Timer | `timer` |  |  |  |
+| Timer | `timer` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Tiny Pong | `tinypong` | Ztry8 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tinypong) |
 | To | `ab-to` | waday; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/to) |
 | TO THE CORE | `to-the-core` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/to-the-core) |
@@ -352,16 +381,18 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Touhou Spirits | `touhou-spirits` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/touhou-spirits) |
 | Train! | `train` | Davidian1024 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/train) |
 | Tres | `ab-tres` | Casey Gold (cajogold); Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/tres) |
+| Trials of Astarok | `ab-trials-of-astarok` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/TrialsOfAstarok) |
 | Trials of the dark sea | `trials-of-the-dark-sea` | ericvilcu | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/trials-of-the-dark-sea) |
 | Tristam Island | `if-tristam-island` | Hugo Labrande; interpreter: Frotz 2.55 | CC0 1.0 (cover art excluded) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=6gtq9ahrolz2ry2) |
 | Ubo | `love-ubo` | Romain Meynet (chezrom) | MIT | [link](https://github.com/chezrom/ubo) |
 | UEM Mini Game | `uem-mini-game` | Thiago Calvi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/uem-mini-game) |
 | Ultimate Doom The Way id Did | `udtwid` | Various authors | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom/s-u/udtwid) |
+| Under the Tower | `ab-under-the-tower` | wuuff; Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/wuuff/under-the-tower-arduboy) |
 | Unholy Realms | `unholyrealms` | Brian Knox | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/ur) |
 | Unstoppable Knight | `gbh-unstoppable-knight` | Rafael Garcia (Rafagars); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/Rafagars/Unstoppable-Knight-GB) |
 | Untangle | `untangle` | Mota Link | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/untangle) |
-| Vertice Bass | `bass` | NucleoOS |  |  |
-| Vertice GP | `vxgp` | NucleoOS |  |  |
+| Vertice Bass | `bass` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
+| Vertice GP | `vxgp` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Villa Morgana | `if-villa-morgana` | Paolo Lucchesi; interpreter: Frotz 2.55 | GPL-2.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=57wq8ncspbsdktg2) |
 | WASM Invaders | `wasminvaders` | Lorenzo Henrique Zanetti, Matheus Cener | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasminvaders) |
 | Wasm Wars | `wasm-wars` | Daniel Kiyoshi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasm-wars) |
@@ -373,7 +404,12 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Waternet | `ab-waternet` | Willems Davy aka Joyrider3774; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/joyrider3774/waternet_arduboy) |
 | Waternet | `waternet` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/waternet) |
 | Watris | `watris` | Bruno Garcia | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/watris) |
-| Weather | `meteo` |  |  |  |
+| Weather | `meteo` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
+| Wikipedia in English | `wiki-en-top` | Wikipedia · Kiwix/openZIM · Wikidata | CC BY-SA 4.0 | [link](https://en.wikipedia.org) |
+| Wikipedia in French | `wiki-fr-top` | Wikipedia · Kiwix/openZIM · Wikidata | CC BY-SA 4.0 | [link](https://fr.wikipedia.org) |
+| Wikipedia in German | `wiki-de-top` | Wikipedia · Kiwix/openZIM · Wikidata | CC BY-SA 4.0 | [link](https://de.wikipedia.org) |
+| Wikipedia in Italian | `wiki-it-top` | Wikipedia · Kiwix/openZIM · Wikidata | CC BY-SA 4.0 | [link](https://it.wikipedia.org) |
+| Wikipedia in Spanish | `wiki-es-top` | Wikipedia · Kiwix/openZIM · Wikidata | CC BY-SA 4.0 | [link](https://es.wikipedia.org) |
 | Win 4 Fighter (W4F) | `w4f` | Kris Dabrowski | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/w4f) |
 | Wired | `wired` | Louis Pearson | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wired) |
 | WLOKU | `wloku` | 12Boti | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wloku) |
