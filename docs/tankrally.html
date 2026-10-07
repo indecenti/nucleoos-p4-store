@@ -1,0 +1,159 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Tank Rally — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAVTElEQVR42u2deXTU5bnHf/b+0cPhchGsV4EC2ZOZ7Hsy2cm+J5NMMklmyWSSmWSyTPawhKwqglJARQpopVp7j8cqtmrFQm/trd5evC63ltrW7oK1UqG2itaQzPc+zzsLCYRkAsQ0lTnnc97f+r7P9/s+7zKSM0rSLB+VSvUvkjT4Bed5cGR/cFDMFnNg1ObH5FGbXpVF9o3JIzdCHtm3yNgIETtpYC2sibVdUD74Bbv2q/hMriAsbmNGaMym50KiN34SGtsPQcxmhET3ITiqd1HCsbMGpx6hjTSy1uk8mMMHN0iD9qwLi+vOiIzddDQqfgui4vsREduL8JjuCTs9ExExPeJaRGzPIoNipthZg1MPX2ONrJU1s3Z7MrIX5Il7nwvDNTa+ZyguYRPiE7YgJq5rIiauezwmrsdGwEX8IiduCja7xq4J1sza2YPpvJnRvLi4jpWJiX1HklP6oVB0TRDjCkU3EghRJvxzMlmjXXPXBHvAXrAns5iIGwDcEB3dfFNqUs/L6Wn9SE7sGiOQkkQ4y88DDq2snT1gL9gT9oY9mnY4OyfLjOTOo7npW5Ce3DmWkdLJpZ2UzxkO3Q4PxtgT9mbahcV5ITvFOlSYtQXZqR1jOWmdXCInjen8nNLh8EB4MSa8IY+mmOg8KEjtSCnK7LHlb+gYJ1DApF9HQF7k2xlnj9grl3dOA4vTrS+ocnpRnNE+XpLZjpIMIvM6k71gb4RH5NXULMzpSFHn9UCVZR1XZVtRnmUFl9e5gMsT8kh4lWPPQrEsq3Naj+oKe1CV0zZOoCr3OtOSIxhnr9gzsaXR5lll+vy2T3X5rTZdfhu0ea3QcnmdSyFv2CP2ij1j7yRDYZvJVNIJQ0HLhKGgFXWF15kJ9oi9Ep6Rd1JDUfMTzcoOmApbxk1FLTAVX2dG2CPyij1j76SmEssbbWVWWEosE5bSZvxTUNKMZipblC1oLbsAnzc77l9d/ZYJ9oy9k6xKy5i1rBltSgusZYsb1sC0lzeDNTUWNKIhx4z6bIJKc36j/b6q2fX8lbbD9bN3UpfKgs7yJnC5qHFo6K6woKXQDGtJI77S2YnDe7fiyENDePbAIPZt6UFPpQWWfJPrvSvV7nxP6qtoQl8l4SwXIxT7Rio3VTXBWmTCA/09+P3xncB7+4AP9gN/3W8vz3wVp0/sweF7+tFZYna9d4l2Ou+taLyEPmLK81RK/VWNWOxsUTdioKYJnUUNOLxrM3D2q8Is2zv3Y+LUXkyc3CtK26n7gdNk6ocH8PKTt6Gn1DSlDhd0PqJpwai2FSMO+HhrdZO4P7ltaajGjAWl2ozBy+Du+8MaygxlPZ7cuZHM24+JP9qNA5UXw9fPv71XZOTxx0fQpzRiSEPt1ZhEXSPUEYNVZqjS8lCSko3SlBwoU3NQnJyF7nI9Gds0JTbpNq0JC4rGhNu15incQfB1wSzv364jA6sasKe5GWOcZX/aZ882Z/YR46fusx+/Q8a9Sxn4HmXonw8Cfz+E5/ZsxbDKjO16i6hvVGdEl7oSXj5+WLPeG2s9vLHO0wer1nrAUqjCjloLRmsaXO1L2/UmLBg6E+7SN5IJdVO4TWfADr1ZPHOnvmFqqWuYwvZaEwZVBvzXw/2YoKE7/vZ9wJ8cJp0hk84+QHPg1+zl+wfx6R/uxQdv7cRPX+zHay9uxr6dGtSp06HTJaBSEw2lNhT56kAEyGTw9ZHBz1cGfz85PL38aGGqwFcMjfZ2HRqknYYGLAR3G+qxy2BGl74IJZoQlGnCoCS4LNYEw6xLx85aeq623sVdk465jq8YTNhNdeyiTvjk55RdHz1EmXXAZdKJ/x7AS8934dGH67Bndzk2DmTB2BKPCmM4cioDkFnuh4wKX+RrA5CvkaFAI0exNggF6mD4BwTA2zsAPj4B8CUT13v6orNUhXvrG13tM9IeYz0+M+oc0PE9RjLAWCvMy6fACzWBLoo0QcjV+GPEUIl9xkbsNZpwv9HsODYLdtXV4W6jHsO1lRhsKMM3Dhlwzx7VJSZlqPyQVuqD9DJfZKr8kVclF/Ur9dRptaFUhooO42uFRIFWjmy1jDKQzZMJ8/woAz0oA3vLVNjXYMbuOqNLk3R/gxHzzV4u6+2l83hfPc1bZGC5NtxlmhMWxNkwVFeG3WTSSF05NhuK0K7PRr0uCXqtAhWaCJSS+fxcXo0MacrLm+Q0iq8VVMuRVeGPDMq+VDKWyzzKPm5TqQmFTh8HbXU8vH39aP7zFZnH5q1a54W+sjI80GjCfcY6lzbpgLkO846pDvvNdh5saBDlvkbKGLNWmHCxgUU0jAprAlGmoyFNwgt1gSjQyZGvk4mSKdKR0TrKnBp6tjoIpWTWTCZl0nm5IRSaxmj09Wdg2/ZiPHKoFke/3YZ7u2qww6DGXrMeB81GHDTVY6CyHFtUZeivsLNZpcQ9dTocbDRiv+mCNulrTXWYfwx4qLEOh6jxbd2l6N6ajo6BVHQOpaHGEon8qkBhWGG1veRzlTEMlq0JaBlIROtAEpE8iSS6bqdxUwKqGiPEO5x95bWXmnTsO234P1o0Tr+5Hed+t0fMk7yg4NwhjL11Hx5pasDXm4w4xLFSx3K832ipx6MtDVO4cP+CNumRZgPmk4cZCwVkqcPoxgI0jSjQOkyGDCWhbThZYOqLn0JDb7wwqX0kBdahZFiHp6eN7nWMpqJpIAHDg3l448WteG+ySWccK/BfHrQfn94vVmgbbWfO00Jjoz3j8Yf6cNCgIcM4zlpXvF+n44vh64847jv1Sf/RWov55NFWPR5vNuLu3hJhXvtQihA+GTbqYvh662DSJc9OB5vZsjUJJ77fb1+JaQ9om7QHdO4D2TixPzxJW52zB/D+K3eJGL/ZcuX6pMfbSOC8UivK3oENaKGss17OiEEuybzhVHtmjaQRG8icVNe1yxpI7zUNJWCgKwu/f3aEso6y7127iTaXcfZj8Gb6g4M4+/rdONxlwGMtOnzLWnvF+qSnOnSYT77dQQ11atAxmGoftjOY0LxVAdPmaOi65PjO9/Zi94MW6DplaNwcM4uByWgeTsRAfxYOt2jx829txnn6/stZhjM0bN93QOf8TeXkD0bxdI8BT7Rq8VSnHoevQp/0TJcW88mzXToc7q5B1wwGCvMGFBjcVY6vfqObjGvC2bMncfy1p3H3gQbcd8hKmZgyo4EWMnB4axae69ThyZZqHB0w4sQ3e/Huj27D+y/fidM/3oa3ntyMH97ZiKdaq/GdDg2e6dbh6avUJx3p0WI+eb6Hguyd3cAWWgg27SjEKz85grFPP8SZs2/jo4/ex1/+8g6+9li/MNg6lDKrgceovef7tGRkDZ5uVeMZazWebbfzdIsa36Xy+V6t4EiP5qr1Sd/v02A++U/iyMbqGQ20LwQptG2hFXhTJN785Y9wfuwjfPr3D7H34Q4xpNuH02bOwKFEjNC3kBfIvGPc9kZqe5NWlE5c53T/2DXSJ/1wUw3mm2ObqtA1xAbOvBBwFm6mLDxz5m28+PITePvUCXz3Bw8IU9tHZjfwtoFMvLRJgxc+A01OpJe2VGM++THxgy1qdM9mIGVgU38stt2vx6HHB1HXG4q+O3Px0OMDs25n2MAmNnAwE8e31GC+NU1GenlrFa6W45PKi+HrL21Vo5e+dbTMuqdLEd88zJujKONSRUY2bom97Nx3sYHbB7Pw2tYa/M9lYpkutuNXqV16bbAK14pXB9V4ncrJ8PWfDdZg71AuTCSy3Y2NsXPfx1lpnWUP6DSQ635isJjaqhZtvu4GHO/VapbeGFbjavmpozxBvDpcgVcugq/9eLgcA0Mb0DzTZvoKsGdfEnYPZeP14cpL2p6O/yX42RPXQLv089FKXA1vEj8jfj2qxvdHStFBw62H5rvJ8PzX5zhuvYbmOeE6uf5eR1s9s9BFMfbTlPL6qAq/cGh48wr1S7+6vQJXyy+JP9xeiR3DGWIosaCWS0hyYw68cpz1uwM/X09xPjqah1O3q/GLq9Au/W6bClfK74nfEn/cVonnby9CI62W7fNo0rUc9tzJnZSJP7lDiZPbKq7YA+nUdhWuhJMOTm0vxztUDtJG13KN57f5hDu6YTARB27LxpkdNIJIxymXJveR/nRXOa6UkzvKcPYuFZ65Iw8mCsY6yP8JanHQ5oC/Hb1+ZzH+THpOkZ65eiC9v7MMc+HMpOPzeyrw513l6BulrcZICjpGU9C+iOgimkaSseuODIzvqcS53apLNM6G9NddSsyFD4i/7S7D6Z2leKwvDaOdCahqjYK+LRq6RcyuzkR8tz8DH5K2D+bgh/ThnlLMhb8RH9+jxLs7i1FQE4gNlTIUVtn/HWOxUlQdCEWFP6zmSJy/lwzc7b4fEvYqMXfK8MmeYujqQ1GsD4KyNhilixltELIq5RiwRAP7yoH73PdCOrEzH3PhjZ15eHN3AV65KxcFpcFIK5QjoygQ6YsQjntDQSBK+J9OG0LR2RqDn5G2N+523w+prEeBuVDep0BJRzyC4oLg6eEPb28ZvLwCxLGXZwC8veznfCzwclzz9Icn4S3OJ92f9M5C1MHPB4YGorQpDjVbEqHsnpsfUk1PAuaCdmMCohTB8FjrBz8/DtKXTPRHgCwIvr4UkKcPfKhk+NzHx19c8/OXIyAgyPG8n/iTCeffnSxoHaTBc70//GUyVFjjoelLQPUc/JDU5Lg7VHYpULMpARmqSHis86dAOGg/RETGoqikAurqWpSVV0ORkCqEsDAu+e9KNqTnQFWpRWWVHrl5JQgMDBPvOoUvdB2cCKwpNi0ENZQgrNVdX6SKzni4BQ1bda8CYbHUex4BrqC1+gboDGYRlIaODcYmpKRmit7mwPMLlTDUW1CtqRPiaul+hVoLmYyy2MMHkZFxC1pHANXB973JaL8AGcpa4shANz0hJFV7HNyhoiMOypZYBMhp2HgHiPQvph7XU9AZmXnimkKRghqtEVU1Bvj7BwphfJ97PSwsSgydwmIVauuaRDasX++N4tLKBayjUdTBneArpiN/5OqiKLPiUe6mL1K5NQ7uwA+XWGLFXMENcc9xT3KPe3vbh8m6dV7IL1AKcSEhkUhM2gBjQ7Mo1631FIGGhEaKwAsKy8SwYpELVYee6igsKqeFxdc+FdDikq2JEhmobHPPF0nZFgt3KLPGorgpRhjIgfLEzHONVtcgepyDDqXerVTTENLV0/AKQWxsohhKPDdxJnhSoBlZ+UJYVk6hOC9T1SxgHY32OpwZSAZmVUeivDMOpa3u+SKVtsTAXZRUaXB4oH35p7mFJ2oOjIcL93iFWoc6mmdycotEkJwdLM5gtEBZVoUiGjY8T7EwFsliExLTFrQOzkReSMRq7heAfGOUMMZdT6SS5hi4Q7GFDGyPhSI7VKxY1JjNm4ZyMk3UYlKm3mQB2RS0H/UyB8SBBQdH0BxVAW2tyT4PVWgQHaNwDRsecgtZh6ejDtoP2kJjgijz7Frd9UUqaoqGuxTTV50CczTkwXKRhRTcBM0nNpk8RKzIwcHhIiDn9sG+xfAT55wt4RExIhv4GR/HHo7hIbRgdZAGUQdNS5maCFsJZVXhHDyRChqj4A6FXJqjUEI9lF4dPu7t5XeOgxAZ4OVnoyFtoyBtFMy0ULACEmGjze2UezSfinc/6zqcf//s6eF3PiEv5ONSmufzTQ6tbiLxC/lmt7A5GAtQfHn3ytUrB7x8vV8jIR9zEAJfu6GX4rgvDJ/+GT/fz7YOhgwd8/b1+/Wt62/ds8p/5eas2ojThTTK8k2RNrc8Ie+kvIZIzAFbnilyPCrH96nlq5d3fXHFF8033rqyf9W6VftWe6w5uMZrzYMOHljjseaB1R6rD/5jQPF4CVzxrV6/ev9Na24aXXLjkualNy9tkcWvP5BtDP8rmWITOt30RMoxRo7l1kcixxhBRM5CBPhZniPSdWHvReX5Pesb/eXdt/is2PhvtyxtYUOZJTctsSy9eUnzjWuWWZetWta2cu2yjhXrl3c66LrpIlbY6ZwrM9azdnnnjauWWTmGpRQbx7RkxZJGju9fb15iucljebdnxOo7wzN9HkurCv5VQWO0MMSp0R0f2Dspqy78jTxKxSxDxER2XQTcIcsQbsulxgrISK4oQxd2Lq06+HeKUtlL4Zm+T8sS1h/0jfny/at8bx5e43fz6Io1K/qW/fuyruW3Lu9e9qVlnUtXLrUS7Y7Sytfo/pyZVIe9/NKyDtEGt3XL8h5qf+QW35uHPMNX7+YMC83w/lZ8keyFlMqgtzK0oR+QFhsbx8MxmzS5rz9iQnhG3kmZ+rAnchuikGkIHydj4C6ZteE2enciqzZcVMqG5lEgXDEf87V0Xeg5eubjVHXIyaSKoF+lqoN/oyiVv0KZ+3xMnv+x6Hz/ozH5/scCkz0eCYhbt59EHvR3i7UHAhTrHnTWI+rK8/tebFHAiymVwb9Jrgj6NZn023Rt6DkRQ629w3Md832uI9OEDn34BN2fmJN28kp4Rt5J6fpQUzZnEZlBUBnuBmG48Kw4ttGQnnBCGWnj65l2o5HN0wO1kc3pX28XwgEI6Dhb3IuYM646HORwx9VHutrKtIsVcVJcU2PU22OcitvaJ7gd9k7K0AbK0vVhn6bbTcA1RSvqtG3QhjITLjQXYb9umzPT1+NCtK+dB13sFXnG3kmDg9IX0jQhRzMNEaByPE0Tig2fMWlXwWcfZ8i4w6uj7J347aJUbVhKOqVnSk3IeGpNKFJrQmAvr3MBuyfsEXvFnjl+vU0SP6CVrA5+YQON7+Sq4PGU6hBc51LYG+EReeXyzvkLZIlVQSmpmlBbkjp4nMB1pmWcPWKvpv0NwQRV4FCaNgyJFYFjiZXBVAYRwZ9zyAPhReAYe8MeXeZXLO1DWaEKPJpCk6WiPHAsQRWE6wQJL4Qn5M1kry7+3AAiuiTgJoUq6OUkGvPxZfKx+LJAxJd/TmHt5AF7wZ6wN+yRZGfaj/1nkLPkKxXlQUcS1SGIVconYkvl43FKOeKUgZ8T5GDNrJ09YC/Yk8kezfBT0hceiC2VDcVxT1Aax5TIJ2JKZOMxpXIbASexi5yYqdiERtLKmlk7ezCdN7N9bnBuEqOKZBlU8dE4Sue48iBEF8sQXSSbEBQLsMiZmKRHaGStrJm1238JXnhxwxX8zwguTJZcWVSJ7LmoYtknzh6LLpGDrhMBixSZ0ODUw9qERodxMy0YczNxUupGFvsHRxbLzRTAY9TQq5EF/mORhQGIKFhccMwcO2tgLayJtU0eru6Y9//1EzI1UqQvqwAAAABJRU5ErkJggg==' alt=><div><h1>Tank Rally</h1><p class=desc>Gioco arcade 3D con un carro armato sul motore Vertice: cinque grandi arene, spara alle casse, raccogli le monete prima che scada il tempo, schiva o abbatti i razzi a ricerca, distruggi i lanciarazzi, raccogli i kit di riparazione. Barra della vita, combo, classifica top 5 con iniziali. Touch, joypad, tastiera e mouse.</p><p class=meta>versione 1.3.0</p></div></header><article><h1>Tank Rally</h1>
+<h2>A cosa serve</h2>
+<p>Un gioco arcade in 3D con un piccolo carro armato. In ogni arena devi raccogliere tutte le monete prima che scada il tempo. Le casse si aprono a cannonate e possono nascondere monete o kit di riparazione. I lanciarazzi ti sparano razzi a ricerca: schivali, abbattili e distruggili. Le arene sono cinque (Prato, Canyon, Tramonto, Notte, Neve), poi si ricomincia con meno tempo. Ogni partita il campo cambia.</p>
+<h2>Come si usa</h2>
+<ol>
+<li>Nel titolo vedi la classifica dei cinque punteggi migliori. Tocca lo schermo, o premi A, per iniziare.</li>
+<li>Compare il nome dell'arena, poi "PRONTI... VIA!".</li>
+<li>Raccogli le monete passandoci sopra. Più monete prendi di fila in poco tempo, più sale la combo e il punteggio. Ogni moneta dà anche 2 secondi in più.</li>
+<li>Spara alle casse: ognuna vale 50 punti e 3 secondi, e può contenere una moneta o un kit di riparazione (+35 di vita).</li>
+<li>Quando arriva "RAZZO IN ARRIVO!" un mirino rosso segue il razzo (una freccia se è fuori schermo). Il razzo vira lentamente: taglia la sua traiettoria e lo eviti, oppure colpiscilo con un colpo (+25). Un lanciarazzi va giù con tre colpi (+150 punti, +4 secondi).</li>
+<li>Con tutte le monete l'arena è completata: il tempo avanzato diventa punti e recuperi un po' di vita.</li>
+<li>La partita finisce quando scade il tempo o la vita arriva a zero. Se entri in classifica scrivi le tue iniziali: frecce sopra e sotto le lettere, poi <strong>OK</strong>.</li>
+</ol>
+<p>Il gioco non usa i gesti di sistema: il tasto <strong>II</strong> accanto al tempo mette in pausa (RIPRENDI, MENU, ESCI DAL GIOCO); nel titolo c'è <strong>ESCI</strong>.</p>
+<p>La barra della vita è in alto a sinistra, il tempo al centro, la mappa a destra (monete gialle, casse marroni, lanciarazzi rossi).</p>
+<h2>Comandi</h2>
+<table>
+<thead>
+<tr>
+<th>Azione</th>
+<th>Tocco</th>
+<th>Tastiera</th>
+<th>Joypad</th>
+<th>Mouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sterza</td>
+<td>◀ ▶ in basso a sinistra</td>
+<td>← → oppure A D</td>
+<td>levetta sinistra o croce</td>
+<td></td>
+</tr>
+<tr>
+<td>Avanti</td>
+<td>GAS</td>
+<td>↑ oppure W</td>
+<td>RT (o levetta su)</td>
+<td>tasto destro</td>
+</tr>
+<tr>
+<td>Retromarcia</td>
+<td>RETRO</td>
+<td>↓ oppure S</td>
+<td>LT o B</td>
+<td></td>
+</tr>
+<tr>
+<td>Spara</td>
+<td>FUOCO</td>
+<td>Spazio o Ctrl</td>
+<td>A, X o RB</td>
+<td>tasto sinistro</td>
+</tr>
+<tr>
+<td>Gira la torretta</td>
+<td>(mira da sola)</td>
+<td>Q / E</td>
+<td>levetta destra</td>
+<td>muovi il mouse</td>
+</tr>
+<tr>
+<td>Pausa</td>
+<td>tasto II accanto al tempo</td>
+<td>Start (P o Tab)</td>
+<td>Start</td>
+<td></td>
+</tr>
+<tr>
+<td>Esci</td>
+<td>Pausa &gt; ESCI DAL GIOCO, o ESCI nel titolo</td>
+<td>Esc</td>
+<td>Back</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>La torretta mira da sola alla cassa o al lanciarazzi più vicino davanti a te. Se la giri a mano, la mira automatica si spegne per tre secondi.</p>
+<p>Con il touch puoi passare il pollice da GAS a FUOCO senza perdere velocità. Con un joypad, una tastiera o un mouse i tasti a schermo spariscono; toccando lo schermo ricompaiono.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Tank Rally</h1><p class=desc>3D arcade tank game on the Vertice engine: five big arenas, shoot the crates, grab the coins before the clock runs out, dodge or shoot down the homing rockets and knock out the launchers, pick up repair kits. Life bar, combos, top-5 table with initials. Touch, gamepad, keyboard and mouse.</p><p class=meta>version 1.3.0</p></div></header><article><h1>Tank Rally</h1>
+<h2>What it is</h2>
+<p>A 3D arcade game with a little tank. In each arena you must pick up every coin before the clock runs out. Crates break open when shot and may hide coins or repair kits. Rocket launchers fire homing rockets at you: dodge them, shoot them down and knock the launchers out. There are five arenas (Meadow, Canyon, Sunset, Night, Snow), then it starts over with less time. Every run lays the arenas out anew.</p>
+<h2>How to play</h2>
+<ol>
+<li>The title shows the five best scores. Tap the screen, or press A, to start.</li>
+<li>The arena's name appears, then "READY... GO!".</li>
+<li>Drive over the coins to pick them up. Coins taken one after the other in a short time build a combo and a bigger score. Each coin also adds 2 seconds.</li>
+<li>Shoot the crates: each is worth 50 points and 3 seconds, and may hold a coin or a repair kit (+35 life).</li>
+<li>When "ROCKET INCOMING!" shows, a red sight follows the rocket (an arrow when it is off screen). Rockets turn slowly: cut across their path and they miss, or shoot them down (+25). A launcher goes down with three hits (+150 points, +4 seconds).</li>
+<li>With every coin taken the arena is clear: the time left turns into points and you get some life back.</li>
+<li>The game ends when time runs out or your life reaches zero. If you make the table, enter your initials: arrows above and below the letters, then <strong>OK</strong>.</li>
+</ol>
+<p>The game does not use the system gestures: the <strong>II</strong> button next to the clock pauses it (RESUME, MENU, QUIT THE GAME); the title has <strong>QUIT</strong>.</p>
+<p>The life bar is top left, the clock in the middle, the map on the right (yellow coins, brown crates, red launchers).</p>
+<h2>Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Touch</th>
+<th>Keyboard</th>
+<th>Gamepad</th>
+<th>Mouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steer</td>
+<td>◀ ▶ bottom left</td>
+<td>← → or A D</td>
+<td>left stick or d-pad</td>
+<td></td>
+</tr>
+<tr>
+<td>Forward</td>
+<td>GAS</td>
+<td>↑ or W</td>
+<td>RT (or stick up)</td>
+<td>right button</td>
+</tr>
+<tr>
+<td>Reverse</td>
+<td>BACK</td>
+<td>↓ or S</td>
+<td>LT or B</td>
+<td></td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>FIRE</td>
+<td>Space or Ctrl</td>
+<td>A, X or RB</td>
+<td>left button</td>
+</tr>
+<tr>
+<td>Turn the turret</td>
+<td>(aims by itself)</td>
+<td>Q / E</td>
+<td>right stick</td>
+<td>move the mouse</td>
+</tr>
+<tr>
+<td>Pause</td>
+<td>II button next to the clock</td>
+<td>Start (P or Tab)</td>
+<td>Start</td>
+<td></td>
+</tr>
+<tr>
+<td>Quit</td>
+<td>Pause &gt; QUIT THE GAME, or QUIT on the title</td>
+<td>Esc</td>
+<td>Back</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The turret aims by itself at the nearest crate or launcher in front of you. Turn it by hand and the auto-aim switches off for three seconds.</p>
+<p>On touch you can slide your thumb from GAS to FIRE without losing speed. With a gamepad, keyboard or mouse the on-screen buttons disappear; touch the screen and they come back.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
