@@ -1,0 +1,153 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>zim — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>zim</h1><p class=desc>La biblioteca offline nel Terminale: legge i file ZIM di Kiwix (Wikipedia, Wikizionario, medicina, iFixit, DevDocs...) copiati in ~/zim. Scrivi zim ls, zim search PAROLE, zim get TITOLO.</p><p class=meta>versione 1.0 · Licenza: PolyForm-Noncommercial-1.0.0 (zim, nvzim, nvhtml); BSD-3-Clause (zstd); 0BSD (XZ Embedded) · <a href='https://wiki.openzim.org/wiki/ZIM_file_format'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>zim</code>.</p></aside><article><h1>zim</h1>
+<h2>A cosa serve</h2>
+<p><code>zim</code> legge i file ZIM della libreria Kiwix: Wikipedia, Wikizionario, Wikivoyage, l'enciclopedia medica, le guide di riparazione di iFixit, la documentazione dei linguaggi di programmazione (DevDocs), i libri di Gutenberg e molto altro, senza Internet. Il catalogo ne conta migliaia, in tutte le lingue, aggiornati ogni mese.</p>
+<p>Una voce esce come testo pulito: titolo, paragrafi, elenchi, tabelle in righe. Note, link di modifica e menu di navigazione restano fuori. ANIMA usa lo stesso programma quando una risposta è nella biblioteca.</p>
+<h2>Come si usa</h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>zim ls</code></td>
+<td>elenca le raccolte in <code>~/zim</code></td>
+</tr>
+<tr>
+<td><code>zim search diabete</code></td>
+<td>i titoli che iniziano così, in tutte le raccolte (maiuscole indifferenti)</td>
+</tr>
+<tr>
+<td><code>zim get Insulina</code></td>
+<td>la voce intera come testo</td>
+</tr>
+<tr>
+<td><code>zim get 'Giuseppe Garibaldi' --intro</code></td>
+<td>solo l'introduzione</td>
+</tr>
+<tr>
+<td><code>zim get 'Diabete mellito' --sections</code></td>
+<td>l'elenco delle sezioni</td>
+</tr>
+<tr>
+<td><code>zim get 'Diabete mellito' --section Terapia</code></td>
+<td>una sezione sola</td>
+</tr>
+<tr>
+<td><code>zim get -z medicina Insulina</code></td>
+<td>cerca solo nella raccolta indicata (basta una parte del nome)</td>
+</tr>
+<tr>
+<td><code>zim get Insulina --max 2000</code></td>
+<td>al massimo 2000 caratteri</td>
+</tr>
+<tr>
+<td><code>zim get Insulina --all</code></td>
+<td>tiene anche note, bibliografia e collegamenti</td>
+</tr>
+<tr>
+<td><code>zim random</code></td>
+<td>l'inizio di una voce a caso</td>
+</tr>
+<tr>
+<td><code>zim info medicina</code></td>
+<td>titolo, lingua, data, numero di voci di una raccolta</td>
+</tr>
+<tr>
+<td><code>zim check medicina</code></td>
+<td>controlla che il file non sia danneggiato</td>
+</tr>
+</tbody>
+</table>
+<p>Si combina con la shell: <code>zim get Insulina &gt; insulina.txt</code> salva la voce in un file, <code>zim get -z wikipedia img/foto.webp --out foto.webp</code> estrae un'immagine o un altro file.</p>
+<h2>Dove prendere i file</h2>
+<p>Dal sito della libreria Kiwix (library.kiwix.org) si scaricano sul PC i file <code>.zim</code> che interessano, poi si copiano nella cartella <code>zim</code> della home della scheda SD (<code>/sdcard/home/zim</code>) con il lettore di schede. Per le schede FAT32 e per i file oltre 2 GB servono i file divisi in parti (<code>nome.zimaa</code>, <code>nome.zimab</code>…): <code>zim</code> li legge come un file solo.</p>
+<p>Per cominciare vanno bene le versioni <code>nopic</code> (solo testo) o <code>mini</code> (solo le introduzioni): Wikipedia in italiano <code>top_nopic</code> pesa circa 900 MB, il Wikizionario circa 360 MB, l'enciclopedia medica circa 90 MB.</p>
+<h2>Limiti</h2>
+<p>La ricerca trova i titoli che <strong>iniziano</strong> con le parole scritte; il testo completo delle voci non è ancora indicizzato. Se una voce non ha un titolo scritto come lo digiti e non ha un rinvio, prova con le maiuscole giuste o con <code>zim search</code>. Le immagini e le formule non si vedono nel Terminale: delle formule appare il codice TeX. Le raccolte fatte con zimit (copie di siti interi) danno risultati più grezzi.</p>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>Scrivi nella riga in basso e premi Invio: la riga va al programma.</li>
+<li><strong>EOF</strong> chiude l'input (come Ctrl-D): molti programmi a quel punto finiscono. <strong>STOP</strong> lo interrompe subito.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help</code> i suoi comandi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>zim</h1><p class=desc>The offline library in the Terminal: reads Kiwix&#x27;s ZIM files (Wikipedia, Wiktionary, medicine, iFixit, DevDocs...) copied to ~/zim. Type zim ls, zim search WORDS, zim get TITLE.</p><p class=meta>version 1.0 · License: PolyForm-Noncommercial-1.0.0 (zim, nvzim, nvhtml); BSD-3-Clause (zstd); 0BSD (XZ Embedded) · <a href='https://wiki.openzim.org/wiki/ZIM_file_format'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>zim</code>.</p></aside><article><h1>zim</h1>
+<h2>What it is for</h2>
+<p><code>zim</code> reads the ZIM files of the Kiwix library: Wikipedia, Wiktionary, Wikivoyage, the medical encyclopedia, iFixit's repair guides, programming language documentation (DevDocs), Gutenberg's books and much more, with no Internet. The catalog has thousands of them, in every language, updated every month.</p>
+<p>An article comes out as clean text: title, paragraphs, lists, tables as rows. Footnotes, edit links and navigation menus are left out. ANIMA uses the same program when an answer is in the library.</p>
+<h2>How to use it</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>zim ls</code></td>
+<td>lists the collections in <code>~/zim</code></td>
+</tr>
+<tr>
+<td><code>zim search diabetes</code></td>
+<td>titles starting like that, in every collection (any case)</td>
+</tr>
+<tr>
+<td><code>zim get Insulin</code></td>
+<td>the whole article as text</td>
+</tr>
+<tr>
+<td><code>zim get 'Albert Einstein' --intro</code></td>
+<td>the introduction only</td>
+</tr>
+<tr>
+<td><code>zim get 'Diabetes' --sections</code></td>
+<td>the list of sections</td>
+</tr>
+<tr>
+<td><code>zim get 'Diabetes' --section Treatment</code></td>
+<td>one section</td>
+</tr>
+<tr>
+<td><code>zim get -z medicine Insulin</code></td>
+<td>only in that collection (part of its name is enough)</td>
+</tr>
+<tr>
+<td><code>zim get Insulin --max 2000</code></td>
+<td>at most 2000 characters</td>
+</tr>
+<tr>
+<td><code>zim get Insulin --all</code></td>
+<td>keeps notes, references and links too</td>
+</tr>
+<tr>
+<td><code>zim random</code></td>
+<td>the beginning of a random article</td>
+</tr>
+<tr>
+<td><code>zim info medicine</code></td>
+<td>title, language, date, number of articles of a collection</td>
+</tr>
+<tr>
+<td><code>zim check medicine</code></td>
+<td>checks the file is not damaged</td>
+</tr>
+</tbody>
+</table>
+<p>It works with the shell: <code>zim get Insulin &gt; insulin.txt</code> saves the article to a file, <code>zim get -z wikipedia img/photo.webp --out photo.webp</code> extracts an image or another file.</p>
+<h2>Where to get the files</h2>
+<p>From the Kiwix library site (library.kiwix.org) download the <code>.zim</code> files you want on a PC, then copy them into the <code>zim</code> folder of the SD card's home (<code>/sdcard/home/zim</code>) with a card reader. FAT32 cards and files over 2 GB need the files split in parts (<code>name.zimaa</code>, <code>name.zimab</code>…): <code>zim</code> reads them as one file.</p>
+<p>To start, the <code>nopic</code> (text only) or <code>mini</code> (introductions only) versions are fine: English Wikipedia <code>top_mini</code> is about 280 MB, the medical encyclopedia about 90 MB.</p>
+<h2>Limits</h2>
+<p>Search finds titles that <strong>start</strong> with the words you type; the full text of the articles is not indexed yet. If an article has no title written the way you type it and no redirect, try the right capitals or <code>zim search</code>. Images and formulas cannot be shown in the Terminal: formulas appear as their TeX code. Collections made with zimit (copies of whole websites) give rougher results.</p>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Type in the bottom line and press Enter: the line goes to the program.</li>
+<li><strong>EOF</strong> ends the input (like Ctrl-D): many programs then finish. <strong>STOP</strong> kills it right away.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help</code> the Terminal's own commands.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

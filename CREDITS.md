@@ -110,6 +110,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Eigenmath | `eigenmath` | George Weigt | BSD-2-Clause | [link](https://georgeweigt.github.io) |
 | El Dueloroso | `gbh-el-dueloroso` | Adrián JG; Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/ajgalan/el-dueloroso) |
 | Endless Runner | `endless-runner` | Richard McCormack | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/endless-runner) |
+| English dictionary | `dict-en` | Wiktionary · WikDict/FreeDict · Open English WordNet | CC BY 4.0 | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/tools/dicts) |
 | Escape Guldur | `escape-guldur` | Chris Heyes | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/escape-guldur) |
 | Evade | `ab-evade` | Modus Create; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/evade-arduboy-game) |
 | Explore the Grotto | `explore-the-grotto` | Donatien Rabiller | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/explore-the-grotto) |
@@ -127,6 +128,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Formula 1 | `formula-1` | Davy Willems | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/formula-1) |
 | Freedoom: Phase 1 | `freedoom1` | The Freedoom project | BSD-3-Clause | [link](https://freedoom.github.io) |
 | Freedoom: Phase 2 | `freedoom2` | The Freedoom project | BSD-3-Clause | [link](https://freedoom.github.io) |
+| French dictionary | `dict-fr` | Wiktionary · WikDict/FreeDict · Open English WordNet | CC BY-SA 4.0 | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/tools/dicts) |
 | FULL STEAM AHEAD TO THE RESCUE | `full-steam-ahead-to-the-rescue` | lluq | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/full-steam-ahead-to-the-rescue) |
 | Future Avoid | `future-avoid` | Joakim Hentula | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/future-avoid) |
 | Fuzzy World Cup | `fuzzy-world-cup` | Damian Girardi, Sebastian Alvarez | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/fuzzy-world-cup) |
@@ -137,6 +139,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Game of Life: Zig Edition | `game-of-life-zig-edition` | David Roman | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/game-of-life-zig-edition) |
 | GB Corp. | `gbh-gb-corp` | Dr. Ludos; Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/drludos/GBcorp) |
 | GB-Wordyl | `gbh-gb-wordyl` | bbbbbr (based on the original by stacksmashing); Peanut-GB by Mahyar Koshkouei | GPL-3.0 (game); MIT (emulator) | [link](https://github.com/bbbbbr/gb-wordyl) |
+| German dictionary | `dict-de` | Wiktionary · WikDict/FreeDict · Open English WordNet | CC BY-SA 4.0 | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/tools/dicts) |
 | German Whist | `ab-german-whist` | Press Play On Tape (Simon Holmes / filmote and Stephane C / vampirics); Arduboy2 library by Scott Allen and contributors | BSD-3-Clause (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/Press-Play-On-Tape/GermanWhist) |
 | Glitch Dungeon | `glitch-dungeon` | jakeonaut, Wormi | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/glitch-dungeon) |
 | Glove | `ab-glove` | fuopy; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/glove) |
@@ -162,6 +165,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Image Carousel | `image-carousel` | pfg | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/image-carousel) |
 | IOCCC 98 Flight Sim | `ioccc98flightsim` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/ioccc98flightsim) |
 | It's Corn! | `corn` | Sander in 't Veld | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/corn) |
+| Italian dictionary | `dict-it` | Wiktionary · WikDict/FreeDict · Open English WordNet | CC BY-SA 4.0 | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/tools/dicts) |
 | IWAS | `iwas` | Mr.Rafael | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/iwas) |
 | JavaScript | `js` | QuickJS-ng project (Bellard, Gordon, contributors) | MIT | [link](https://github.com/quickjs-ng/quickjs) |
 | Journey to Entorus | `journey-to-entorus` | Marcus Ramse | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/journey-to-entorus) |
@@ -332,6 +336,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Space Delivery | `space-delivery` | kirinokirino | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-delivery) |
 | Space Fighter | `ab-space-fighter` | Maicon Hieronymus (PolygonAndPixel); Arduboy2 library by Scott Allen and contributors | GPL-3.0 (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/ArduboyCollection/SpaceFighter) |
 | Space Kommand | `space-kommand` | korhadris | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/space-kommand) |
+| Spanish dictionary | `dict-es` | Wiktionary · WikDict/FreeDict · Open English WordNet | CC BY-SA 4.0 | [link](https://github.com/indecenti/NucleoOS-P4/tree/main/tools/dicts) |
 | Spider and Web | `if-spider-and-web` | Andrew Plotkin; interpreter: Frotz 2.55 | Free distribution (author's permission) (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=2xyccw3pe0uovfad) |
 | SpiritWrak | `if-spiritwrak` | Daniel S. Yu; interpreter: Frotz 2.55 | GPL-2.0-or-later (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=tqpowvmdoemtooqf) |
 | Spunky | `spunky` | Richard McCormack | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/spunky) |
@@ -351,6 +356,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | T Flight Simulator 1.0 | `taufl` | Tau | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/taufl) |
 | Tail Gunner | `tail-gunner` | Dial0 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tail-gunner) |
 | Tank Battle | `tankbattle` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankbattle) |
+| Tank Rally | `tankrally` |  |  |  |
 | Tank Wars | `tank-wars` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tank-wars) |
 | Tankle | `tankle` | Milky Natas | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankle) |
 | Tankle Adventure | `tankle-adventure` | Milky Natas | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankle-adventure) |
@@ -392,6 +398,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | Unstoppable Knight | `gbh-unstoppable-knight` | Rafael Garcia (Rafagars); Peanut-GB by Mahyar Koshkouei | MIT (game); MIT (emulator) | [link](https://github.com/Rafagars/Unstoppable-Knight-GB) |
 | Untangle | `untangle` | Mota Link | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/untangle) |
 | Vertice Bass | `bass` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
+| Vertice Bass soundtrack | `bass-music` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Vertice GP | `vxgp` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Villa Morgana | `if-villa-morgana` | Paolo Lucchesi; interpreter: Frotz 2.55 | GPL-2.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=57wq8ncspbsdktg2) |
 | WASM Invaders | `wasminvaders` | Lorenzo Henrique Zanetti, Matheus Cener | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/wasminvaders) |
@@ -422,6 +429,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | ZenFactor Spa | `if-zenfactor-spa` | Tristano Ajmone; interpreter: Frotz 2.55 | Public domain (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=kj5hyq3wkvl8x8yf) |
 | Zigbee | `zigbee` | NucleoOS | MIT |  |
 | Zigtris | `zigtris` | Toby Jaffey | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zigtris) |
+| zim | `zim` | NucleoOS (zim, nvzim, nvhtml); Meta Platforms (zstd); the XZ Embedded authors | PolyForm-Noncommercial-1.0.0 (zim, nvzim, nvhtml); BSD-3-Clause (zstd); 0BSD (XZ Embedded) | [link](https://wiki.openzim.org/wiki/ZIM_file_format) |
 | Zip | `zip` | Rich Geldreich and contributors (miniz) | MIT | [link](https://github.com/richgel999/miniz) |
 | Zone 300 | `zone300` | Paul Corfiatis | Freely distributable (idgames) | [link](https://www.doomworld.com/idgames/levels/doom2/megawads/zone300) |
 | Zoop Zoop Bee Adventures 7 | `zoopzoop` | Garrett Hale | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/zoopzoop) |
