@@ -299,7 +299,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | SameGame | `ab-samegame` | OBONO; Arduboy2 library by Scott Allen and contributors | MIT (game); BSD-3-Clause (Arduboy2 library and NucleoOS shim) | [link](https://github.com/obono/ArduboyWorks/tree/master/samegame) |
 | Samurai Revenge | `samurai-revenge` | Krylan, Dominik Koperkiewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/samurai-revenge) |
 | Save the Cheshire Cat! | `if-cheshire-cat` | Marco Vallarino; interpreter: Frotz 2.55 | CC BY-SA 4.0 (game), GPL-2.0-or-later (interpreter) | [link](https://ifdb.org/viewgame?id=j6purjagso6i5b0) |
-| sc-im spreadsheet | `sc-im` | Andrés Martinelli and the sc-im contributors | BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) | [link](https://github.com/andmarti1424/sc-im) |
+| sc-im (Sheets engine) | `sc-im` | Andrés Martinelli and the sc-im contributors | BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) | [link](https://github.com/andmarti1424/sc-im) |
 | Scheme | `scheme` | Dimitrios Souflis, Kevin Cozens and the TinyScheme contributors | BSD-3-Clause | [link](https://tinyscheme.sourceforge.net) |
 | ScummVM (cge) | `scummvm-cge` | The ScummVM Team; NucleoOS port | GPL-3.0-or-later | [link](https://www.scummvm.org) |
 | ScummVM (cge2) | `scummvm-cge2` | The ScummVM Team; NucleoOS port | GPL-3.0-or-later | [link](https://www.scummvm.org) |
