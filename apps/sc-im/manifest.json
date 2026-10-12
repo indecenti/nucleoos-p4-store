@@ -8,7 +8,7 @@
     "fr": "sc-im (moteur de Feuilles)",
     "de": "sc-im (Tabellen-Engine)"
   },
-  "version": "0.8.5.2",
+  "version": "0.8.5.3",
   "abi": 17,
   "console": true,
   "tty": true,
