@@ -1,0 +1,430 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>WordGrinder — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a> <a href='#es'>ES</a> <a href='#fr'>FR</a> <a href='#de'>DE</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>WordGrinder</h1><p class=desc>WordGrinder è un programma di videoscrittura per scrivere: titoli, elenchi, grassetto, corsivo e sottolineato, conteggio parole, più documenti in un file, annulla, salvataggio automatico. Apre ed esporta OpenDocument .odt, Markdown, HTML e testo, ed esporta anche LaTeX, troff e Org. ESC apre il menu, Ctrl+S salva.</p><p class=meta>versione 0.9.0.1 · Licenza: MIT (WordGrinder, Luau, fmt); BSD-2-Clause (cmark); Zlib (MiniZip, zlib); X11 (ncurses) · <a href='https://github.com/davidgiven/wordgrinder'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>wordgrinder</code>.</p></aside><article><h1>WordGrinder, videoscrittura</h1>
+<h2>A cosa serve</h2>
+<p>WordGrinder è un programma per <strong>scrivere</strong>: lettere, relazioni, appunti, capitoli. Ti fa concentrare sul testo, senza distrazioni, ma ha quello che serve: titoli, paragrafi, elenchi puntati e numerati, <strong>grassetto</strong>, <em>corsivo</em>, sottolineato, trova e sostituisci, conteggio delle parole, annulla e ripeti, più documenti nello stesso file. Apre ed esporta <strong>OpenDocument <code>.odt</code></strong> (LibreOffice, Word lo apre), <strong>Markdown</strong>, <strong>HTML</strong> e testo; esporta anche LaTeX, troff e Org.</p>
+<h2>Come si apre</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> in Home: si apre un documento vuoto.</li>
+<li>Da <strong>File</strong>, tocca un <code>.odt</code>, <code>.md</code>, <code>.html</code> o <code>.txt</code> e scegli <strong>Apri con › WordGrinder</strong>.</li>
+<li>Dal Terminale: <code>wordgrinder lettera.odt</code>.</li>
+</ul>
+<p>Un <code>.odt</code>, <code>.md</code>, <code>.html</code> o <code>.txt</code> viene <strong>importato</strong>: quando salvi, WordGrinder scrive un file <code>.wg</code> accanto (il suo formato) e l'originale non viene toccato. Per riscriverlo in <code>.odt</code> usa <strong>ESC › File › Export</strong>.</p>
+<h2>Tocco e tastiera</h2>
+<ul>
+<li><strong>Tocca il testo</strong> per spostare il cursore lì. <strong>Trascina su e giù</strong> per scorrere.</li>
+<li><strong>ESC</strong> (nella riga di tasti sopra la tastiera) apre il <strong>menu</strong>: File, Edit, Style, Documents, Navigation. Ogni voce ha una lettera, e i comandi più usati hanno una scorciatoia con Ctrl.</li>
+<li>Con una tastiera USB o KeyDeck funzionano anche Shift+frecce (selezione) e Ctrl+frecce (parola per parola).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tasti</th>
+<th>Cosa fanno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>salva</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>apre un documento</td>
+</tr>
+<tr>
+<td>Ctrl+B / Ctrl+U</td>
+<td>grassetto / sottolineato (corsivo: ESC › Style › Set italic)</td>
+</tr>
+<tr>
+<td>Ctrl+N</td>
+<td>testo normale</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>stile del paragrafo: titoli H1–H4, elenchi, citazioni</td>
+</tr>
+<tr>
+<td>Ctrl+Z / Ctrl+Y</td>
+<td>annulla / ripeti</td>
+</tr>
+<tr>
+<td>Ctrl+X / Ctrl+C / Ctrl+V</td>
+<td>taglia / copia / incolla</td>
+</tr>
+<tr>
+<td>Ctrl+F / Ctrl+K</td>
+<td>trova e sostituisci / trova il successivo</td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td>vai a una pagina o a un titolo</td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td>esce</td>
+</tr>
+</tbody>
+</table>
+<p>I menu di WordGrinder sono in inglese.</p>
+<h2>Con Anima</h2>
+<p>WordGrinder è un programma di sistema: Anima lo usa per leggere un <code>.odt</code> o trasformare appunti in un documento. Chiedi per esempio "leggimi il file relazione.odt" o "trasforma note.md in un documento odt".</p>
+<h2>Limiti</h2>
+<ul>
+<li>I file Word <code>.docx</code> e <code>.doc</code> non si aprono: salvali come <code>.odt</code>.</li>
+<li>Niente immagini, tabelle, colonne o impaginazione: è un programma per il testo. Le immagini di un <code>.odt</code> importato vanno perse.</li>
+<li>Il controllo ortografico non ha dizionari installati.</li>
+<li>Gli appunti sono interni al programma.</li>
+</ul>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Convertire senza aprire: <code>wordgrinder --convert lettera.odt lettera.txt</code> (il formato lo decide l'estensione: <code>.odt</code> <code>.md</code> <code>.html</code> <code>.txt</code> <code>.wg</code>, in uscita anche <code>.tex</code>).</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help wordgrinder</code> la sintassi.</li>
+</ul></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>WordGrinder</h1><p class=desc>WordGrinder is a word processor for writing: headings, lists, bold, italic and underline, word count, several documents in one file, undo, autosave. It opens and exports OpenDocument .odt, Markdown, HTML and plain text, and exports LaTeX, troff and Org too. ESC opens the menu, Ctrl+S saves.</p><p class=meta>version 0.9.0.1 · License: MIT (WordGrinder, Luau, fmt); BSD-2-Clause (cmark); Zlib (MiniZip, zlib); X11 (ncurses) · <a href='https://github.com/davidgiven/wordgrinder'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>wordgrinder</code>.</p></aside><article><h1>WordGrinder, word processor</h1>
+<h2>What it is for</h2>
+<p>WordGrinder is a program for <strong>writing</strong>: letters, reports, notes, chapters. It keeps you on the text, without distractions, yet has what you need: headings, paragraphs, bulleted and numbered lists, <strong>bold</strong>, <em>italic</em>, underline, find and replace, word count, undo and redo, several documents in one file. It opens and exports <strong>OpenDocument <code>.odt</code></strong> (LibreOffice; Word opens it too), <strong>Markdown</strong>, <strong>HTML</strong> and plain text; it also exports LaTeX, troff and Org.</p>
+<h2>How to open it</h2>
+<ul>
+<li><strong>Tap the icon</strong> on Home: an empty document opens.</li>
+<li>In <strong>Files</strong>, tap an <code>.odt</code>, <code>.md</code>, <code>.html</code> or <code>.txt</code> file and choose <strong>Open with › WordGrinder</strong>.</li>
+<li>In the Terminal: <code>wordgrinder letter.odt</code>.</li>
+</ul>
+<p>An <code>.odt</code>, <code>.md</code>, <code>.html</code> or <code>.txt</code> file is <strong>imported</strong>: when you save, WordGrinder writes a <code>.wg</code> file next to it (its own format) and the original is left alone. To write it back as <code>.odt</code> use <strong>ESC › File › Export</strong>.</p>
+<h2>Touch and keyboard</h2>
+<ul>
+<li><strong>Tap the text</strong> to move the cursor there. <strong>Drag up and down</strong> to scroll.</li>
+<li><strong>ESC</strong> (in the key row above the keyboard) opens the <strong>menu</strong>: File, Edit, Style, Documents, Navigation. Every item has a letter, and the most used commands have a Ctrl shortcut.</li>
+<li>A USB or KeyDeck keyboard also gives you Shift+arrows (selection) and Ctrl+arrows (word by word).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Keys</th>
+<th>What they do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>save</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>open a document</td>
+</tr>
+<tr>
+<td>Ctrl+B / Ctrl+U</td>
+<td>bold / underline (italic: ESC › Style › Set italic)</td>
+</tr>
+<tr>
+<td>Ctrl+N</td>
+<td>normal text</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>paragraph style: headings H1–H4, lists, quotes</td>
+</tr>
+<tr>
+<td>Ctrl+Z / Ctrl+Y</td>
+<td>undo / redo</td>
+</tr>
+<tr>
+<td>Ctrl+X / Ctrl+C / Ctrl+V</td>
+<td>cut / copy / paste</td>
+</tr>
+<tr>
+<td>Ctrl+F / Ctrl+K</td>
+<td>find and replace / find next</td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td>go to a page or a heading</td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td>quit</td>
+</tr>
+</tbody>
+</table>
+<h2>With Anima</h2>
+<p>WordGrinder is a system program: Anima uses it to read an <code>.odt</code> or to turn notes into a document. Ask for example "read me report.odt" or "turn notes.md into an odt document".</p>
+<h2>Limits</h2>
+<ul>
+<li>Word <code>.docx</code> and <code>.doc</code> files do not open: save them as <code>.odt</code>.</li>
+<li>No pictures, tables, columns or page layout: it is a program for text. Pictures in an imported <code>.odt</code> are lost.</li>
+<li>The spell checker has no dictionaries installed.</li>
+<li>The clipboard is internal to the program.</li>
+</ul>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li>Convert without opening: <code>wordgrinder --convert letter.odt letter.txt</code> (the extension picks the format: <code>.odt</code> <code>.md</code> <code>.html</code> <code>.txt</code> <code>.wg</code>, out also <code>.tex</code>).</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help wordgrinder</code> its syntax.</li>
+</ul></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><section id=es lang=es><header><img src='data:image/png;base64,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' alt=><div><h1>WordGrinder</h1><p class=desc>WordGrinder es un procesador de textos para escribir: títulos, listas, negrita, cursiva y subrayado, recuento de palabras, varios documentos en un archivo, deshacer, guardado automático. Abre y exporta OpenDocument .odt, Markdown, HTML y texto, y también exporta LaTeX, troff y Org. ESC abre el menú, Ctrl+S guarda.</p><p class=meta>versión 0.9.0.1 · Licencia: MIT (WordGrinder, Luau, fmt); BSD-2-Clause (cmark); Zlib (MiniZip, zlib); X11 (ncurses) · <a href='https://github.com/davidgiven/wordgrinder'>Sitio del proyecto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programa del Terminal</b><p>No tiene ventana propia: funciona dentro de la app Terminal. Al tocar su icono se abre el Terminal con el programa ya iniciado; o abre Terminal y escribe <code>wordgrinder</code>.</p></aside><article><h1>WordGrinder, procesador de textos</h1>
+<h2>Para qué sirve</h2>
+<p>WordGrinder es un programa para <strong>escribir</strong>: cartas, informes, apuntes, capítulos. Te deja concentrarte en el texto, sin distracciones, pero tiene lo necesario: títulos, párrafos, listas con viñetas y numeradas, <strong>negrita</strong>, <em>cursiva</em>, subrayado, buscar y reemplazar, recuento de palabras, deshacer y rehacer, varios documentos en el mismo archivo. Abre y exporta <strong>OpenDocument <code>.odt</code></strong> (LibreOffice; Word también lo abre), <strong>Markdown</strong>, <strong>HTML</strong> y texto; también exporta LaTeX, troff y Org.</p>
+<h2>Cómo se abre</h2>
+<ul>
+<li><strong>Toca el icono</strong> en Inicio: se abre un documento vacío.</li>
+<li>En <strong>Archivos</strong>, toca un <code>.odt</code>, <code>.md</code>, <code>.html</code> o <code>.txt</code> y elige <strong>Abrir con › WordGrinder</strong>.</li>
+<li>En el Terminal: <code>wordgrinder carta.odt</code>.</li>
+</ul>
+<p>Un <code>.odt</code>, <code>.md</code>, <code>.html</code> o <code>.txt</code> se <strong>importa</strong>: al guardar, WordGrinder escribe un archivo <code>.wg</code> al lado (su formato) y el original no se toca. Para volver a escribirlo en <code>.odt</code> usa <strong>ESC › File › Export</strong>.</p>
+<h2>Tacto y teclado</h2>
+<ul>
+<li><strong>Toca el texto</strong> para llevar el cursor allí. <strong>Arrastra arriba y abajo</strong> para desplazarte.</li>
+<li><strong>ESC</strong> (en la fila de teclas sobre el teclado) abre el <strong>menú</strong>: File, Edit, Style, Documents, Navigation. Cada opción tiene una letra, y las más usadas tienen un atajo con Ctrl.</li>
+<li>Con un teclado USB o KeyDeck también funcionan Mayús+flechas (selección) y Ctrl+flechas (palabra a palabra).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Teclas</th>
+<th>Qué hacen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC</td>
+<td>menú</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>guarda</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>abre un documento</td>
+</tr>
+<tr>
+<td>Ctrl+B / Ctrl+U</td>
+<td>negrita / subrayado (cursiva: ESC › Style › Set italic)</td>
+</tr>
+<tr>
+<td>Ctrl+N</td>
+<td>texto normal</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>estilo del párrafo: títulos H1–H4, listas, citas</td>
+</tr>
+<tr>
+<td>Ctrl+Z / Ctrl+Y</td>
+<td>deshacer / rehacer</td>
+</tr>
+<tr>
+<td>Ctrl+X / Ctrl+C / Ctrl+V</td>
+<td>cortar / copiar / pegar</td>
+</tr>
+<tr>
+<td>Ctrl+F / Ctrl+K</td>
+<td>buscar y reemplazar / buscar siguiente</td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td>ir a una página o a un título</td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td>salir</td>
+</tr>
+</tbody>
+</table>
+<p>Los menús de WordGrinder están en inglés.</p>
+<h2>Con Anima</h2>
+<p>WordGrinder es un programa del sistema: Anima lo usa para leer un <code>.odt</code> o convertir apuntes en un documento. Pregunta por ejemplo "léeme el archivo informe.odt" o "convierte notas.md en un documento odt".</p>
+<h2>Límites</h2>
+<ul>
+<li>Los archivos de Word <code>.docx</code> y <code>.doc</code> no se abren: guárdalos como <code>.odt</code>.</li>
+<li>Nada de imágenes, tablas, columnas ni maquetación: es un programa para texto. Las imágenes de un <code>.odt</code> importado se pierden.</li>
+<li>El corrector ortográfico no tiene diccionarios instalados.</li>
+<li>El portapapeles es interno del programa.</li>
+</ul>
+<h2>En el Terminal</h2>
+<ul>
+<li><strong>Toca el icono</strong> para abrir el Terminal con el programa ya iniciado, o abre <strong>Terminal</strong> y escribe el comando.</li>
+<li>Tus archivos están en la carpeta <strong>home</strong> de la tarjeta SD (<code>/sdcard/home</code>): para el programa esa carpeta es <code>/</code>. Puedes copiar archivos desde el PC poniendo la SD en el lector.</li>
+<li>Convertir sin abrir: <code>wordgrinder --convert carta.odt carta.txt</code> (la extensión decide el formato: <code>.odt</code> <code>.md</code> <code>.html</code> <code>.txt</code> <code>.wg</code>, de salida también <code>.tex</code>).</li>
+<li>Con <code>apps</code> el Terminal lista los programas instalados, con <code>help wordgrinder</code> la sintaxis.</li>
+</ul></article><footer><a href='../index-it.html'>Todas las apps</a> · NucleoOS P4</footer></section><section id=fr lang=fr><header><img src='data:image/png;base64,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' alt=><div><h1>WordGrinder</h1><p class=desc>WordGrinder est un traitement de texte pour écrire : titres, listes, gras, italique et souligné, comptage des mots, plusieurs documents dans un fichier, annulation, sauvegarde automatique. Il ouvre et exporte OpenDocument .odt, Markdown, HTML et texte brut, et exporte aussi LaTeX, troff et Org. ESC ouvre le menu, Ctrl+S enregistre.</p><p class=meta>version 0.9.0.1 · Licence: MIT (WordGrinder, Luau, fmt); BSD-2-Clause (cmark); Zlib (MiniZip, zlib); X11 (ncurses) · <a href='https://github.com/davidgiven/wordgrinder'>Site du projet</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programme du Terminal</b><p>Il n'a pas de fenêtre à lui : il tourne dans l'app Terminal. Toucher son icône ouvre le Terminal avec le programme déjà lancé ; ou ouvrez Terminal et tapez <code>wordgrinder</code>.</p></aside><article><h1>WordGrinder, traitement de texte</h1>
+<h2>À quoi il sert</h2>
+<p>WordGrinder est un programme pour <strong>écrire</strong> : lettres, rapports, notes, chapitres. Il vous garde sur le texte, sans distractions, mais il a l'essentiel : titres, paragraphes, listes à puces et numérotées, <strong>gras</strong>, <em>italique</em>, souligné, rechercher et remplacer, comptage des mots, annuler et rétablir, plusieurs documents dans le même fichier. Il ouvre et exporte <strong>OpenDocument <code>.odt</code></strong> (LibreOffice ; Word l'ouvre aussi), <strong>Markdown</strong>, <strong>HTML</strong> et texte brut ; il exporte aussi LaTeX, troff et Org.</p>
+<h2>Comment l'ouvrir</h2>
+<ul>
+<li><strong>Touchez l'icône</strong> sur l'Accueil : un document vide s'ouvre.</li>
+<li>Dans <strong>Fichiers</strong>, touchez un <code>.odt</code>, <code>.md</code>, <code>.html</code> ou <code>.txt</code> et choisissez <strong>Ouvrir avec › WordGrinder</strong>.</li>
+<li>Dans le Terminal : <code>wordgrinder lettre.odt</code>.</li>
+</ul>
+<p>Un <code>.odt</code>, <code>.md</code>, <code>.html</code> ou <code>.txt</code> est <strong>importé</strong> : à l'enregistrement, WordGrinder écrit un fichier <code>.wg</code> à côté (son format) et l'original n'est pas modifié. Pour le réécrire en <code>.odt</code>, utilisez <strong>ESC › File › Export</strong>.</p>
+<h2>Toucher et clavier</h2>
+<ul>
+<li><strong>Touchez le texte</strong> pour y placer le curseur. <strong>Glissez vers le haut ou le bas</strong> pour faire défiler.</li>
+<li><strong>ESC</strong> (dans la rangée de touches au-dessus du clavier) ouvre le <strong>menu</strong> : File, Edit, Style, Documents, Navigation. Chaque entrée a une lettre, et les plus utilisées ont un raccourci avec Ctrl.</li>
+<li>Avec un clavier USB ou KeyDeck, Maj+flèches (sélection) et Ctrl+flèches (mot par mot) marchent aussi.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Touches</th>
+<th>Ce qu'elles font</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>enregistrer</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>ouvrir un document</td>
+</tr>
+<tr>
+<td>Ctrl+B / Ctrl+U</td>
+<td>gras / souligné (italique : ESC › Style › Set italic)</td>
+</tr>
+<tr>
+<td>Ctrl+N</td>
+<td>texte normal</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>style du paragraphe : titres H1–H4, listes, citations</td>
+</tr>
+<tr>
+<td>Ctrl+Z / Ctrl+Y</td>
+<td>annuler / rétablir</td>
+</tr>
+<tr>
+<td>Ctrl+X / Ctrl+C / Ctrl+V</td>
+<td>couper / copier / coller</td>
+</tr>
+<tr>
+<td>Ctrl+F / Ctrl+K</td>
+<td>rechercher et remplacer / suivant</td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td>aller à une page ou à un titre</td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td>quitter</td>
+</tr>
+</tbody>
+</table>
+<p>Les menus de WordGrinder sont en anglais.</p>
+<h2>Avec Anima</h2>
+<p>WordGrinder est un programme du système : Anima s'en sert pour lire un <code>.odt</code> ou transformer des notes en document. Demandez par exemple « lis-moi le fichier rapport.odt » ou « transforme notes.md en document odt ».</p>
+<h2>Limites</h2>
+<ul>
+<li>Les fichiers Word <code>.docx</code> et <code>.doc</code> ne s'ouvrent pas : enregistrez-les en <code>.odt</code>.</li>
+<li>Pas d'images, de tableaux, de colonnes ni de mise en page : c'est un programme pour le texte. Les images d'un <code>.odt</code> importé sont perdues.</li>
+<li>Le correcteur orthographique n'a pas de dictionnaires installés.</li>
+<li>Le presse-papiers est interne au programme.</li>
+</ul>
+<h2>Dans le Terminal</h2>
+<ul>
+<li><strong>Touchez l'icône</strong> pour ouvrir le Terminal avec le programme déjà lancé, ou ouvrez <strong>Terminal</strong> et tapez la commande.</li>
+<li>Vos fichiers sont dans le dossier <strong>home</strong> de la carte SD (<code>/sdcard/home</code>) : pour le programme ce dossier est <code>/</code>. Copiez-y des fichiers depuis un PC en mettant la SD dans un lecteur.</li>
+<li>Convertir sans ouvrir : <code>wordgrinder --convert lettre.odt lettre.txt</code> (l'extension choisit le format : <code>.odt</code> <code>.md</code> <code>.html</code> <code>.txt</code> <code>.wg</code>, en sortie aussi <code>.tex</code>).</li>
+<li><code>apps</code> liste les programmes installés, <code>help wordgrinder</code> sa syntaxe.</li>
+</ul></article><footer><a href='../index-it.html'>Toutes les apps</a> · NucleoOS P4</footer></section><section id=de lang=de><header><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAALiUlEQVR42u2deXAT5xXADaHN9J+2CZkyIZADjK0zJkMgadrU9MgUAgQbs1rJNmdb+kcmHZJp/mmdMZNp809OjC1pddoYZ8AQjhzlSjAkJCYY2nLEcRxsAuUMl2XJto7d/fret7uyfIEt67As78zjs4y0x8/ve9fu95SREe1WWjo+N7d0Agr+nJF62ziGqb0rN7duQgaM+Doxh6UHI30OlllU/eOcFe6f5ixOAYHz7PfS4goSdx6haZqiao3OVLlKa3S6NUb7IQ3DXdMYuDa1gbullsaRKrc0BtstDWs/CrIdzn+txlQ5B+jd1QtkDNlF7FBndD2jNTn3aYyOkL6omuiLq4musIpojQ6iZe0gjhQQO5xzJdEVbaTnrzW5iIZ1nFQbHas1TOkPZRs1vr+ZNsQNdiBrnZq1/hbB6QrdcOAqAtpG1AYrD3/RkAZGEDG1hOMjzl/UAUQK0+g8hSB7mqwonYTyo5rl1ulMMjjGKqgpMA5PgowaYTh6XaiN+mU1qKlbVHmvTYxySkvwNMyb98JU3aMvrsGDKODIqBYJZEhfvAm00d2sNVTMHiJEnPdknCpvw0SwC0fxr6FmLMFRD66XqBlrCO2kxui6qUAsLSXjBxmmoPbZ9qcrvDBEg4VH0wWKdFVntE+SQpzbxLyKmgK0dTht0xleD00Ebw22fz/1CwNNZQWejuFyIb6jXird4UVC1C97F8e/DWwPlXCFsdYhcVTfMXiKWEUt6xTUrO2GalnVxAwi+Yk+dk9r4H5NDeeY9vVjDyXPjOatb3yI2geiZrgDGOulRbgSlRY6wLTZrj+ab/5Zd8QiexU9Y84GbxMadQFyjL0yaiFEKCuRWW5p3QTpHxq2WFZibjumfbefxrriahHSP7c0c5GdDFBlsG7EXBDfFMuDgl0leqON6E12GGMhtmRCFDDVUxm45sx5/7pbmsJyfQ+87+e6osqYaqCOtcH+ODJ14QYyZcEGAUZh6oIoRf7sQ4vKiS5pENEO2vGafLMW1twX9iGzGO4nAO46lnrkSkVM4M1YYsGLDZSYD3bsqGvy7P78DEhLVPLR4TOevfWtba+5DnsAJA+ZQdJyZYiTMaR5OgwQq7TggT2xAqhlOTKjwEqe+kNV19dnr3UQQgQSu43fsKXBM3l+GY9mISkAsf4JIV9PgAauLVYAcYo9sricP3L6gg+vOBgSCM+DCPI4RBFEkUj74eG1mFyICkDWPjcuAHHqTsszk/yXt3XBhYYEQSTiMFUOwPHtHYEOSg72h5I0iPEGiF5y6sJy8uJb+7w4dQUhenzKJ2EngeXrdl073fq9H1+HqDYnCWKiAL709n5PrADC5n/m+ZrOR032QOulto6kQkxRgIH8l7f6psB+n1hV2Xnmwq3OpEFMVYCLXqz1ZYFnx9BozkpXV9IgpjLA6fkWklNoF3FMGsRUB4heXm+ykaRBHA0A6XEiILYkEuJoATgUiFrWNgawP4B9IF7sC7Fs89H2aYsrhJgVIFIVYN5ft/myl3JkZqGDQDwYFpyijxU5SPZSKfc+d9nTKQXfIpGPza9+9QPvw89VxKaKk6oAf7Wm2nvv794mU54tI5Pnr+8jWDKbCP+fXWDpOtZ4GSGKoRCtYQhwLu0Pwjnp0w1gZAVm896vgus3NxDz1uOkYuuxPlJee4xY3ztO3tj0Jan9uNEvCOFjC395Y1/aA4xqUwCufXMMIC2FoXMYjMgOhP6M5/DC63vHAA51k+GRvfUtXukZwFEQxmBdNP4idsM70uKdllceRO+NVfK0C2OGsYn7KLyKgJoWeUdBJoLa0d4RIB6fP25yq72Ljru/OOObnmeOPbxkAJTvYQA8P3nm+XfJ48td5OerK8mTq+IhbjpmLTGLKkaatpi5UEnVTEQBiJoxG+DBtIKswUKyCuInmPtq5ZtboIl4zNDDz5WTmOTEyQT4yz9upO/JKbT3SMeGIxQWy/UQ5TymLNhAlpfu8p1ovtrxenW9F7KY4d9PThbANq8fp5Jw/7z1woPDeUIhQh54tkzIphrX97Yq5r7Fr+zy+oOhgBJKltc2eB6YjxBtqedEgiFe3H/0bDs+YbD7i5aon1BQ5IPPvvUc+s/5NsgyruM0DdcJ4fhY+l+wdgvek5bv4vFiuMQFEKUnG2xjYUz9qQu+nEJHUB2heZlLzPSmPmgl//6nzQhRxFmA8SEvxYf8q/ZP2x9aVC5GBTGZAANBXhyudAVCNCraU9+CEAJZS610CqM9nDy/jKz550cdnzSc9WQzXBCLqTsPfeNVIAaDPD2PrR83enD6R1WtHgUaKEoZhhTnKfDQYaDN6/RLNu/Lry561QARHceOgxJE/D06lJlFjqAS5qSNDVSeznK9f6INwqAwAAVe0Ss7ff6ABA+focHt2NeXvBqDLTjp9+/wYDN9p1uu+cAL+zOlp8bS0AsvpCIqD26G4ZWAt5XhCT0rMaSh8ZJ3ZpEzqCqw8DkmexCfGkspLzzcOHCgJ1QVeIUl3ZrX21wEZJu3afdJD1asMQYcdlEhlTKRGeBR1f0cYzDwZI9L/t10uQOOG1QzMarIpEYu7CZzVrjJ3D9vwv2JePHRwPvvN1c64POBzH7u5o3qasxNTyedfu990uSFoDik5LBDgQfe1ofwMKiO6YPpqRLGHGg4C/AsARXTU/NMAK8rWfBGdkU6nCnQMvwjiysCvUMVU8mOO8JTpm1c4I1kDVTet/dIq1xJtoXhTVXg+ZOoeYkHSB/xFQcDUHnPieYrvmmLu+Hp5JKU8e+DhGeKM7ykPWR+B4YKhJ0HmzyQeomodbif6XlmEW1e50iBlwiA3cscKkL1p/43qGUOgWCIjh9+dsaDWQoCVDFWAjmreL2tI3RbeN8iPLs/IfASBTByoU1j6+AX2hw49h1ooAQQA+mnVlcRL4Q+6GAitbgb3vdU82YkCt5AAPULzPeoDdb2uCz1Ym2BEstB3/bbLPX6UC4U/MN5+AY4EFEqilpoUH2zvZPaUQzIcVRy3JMAD0D7EwovAqDGaPtNRBe2ugkQ7R/HrkRqxirEZ7Fh2cCLDeXfY5qn3NdAgJixBPm+ynuiGeElyOb1XmxosIsa1t6pZV1TJYDYvg57JRi47VKvhNiuFx7Kclcl3UKA+Lzf7BUuEXPZ5nM3fU3f3fA1n7/hqzt+rv2xYqcftTvxS18BoNGJSnbxSab2R7QNyqw13A/k9cJraU+AGK8XHq5kLbEEZsiSXWD14y1KFcDVsYlf8orKBUqGJm57WPmUbjzYnQfoijDHR9SSf+m2Zbegh9eyyTkXqfFEDfaQeYkuE5aVLwPbeGS+sP5usIONOpNbhDcKIwniCBFsOAFT2OFXsbasyB5jEe2euBXyNB7rmzBAwwmwf1X9tMWT+gRmzgMtNHBNWpNrTAt7ax9r48HE+bG7CXUevRuRMeHmO7blcpuj0Bi4yNZPNRiSVd62FR4j90mFD2yTu/SExuBZsVMHxn4tWSbuPqlF1oCtQaWeUPpC8z0a1tGKbaDSuocWTSrsgtYIJs3IPSH5jTv0EFTCGoi5Hsfmg9g/Lx2nM3WkrE3E5EJVYPnTkLpYhu1hPsaGrks0Q6EQrenQFkrEa8UGO1qTO6RhJHi0YXc0rY9V+W/dD9N5j9yYVc5URiVIUQnf6LUanc1ag+UXUcHrrwWw1uAo0RidV2lzVgrSIrUQZjghRYGKSudeJX2V2iA7AjDrXNhDNkZNububDeqM70zSss51GpPzCoLEZmVU1Vk7LfNQo0vHkS5wnpgaGp1yM25UCqcfFMOlMjh03Q6BxO47Anp2M7dP0hldq6U28I5GcPFttM90YZXUIZyOI1UqpX7YrK1TY7Sfl9rBu9fqTJyq57WSePTUJ+N6qzS+nr1s+0R1gflprNJqWctcaRyhUoDn554Ls2eKXJIa8PsC4riRceGvwkj1TflKjCjB/R/I8NyQLPDr5wAAAABJRU5ErkJggg==' alt=><div><h1>WordGrinder</h1><p class=desc>WordGrinder ist ein Textverarbeitungsprogramm zum Schreiben: Überschriften, Listen, fett, kursiv und unterstrichen, Wortzählung, mehrere Dokumente in einer Datei, Rückgängig, automatisches Speichern. Es öffnet und exportiert OpenDocument .odt, Markdown, HTML und Text und exportiert auch LaTeX, troff und Org. ESC öffnet das Menü, Strg+S speichert.</p><p class=meta>Version 0.9.0.1 · Lizenz: MIT (WordGrinder, Luau, fmt); BSD-2-Clause (cmark); Zlib (MiniZip, zlib); X11 (ncurses) · <a href='https://github.com/davidgiven/wordgrinder'>Projektseite</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal-Programm</b><p>Es hat kein eigenes Fenster: Es läuft in der App Terminal. Ein Tipp auf sein Symbol öffnet das Terminal mit dem bereits gestarteten Programm; oder öffne Terminal und gib <code>wordgrinder</code> ein.</p></aside><article><h1>WordGrinder, Textverarbeitung</h1>
+<h2>Wofür es da ist</h2>
+<p>WordGrinder ist ein Programm zum <strong>Schreiben</strong>: Briefe, Berichte, Notizen, Kapitel. Es hält dich beim Text, ohne Ablenkung, hat aber alles Nötige: Überschriften, Absätze, Aufzählungen und nummerierte Listen, <strong>fett</strong>, <em>kursiv</em>, unterstrichen, Suchen und Ersetzen, Wortzählung, Rückgängig und Wiederholen, mehrere Dokumente in einer Datei. Es öffnet und exportiert <strong>OpenDocument <code>.odt</code></strong> (LibreOffice; auch Word öffnet es), <strong>Markdown</strong>, <strong>HTML</strong> und Text; außerdem exportiert es LaTeX, troff und Org.</p>
+<h2>So öffnest du es</h2>
+<ul>
+<li><strong>Tippe auf das Symbol</strong> auf dem Startbildschirm: Ein leeres Dokument öffnet sich.</li>
+<li>Tippe in <strong>Dateien</strong> auf eine <code>.odt</code>-, <code>.md</code>-, <code>.html</code>- oder <code>.txt</code>-Datei und wähle <strong>Öffnen mit › WordGrinder</strong>.</li>
+<li>Im Terminal: <code>wordgrinder brief.odt</code>.</li>
+</ul>
+<p>Eine <code>.odt</code>-, <code>.md</code>-, <code>.html</code>- oder <code>.txt</code>-Datei wird <strong>importiert</strong>: Beim Speichern schreibt WordGrinder daneben eine <code>.wg</code>-Datei (sein Format) und das Original bleibt unverändert. Um es wieder als <code>.odt</code> zu schreiben, nimm <strong>ESC › File › Export</strong>.</p>
+<h2>Touch und Tastatur</h2>
+<ul>
+<li><strong>Tippe in den Text</strong>, um den Cursor dorthin zu setzen. <strong>Wische nach oben und unten</strong>, um zu scrollen.</li>
+<li><strong>ESC</strong> (in der Tastenleiste über der Tastatur) öffnet das <strong>Menü</strong>: File, Edit, Style, Documents, Navigation. Jeder Eintrag hat einen Buchstaben, die häufigsten haben eine Strg-Kurztaste.</li>
+<li>Mit einer USB- oder KeyDeck-Tastatur funktionieren auch Umschalt+Pfeile (Auswahl) und Strg+Pfeile (Wort für Wort).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tasten</th>
+<th>Was sie tun</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC</td>
+<td>Menü</td>
+</tr>
+<tr>
+<td>Strg+S</td>
+<td>speichern</td>
+</tr>
+<tr>
+<td>Strg+O</td>
+<td>ein Dokument öffnen</td>
+</tr>
+<tr>
+<td>Strg+B / Strg+U</td>
+<td>fett / unterstrichen (kursiv: ESC › Style › Set italic)</td>
+</tr>
+<tr>
+<td>Strg+N</td>
+<td>normaler Text</td>
+</tr>
+<tr>
+<td>Strg+P</td>
+<td>Absatzstil: Überschriften H1–H4, Listen, Zitate</td>
+</tr>
+<tr>
+<td>Strg+Z / Strg+Y</td>
+<td>rückgängig / wiederholen</td>
+</tr>
+<tr>
+<td>Strg+X / Strg+C / Strg+V</td>
+<td>ausschneiden / kopieren / einfügen</td>
+</tr>
+<tr>
+<td>Strg+F / Strg+K</td>
+<td>suchen und ersetzen / weitersuchen</td>
+</tr>
+<tr>
+<td>Strg+G</td>
+<td>zu einer Seite oder Überschrift springen</td>
+</tr>
+<tr>
+<td>Strg+Q</td>
+<td>beenden</td>
+</tr>
+</tbody>
+</table>
+<p>Die Menüs von WordGrinder sind auf Englisch.</p>
+<h2>Mit Anima</h2>
+<p>WordGrinder ist ein Systemprogramm: Anima liest damit eine <code>.odt</code>-Datei oder macht aus Notizen ein Dokument. Frag zum Beispiel „Lies mir die Datei bericht.odt vor" oder „Mach aus notizen.md ein odt-Dokument".</p>
+<h2>Grenzen</h2>
+<ul>
+<li>Word-Dateien <code>.docx</code> und <code>.doc</code> lassen sich nicht öffnen: speichere sie als <code>.odt</code>.</li>
+<li>Keine Bilder, Tabellen, Spalten oder Seitenlayout: Es ist ein Programm für Text. Bilder einer importierten <code>.odt</code> gehen verloren.</li>
+<li>Die Rechtschreibprüfung hat keine Wörterbücher installiert.</li>
+<li>Die Zwischenablage gibt es nur im Programm.</li>
+</ul>
+<h2>Im Terminal</h2>
+<ul>
+<li><strong>Tippe auf das Symbol</strong>, um das Terminal mit dem bereits gestarteten Programm zu öffnen, oder öffne <strong>Terminal</strong> und gib den Befehl ein.</li>
+<li>Deine Dateien liegen im Ordner <strong>home</strong> der SD-Karte (<code>/sdcard/home</code>): Für das Programm ist dieser Ordner <code>/</code>. Dateien vom PC kopierst du, indem du die SD-Karte in einen Kartenleser steckst.</li>
+<li>Umwandeln, ohne zu öffnen: <code>wordgrinder --convert brief.odt brief.txt</code> (die Endung bestimmt das Format: <code>.odt</code> <code>.md</code> <code>.html</code> <code>.txt</code> <code>.wg</code>, als Ausgabe auch <code>.tex</code>).</li>
+<li><code>apps</code> listet die installierten Programme, <code>help wordgrinder</code> die Syntax.</li>
+</ul></article><footer><a href='../index-it.html'>Alle Apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>

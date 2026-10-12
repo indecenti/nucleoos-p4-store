@@ -1,0 +1,571 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>sc-im — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a> <a href='#es'>ES</a> <a href='#fr'>FR</a> <a href='#de'>DE</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Foglio di calcolo sc-im</h1><p class=desc>sc-im è un foglio di calcolo a schermo intero: formule e funzioni (@sum, @avg, @if, date...), formati dei numeri, ordinamento, filtri, annulla. Apre file Excel .xlsx e .xls, LibreOffice .ods, .csv e .tsv e salva in .xlsx, .csv e .tsv. Tocca una cella per selezionarla, = per scrivere un numero o una formula, :w per salvare, :q per uscire, :h per il manuale.</p><p class=meta>versione 0.8.5.1 · Licenza: BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) · <a href='https://github.com/andmarti1424/sc-im'>Sito del progetto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programma da Terminale</b><p>Non ha una finestra sua: gira dentro l'app Terminale. Toccando l'icona si apre il Terminale con il programma già avviato; oppure apri Terminale e scrivi <code>sc-im</code>.</p></aside><article><h1>sc-im, foglio di calcolo</h1>
+<h2>A cosa serve</h2>
+<p>sc-im è un foglio di calcolo vero, a schermo intero: celle con numeri, testi e formule che si ricalcolano da sole, funzioni (<code>@sum</code>, <code>@avg</code>, <code>@max</code>, <code>@if</code>, date e ore), formati dei numeri, larghezza delle colonne, ordinamento, filtri, annulla e ripeti. Apre file <strong>Excel <code>.xlsx</code> e <code>.xls</code></strong>, <strong>LibreOffice <code>.ods</code></strong>, <strong><code>.csv</code></strong> e <strong><code>.tsv</code></strong>, e salva in <code>.xlsx</code>, <code>.csv</code> e <code>.tsv</code>: un elenco di spese, un inventario, un piano rate, un foglio ricevuto per mail.</p>
+<h2>Come si apre</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> in Home: si apre il foglio vuoto.</li>
+<li>Da <strong>File</strong>, tocca un <code>.xlsx</code>, <code>.xls</code>, <code>.ods</code> o <code>.csv</code> e scegli <strong>Apri con › sc-im</strong>.</li>
+<li>Dal Terminale: <code>sc-im spese.xlsx</code>.</li>
+</ul>
+<h2>Tocco e tastiera</h2>
+<ul>
+<li><strong>Tocca una cella</strong> per selezionarla. <strong>Trascina su e giù</strong> per scorrere il foglio.</li>
+<li>La riga di tasti sopra la tastiera ha <strong>Esc</strong>, <strong>Tab</strong>, <strong>Ctrl</strong> e le <strong>frecce</strong>.</li>
+<li>Con una tastiera USB o KeyDeck funzionano anche Ctrl, Shift e i tasti funzione.</li>
+</ul>
+<h2>I comandi principali</h2>
+<p>sc-im si usa come l'editor vim: una lettera è un comando, i comandi lunghi cominciano con i due punti.</p>
+<table>
+<thead>
+<tr>
+<th>Tasti</th>
+<th>Cosa fanno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>frecce</td>
+<td>spostano la selezione</td>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td>scrivi un numero o una formula, es. <code>=@sum(B0:B9)</code> poi Invio</td>
+</tr>
+<tr>
+<td><code>&lt;</code> <code>&gt;</code> <code>\</code></td>
+<td>scrivi un testo allineato a sinistra, a destra, centrato</td>
+</tr>
+<tr>
+<td><code>e</code> / <code>E</code></td>
+<td>modifica il numero / il testo della cella</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>cancella la cella</td>
+</tr>
+<tr>
+<td><code>u</code> / Ctrl+R</td>
+<td>annulla / ripeti</td>
+</tr>
+<tr>
+<td><code>yy</code> poi <code>p</code></td>
+<td>copia la cella e incollala</td>
+</tr>
+<tr>
+<td><code>ir</code> <code>ic</code></td>
+<td>inserisci una riga / una colonna</td>
+</tr>
+<tr>
+<td><code>dr</code> <code>dc</code></td>
+<td>elimina la riga / la colonna</td>
+</tr>
+<tr>
+<td><code>f&gt;</code> <code>f&lt;</code></td>
+<td>colonna più larga / più stretta</td>
+</tr>
+<tr>
+<td><code>f+</code> <code>f-</code></td>
+<td>più / meno decimali</td>
+</tr>
+<tr>
+<td><code>goB12</code></td>
+<td>vai alla cella B12</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>salva; <code>:w conti.xlsx</code> salva come Excel</td>
+</tr>
+<tr>
+<td><code>:e csv conti.csv</code></td>
+<td>esporta in CSV (anche <code>tab</code>, <code>txt</code>, <code>mkd</code>)</td>
+</tr>
+<tr>
+<td><code>:load file.ods</code></td>
+<td>apre un altro file</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>esce (<code>:q!</code> senza salvare)</td>
+</tr>
+<tr>
+<td><code>:h</code></td>
+<td>il manuale completo (<code>q</code> per chiuderlo)</td>
+</tr>
+</tbody>
+</table>
+<p>Le celle si chiamano con la colonna e la riga, <strong>contando le righe da 0</strong>: <code>A0</code> è la prima cella in alto a sinistra. Nelle formule gli intervalli si scrivono <code>A0:A9</code>.</p>
+<h2>Con Anima</h2>
+<p>sc-im è un programma di sistema: Anima lo usa per leggere i tuoi fogli. Chiedi per esempio "quanto fa il totale nel file spese.xlsx?" o "riassumi la tabella ordini.ods".</p>
+<h2>Limiti</h2>
+<ul>
+<li>Grafici, macro, immagini e commenti dei file Excel non vengono letti; di un <code>.xlsx</code> si leggono valori, testi e (con l'opzione <code>--xlsx_readformulas</code>) le formule.</li>
+<li>I file <code>.ods</code> si aprono ma si salvano in <code>.xlsx</code>, <code>.csv</code> o nel formato di sc-im (<code>.sc</code>).</li>
+<li>Di un vecchio <code>.xls</code> si legge il primo foglio; si salva in <code>.xlsx</code>.</li>
+<li>Gli appunti di sistema e i comandi <code>!</code> (programmi esterni) non sono disponibili.</li>
+<li>Fogli molto grandi (decine di migliaia di righe) possono non entrare nella memoria del dispositivo: sc-im lo dice e il file originale resta intatto, perché salva prima in un file temporaneo.</li>
+</ul>
+<h2>Nel Terminale</h2>
+<ul>
+<li><strong>Tocca l'icona</strong> per aprire il Terminale con il programma già avviato, oppure apri <strong>Terminale</strong> e scrivi il comando.</li>
+<li>I tuoi file stanno nella cartella <strong>home</strong> della scheda SD (<code>/sdcard/home</code>): per il programma quella cartella è <code>/</code>. Puoi copiarci file dal PC mettendo la SD nel lettore.</li>
+<li>Leggere un foglio senza aprirlo: <code>sc-im --nocurses --quit_afterload --export_csv spese.xlsx</code> (con <code>--export_mkd</code> esce una tabella).</li>
+<li>Con <code>apps</code> il Terminale elenca i programmi installati, con <code>help sc-im</code> la sintassi.</li>
+</ul>
+<hr />
+<p><em>This product includes software developed by Andrés Martinelli <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</em></p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>sc-im spreadsheet</h1><p class=desc>sc-im is a full-screen spreadsheet: formulas and functions (@sum, @avg, @if, dates...), number formats, sorting, filters, undo. It opens Excel .xlsx and .xls, LibreOffice .ods, .csv and .tsv files and saves .xlsx, .csv and .tsv. Tap a cell to select it, = to type a number or formula, :w to save, :q to quit, :h for the manual.</p><p class=meta>version 0.8.5.1 · License: BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) · <a href='https://github.com/andmarti1424/sc-im'>Project site</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal program</b><p>It has no window of its own: it runs inside the Terminal app. Tapping its icon opens the Terminal with the program already started; or open Terminal and type <code>sc-im</code>.</p></aside><article><h1>sc-im, spreadsheet</h1>
+<h2>What it is for</h2>
+<p>sc-im is a real full-screen spreadsheet: cells with numbers, text and formulas that recalculate by themselves, functions (<code>@sum</code>, <code>@avg</code>, <code>@max</code>, <code>@if</code>, dates and times), number formats, column widths, sorting, filters, undo and redo. It opens <strong>Excel <code>.xlsx</code> and <code>.xls</code></strong>, <strong>LibreOffice <code>.ods</code></strong>, <strong><code>.csv</code></strong> and <strong><code>.tsv</code></strong> files, and saves <code>.xlsx</code>, <code>.csv</code> and <code>.tsv</code>: a list of expenses, an inventory, a loan plan, a sheet someone emailed you.</p>
+<h2>How to open it</h2>
+<ul>
+<li><strong>Tap the icon</strong> on Home: an empty sheet opens.</li>
+<li>In <strong>Files</strong>, tap an <code>.xlsx</code>, <code>.xls</code>, <code>.ods</code> or <code>.csv</code> file and choose <strong>Open with › sc-im</strong>.</li>
+<li>In the Terminal: <code>sc-im expenses.xlsx</code>.</li>
+</ul>
+<h2>Touch and keyboard</h2>
+<ul>
+<li><strong>Tap a cell</strong> to select it. <strong>Drag up and down</strong> to scroll the sheet.</li>
+<li>The key row above the keyboard has <strong>Esc</strong>, <strong>Tab</strong>, <strong>Ctrl</strong> and the <strong>arrows</strong>.</li>
+<li>A USB or KeyDeck keyboard also gives you Ctrl, Shift and the function keys.</li>
+</ul>
+<h2>The main commands</h2>
+<p>sc-im works like the vim editor: a letter is a command, long commands start with a colon.</p>
+<table>
+<thead>
+<tr>
+<th>Keys</th>
+<th>What they do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrows</td>
+<td>move the selection</td>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td>type a number or a formula, e.g. <code>=@sum(B0:B9)</code> then Enter</td>
+</tr>
+<tr>
+<td><code>&lt;</code> <code>&gt;</code> <code>\</code></td>
+<td>type text aligned left, right, centred</td>
+</tr>
+<tr>
+<td><code>e</code> / <code>E</code></td>
+<td>edit the cell's number / text</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>delete the cell</td>
+</tr>
+<tr>
+<td><code>u</code> / Ctrl+R</td>
+<td>undo / redo</td>
+</tr>
+<tr>
+<td><code>yy</code> then <code>p</code></td>
+<td>copy the cell and paste it</td>
+</tr>
+<tr>
+<td><code>ir</code> <code>ic</code></td>
+<td>insert a row / a column</td>
+</tr>
+<tr>
+<td><code>dr</code> <code>dc</code></td>
+<td>delete the row / the column</td>
+</tr>
+<tr>
+<td><code>f&gt;</code> <code>f&lt;</code></td>
+<td>wider / narrower column</td>
+</tr>
+<tr>
+<td><code>f+</code> <code>f-</code></td>
+<td>more / fewer decimals</td>
+</tr>
+<tr>
+<td><code>goB12</code></td>
+<td>go to cell B12</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>save; <code>:w accounts.xlsx</code> saves as Excel</td>
+</tr>
+<tr>
+<td><code>:e csv accounts.csv</code></td>
+<td>export to CSV (also <code>tab</code>, <code>txt</code>, <code>mkd</code>)</td>
+</tr>
+<tr>
+<td><code>:load file.ods</code></td>
+<td>open another file</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>quit (<code>:q!</code> without saving)</td>
+</tr>
+<tr>
+<td><code>:h</code></td>
+<td>the full manual (<code>q</code> closes it)</td>
+</tr>
+</tbody>
+</table>
+<p>Cells are named by column and row, <strong>counting rows from 0</strong>: <code>A0</code> is the top-left cell. Ranges in formulas are written <code>A0:A9</code>.</p>
+<h2>With Anima</h2>
+<p>sc-im is a system program: Anima uses it to read your sheets. Ask for example "what is the total in expenses.xlsx?" or "summarise the orders.ods table".</p>
+<h2>Limits</h2>
+<ul>
+<li>Charts, macros, pictures and comments in Excel files are not read; from an <code>.xlsx</code> you get values, text and (with the <code>--xlsx_readformulas</code> option) formulas.</li>
+<li><code>.ods</code> files open but save as <code>.xlsx</code>, <code>.csv</code> or sc-im's own format (<code>.sc</code>).</li>
+<li>From an old <code>.xls</code> file the first sheet is read; it saves as <code>.xlsx</code>.</li>
+<li>The system clipboard and <code>!</code> commands (external programs) are not available.</li>
+<li>Very large sheets (tens of thousands of rows) may not fit in the device's memory: sc-im says so and the original file is left untouched, because it saves to a temporary file first.</li>
+</ul>
+<h2>In the Terminal</h2>
+<ul>
+<li><strong>Tap the icon</strong> to open the Terminal with the program already running, or open <strong>Terminal</strong> and type the command.</li>
+<li>Your files live in the <strong>home</strong> folder of the SD card (<code>/sdcard/home</code>): the program sees that folder as <code>/</code>. Copy files from a PC by putting the SD in a card reader.</li>
+<li>Read a sheet without opening it: <code>sc-im --nocurses --quit_afterload --export_csv expenses.xlsx</code> (<code>--export_mkd</code> gives a table).</li>
+<li><code>apps</code> lists the installed terminal programs, <code>help sc-im</code> its syntax.</li>
+</ul>
+<hr />
+<p><em>This product includes software developed by Andrés Martinelli <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</em></p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><section id=es lang=es><header><img src='data:image/png;base64,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' alt=><div><h1>Hoja de cálculo sc-im</h1><p class=desc>sc-im es una hoja de cálculo a pantalla completa: fórmulas y funciones (@sum, @avg, @if, fechas...), formatos de número, ordenación, filtros, deshacer. Abre archivos de Excel .xlsx y .xls, LibreOffice .ods, .csv y .tsv y guarda en .xlsx, .csv y .tsv. Toca una celda para seleccionarla, = para escribir un número o una fórmula, :w para guardar, :q para salir, :h para el manual.</p><p class=meta>versión 0.8.5.1 · Licencia: BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) · <a href='https://github.com/andmarti1424/sc-im'>Sitio del proyecto</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programa del Terminal</b><p>No tiene ventana propia: funciona dentro de la app Terminal. Al tocar su icono se abre el Terminal con el programa ya iniciado; o abre Terminal y escribe <code>sc-im</code>.</p></aside><article><h1>sc-im, hoja de cálculo</h1>
+<h2>Para qué sirve</h2>
+<p>sc-im es una hoja de cálculo de verdad, a pantalla completa: celdas con números, textos y fórmulas que se recalculan solas, funciones (<code>@sum</code>, <code>@avg</code>, <code>@max</code>, <code>@if</code>, fechas y horas), formatos de número, ancho de columnas, ordenación, filtros, deshacer y rehacer. Abre archivos <strong>Excel <code>.xlsx</code> y <code>.xls</code></strong>, <strong>LibreOffice <code>.ods</code></strong>, <strong><code>.csv</code></strong> y <strong><code>.tsv</code></strong>, y guarda en <code>.xlsx</code>, <code>.csv</code> y <code>.tsv</code>: una lista de gastos, un inventario, un plan de pagos, una hoja que te enviaron por correo.</p>
+<h2>Cómo se abre</h2>
+<ul>
+<li><strong>Toca el icono</strong> en Inicio: se abre una hoja vacía.</li>
+<li>En <strong>Archivos</strong>, toca un <code>.xlsx</code>, <code>.xls</code>, <code>.ods</code> o <code>.csv</code> y elige <strong>Abrir con › sc-im</strong>.</li>
+<li>En el Terminal: <code>sc-im gastos.xlsx</code>.</li>
+</ul>
+<h2>Tacto y teclado</h2>
+<ul>
+<li><strong>Toca una celda</strong> para seleccionarla. <strong>Arrastra arriba y abajo</strong> para desplazar la hoja.</li>
+<li>La fila de teclas sobre el teclado tiene <strong>Esc</strong>, <strong>Tab</strong>, <strong>Ctrl</strong> y las <strong>flechas</strong>.</li>
+<li>Con un teclado USB o KeyDeck también funcionan Ctrl, Shift y las teclas de función.</li>
+</ul>
+<h2>Los comandos principales</h2>
+<p>sc-im se usa como el editor vim: una letra es un comando, los comandos largos empiezan con dos puntos.</p>
+<table>
+<thead>
+<tr>
+<th>Teclas</th>
+<th>Qué hacen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flechas</td>
+<td>mueven la selección</td>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td>escribe un número o una fórmula, p. ej. <code>=@sum(B0:B9)</code> y luego Intro</td>
+</tr>
+<tr>
+<td><code>&lt;</code> <code>&gt;</code> <code>\</code></td>
+<td>escribe un texto alineado a la izquierda, a la derecha, centrado</td>
+</tr>
+<tr>
+<td><code>e</code> / <code>E</code></td>
+<td>edita el número / el texto de la celda</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>borra la celda</td>
+</tr>
+<tr>
+<td><code>u</code> / Ctrl+R</td>
+<td>deshacer / rehacer</td>
+</tr>
+<tr>
+<td><code>yy</code> y luego <code>p</code></td>
+<td>copia la celda y pégala</td>
+</tr>
+<tr>
+<td><code>ir</code> <code>ic</code></td>
+<td>inserta una fila / una columna</td>
+</tr>
+<tr>
+<td><code>dr</code> <code>dc</code></td>
+<td>elimina la fila / la columna</td>
+</tr>
+<tr>
+<td><code>f&gt;</code> <code>f&lt;</code></td>
+<td>columna más ancha / más estrecha</td>
+</tr>
+<tr>
+<td><code>f+</code> <code>f-</code></td>
+<td>más / menos decimales</td>
+</tr>
+<tr>
+<td><code>goB12</code></td>
+<td>ve a la celda B12</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>guarda; <code>:w cuentas.xlsx</code> guarda como Excel</td>
+</tr>
+<tr>
+<td><code>:e csv cuentas.csv</code></td>
+<td>exporta a CSV (también <code>tab</code>, <code>txt</code>, <code>mkd</code>)</td>
+</tr>
+<tr>
+<td><code>:load archivo.ods</code></td>
+<td>abre otro archivo</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>sale (<code>:q!</code> sin guardar)</td>
+</tr>
+<tr>
+<td><code>:h</code></td>
+<td>el manual completo (<code>q</code> lo cierra)</td>
+</tr>
+</tbody>
+</table>
+<p>Las celdas se nombran con la columna y la fila, <strong>contando las filas desde 0</strong>: <code>A0</code> es la primera celda arriba a la izquierda. En las fórmulas los rangos se escriben <code>A0:A9</code>.</p>
+<h2>Con Anima</h2>
+<p>sc-im es un programa del sistema: Anima lo usa para leer tus hojas. Pregunta por ejemplo "¿cuánto suma el total de gastos.xlsx?" o "resume la tabla pedidos.ods".</p>
+<h2>Límites</h2>
+<ul>
+<li>Los gráficos, macros, imágenes y comentarios de los archivos de Excel no se leen; de un <code>.xlsx</code> se leen valores, textos y (con la opción <code>--xlsx_readformulas</code>) fórmulas.</li>
+<li>Los archivos <code>.ods</code> se abren pero se guardan en <code>.xlsx</code>, <code>.csv</code> o en el formato de sc-im (<code>.sc</code>).</li>
+<li>De un <code>.xls</code> antiguo se lee la primera hoja; se guarda en <code>.xlsx</code>.</li>
+<li>El portapapeles del sistema y los comandos <code>!</code> (programas externos) no están disponibles.</li>
+<li>Las hojas muy grandes (decenas de miles de filas) pueden no caber en la memoria del dispositivo: sc-im lo avisa y el archivo original queda intacto, porque primero guarda en un archivo temporal.</li>
+</ul>
+<h2>En el Terminal</h2>
+<ul>
+<li><strong>Toca el icono</strong> para abrir el Terminal con el programa ya iniciado, o abre <strong>Terminal</strong> y escribe el comando.</li>
+<li>Tus archivos están en la carpeta <strong>home</strong> de la tarjeta SD (<code>/sdcard/home</code>): para el programa esa carpeta es <code>/</code>. Puedes copiar archivos desde el PC poniendo la SD en el lector.</li>
+<li>Leer una hoja sin abrirla: <code>sc-im --nocurses --quit_afterload --export_csv gastos.xlsx</code> (con <code>--export_mkd</code> sale una tabla).</li>
+<li>Con <code>apps</code> el Terminal lista los programas instalados, con <code>help sc-im</code> la sintaxis.</li>
+</ul>
+<hr />
+<p><em>This product includes software developed by Andrés Martinelli <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</em></p></article><footer><a href='../index-it.html'>Todas las apps</a> · NucleoOS P4</footer></section><section id=fr lang=fr><header><img src='data:image/png;base64,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' alt=><div><h1>Tableur sc-im</h1><p class=desc>sc-im est un tableur plein écran : formules et fonctions (@sum, @avg, @if, dates...), formats de nombre, tri, filtres, annulation. Il ouvre les fichiers Excel .xlsx et .xls, LibreOffice .ods, .csv et .tsv et enregistre en .xlsx, .csv et .tsv. Touchez une cellule pour la sélectionner, = pour saisir un nombre ou une formule, :w pour enregistrer, :q pour quitter, :h pour le manuel.</p><p class=meta>version 0.8.5.1 · Licence: BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) · <a href='https://github.com/andmarti1424/sc-im'>Site du projet</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Programme du Terminal</b><p>Il n'a pas de fenêtre à lui : il tourne dans l'app Terminal. Toucher son icône ouvre le Terminal avec le programme déjà lancé ; ou ouvrez Terminal et tapez <code>sc-im</code>.</p></aside><article><h1>sc-im, tableur</h1>
+<h2>À quoi il sert</h2>
+<p>sc-im est un vrai tableur, en plein écran : des cellules avec des nombres, des textes et des formules qui se recalculent toutes seules, des fonctions (<code>@sum</code>, <code>@avg</code>, <code>@max</code>, <code>@if</code>, dates et heures), des formats de nombre, la largeur des colonnes, le tri, les filtres, annuler et rétablir. Il ouvre les fichiers <strong>Excel <code>.xlsx</code> et <code>.xls</code></strong>, <strong>LibreOffice <code>.ods</code></strong>, <strong><code>.csv</code></strong> et <strong><code>.tsv</code></strong>, et enregistre en <code>.xlsx</code>, <code>.csv</code> et <code>.tsv</code> : une liste de dépenses, un inventaire, un échéancier, un classeur reçu par e-mail.</p>
+<h2>Comment l'ouvrir</h2>
+<ul>
+<li><strong>Touchez l'icône</strong> sur l'Accueil : une feuille vide s'ouvre.</li>
+<li>Dans <strong>Fichiers</strong>, touchez un <code>.xlsx</code>, <code>.xls</code>, <code>.ods</code> ou <code>.csv</code> et choisissez <strong>Ouvrir avec › sc-im</strong>.</li>
+<li>Dans le Terminal : <code>sc-im depenses.xlsx</code>.</li>
+</ul>
+<h2>Toucher et clavier</h2>
+<ul>
+<li><strong>Touchez une cellule</strong> pour la sélectionner. <strong>Glissez vers le haut ou le bas</strong> pour faire défiler la feuille.</li>
+<li>La rangée de touches au-dessus du clavier a <strong>Échap</strong>, <strong>Tab</strong>, <strong>Ctrl</strong> et les <strong>flèches</strong>.</li>
+<li>Avec un clavier USB ou KeyDeck, Ctrl, Maj et les touches de fonction marchent aussi.</li>
+</ul>
+<h2>Les commandes principales</h2>
+<p>sc-im s'utilise comme l'éditeur vim : une lettre est une commande, les commandes longues commencent par deux-points.</p>
+<table>
+<thead>
+<tr>
+<th>Touches</th>
+<th>Ce qu'elles font</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flèches</td>
+<td>déplacent la sélection</td>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td>saisir un nombre ou une formule, p. ex. <code>=@sum(B0:B9)</code> puis Entrée</td>
+</tr>
+<tr>
+<td><code>&lt;</code> <code>&gt;</code> <code>\</code></td>
+<td>saisir un texte aligné à gauche, à droite, centré</td>
+</tr>
+<tr>
+<td><code>e</code> / <code>E</code></td>
+<td>modifier le nombre / le texte de la cellule</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>effacer la cellule</td>
+</tr>
+<tr>
+<td><code>u</code> / Ctrl+R</td>
+<td>annuler / rétablir</td>
+</tr>
+<tr>
+<td><code>yy</code> puis <code>p</code></td>
+<td>copier la cellule et la coller</td>
+</tr>
+<tr>
+<td><code>ir</code> <code>ic</code></td>
+<td>insérer une ligne / une colonne</td>
+</tr>
+<tr>
+<td><code>dr</code> <code>dc</code></td>
+<td>supprimer la ligne / la colonne</td>
+</tr>
+<tr>
+<td><code>f&gt;</code> <code>f&lt;</code></td>
+<td>colonne plus large / plus étroite</td>
+</tr>
+<tr>
+<td><code>f+</code> <code>f-</code></td>
+<td>plus / moins de décimales</td>
+</tr>
+<tr>
+<td><code>goB12</code></td>
+<td>aller à la cellule B12</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>enregistrer ; <code>:w comptes.xlsx</code> enregistre au format Excel</td>
+</tr>
+<tr>
+<td><code>:e csv comptes.csv</code></td>
+<td>exporter en CSV (aussi <code>tab</code>, <code>txt</code>, <code>mkd</code>)</td>
+</tr>
+<tr>
+<td><code>:load fichier.ods</code></td>
+<td>ouvrir un autre fichier</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>quitter (<code>:q!</code> sans enregistrer)</td>
+</tr>
+<tr>
+<td><code>:h</code></td>
+<td>le manuel complet (<code>q</code> le ferme)</td>
+</tr>
+</tbody>
+</table>
+<p>Les cellules se nomment par colonne et ligne, <strong>en comptant les lignes à partir de 0</strong> : <code>A0</code> est la première cellule en haut à gauche. Dans les formules, les plages s'écrivent <code>A0:A9</code>.</p>
+<h2>Avec Anima</h2>
+<p>sc-im est un programme du système : Anima s'en sert pour lire vos feuilles. Demandez par exemple « combien fait le total dans depenses.xlsx ? » ou « résume le tableau commandes.ods ».</p>
+<h2>Limites</h2>
+<ul>
+<li>Les graphiques, macros, images et commentaires des fichiers Excel ne sont pas lus ; d'un <code>.xlsx</code> on lit les valeurs, les textes et (avec l'option <code>--xlsx_readformulas</code>) les formules.</li>
+<li>Les fichiers <code>.ods</code> s'ouvrent mais s'enregistrent en <code>.xlsx</code>, <code>.csv</code> ou au format de sc-im (<code>.sc</code>).</li>
+<li>D'un ancien <code>.xls</code>, la première feuille est lue ; il s'enregistre en <code>.xlsx</code>.</li>
+<li>Le presse-papiers du système et les commandes <code>!</code> (programmes externes) ne sont pas disponibles.</li>
+<li>Les très grandes feuilles (des dizaines de milliers de lignes) peuvent ne pas tenir dans la mémoire de l'appareil : sc-im le signale et le fichier d'origine reste intact, car il enregistre d'abord dans un fichier temporaire.</li>
+</ul>
+<h2>Dans le Terminal</h2>
+<ul>
+<li><strong>Touchez l'icône</strong> pour ouvrir le Terminal avec le programme déjà lancé, ou ouvrez <strong>Terminal</strong> et tapez la commande.</li>
+<li>Vos fichiers sont dans le dossier <strong>home</strong> de la carte SD (<code>/sdcard/home</code>) : pour le programme ce dossier est <code>/</code>. Copiez-y des fichiers depuis un PC en mettant la SD dans un lecteur.</li>
+<li>Lire une feuille sans l'ouvrir : <code>sc-im --nocurses --quit_afterload --export_csv depenses.xlsx</code> (avec <code>--export_mkd</code> on obtient un tableau).</li>
+<li><code>apps</code> liste les programmes installés, <code>help sc-im</code> sa syntaxe.</li>
+</ul>
+<hr />
+<p><em>This product includes software developed by Andrés Martinelli <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</em></p></article><footer><a href='../index-it.html'>Toutes les apps</a> · NucleoOS P4</footer></section><section id=de lang=de><header><img src='data:image/png;base64,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' alt=><div><h1>Tabellenkalkulation sc-im</h1><p class=desc>sc-im ist eine Vollbild-Tabellenkalkulation: Formeln und Funktionen (@sum, @avg, @if, Datumswerte...), Zahlenformate, Sortieren, Filter, Rückgängig. Sie öffnet Excel-.xlsx- und -.xls-, LibreOffice-.ods-, .csv- und .tsv-Dateien und speichert als .xlsx, .csv und .tsv. Tippe auf eine Zelle, um sie auszuwählen, = für eine Zahl oder Formel, :w zum Speichern, :q zum Beenden, :h für das Handbuch.</p><p class=meta>Version 0.8.5.1 · Lizenz: BSD-4-Clause (sc-im); X11 (ncurses); MIT (libxml2); BSD-3-Clause (libzip); BSD-2-Clause (libxlsxwriter); Zlib (zlib) · <a href='https://github.com/andmarti1424/sc-im'>Projektseite</a></p></div></header><aside><b><span class=prompt>&gt;_</span> Terminal-Programm</b><p>Es hat kein eigenes Fenster: Es läuft in der App Terminal. Ein Tipp auf sein Symbol öffnet das Terminal mit dem bereits gestarteten Programm; oder öffne Terminal und gib <code>sc-im</code> ein.</p></aside><article><h1>sc-im, Tabellenkalkulation</h1>
+<h2>Wofür sie da ist</h2>
+<p>sc-im ist eine echte Tabellenkalkulation im Vollbild: Zellen mit Zahlen, Texten und Formeln, die sich selbst neu berechnen, Funktionen (<code>@sum</code>, <code>@avg</code>, <code>@max</code>, <code>@if</code>, Datum und Uhrzeit), Zahlenformate, Spaltenbreiten, Sortieren, Filter, Rückgängig und Wiederholen. Sie öffnet <strong>Excel-<code>.xlsx</code></strong>- und <strong><code>.xls</code></strong>-, <strong>LibreOffice-<code>.ods</code></strong>-, <strong><code>.csv</code></strong>- und <strong><code>.tsv</code></strong>-Dateien und speichert als <code>.xlsx</code>, <code>.csv</code> und <code>.tsv</code>: eine Ausgabenliste, eine Inventur, einen Ratenplan, eine Tabelle, die dir jemand gemailt hat.</p>
+<h2>So öffnest du sie</h2>
+<ul>
+<li><strong>Tippe auf das Symbol</strong> auf dem Startbildschirm: Eine leere Tabelle öffnet sich.</li>
+<li>Tippe in <strong>Dateien</strong> auf eine <code>.xlsx</code>-, <code>.xls</code>-, <code>.ods</code>- oder <code>.csv</code>-Datei und wähle <strong>Öffnen mit › sc-im</strong>.</li>
+<li>Im Terminal: <code>sc-im ausgaben.xlsx</code>.</li>
+</ul>
+<h2>Touch und Tastatur</h2>
+<ul>
+<li><strong>Tippe auf eine Zelle</strong>, um sie auszuwählen. <strong>Wische nach oben und unten</strong>, um durch die Tabelle zu scrollen.</li>
+<li>Die Tastenleiste über der Tastatur hat <strong>Esc</strong>, <strong>Tab</strong>, <strong>Strg</strong> und die <strong>Pfeile</strong>.</li>
+<li>Mit einer USB- oder KeyDeck-Tastatur funktionieren auch Strg, Umschalt und die Funktionstasten.</li>
+</ul>
+<h2>Die wichtigsten Befehle</h2>
+<p>sc-im bedient man wie den Editor vim: Ein Buchstabe ist ein Befehl, lange Befehle beginnen mit einem Doppelpunkt.</p>
+<table>
+<thead>
+<tr>
+<th>Tasten</th>
+<th>Was sie tun</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pfeile</td>
+<td>bewegen die Auswahl</td>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td>eine Zahl oder Formel eingeben, z. B. <code>=@sum(B0:B9)</code>, dann Enter</td>
+</tr>
+<tr>
+<td><code>&lt;</code> <code>&gt;</code> <code>\</code></td>
+<td>Text eingeben, links, rechts, zentriert ausgerichtet</td>
+</tr>
+<tr>
+<td><code>e</code> / <code>E</code></td>
+<td>die Zahl / den Text der Zelle bearbeiten</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>die Zelle löschen</td>
+</tr>
+<tr>
+<td><code>u</code> / Strg+R</td>
+<td>rückgängig / wiederholen</td>
+</tr>
+<tr>
+<td><code>yy</code>, dann <code>p</code></td>
+<td>die Zelle kopieren und einfügen</td>
+</tr>
+<tr>
+<td><code>ir</code> <code>ic</code></td>
+<td>eine Zeile / Spalte einfügen</td>
+</tr>
+<tr>
+<td><code>dr</code> <code>dc</code></td>
+<td>die Zeile / Spalte löschen</td>
+</tr>
+<tr>
+<td><code>f&gt;</code> <code>f&lt;</code></td>
+<td>Spalte breiter / schmaler</td>
+</tr>
+<tr>
+<td><code>f+</code> <code>f-</code></td>
+<td>mehr / weniger Nachkommastellen</td>
+</tr>
+<tr>
+<td><code>goB12</code></td>
+<td>zur Zelle B12 springen</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>speichern; <code>:w konten.xlsx</code> speichert als Excel</td>
+</tr>
+<tr>
+<td><code>:e csv konten.csv</code></td>
+<td>als CSV exportieren (auch <code>tab</code>, <code>txt</code>, <code>mkd</code>)</td>
+</tr>
+<tr>
+<td><code>:load datei.ods</code></td>
+<td>eine andere Datei öffnen</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>beenden (<code>:q!</code> ohne zu speichern)</td>
+</tr>
+<tr>
+<td><code>:h</code></td>
+<td>das ganze Handbuch (<code>q</code> schließt es)</td>
+</tr>
+</tbody>
+</table>
+<p>Zellen heißen nach Spalte und Zeile, <strong>die Zeilen ab 0 gezählt</strong>: <code>A0</code> ist die erste Zelle oben links. In Formeln schreibt man Bereiche als <code>A0:A9</code>.</p>
+<h2>Mit Anima</h2>
+<p>sc-im ist ein Systemprogramm: Anima liest damit deine Tabellen. Frag zum Beispiel „Wie hoch ist die Summe in ausgaben.xlsx?" oder „Fasse die Tabelle bestellungen.ods zusammen".</p>
+<h2>Grenzen</h2>
+<ul>
+<li>Diagramme, Makros, Bilder und Kommentare in Excel-Dateien werden nicht gelesen; aus einer <code>.xlsx</code> liest man Werte, Texte und (mit der Option <code>--xlsx_readformulas</code>) Formeln.</li>
+<li><code>.ods</code>-Dateien lassen sich öffnen, werden aber als <code>.xlsx</code>, <code>.csv</code> oder im Format von sc-im (<code>.sc</code>) gespeichert.</li>
+<li>Aus einer alten <code>.xls</code>-Datei wird das erste Blatt gelesen; gespeichert wird als <code>.xlsx</code>.</li>
+<li>Die System-Zwischenablage und <code>!</code>-Befehle (externe Programme) sind nicht verfügbar.</li>
+<li>Sehr große Tabellen (zehntausende Zeilen) passen eventuell nicht in den Speicher des Geräts: sc-im meldet das und die Originaldatei bleibt unverändert, weil zuerst in eine temporäre Datei gespeichert wird.</li>
+</ul>
+<h2>Im Terminal</h2>
+<ul>
+<li><strong>Tippe auf das Symbol</strong>, um das Terminal mit dem bereits gestarteten Programm zu öffnen, oder öffne <strong>Terminal</strong> und gib den Befehl ein.</li>
+<li>Deine Dateien liegen im Ordner <strong>home</strong> der SD-Karte (<code>/sdcard/home</code>): Für das Programm ist dieser Ordner <code>/</code>. Dateien vom PC kopierst du, indem du die SD-Karte in einen Kartenleser steckst.</li>
+<li>Eine Tabelle lesen, ohne sie zu öffnen: <code>sc-im --nocurses --quit_afterload --export_csv ausgaben.xlsx</code> (mit <code>--export_mkd</code> kommt eine Tabelle heraus).</li>
+<li><code>apps</code> listet die installierten Programme, <code>help sc-im</code> die Syntax.</li>
+</ul>
+<hr />
+<p><em>This product includes software developed by Andrés Martinelli <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#110;&#100;&#109;&#97;&#114;&#116;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</em></p></article><footer><a href='../index-it.html'>Alle Apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
