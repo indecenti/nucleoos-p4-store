@@ -358,7 +358,7 @@ Every app in this store, who made it and under which license. The WASM-4 carts a
 | T Flight Simulator 1.0 | `taufl` | Tau | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/taufl) |
 | Tail Gunner | `tail-gunner` | Dial0 | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tail-gunner) |
 | Tank Battle | `tankbattle` | Jeremy Zeiber | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankbattle) |
-| Tank Rally | `tankrally` |  |  |  |
+| Tank Rally | `tankrally` | NucleoOS | PolyForm-Noncommercial-1.0.0 |  |
 | Tank Wars | `tank-wars` | Shimon Ulewicz | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tank-wars) |
 | Tankle | `tankle` | Milky Natas | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankle) |
 | Tankle Adventure | `tankle-adventure` | Milky Natas | CC BY-NC-SA 4.0 | [link](https://wasm4.org/play/tankle-adventure) |
