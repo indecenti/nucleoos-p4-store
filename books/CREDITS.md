@@ -164,7 +164,6 @@ nelle schede compare la fonte con il link all'originale.
 - **A proposito dei sonetti di Cesare Pascarella** (it) - Guido Mazzoni (letterato). Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/A_proposito_dei_sonetti_di_Cesare_Pascarella. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **A scuola con metodo** (it) - Autori di Wikibooks. Licenza: CC-BY-SA. Fonte: https://it.wikibooks.org/wiki/A_scuola_con_metodo. Wikibooks (it.wikibooks.org), CC BY-SA 4.0
 - **A sinistra** (it) - Grazia Deledda. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/A_sinistra. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Abissinia** (it) - Giuseppe Vigoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Abissinia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Abramo Lincoln** (it) - Antonio Agresti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Abramo_Lincoln. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Achille in Sciro** (it) - Pietro Metastasio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Achille_in_Sciro. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Acqua amara** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Acqua_amara. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -197,7 +196,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Alfredo Panzini** (it) - Renato Serra. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Alfredo_Panzini. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Alla scoperta dei letterati** (it) - Ugo Ojetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Alla_scoperta_dei_letterati. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Alla zappa** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Alla_zappa. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Alle porte d'Italia** (it) - Edmondo De Amicis. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Alle_porte_d%27Italia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Alpinisti ciabattoni** (it) - Achille Giovanni Cagna. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Alpinisti_ciabattoni. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Amicissimi** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Amicissimi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Aminta** (it) - Torquato Tasso. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Aminta. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -437,7 +435,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Divina Commedia (Guerri)** (it) - Dante Alighieri. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Divina_Commedia_%28Guerri%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Dizionario delle monete milanesi** (it) - Giovanni Mulazzani. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Dizionario_delle_monete_milanesi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Documenti inediti o rari sull'antica agiatezza cremonese** (it) - Francesco Robolotti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Documenti_inediti_o_rari_sull%27antica_agiatezza_cremonese. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Documenti umani** (it) - Federico De Roberto. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Documenti_umani. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Dodici monologhi** (it) - Luigi Arnaldo Vassallo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Dodici_monologhi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Don Candeloro e C.i** (it) - Giovanni Verga. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Don_Candeloro_e_C.i. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Don Evèno** (it) - Grazia Deledda. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Don_Ev%C3%A8no. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -446,7 +443,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Donna Paola** (it) - Matilde Serao. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Donna_Paola. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Donne illustri** (it) - Eugenio Camerini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Donne_illustri. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Donnina forte** (it) - Sofia Bisi Albini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Donnina_forte. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Dopo il divorzio** (it) - Grazia Deledda. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Dopo_il_divorzio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Dopo le nozze** (it) - Virginia Tedeschi Treves. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Dopo_le_nozze. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Doveri dell'uomo (1860)** (it) - Giuseppe Mazzini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Doveri_dell%27uomo_%281860%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Dracula** (it) - Bram Stoker. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Dracula. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -472,7 +468,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Edmenegarda** (it) - Giovanni Prati. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Edmenegarda. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Educazione del baco da seta** (it) - Gaetano Cantoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Educazione_del_baco_da_seta. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Egloghe (Chiabrera 1608)** (it) - Gabriello Chiabrera. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Egloghe_%28Chiabrera_1608%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Eh! La vita** (it) - Luigi Capuana. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Eh%21_La_vita. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Elegie romane** (it) - Gabriele D'Annunzio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Elegie_romane. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Elementi di economia pubblica** (it) - Cesare Beccaria. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Elementi_di_economia_pubblica. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Elena (Euripide - Romagnoli)** (it) - Euripide. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Elena_%28Euripide_-_Romagnoli%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -509,7 +504,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Estratti savonaroliani** (it) - Girolamo Savonarola & Francesco Guicciardini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Estratti_savonaroliani. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Esultate, o dilettissimi!** (it) - Filippo Artico. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Esultate%2C_o_dilettissimi%21. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Etica** (it) - Baruch Spinoza. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Etica. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Ettore Fieramosca** (it) - Massimo d'Azeglio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Ettore_Fieramosca. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Eufemio da Messina** (it) - Silvio Pellico. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Eufemio_da_Messina. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Eureka** (it) - Edgar Allan Poe. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Eureka. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Eutifrone** (it) - Platone. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Eutifrone. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -518,7 +512,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Facezie (Poggio Bracciolini)** (it) - Poggio Bracciolini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Facezie_%28Poggio_Bracciolini%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Fantasia (Serao)** (it) - Matilde Serao. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Fantasia_%28Serao%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Farfalle nere e farfalle bianche** (it) - Neera. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Farfalle_nere_e_farfalle_bianche. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Fatalità (1895)** (it) - Ada Negri. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Fatalit%C3%A0_%281895%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Favole (Fedro)** (it) - Fedro. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Favole_%28Fedro%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Favole di Esopo** (it) - Esopo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Favole_di_Esopo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Favole per i Re d'oggi** (it) - Ercole Luigi Morselli. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Favole_per_i_Re_d%27oggi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -575,7 +568,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Gli amanti timidi** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_amanti_timidi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Gli amori di Zelinda e Lindoro** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_amori_di_Zelinda_e_Lindoro. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Gli assempri** (it) - Filippo Agazzari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_assempri. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Gli duoi fratelli rivali** (it) - Giovanni Battista Della Porta. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_duoi_fratelli_rivali. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Gli elogi del porco** (it) - Giuseppe Ferrari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_elogi_del_porco. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Gli occhiali** (it) - Edgar Allan Poe. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_occhiali. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Gli scorridori del mare** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Gli_scorridori_del_mare. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -596,7 +588,6 @@ nelle schede compare la fonte con il link all'originale.
 - **I Figli dell'Aria** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Figli_dell%27Aria. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **I Malavoglia** (it) - Giovanni Verga. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Malavoglia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **I Manifesti del futurismo** (it) - Filippo Tommaso Marinetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Manifesti_del_futurismo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **I Mille** (it) - Giuseppe Garibaldi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Mille. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **I Parenti** (it) - Silvio Pellico. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Parenti. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **I Persiani (Eschilo-Romagnoli)** (it) - Eschilo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Persiani_%28Eschilo-Romagnoli%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **I Robinson Italiani** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/I_Robinson_Italiani. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -715,7 +706,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Il demone della perversità (Poe-Rossi)** (it) - Edgar Allan Poe. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_demone_della_perversit%C3%A0_%28Poe-Rossi%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Il diamante di Paolino** (it) - Ida Baccini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_diamante_di_Paolino. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Il diavolo** (it) - Arturo Graf. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_diavolo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Il diavolo nell'ampolla** (it) - Adolfo Albertazzi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_diavolo_nell%27ampolla. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Il diavolo nella mia libreria** (it) - Alfredo Panzini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_diavolo_nella_mia_libreria. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Il diavolo, novelle valdarnesi** (it) - Giovanni Magherini Graziani. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_diavolo%2C_novelle_valdarnesi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Il dottor Antonio** (it) - Giovanni Ruffini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Il_dottor_Antonio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -866,7 +856,6 @@ nelle schede compare la fonte con il link all'originale.
 - **L'Etruria vendicata** (it) - Vittorio Alfieri. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Etruria_vendicata. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'Italia e la civiltà tedesca** (it) - Ugo Ojetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Italia_e_la_civilt%C3%A0_tedesca. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'Oceano (1824)** (it) - Alessandro Tassoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Oceano_%281824%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **L'Olimpia** (it) - Giovanni Battista Della Porta. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Olimpia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'Ossola** (it) - Carlo Errera. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Ossola. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'Uomo della folla** (it) - Edgar Allan Poe. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Uomo_della_folla. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'Uomo di fuoco** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27Uomo_di_fuoco. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -911,8 +900,6 @@ nelle schede compare la fonte con il link all'originale.
 - **L'impresario delle Smirne** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27impresario_delle_Smirne. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'incendio nell'oliveto** (it) - Grazia Deledda. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27incendio_nell%27oliveto. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'incognita** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27incognita. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **L'indomani** (it) - Neera. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27indomani. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **L'infedele** (it) - Matilde Serao. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27infedele. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'innesto** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27innesto. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'insegnamento politico-amministrativo** (it) - Angelo Messedaglia. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27insegnamento_politico-amministrativo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **L'oceano del cuore** (it) - Filippo Tommaso Marinetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/L%27oceano_del_cuore. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -933,7 +920,6 @@ nelle schede compare la fonte con il link all'originale.
 - **La Cassaria (prosa)** (it) - Ludovico Ariosto. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Cassaria_%28prosa%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La Chioma di Berenice - Discorsi e considerazioni (1913)** (it) - Ugo Foscolo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Chioma_di_Berenice_-_Discorsi_e_considerazioni_%281913%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La Cicceide legittima** (it) - Giovanni Francesco Lazzarelli. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Cicceide_legittima. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **La Cintia** (it) - Giovanni Battista Della Porta. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Cintia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La Città del Sole (1863)** (it) - Tommaso Campanella. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Citt%C3%A0_del_Sole_%281863%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La Città dell'Oro** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Citt%C3%A0_dell%27Oro. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La Costa d'Avorio** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_Costa_d%27Avorio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -995,7 +981,6 @@ nelle schede compare la fonte con il link all'originale.
 - **La coda del diavolo** (it) - Giovanni Verga. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_coda_del_diavolo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La coltivazione degli olivi** (it) - Cesare Arici. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_coltivazione_degli_olivi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La commedia degli equivochi** (it) - William Shakespeare. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_commedia_degli_equivochi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **La conquista di Roma** (it) - Matilde Serao. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_conquista_di_Roma. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La corona** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_corona. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La coscienza di Zeno (1930)** (it) - Italo Svevo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_coscienza_di_Zeno_%281930%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La crisi dell'infanzia e la delinquenza dei minorenni** (it) - Scipio Sighele. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_crisi_dell%27infanzia_e_la_delinquenza_dei_minorenni. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1017,7 +1002,6 @@ nelle schede compare la fonte con il link all'originale.
 - **La donna volubile** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_donna_volubile. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La famiglia dell'antiquario** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_famiglia_dell%27antiquario. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La fantesca** (it) - Giovanni Battista Della Porta. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_fantesca. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **La favorita del Mahdi** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_favorita_del_Mahdi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La fede (Pirandello)** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_fede_%28Pirandello%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La fedeltà del cane** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_fedelt%C3%A0_del_cane. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La fiera di Sorocinzi** (it) - Nikolaj Vasil'evič Gogol'. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_fiera_di_Sorocinzi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1081,7 +1065,6 @@ nelle schede compare la fonte con il link all'originale.
 - **La rosa (Pirandello)** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_rosa_%28Pirandello%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La santa alleanza dei popoli (Mazzini)** (it) - Giuseppe Mazzini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_santa_alleanza_dei_popoli_%28Mazzini%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La sciarada, appendice alle antiche poetiche** (it) - Bennassù Montanari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_sciarada%2C_appendice_alle_antiche_poetiche. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **La scienza in cucina e l'arte di mangiar bene (1895)** (it) - Pellegrino Artusi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_scienza_in_cucina_e_l%27arte_di_mangiar_bene_%281895%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La scoperta de l'America** (it) - Cesare Pascarella. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_scoperta_de_l%27America. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La scotennatrice** (it) - Emilio Salgari. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_scotennatrice. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La scozzese** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_scozzese. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1098,9 +1081,7 @@ nelle schede compare la fonte con il link all'originale.
 - **La statistica e i suoi metodi** (it) - Angelo Messedaglia. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_statistica_e_i_suoi_metodi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La stipe tributata alle divinità delle Acque Apollinari** (it) - Giuseppe Marchi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_stipe_tributata_alle_divinit%C3%A0_delle_Acque_Apollinari. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La tabernaria** (it) - Giovanni Battista Della Porta. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_tabernaria. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **La tempesta (Shakespeare-Maffei)** (it) - William Shakespeare. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_tempesta_%28Shakespeare-Maffei%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La terribile vendetta** (it) - Nikolaj Vasil'evič Gogol'. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_terribile_vendetta. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **La testa della vipera** (it) - Vittorio Bersezio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_testa_della_vipera. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La toccatina** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_toccatina. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La traviata** (it) - Francesco Maria Piave. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_traviata. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **La trovatella di Milano** (it) - Carolina Invernizio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/La_trovatella_di_Milano. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1143,7 +1124,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Le amanti** (it) - Matilde Serao. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_amanti. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Le avventure d'Alice nel paese delle meraviglie** (it) - Lewis Carroll. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_avventure_d%27Alice_nel_paese_delle_meraviglie. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Le avventure della villeggiatura** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_avventure_della_villeggiatura. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Le avventure di Pinocchio** (it) - Carlo Collodi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_avventure_di_Pinocchio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Le avventure di Sherlock Holmes** (it) - Arthur Conan Doyle. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_avventure_di_Sherlock_Holmes. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Le baruffe chiozzotte** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_baruffe_chiozzotte. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Le biblioteche popolari in Italia dall'anno 1861 al 1869** (it) - Antonio Bruni (insegnante). Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Le_biblioteche_popolari_in_Italia_dall%27anno_1861_al_1869. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1225,7 +1205,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Lettere volgari** (it) - Giovanni Boccaccio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Lettere_volgari. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Levia Gravia** (it) - Giosuè Carducci. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Levia_Gravia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Leviamoci questo pensiero** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Leviamoci_questo_pensiero. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Lezioni e racconti per i bambini** (it) - Ida Baccini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Lezioni_e_racconti_per_i_bambini. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Lezioni elementari di numismatica antica** (it) - Joseph Hilarius Eckhel. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Lezioni_elementari_di_numismatica_antica. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Libertà d'insegnamento e libertà di studio** (it) - Francesco Gasco. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Libert%C3%A0_d%27insegnamento_e_libert%C3%A0_di_studio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **LibreOffice Writer** (it) - Autori di Wikibooks. Licenza: CC-BY-SA. Fonte: https://it.wikibooks.org/wiki/LibreOffice_Writer. Wikibooks (it.wikibooks.org), CC BY-SA 4.0
@@ -1361,7 +1340,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Novelle orientali** (it) - Gasparo Gozzi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Novelle_orientali. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Novelle rumene** (it) - Ion Luca Caragiale. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Novelle_rumene. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Novelle rusticane** (it) - Giovanni Verga. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Novelle_rusticane. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Novelle umoristiche** (it) - Adolfo Albertazzi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Novelle_umoristiche. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Novellette e racconti** (it) - Gasparo Gozzi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Novellette_e_racconti. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Novellette ed esempi morali (Bernardino da Siena)** (it) - Bernardino da Siena. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Novellette_ed_esempi_morali_%28Bernardino_da_Siena%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Numismatica di Lipara** (it) - Giacomo Tropea. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Numismatica_di_Lipara. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1393,10 +1371,8 @@ nelle schede compare la fonte con il link all'originale.
 - **Oreste (Euripide - Romagnoli)** (it) - Euripide. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Oreste_%28Euripide_-_Romagnoli%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Orientamento** (it) - Autori di Wikibooks. Licenza: CC-BY-SA. Fonte: https://it.wikibooks.org/wiki/Orientamento. Wikibooks (it.wikibooks.org), CC BY-SA 4.0
 - **Origine dell'Esperanto** (it) - Ludwik Lejzer Zamenhof. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Origine_dell%27Esperanto. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Origine della lingua italiana** (it) - Luigi Morandi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Origine_della_lingua_italiana. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Orlandino (Aretino)** (it) - Pietro Aretino. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Orlandino_%28Aretino%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Orlandino (Folengo)** (it) - Teofilo Folengo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Orlandino_%28Folengo%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Orlando furioso (1928)** (it) - Ludovico Ariosto. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Orlando_furioso_%281928%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Orologio di Flora** (it) - Angelo Maria Ricci. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Orologio_di_Flora. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Osservare il cielo** (it) - Autori di Wikibooks. Licenza: CC-BY-SA. Fonte: https://it.wikibooks.org/wiki/Osservare_il_cielo. Wikibooks (it.wikibooks.org), CC BY-SA 4.0
 - **Osservazioni alle Ricerche sul progetto di una strada di ferro da Milano a Venezia colle relative risposte** (it) - Carlo Cattaneo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Osservazioni_alle_Ricerche_sul_progetto_di_una_strada_di_ferro_da_Milano_a_Venezia_colle_relative_risposte. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1404,7 +1380,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Osservazioni intorno a' pellicelli del corpo umano** (it) - Giovanni Cosimo Bonomo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Osservazioni_intorno_a%27_pellicelli_del_corpo_umano. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Osservazioni sopra alcune particolari petrificazioni nel Monte Misma** (it) - Giovanni Maironi da Ponte. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Osservazioni_sopra_alcune_particolari_petrificazioni_nel_Monte_Misma. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Osservazioni sulla tortura** (it) - Pietro Verri. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Osservazioni_sulla_tortura. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Osservazioni sullo stato attuale dell'Italia e sul suo avvenire** (it) - Cristina di Belgioioso. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Osservazioni_sullo_stato_attuale_dell%27Italia_e_sul_suo_avvenire. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Osservazioni, progetti, e consigli risguardanti l'agricoltura nel Trentino ora Tirolo italiano** (it) - Giuseppe Pinamonti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Osservazioni%2C_progetti%2C_e_consigli_risguardanti_l%27agricoltura_nel_Trentino_ora_Tirolo_italiano. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Otello** (it) - William Shakespeare. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Otello. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Pallino e Mimì** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Pallino_e_Mim%C3%AC. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1444,10 +1419,8 @@ nelle schede compare la fonte con il link all'originale.
 - **Personal computer** (it) - Autori di Wikibooks. Licenza: CC-BY-SA. Fonte: https://it.wikibooks.org/wiki/Personal_computer. Wikibooks (it.wikibooks.org), CC BY-SA 4.0
 - **Pesi proporzionali dedotti dalla libbra romana, merovingia e di Carlomagno** (it) - Vincenzo Capobianchi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Pesi_proporzionali_dedotti_dalla_libbra_romana%2C_merovingia_e_di_Carlomagno. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Peter Pan** (it) - James Matthew Barrie. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Peter_Pan. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Piccole anime** (it) - Matilde Serao. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Piccole_anime. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Piccole storie del mondo grande** (it) - Alfredo Panzini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Piccole_storie_del_mondo_grande. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Piccole storie e grandi ragioni della nostra guerra** (it) - Maria Pezzè Pascolato. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Piccole_storie_e_grandi_ragioni_della_nostra_guerra. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Piccoli eroi** (it) - Virginia Tedeschi Treves. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Piccoli_eroi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Piccolo manuale di LibreLogo** (it) - Autori di Wikibooks. Licenza: CC-BY-SA. Fonte: https://it.wikibooks.org/wiki/Piccolo_manuale_di_LibreLogo. Wikibooks (it.wikibooks.org), CC BY-SA 4.0
 - **Piccolo mondo antico** (it) - Antonio Fogazzaro. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Piccolo_mondo_antico. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Piccolo mondo antico (Gogol)** (it) - Nikolaj Vasil'evič Gogol'. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Piccolo_mondo_antico_%28Gogol%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1509,7 +1482,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Questioni sull'Ottima Repubblica ossia sulla Città del Sole** (it) - Tommaso Campanella. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Questioni_sull%27Ottima_Repubblica_ossia_sulla_Citt%C3%A0_del_Sole. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Questioni urgenti (d'Azeglio)** (it) - Massimo d'Azeglio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Questioni_urgenti_%28d%27Azeglio%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Racconti fantastici (Nodier)** (it) - Charles Nodier. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Racconti_fantastici_%28Nodier%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Racconti fantastici (Tarchetti)** (it) - Iginio Ugo Tarchetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Racconti_fantastici_%28Tarchetti%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Racconti sardi** (it) - Grazia Deledda. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Racconti_sardi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Racconti umoristici** (it) - Iginio Ugo Tarchetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Racconti_umoristici. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Rafaella** (it) - Silvio Pellico. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Rafaella. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1529,7 +1501,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Ricerche sopra l'aritmetica degli antichi** (it) - Luigi Boschetti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Ricerche_sopra_l%27aritmetica_degli_antichi. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Ricerche sul progetto di una strada di ferro da Milano a Venezia** (it) - Carlo Cattaneo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Ricerche_sul_progetto_di_una_strada_di_ferro_da_Milano_a_Venezia. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Richiamo all'obbligo** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Richiamo_all%27obbligo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Riconciliazione** (it) - Tommasina Guidi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Riconciliazione. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Ricordanze (Guicciardini)** (it) - Francesco Guicciardini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Ricordanze_%28Guicciardini%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Ricordanze della mia vita** (it) - Luigi Settembrini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Ricordanze_della_mia_vita. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Ricordi del 1870-71** (it) - Edmondo De Amicis. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Ricordi_del_1870-71. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1558,7 +1529,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Roccello** (it) - Silvio Pellico. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Roccello. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Roma sotterranea cristiana** (it) - Pellegrino Tonini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Roma_sotterranea_cristiana. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Roma, parte I** (it) - Diego Angeli. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Roma%2C_parte_I. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Romanzo d'una signorina per bene** (it) - Anna Vertua Gentile. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Romanzo_d%27una_signorina_per_bene. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **S. Benedetto al Parlamento nazionale (Tosti)** (it) - Luigi Tosti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/S._Benedetto_al_Parlamento_nazionale_%28Tosti%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Saggio di racconti** (it) - Pietro Thouar. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Saggio_di_racconti. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Saggio di rime devote e morali** (it) - Marianne Santini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Saggio_di_rime_devote_e_morali. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1583,7 +1553,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Scritti vari (Ardigò)** (it) - Roberto Ardigò. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Scritti_vari_%28Ardig%C3%B2%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Scritti vari (Leopardi)** (it) - Giacomo Leopardi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Scritti_vari_%28Leopardi%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Seconda parte del Re Enrico VI** (it) - William Shakespeare. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Seconda_parte_del_Re_Enrico_VI. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Sei personaggi in cerca d'autore** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sei_personaggi_in_cerca_d%27autore. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Sei stato tu** (it) - Edgar Allan Poe. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sei_stato_tu. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Semiramide** (it) - Pietro Metastasio. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Semiramide. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Senilità** (it) - Italo Svevo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Senilit%C3%A0. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1613,7 +1582,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Sopra le vie del nuovo impero** (it) - Enrico Corradini. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sopra_le_vie_del_nuovo_impero. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Sopra lo amore** (it) - Marsilio Ficino. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sopra_lo_amore. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Sorella di Messalina** (it) - Annie Vivanti. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sorella_di_Messalina. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Sotto il velame** (it) - Giovanni Pascoli. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sotto_il_velame. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Sotto l'Austria nel Friuli** (it) - Caterina Percoto. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Sotto_l%27Austria_nel_Friuli. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Spagna** (it) - Edmondo De Amicis. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Spagna. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Spasimo** (it) - Federico De Roberto. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Spasimo. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1682,7 +1650,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Tirocinio** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Tirocinio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Tito Andronico** (it) - William Shakespeare. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Tito_Andronico. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Tommaso Moro (Pellico, 1883)** (it) - Silvio Pellico. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Tommaso_Moro_%28Pellico%2C_1883%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Top** (it) - Adolfo Albertazzi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Top. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Torniamo allo Statuto** (it) - Sidney Sonnino. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Torniamo_allo_Statuto. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Torquato Tasso (Goldoni)** (it) - Carlo Goldoni. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Torquato_Tasso_%28Goldoni%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Tra due ombre** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Tra_due_ombre. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
@@ -1745,7 +1712,6 @@ nelle schede compare la fonte con il link all'originale.
 - **Va bene** (it) - Luigi Pirandello. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Va_bene. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Vagabondaggio** (it) - Giovanni Verga. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Vagabondaggio. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Vecchie catene** (it) - Neera. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Vecchie_catene. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
-- **Vecchie storie d'amore** (it) - Adolfo Albertazzi. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Vecchie_storie_d%27amore. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Venti vite d'artisti** (it) - Giovanni Battista Gelli. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Venti_vite_d%27artisti. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Vera storia di due amanti infelici ovvero Ultime lettere di Iacopo Ortis (1912)** (it) - Ugo Foscolo. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Vera_storia_di_due_amanti_infelici_ovvero_Ultime_lettere_di_Iacopo_Ortis_%281912%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
 - **Versi (Cattermole)** (it) - Evelina Cattermole. Licenza: CC-BY-SA. Fonte: https://it.wikisource.org/wiki/Versi_%28Cattermole%29. Wikisource (it.wikisource.org), trascrizione CC BY-SA 4.0
