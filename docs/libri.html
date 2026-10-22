@@ -1,0 +1,171 @@
+<!doctype html><html lang=it><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Libri — guida · NucleoOS P4</title><style>:root{--bg:#f6f6f4;--card:#fff;--text:#1d1d1f;--dim:#6b6b70;--line:#e3e3e0;--accent:#2563eb;--code:#f0f0ec;--term:#0c0e10;--termfg:#4ade80}@media (prefers-color-scheme:dark){:root{--bg:#111214;--card:#1a1b1e;--text:#ececec;--dim:#9a9aa0;--line:#2b2c30;--accent:#7aa7ff;--code:#24252a}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}section{max-width:720px;margin:0 auto;padding:24px 16px 40px}section+section{display:none}nav{max-width:720px;margin:0 auto;padding:12px 16px 0;text-align:right}nav a{margin-left:10px;font-weight:600;font-size:14px}header{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}header img{width:80px;height:80px;flex:none;border-radius:18px}h1{margin:0;font-size:28px;line-height:1.2}.desc{margin:6px 0 4px}.meta{margin:0;color:var(--dim);font-size:14px}aside{background:var(--term);color:#e6e6e6;border:1px solid #2f3a33;border-radius:12px;padding:14px 16px;margin:0 0 24px}aside p{margin:6px 0 0}aside code{background:#23262a;color:var(--termfg)}.prompt{color:var(--termfg);font-family:ui-monospace,Consolas,monospace;margin-right:4px}article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px 12px}article h1{display:none}h2{font-size:20px;margin:24px 0 8px}h3{font-size:17px;margin:18px 0 6px}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--code);padding:1px 5px;border-radius:5px}pre{background:var(--term);color:#e6e6e6;padding:12px 14px;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0;color:inherit}table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}a{color:var(--accent);text-decoration:none}footer{margin-top:24px;color:var(--dim);font-size:14px;text-align:center}</style><body><nav><a href='#it'>IT</a> <a href='#en'>EN</a></nav><section id=it lang=it><header><img src='data:image/png;base64,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' alt=><div><h1>Libri</h1><p class=desc>Un lettore di ebook: EPUB (anche a layout fisso e a colori), FB2, fumetti (CBZ), TXT, HTML e Markdown. Pagine vere con testo giustificato, capitoli e indice, segnalibri, ricerca, note in finestra, immagini con zoom. Temi bianco, seppia, scuro e nero, aspetto e-ink e modalità 1 bit; serif o sans, dimensione, interlinea, margini, due pagine affiancate, orizzontale o verticale. Libri gratuiti in molte lingue dal catalogo dello Store.</p><p class=meta>versione 1.0.0 · Licenza: PolyForm-Noncommercial-1.0.0 (Libri, nvhtml); BSD-3-Clause (libwebp); MIT or public domain (stb_truetype, stb_image); zlib (LodePNG, NanoSVG); MIT (miniz); TJpgDec license (free use, notice kept); SIL OFL 1.1 (Noto Sans, Noto Serif, Noto Sans Mono) · <a href='https://github.com/indecenti/NucleoOS-P4/tree/main/ports/books'>Sito del progetto</a></p></div></header><article><h1>Libri</h1>
+<h2>A cosa serve</h2>
+<p>Libri è il lettore di ebook di NucleoOS: romanzi, classici, poesia, saggi, manuali e fumetti, sulla scheda e senza Internet. Legge EPUB 2 e 3 (anche a layout fisso, a colori e con le note), FB2 (anche compresso e in cirillico), CBZ, TXT, HTML e Markdown.</p>
+<p>Il catalogo dello Store offre migliaia di libri gratuiti in molte lingue, solo opere di pubblico dominio o con licenza libera, da fonti come Project Gutenberg e Standard Ebooks.</p>
+<h2>Come si usa</h2>
+<ul>
+<li><strong>Libreria</strong>: in cima c'è <strong>Continua a leggere</strong> con l'ultimo libro e il punto in cui eri. Sotto trovi tutti i libri della cartella <code>books</code>, con copertina e avanzamento. Tocca un libro per aprirlo e tienilo premuto per le informazioni (formato, dimensione, avanzamento, <strong>Elimina</strong> con due tocchi). Il pulsante con le linee cambia l'ordine: recenti, titolo, autore, avanzamento.</li>
+<li><strong>Catalogo</strong>: cerca per titolo o autore (gli accenti non contano) e filtra per categoria e per lingua (il pulsante con i codici delle lingue). Tocca un libro per la sua scheda, con autore, anno, lingua, dimensione, fonte e licenza, poi <strong>Scarica</strong>. I download continuano anche se chiudi l'app, il file viene verificato e alla fine il libro compare in libreria. La freccia in basso in alto a destra mostra i download in corso, che puoi annullare con due tocchi.</li>
+<li><strong>Leggere</strong>: tocca il lato destro per andare avanti e il sinistro per tornare indietro, oppure trascina la pagina con il dito, che la segue. Tocca il centro per i controlli: titolo, indice, ricerca, aspetto, segnalibro e informazioni in alto; capitolo, pagina, percentuale e la barra per spostarti nel libro in basso.</li>
+<li><strong>Indice e segnalibri</strong>: l'elenco dei capitoli con quello in corso evidenziato. Nella seconda scheda ci sono i segnalibri, con il testo della pagina.</li>
+<li><strong>Note</strong>: tocca il numero di una nota per leggerla in una finestra senza perdere la pagina. Dopo un link, <strong>Torna a pagina</strong> ti riporta dove eri.</li>
+<li><strong>Immagini</strong>: tieni premuta un'immagine (o toccala, se è grande) per vederla a tutto schermo. Pizzica o tocca due volte per ingrandirla e trascina per spostarti. Nei fumetti basta toccare due volte la pagina.</li>
+<li><strong>Aspetto</strong> (le due A): tema <strong>Bianco</strong>, <strong>Seppia</strong>, <strong>Scuro</strong>, <strong>Nero</strong>, <strong>E-ink</strong> (sedici grigi, immagini retinate, lampo di aggiornamento ogni N pagine come un lettore e-ink) e <strong>1 bit</strong> (bianco e nero puro). Poi carattere serif o sans, dimensione, interlinea, margini, giustificato, sillabazione, rientro dei paragrafi, riga di stato, pagine affiancate, animazione della pagina (scorri, copri, nessuna) e tocco sui lati.</li>
+<li><strong>Verticale</strong>: il pulsante con il telefono, nella libreria e nei controlli di lettura, gira l'app per tenere la scheda in piedi.</li>
+<li><strong>Due dita</strong>: allarga o stringi le dita sulla pagina per cambiare la dimensione del testo.</li>
+</ul>
+<h2>Tastiera e mouse</h2>
+<table>
+<thead>
+<tr>
+<th>Tasto</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Freccia destra, giù, Pag Giù, Spazio</td>
+<td>pagina avanti</td>
+</tr>
+<tr>
+<td>Freccia sinistra, su, Pag Su, Backspace, Maiusc+Spazio</td>
+<td>pagina indietro</td>
+</tr>
+<tr>
+<td>Inizio, Fine</td>
+<td>inizio del capitolo, capitolo successivo</td>
+</tr>
+<tr>
+<td>Invio</td>
+<td>mostra o nasconde i controlli, segue il link scelto</td>
+</tr>
+<tr>
+<td>Tab, Maiusc+Tab</td>
+<td>passano da un pulsante all'altro</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td>sceglie i link della pagina uno dopo l'altro</td>
+</tr>
+<tr>
+<td><code>t</code> o <code>c</code></td>
+<td>indice</td>
+</tr>
+<tr>
+<td><code>/</code> o Ctrl+F</td>
+<td>cerca nel libro</td>
+</tr>
+<tr>
+<td><code>b</code> o Ctrl+D</td>
+<td>segnalibro</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>aspetto</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>informazioni sul libro</td>
+</tr>
+<tr>
+<td><code>+</code> e <code>-</code></td>
+<td>dimensione del testo</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>orizzontale o verticale</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>chiude il pannello, poi torna alla libreria</td>
+</tr>
+</tbody>
+</table>
+<p>Nella libreria <code>c</code> apre il catalogo e <code>s</code> l'ordine. Il mouse funziona come il dito.</p>
+<h2>Libri tuoi</h2>
+<p>Copia i file EPUB, FB2, CBZ, TXT, HTML o MD nella cartella <code>books</code> della scheda (anche in una sottocartella), oppure aprili da <strong>File</strong> con <strong>Apri con &gt; Libri</strong>. I libri protetti da DRM non si possono leggere.</p></article><footer><a href='../index-it.html'>Tutte le app</a> · NucleoOS P4</footer></section><section id=en lang=en><header><img src='data:image/png;base64,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' alt=><div><h1>Books</h1><p class=desc>An ebook reader: EPUB (also fixed layout and colour), FB2, comics (CBZ), TXT, HTML and Markdown. Real pages with justified text, chapters and contents, bookmarks, search, notes in a popup, pictures with zoom. White, sepia, dark and black themes, an e-ink look and a 1-bit mode; serif or sans, size, spacing, margins, two pages side by side, landscape or portrait. Free books in many languages from the store&#x27;s catalog.</p><p class=meta>version 1.0.0 · License: PolyForm-Noncommercial-1.0.0 (Libri, nvhtml); BSD-3-Clause (libwebp); MIT or public domain (stb_truetype, stb_image); zlib (LodePNG, NanoSVG); MIT (miniz); TJpgDec license (free use, notice kept); SIL OFL 1.1 (Noto Sans, Noto Serif, Noto Sans Mono) · <a href='https://github.com/indecenti/NucleoOS-P4/tree/main/ports/books'>Project site</a></p></div></header><article><h1>Books</h1>
+<h2>What it is for</h2>
+<p>Books is NucleoOS's ebook reader: novels, classics, poetry, essays, manuals and comics, on the board and without the Internet. It reads EPUB 2 and 3 (fixed layout, colour and notes included), FB2 (also zipped and in Cyrillic), CBZ, TXT, HTML and Markdown.</p>
+<p>The store's catalog offers thousands of free books in many languages, only public-domain or freely licensed works, from sources such as Project Gutenberg and Standard Ebooks.</p>
+<h2>How to use it</h2>
+<ul>
+<li><strong>Library</strong>: <strong>Continue reading</strong> at the top shows your last book where you left it. Below are all the books in the <code>books</code> folder, with cover and progress. Tap a book to open it, hold it for its details (format, size, progress, <strong>Delete</strong> with two taps). The lines button changes the order: recent, title, author, progress.</li>
+<li><strong>Catalog</strong>: search by title or author (accents don't matter), filter by category and by language (the button with the language codes). Tap a book for its sheet (author, year, language, size, source and license) and <strong>Download</strong>. Downloads go on even with the app closed, the file is verified, and the book appears in your library when it is done. The arrow at the top right shows the downloads in progress; cancel one with two taps.</li>
+<li><strong>Reading</strong>: tap the right side to go forward and the left side to go back, or drag the page: it follows your finger. Tap the middle for the controls: title, contents, search, appearance, bookmark and details at the top; chapter, page, percentage and a slider to move through the book at the bottom.</li>
+<li><strong>Contents and bookmarks</strong>: the chapters, with the current one highlighted; the second tab holds your bookmarks with the text of their page.</li>
+<li><strong>Notes</strong>: tap a note's number to read it in a popup without losing your page. After following a link, <strong>Back to page</strong> brings you back.</li>
+<li><strong>Pictures</strong>: hold a picture (or tap it, if it is large) to see it full screen; pinch or double-tap to zoom, drag to move. In comics, double-tap the page.</li>
+<li><strong>Appearance</strong> (the two A's): <strong>White</strong>, <strong>Sepia</strong>, <strong>Dark</strong>, <strong>Black</strong>, <strong>E-ink</strong> (sixteen greys, dithered pictures and a full refresh flash every N pages, like an e-ink reader) and <strong>1-bit</strong> (pure black and white). Also serif or sans, size, line spacing, margins, justified text, hyphenation, paragraph indent, status line, pages side by side, page turn animation (slide, cover, none) and tapping the sides.</li>
+<li><strong>Portrait</strong>: the phone button, in the library and in the reading controls, turns the app so the board can stand upright.</li>
+<li><strong>Two fingers</strong>: pinch on the page to change the text size.</li>
+</ul>
+<h2>Keyboard and mouse</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Right, Down, Page Down, Space</td>
+<td>next page</td>
+</tr>
+<tr>
+<td>Left, Up, Page Up, Backspace, Shift+Space</td>
+<td>previous page</td>
+</tr>
+<tr>
+<td>Home, End</td>
+<td>start of the chapter, next chapter</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>shows or hides the controls, follows the chosen link</td>
+</tr>
+<tr>
+<td>Tab, Shift+Tab</td>
+<td>move between buttons</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td>picks the page's links one by one</td>
+</tr>
+<tr>
+<td><code>t</code> or <code>c</code></td>
+<td>contents</td>
+</tr>
+<tr>
+<td><code>/</code> or Ctrl+F</td>
+<td>search in the book</td>
+</tr>
+<tr>
+<td><code>b</code> or Ctrl+D</td>
+<td>bookmark</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>appearance</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>book details</td>
+</tr>
+<tr>
+<td><code>+</code> and <code>-</code></td>
+<td>text size</td>
+</tr>
+<tr>
+<td>Ctrl+O</td>
+<td>landscape or portrait</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>closes the panel, then back to the library</td>
+</tr>
+</tbody>
+</table>
+<p>In the library <code>c</code> opens the catalog and <code>s</code> the order. The mouse works like a finger.</p>
+<h2>Your own books</h2>
+<p>Copy EPUB, FB2, CBZ, TXT, HTML or MD files into the board's <code>books</code> folder (subfolders too), or open them from <strong>Files</strong> with <strong>Open with &gt; Books</strong>. DRM-protected books cannot be read.</p></article><footer><a href='../index-it.html'>All apps</a> · NucleoOS P4</footer></section><script>function pick(){var h=location.hash.slice(1)||(navigator.language||'').slice(0,2),all=document.querySelectorAll('section'),hit=document.getElementById(h);all.forEach(function(x,i){x.style.display=(hit&&hit.tagName=='SECTION'?x===hit:i==0)?'block':'none'})}onhashchange=pick;pick()</script></body></html>
