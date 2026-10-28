@@ -1,7 +1,7 @@
 nucleoos-data-v2
 sys-web
-2026.10.2
+2026.10.3
 web
-4c44e2a87a5e1e83279e903ece64182d7cfae66d20eecd1a46b92fee674d5cf4 59276 i . https://github.com/indecenti/nucleoos-p4-store/releases/download/content-2026.10.2/sys-web--root.idx
-aa627f34ecd8be69f36a6f01861797a1905241ec3de4a9941aeae71bbf4fb657 7495680 t . https://github.com/indecenti/nucleoos-p4-store/releases/download/content-2026.10.2/sys-web--root.tar
-sig 30440220666e7445a8d848c4304008e9c6a8cb9b6584f9a5070fdc00eb6cbf3775f9716f02206ab211bcc785820583432866493fb5f1fdc6cdff34258530a8728ee04115856c
+c1d0e9b11cd81b8f8307c13357ed41fec8fc1a8194859847306420ea35e1c755 127739 i . https://github.com/indecenti/nucleoos-p4-store/releases/download/content-2026.10.3/sys-web--root.idx
+9ded10caaba91a5d7e529756b4fcff7a7bc49d49952b9f8e56d1dba166447b73 30341120 t . https://github.com/indecenti/nucleoos-p4-store/releases/download/content-2026.10.3/sys-web--root.tar
+sig 3046022100f167cf0e651d9cbdea48feef7c7deaaf468ea11cdc26f1aab0e3ea7d803280d3022100cb0e477a1cd7214fc8aff3b5f68d91d8cc3537d4592b557de6099f2df56683f6
